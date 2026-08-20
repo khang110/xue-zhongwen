@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  background-color: #f3f1ea;
+  color: #26211c;
+}
+
+.font-hanzi {
+  font-family: 'Noto Serif TC', 'Noto Sans TC', serif;
+}
+
+.font-mono-pinyin {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-feature-settings: 'ss01';
+}
+
+/* 田字格 - ô vuông chia 4 phần bằng nét mực mảnh, khung để đặt 1 chữ Hán nổi bật.
+   Đây là mô-típ hình ảnh xuyên suốt app (thẻ từ vựng, trang chữ Hán, trang luyện viết).
+   Màu điều chỉnh qua CSS variable để dùng được trên cả nền sáng lẫn nền tối. */
+.tianzige {
+  --tzg-border: #cec8ba;
+  --tzg-line: #ded7c4;
+  --tzg-bg: #faf9f5;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--tzg-border);
+  border-radius: 0.75rem;
+  background-color: var(--tzg-bg);
+  background-image:
+    linear-gradient(to right, transparent calc(50% - 0.5px), var(--tzg-line) calc(50% - 0.5px), var(--tzg-line) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), var(--tzg-line) calc(50% - 0.5px), var(--tzg-line) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+
+.tianzige--dark {
+  --tzg-border: #463f36;
+  --tzg-line: #362f28;
+  --tzg-bg: #26211c;
+}
+
+/* Dấu triện son góc thẻ - dùng để đánh dấu trạng thái (đã thuộc, nổi bật...) */
+.seal-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid currentColor;
+  border-radius: 0.25rem;
+  transform: rotate(-4deg);
+}

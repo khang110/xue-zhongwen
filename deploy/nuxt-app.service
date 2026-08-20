@@ -1,0 +1,18 @@
+[Unit]
+Description=Hoc Tieng Trung B3 (Nuxt)
+After=network.target
+
+[Service]
+Type=simple
+User=nuxtapp
+WorkingDirectory=/opt/hoc-tieng-trung-b3
+EnvironmentFile=/opt/hoc-tieng-trung-b3/.env
+Environment=PORT=3000
+Environment=HOST=127.0.0.1
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node /opt/hoc-tieng-trung-b3/.output/server/index.mjs
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
