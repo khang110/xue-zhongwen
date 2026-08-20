@@ -1,6 +1,16 @@
 <script setup lang="ts">
+import { lessons } from '../data/lessons'
+
 const { clear } = useUserSession()
 const useSimplifiedChars = useSimplified()
+const route = useRoute()
+
+const currentLessonId = computed(() => (typeof route.params.id === 'string' ? route.params.id : ''))
+
+function handleLessonChange(e: Event) {
+  const id = (e.target as HTMLSelectElement).value
+  if (id) navigateTo(`/lessons/${id}`)
+}
 
 async function handleLogout() {
   await $fetch('/api/auth/logout', { method: 'POST' })
@@ -19,6 +29,21 @@ async function handleLogout() {
           <span class="hidden text-sm text-ink-400 sm:inline">Book 3</span>
         </NuxtLink>
         <nav class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-ink-600 sm:gap-x-5">
+          <select
+            :value="currentLessonId"
+            class="rounded-md border border-ink-200 bg-white px-2 py-1 text-sm text-ink-600 transition hover:border-seal-300 focus:outline-none"
+            @change="handleLessonChange"
+          >
+            <option value="" disabled>Bài học</option>
+            <option
+              v-for="lesson in lessons"
+              :key="lesson.id"
+              :value="lesson.id"
+              :disabled="lesson.status === 'coming-soon'"
+            >
+              Bài {{ lesson.number }}: {{ lesson.titleVi }}{{ lesson.status === 'coming-soon' ? ' (sắp có)' : '' }}
+            </option>
+          </select>
           <NuxtLink to="/review" class="transition hover:text-seal-600">Ôn tập</NuxtLink>
           <NuxtLink to="/characters" class="transition hover:text-seal-600">Chữ Hán</NuxtLink>
           <NuxtLink to="/writing" class="transition hover:text-seal-600">Luyện viết</NuxtLink>
