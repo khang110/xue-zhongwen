@@ -7,7 +7,7 @@ npm run build
 node .output/server/index.mjs
 ```
 
-Tiến độ ôn tập (SRS) lưu trong SQLite tại `server/database/app.db` (tự tạo khi chạy lần đầu, không đưa vào git) — đây là nguồn dữ liệu chung cho mọi thiết bị đăng nhập cùng mật khẩu, nên khi triển khai thật cần host trên máy có ổ đĩa bền vững (không phải môi trường serverless tạm thời).
+Tiến độ ôn tập (SRS) lưu trong SQLite tại `server/database/app.db` (tự tạo khi chạy lần đầu, không đưa vào git) — đây là nguồn dữ liệu chung cho mọi thiết bị đăng nhập cùng tài khoản Google, nên khi triển khai thật cần host trên máy có ổ đĩa bền vững (không phải môi trường serverless tạm thời).
 
 ## Triển khai lên VPS miễn phí (Google Cloud Always Free)
 
@@ -112,7 +112,7 @@ sudo -u nuxtapp npm run build
 exit
 ```
 
-Tạo `.env` production — cách nhanh nhất là copy thẳng `.env` local đang dùng (giữ nguyên mật khẩu đăng nhập, không cần sinh lại hash):
+Tạo `.env` production — cách nhanh nhất là copy thẳng `.env` local đang dùng:
 
 ```bash
 # Từ máy local
@@ -120,7 +120,13 @@ gcloud compute scp .env hoc-tieng-trung:/tmp/app.env --zone=us-central1-a
 gcloud compute ssh hoc-tieng-trung --zone=us-central1-a --command="sudo mv /tmp/app.env /opt/hoc-tieng-trung-b3/.env && sudo chown nuxtapp:nuxtapp /opt/hoc-tieng-trung-b3/.env && sudo chmod 600 /opt/hoc-tieng-trung-b3/.env"
 ```
 
-(hoặc `sudo -u nuxtapp nano /opt/hoc-tieng-trung-b3/.env` để gõ tay giá trị mới nếu muốn mật khẩu riêng cho bản deploy — xem mục Cài đặt ở README chính để sinh giá trị).
+**Quan trọng**: đăng nhập dùng Google OAuth (xem mục Cài đặt ở README chính) nên phải thêm redirect URI của domain production vào OAuth client trên [console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials):
+
+```
+https://<domain-production>/api/auth/google
+```
+
+Thiếu bước này sẽ báo lỗi `redirect_uri_mismatch` khi đăng nhập từ domain thật.
 
 ### 4. Chạy app như một service (tự khởi động lại, tự chạy khi reboot)
 
@@ -165,5 +171,5 @@ git push                    # đẩy code mới lên GitHub (làm ở máy local
 - **URL**: https://136.65.122.242.nip.io/ (dùng `<PUBLIC_IP>.nip.io` — không cần domain riêng, tự phân giải về IP)
 - **Project GCP**: `hoc-tieng-trung-b3`
 - **VM**: `hoc-tieng-trung`, zone `us-central1-a`, machine type `e2-micro`, IP `136.65.122.242`
-- Mật khẩu đăng nhập giống hệt `.env` local (đã copy trực tiếp sang VM).
-- Nếu VM bị xoá/tạo lại, IP public sẽ đổi → phải cập nhật lại domain trong `/etc/caddy/Caddyfile` trên VM và đổi link ở mục này.
+- Đăng nhập Google dùng chung cấu hình `.env` local (đã copy trực tiếp sang VM) — nhớ đã thêm redirect URI `https://136.65.122.242.nip.io/api/auth/google` vào OAuth client trên Google Cloud Console.
+- Nếu VM bị xoá/tạo lại, IP public sẽ đổi → phải cập nhật lại domain trong `/etc/caddy/Caddyfile` trên VM, đổi link ở mục này, và thêm redirect URI mới vào OAuth client.

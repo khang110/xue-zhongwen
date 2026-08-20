@@ -8,12 +8,13 @@ Website học từ vựng và ngữ pháp cho giáo trình *當代中文課程 3
 npm install
 ```
 
-Tạo file `.env` (xem mẫu ở `.env.example`) với 3 biến:
+App đăng nhập bằng Google OAuth (chỉ 1 email được phép truy cập). Tạo file `.env` (xem mẫu ở `.env.example`) với các biến:
 
-- `NUXT_AUTH_PASSWORD_HASH`, `NUXT_AUTH_PASSWORD_SALT` — mật khẩu đăng nhập (băm bằng scrypt). Tạo mới bằng:
-  ```bash
-  node -e "const {scryptSync,randomBytes}=require('node:crypto');const s=randomBytes(16).toString('hex');console.log('NUXT_AUTH_PASSWORD_SALT='+s);console.log('NUXT_AUTH_PASSWORD_HASH='+scryptSync('MAT_KHAU_MOI',s,64).toString('hex'))"
-  ```
+- `NUXT_OAUTH_GOOGLE_CLIENT_ID`, `NUXT_OAUTH_GOOGLE_CLIENT_SECRET` — tạo tại [console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials) → **Create Credentials → OAuth client ID → Web application**. Thêm **Authorized redirect URI**:
+  - Local dev: `http://localhost:3000/api/auth/google`
+  - Production: `https://<domain-thật>/api/auth/google`
+  (Lần đầu tạo OAuth client, Google có thể yêu cầu cấu hình "OAuth consent screen" trước — chọn loại **External**, điền tên app, thêm chính email của bạn vào mục Test users nếu app ở chế độ Testing.)
+- `NUXT_ALLOWED_GOOGLE_EMAIL` — email Google duy nhất được phép đăng nhập (email của bạn).
 - `NUXT_SESSION_PASSWORD` — chuỗi bí mật ≥32 ký tự để mã hoá cookie phiên đăng nhập:
   ```bash
   node -e "console.log(require('node:crypto').randomBytes(24).toString('hex'))"
@@ -25,7 +26,7 @@ Tạo file `.env` (xem mẫu ở `.env.example`) với 3 biến:
 npm run dev
 ```
 
-Mở `http://localhost:3000`, đăng nhập bằng mật khẩu đã cấu hình.
+Mở `http://localhost:3000`, đăng nhập bằng Google.
 
 ## Kiểm thử
 

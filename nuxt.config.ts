@@ -24,8 +24,7 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    authPasswordHash: '',
-    authPasswordSalt: ''
+    allowedGoogleEmail: ''
   },
 
   nitro: {
