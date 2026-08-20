@@ -179,10 +179,21 @@ Caddy sẽ tự xin chứng chỉ HTTPS (Let's Encrypt) cho domain đó. Sau bư
 
 ### 6. Cập nhật code sau này
 
+Vì code đã push lên GitHub, cách nhanh nhất là cho VM tự `git pull` thay vì đóng gói/scp lại từ đầu:
+
 ```bash
-# lặp lại bước 3 (copy code mới, npm install, npm run build)
-sudo systemctl restart nuxt-app
+# Một lần duy nhất: chuyển /opt/hoc-tieng-trung-b3 (đang là thư mục giải nén từ tar) thành git clone thật
+gcloud compute ssh hoc-tieng-trung --zone=us-central1-a --command="cd /opt/hoc-tieng-trung-b3 && sudo -u nuxtapp git init -b master && sudo -u nuxtapp git remote add origin https://github.com/khang110/xue-zhongwen.git && sudo -u nuxtapp git fetch origin master && sudo -u nuxtapp git reset --hard origin/master"
 ```
+
+Từ lần sau, mỗi khi sửa code xong, chỉ cần:
+
+```bash
+git push                    # đẩy code mới lên GitHub (làm ở máy local như bình thường)
+.\deploy\redeploy.ps1       # VM tự pull + npm install + npm run build + restart service
+```
+
+`deploy/redeploy.ps1` chỉ là wrapper gọi `deploy/update.sh` trên VM qua SSH — có thể chạy tay lệnh `gcloud compute ssh ... --command="bash /opt/hoc-tieng-trung-b3/deploy/update.sh"` nếu không dùng PowerShell.
 
 ### Trạng thái triển khai hiện tại
 
