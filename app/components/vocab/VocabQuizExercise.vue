@@ -7,6 +7,7 @@ const props = defineProps<{
 
 const useSimplifiedChars = useSimplified()
 const autoSpeak = useAutoSpeakAnswer()
+const autoNextOnCorrect = useAutoNextOnCorrect()
 const { speak } = useSpeech()
 
 function displayText(item: VocabItem) {
@@ -70,7 +71,9 @@ function selectOption(optionId: string) {
     if (autoSpeak.value) {
       speak(current.value.traditional, { simplifiedText: current.value.simplified })
     }
-    autoNextTimer = setTimeout(goNext, 700)
+    if (autoNextOnCorrect.value) {
+      autoNextTimer = setTimeout(goNext, 700)
+    }
   }
 }
 
@@ -105,16 +108,26 @@ onUnmounted(clearAutoNext)
     </div>
 
     <div v-else-if="current" class="mx-auto max-w-lg">
-      <div class="mb-3 flex items-center justify-between">
+      <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
         <p class="text-sm text-ink-400">Câu {{ currentIndex + 1 }} / {{ total }}</p>
-        <button
-          type="button"
-          :title="autoSpeak ? 'Đang tự động đọc đáp án đúng - bấm để tắt' : 'Đang tắt tự động đọc - bấm để bật'"
-          class="rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"
-          @click="autoSpeak = !autoSpeak"
-        >
-          {{ autoSpeak ? 'Tự đọc đáp án: Bật' : 'Tự đọc đáp án: Tắt' }}
-        </button>
+        <div class="flex gap-2">
+          <button
+            type="button"
+            :title="autoNextOnCorrect ? 'Đang tự động chuyển câu khi đúng - bấm để tắt' : 'Đang tắt tự động chuyển câu - bấm để bật'"
+            class="rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"
+            @click="autoNextOnCorrect = !autoNextOnCorrect"
+          >
+            {{ autoNextOnCorrect ? 'Tự động next: Bật' : 'Tự động next: Tắt' }}
+          </button>
+          <button
+            type="button"
+            :title="autoSpeak ? 'Đang tự động đọc đáp án đúng - bấm để tắt' : 'Đang tắt tự động đọc - bấm để bật'"
+            class="rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"
+            @click="autoSpeak = !autoSpeak"
+          >
+            {{ autoSpeak ? 'Tự đọc đáp án: Bật' : 'Tự đọc đáp án: Tắt' }}
+          </button>
+        </div>
       </div>
 
       <div class="rounded-xl border border-ink-100 bg-white p-6 text-center shadow-sm">
@@ -145,13 +158,14 @@ onUnmounted(clearAutoNext)
         <p :class="isCorrect ? 'text-jade-700' : 'text-seal-600'" class="text-sm font-medium">
           {{ isCorrect ? 'Chính xác!' : 'Chưa đúng.' }}
         </p>
-        <p class="mt-1 text-sm text-ink-600">
+        <p class="mt-1 flex items-center justify-center gap-1.5 text-sm text-ink-600">
           Đáp án: <span class="font-hanzi text-base text-ink-900">{{ displayText(current) }}</span>
-          <span class="ml-1 font-mono-pinyin text-xs text-ink-400">{{ current.pinyin }}</span>
+          <span class="font-mono-pinyin text-xs text-ink-400">{{ current.pinyin }}</span>
+          <SpeakerButton size="sm" :text="current.traditional" :simplified-text="current.simplified" />
         </p>
         <div class="mt-2 flex items-center justify-center gap-3">
           <button
-            v-if="!isCorrect"
+            v-if="!isCorrect || !autoNextOnCorrect"
             type="button"
             class="rounded-md border border-ink-200 px-3 py-1.5 text-sm text-ink-600 transition hover:border-seal-300"
             @click="goNext"
