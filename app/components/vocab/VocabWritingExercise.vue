@@ -6,6 +6,9 @@ const props = defineProps<{
   vocab: VocabItem[]
 }>()
 
+const autoSpeak = useAutoSpeakAnswer()
+const { speak } = useSpeech()
+
 interface WrongAnswer {
   item: VocabItem
   userInput: string
@@ -64,6 +67,9 @@ function handleCheck() {
     correctCount.value += 1
   } else {
     wrongAnswers.value.push({ item: current.value, userInput: inputValue.value.trim() })
+  }
+  if (autoSpeak.value) {
+    speak(current.value.traditional, { simplifiedText: current.value.simplified })
   }
 }
 
@@ -135,7 +141,17 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
     </div>
 
     <div v-else-if="current" class="mx-auto max-w-lg">
-      <p class="mb-3 text-center text-sm text-ink-400">Câu {{ currentIndex + 1 }} / {{ total }}</p>
+      <div class="mb-3 flex items-center justify-between">
+        <p class="text-sm text-ink-400">Câu {{ currentIndex + 1 }} / {{ total }}</p>
+        <button
+          type="button"
+          :title="autoSpeak ? 'Đang tự động đọc đáp án - bấm để tắt' : 'Đang tắt tự động đọc - bấm để bật'"
+          class="rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"
+          @click="autoSpeak = !autoSpeak"
+        >
+          {{ autoSpeak ? 'Tự đọc đáp án: Bật' : 'Tự đọc đáp án: Tắt' }}
+        </button>
+      </div>
 
       <div class="rounded-xl border border-ink-100 bg-white p-6 text-center shadow-sm">
         <p class="text-xs uppercase tracking-wide text-ink-400">Nghĩa tiếng Việt</p>
@@ -161,9 +177,10 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
         <span :class="isCorrect ? 'text-jade-700' : 'text-seal-600'" class="text-sm font-medium">
           {{ isCorrect ? 'Chính xác!' : 'Chưa đúng.' }}
         </span>
-        <p class="mt-1 text-sm text-ink-600">
+        <p class="mt-1 flex items-center justify-center gap-1.5 text-sm text-ink-600">
           Đáp án: <span class="font-hanzi text-base text-ink-900">{{ current.traditional }} / {{ current.simplified }}</span>
-          <span class="ml-1 font-mono-pinyin text-xs text-ink-400">{{ current.pinyin }}</span>
+          <span class="font-mono-pinyin text-xs text-ink-400">{{ current.pinyin }}</span>
+          <SpeakerButton size="sm" :text="current.traditional" :simplified-text="current.simplified" />
         </p>
       </div>
 
