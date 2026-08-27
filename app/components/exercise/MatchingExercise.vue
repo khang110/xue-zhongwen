@@ -5,8 +5,17 @@ const props = defineProps<{
   exercise: MatchingExercise
 }>()
 
+const showPinyin = usePinyinVisible()
+
 const leftItems = computed(() => [...new Set(props.exercise.pairs.map((p) => p.left))])
 const rightItems = computed(() => props.exercise.pairs.map((p) => p.right))
+const pinyinFor = computed(() => {
+  const map = new Map<string, string>()
+  for (const text of [...leftItems.value, ...rightItems.value]) {
+    if (!map.has(text)) map.set(text, toPinyinText(text))
+  }
+  return map
+})
 
 const correctMap = computed(() => {
   const map = new Map<string, Set<string>>()
@@ -56,13 +65,14 @@ function handleReset() {
 
     <div class="space-y-3">
       <div v-for="left in leftItems" :key="left">
-        <p class="mb-1 font-hanzi text-sm font-medium text-ink-800">{{ left }}</p>
+        <p class="font-hanzi text-sm font-medium text-ink-800">{{ left }}</p>
+        <p v-if="showPinyin" class="mb-1 font-mono-pinyin text-xs text-ink-400">{{ pinyinFor.get(left) }}</p>
         <div class="flex flex-wrap gap-1.5">
           <button
             v-for="right in rightItems"
             :key="right"
             type="button"
-            class="rounded-full border px-2.5 py-1 text-xs font-hanzi transition"
+            class="rounded-full border px-2.5 py-1 text-xs transition"
             :class="{
               'border-ink-200 text-ink-600 hover:border-seal-300': cellState(left, right) === 'idle' && !selected[left]?.has(right),
               'border-seal-400 bg-seal-50 text-seal-700': cellState(left, right) === 'idle' && selected[left]?.has(right),
@@ -72,7 +82,8 @@ function handleReset() {
             }"
             @click="toggle(left, right)"
           >
-            {{ right }}
+            <span class="font-hanzi">{{ right }}</span>
+            <span v-if="showPinyin" class="ml-1 font-mono-pinyin">{{ pinyinFor.get(right) }}</span>
           </button>
         </div>
       </div>

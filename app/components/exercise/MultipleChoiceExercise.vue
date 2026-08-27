@@ -5,6 +5,12 @@ const props = defineProps<{
   exercise: MultipleChoiceExercise
 }>()
 
+const showPinyin = usePinyinVisible()
+
+const questionPinyin = computed(() => toPinyinText(props.exercise.question))
+const promptPinyin = computed(() => (props.exercise.prompt ? toPinyinText(props.exercise.prompt) : ''))
+const optionPinyin = computed(() => new Map(props.exercise.options.map((o) => [o.id, toPinyinText(o.text)])))
+
 const selectedId = ref<string | null>(null)
 const checked = ref(false)
 
@@ -29,8 +35,10 @@ function optionState(optionId: string) {
 
 <template>
   <div class="rounded-lg border border-ink-100 bg-white p-4">
-    <p v-if="exercise.prompt" class="mb-2 whitespace-pre-line font-hanzi text-sm leading-relaxed text-ink-800">{{ exercise.prompt }}</p>
-    <p class="mb-3 whitespace-pre-line font-hanzi text-base text-ink-900">{{ exercise.question }}</p>
+    <p v-if="exercise.prompt" class="mb-1 whitespace-pre-line font-hanzi text-sm leading-relaxed text-ink-800">{{ exercise.prompt }}</p>
+    <p v-if="exercise.prompt && showPinyin" class="mb-2 whitespace-pre-line font-mono-pinyin text-xs text-ink-400">{{ promptPinyin }}</p>
+    <p class="whitespace-pre-line font-hanzi text-base text-ink-900">{{ exercise.question }}</p>
+    <p v-if="showPinyin" class="mb-3 whitespace-pre-line font-mono-pinyin text-xs text-ink-400">{{ questionPinyin }}</p>
 
     <div class="space-y-1.5">
       <label
@@ -50,7 +58,10 @@ function optionState(optionId: string) {
           :disabled="checked"
           class="accent-seal-600"
         >
-        <span class="font-hanzi">{{ option.text }}</span>
+        <span class="min-w-0">
+          <span class="font-hanzi">{{ option.text }}</span>
+          <span v-if="showPinyin" class="block font-mono-pinyin text-xs text-ink-400">{{ optionPinyin.get(option.id) }}</span>
+        </span>
       </label>
     </div>
 

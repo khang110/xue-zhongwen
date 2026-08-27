@@ -6,6 +6,9 @@ const props = defineProps<{
   exercise: CompositionExercise
 }>()
 
+const showPinyin = usePinyinVisible()
+const showMeaning = useMeaningVisible()
+
 const lesson = computed(() => getLessonById(props.exercise.lessonId))
 
 const requiredVocab = computed(
@@ -14,6 +17,7 @@ const requiredVocab = computed(
 const requiredGrammar = computed(
   () => lesson.value?.grammar.filter((g) => props.exercise.requiredPatterns.includes(g.id)) ?? []
 )
+const requiredGrammarPinyin = computed(() => new Map(requiredGrammar.value.map((g) => [g.id, toPinyinText(g.pattern)])))
 
 const text = ref('')
 const length = computed(() => text.value.replace(/\s/g, '').length)
@@ -27,8 +31,10 @@ const inRange = computed(() => length.value >= props.exercise.minLength && lengt
     <div v-if="requiredVocab.length" class="mt-3">
       <p class="mb-1 text-xs font-medium uppercase tracking-wide text-ink-400">Gợi ý từ vựng nên dùng</p>
       <div class="flex flex-wrap gap-1.5">
-        <span v-for="w in requiredVocab" :key="w.id" class="font-hanzi rounded border border-ink-200 bg-paper px-2 py-0.5 text-sm text-ink-700">
-          {{ w.traditional }}
+        <span v-for="w in requiredVocab" :key="w.id" class="rounded border border-ink-200 bg-paper px-2 py-0.5 text-sm text-ink-700">
+          <span class="font-hanzi">{{ w.traditional }}</span>
+          <span v-if="showPinyin" class="ml-1 font-mono-pinyin text-xs text-ink-400">{{ w.pinyin }}</span>
+          <span v-if="showMeaning" class="ml-1 text-xs text-ink-500">({{ w.meaningVi }})</span>
         </span>
       </div>
     </div>
@@ -36,8 +42,9 @@ const inRange = computed(() => length.value >= props.exercise.minLength && lengt
     <div v-if="requiredGrammar.length" class="mt-3">
       <p class="mb-1 text-xs font-medium uppercase tracking-wide text-ink-400">Gợi ý mẫu câu nên dùng</p>
       <div class="flex flex-wrap gap-1.5">
-        <span v-for="g in requiredGrammar" :key="g.id" class="font-hanzi rounded border border-seal-200 bg-seal-50 px-2 py-0.5 text-sm text-seal-700">
-          {{ g.pattern }}
+        <span v-for="g in requiredGrammar" :key="g.id" class="rounded border border-seal-200 bg-seal-50 px-2 py-0.5 text-sm text-seal-700">
+          <span class="font-hanzi">{{ g.pattern }}</span>
+          <span v-if="showPinyin" class="ml-1 font-mono-pinyin text-xs text-seal-500">{{ requiredGrammarPinyin.get(g.id) }}</span>
         </span>
       </div>
     </div>

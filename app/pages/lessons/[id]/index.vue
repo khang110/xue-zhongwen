@@ -74,11 +74,11 @@ const readingParagraphs = computed(() => {
       </button>
 
       <div
-        v-if="activeTab === 'dialogue' || activeTab === 'vocab' || activeTab === 'reading'"
+        v-if="activeTab === 'dialogue' || activeTab === 'vocab' || activeTab === 'reading' || activeTab === 'grammar' || activeTab === 'practice'"
         class="ml-auto flex shrink-0 gap-2 self-center"
       >
         <button
-          v-if="activeTab === 'dialogue'"
+          v-if="activeTab === 'dialogue' || activeTab === 'grammar' || activeTab === 'practice'"
           type="button"
           :title="showMeaning ? 'Đang hiện nghĩa - bấm để ẩn' : 'Đang ẩn nghĩa - bấm để hiện'"
           class="shrink-0 rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"

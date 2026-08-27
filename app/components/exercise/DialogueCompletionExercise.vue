@@ -6,6 +6,8 @@ const props = defineProps<{
   exercise: DialogueCompletionExercise
 }>()
 
+const showPinyin = usePinyinVisible()
+
 const userAnswer = ref('')
 const revealed = ref(false)
 
@@ -13,6 +15,9 @@ const pattern = computed(() => {
   const lesson = getLessonById(props.exercise.lessonId)
   return lesson?.grammar.find((g) => g.id === props.exercise.requiredPattern)
 })
+
+const turnPinyin = computed(() => props.exercise.turns.map((t) => toPinyinText(t.text)))
+const sampleAnswerPinyin = computed(() => toPinyinText(props.exercise.sampleAnswer))
 </script>
 
 <template>
@@ -24,9 +29,13 @@ const pattern = computed(() => {
     <div class="space-y-1.5">
       <div v-for="(turn, i) in exercise.turns" :key="i" class="flex gap-2 text-sm">
         <span class="w-5 shrink-0 font-medium text-ink-500">{{ turn.speaker }}:</span>
-        <span v-if="!turn.isBlank" class="font-hanzi text-ink-800">{{ turn.text }}</span>
+        <div v-if="!turn.isBlank" class="min-w-0">
+          <span class="font-hanzi text-ink-800">{{ turn.text }}</span>
+          <p v-if="showPinyin" class="font-mono-pinyin text-xs text-ink-400">{{ turnPinyin[i] }}</p>
+        </div>
         <div v-else class="flex-1">
-          <p v-if="turn.text" class="mb-1 font-hanzi text-xs text-ink-400">{{ turn.text }}</p>
+          <p v-if="turn.text" class="font-hanzi text-xs text-ink-400">{{ turn.text }}</p>
+          <p v-if="turn.text && showPinyin" class="mb-1 font-mono-pinyin text-xs text-ink-400">{{ turnPinyin[i] }}</p>
           <textarea
             v-model="userAnswer"
             rows="2"
@@ -47,8 +56,9 @@ const pattern = computed(() => {
       </button>
     </div>
 
-    <p v-if="revealed" class="mt-2 rounded-md bg-paper px-3 py-2 font-hanzi text-sm text-ink-800">
-      {{ exercise.sampleAnswer }}
-    </p>
+    <div v-if="revealed" class="mt-2 rounded-md bg-paper px-3 py-2">
+      <p class="font-hanzi text-sm text-ink-800">{{ exercise.sampleAnswer }}</p>
+      <p v-if="showPinyin" class="mt-0.5 font-mono-pinyin text-xs text-ink-400">{{ sampleAnswerPinyin }}</p>
+    </div>
   </div>
 </template>
