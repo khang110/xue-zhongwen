@@ -18,6 +18,11 @@ export function useDailyReview() {
   const remaining = computed(() => Math.max(0, queue.value.length - currentIndex.value))
   const isDone = computed(() => queue.value.length > 0 && currentIndex.value >= queue.value.length)
 
+  const { record } = useStreak()
+  watch(isDone, (done) => {
+    if (done) record('srs_review')
+  })
+
   async function start(tag?: string) {
     loading.value = true
     error.value = ''

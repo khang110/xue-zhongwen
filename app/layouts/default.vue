@@ -29,6 +29,7 @@ async function handleLogout() {
           <span class="hidden text-sm text-ink-400 sm:inline">Book 3</span>
         </NuxtLink>
         <nav class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-ink-600 sm:gap-x-5">
+          <StreakBadge variant="compact" />
           <select
             :value="currentLessonId"
             class="rounded-md border border-ink-200 bg-white px-2 py-1 text-sm text-ink-600 transition hover:border-seal-300 focus:outline-none"

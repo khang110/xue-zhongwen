@@ -24,6 +24,24 @@ CREATE TABLE IF NOT EXISTS review_log (
 
 CREATE INDEX IF NOT EXISTS idx_srs_cards_due_date ON srs_cards (due_date);
 CREATE INDEX IF NOT EXISTS idx_review_log_item_id ON review_log (item_id);
+
+CREATE TABLE IF NOT EXISTS streak_state (
+  id                     INTEGER PRIMARY KEY CHECK (id = 1),
+  current_streak         INTEGER NOT NULL DEFAULT 0,
+  longest_streak         INTEGER NOT NULL DEFAULT 0,
+  last_activity_date     TEXT,
+  freezes_available      INTEGER NOT NULL DEFAULT 0,
+  last_freeze_regen_date TEXT
+);
+
+CREATE TABLE IF NOT EXISTS streak_activity_log (
+  id             INTEGER PRIMARY KEY AUTOINCREMENT,
+  activity_date  TEXT NOT NULL,
+  activity_type  TEXT NOT NULL,
+  recorded_at    TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_streak_activity_log_date ON streak_activity_log (activity_date);
 `
 
 let _db: DatabaseSync | null = null

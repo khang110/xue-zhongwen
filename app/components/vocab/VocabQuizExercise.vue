@@ -28,6 +28,11 @@ const total = computed(() => queue.value.length)
 const isDone = computed(() => total.value > 0 && currentIndex.value >= total.value)
 const isCorrect = computed(() => !!current.value && selectedId.value === current.value.id)
 
+const { record } = useStreak()
+watch(isDone, (done) => {
+  if (done) record('lesson_quiz')
+})
+
 function clearAutoNext() {
   if (autoNextTimer) {
     clearTimeout(autoNextTimer)

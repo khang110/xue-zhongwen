@@ -26,20 +26,23 @@ function percentFor(lessonId: string): number {
 
 <template>
   <div>
-    <div class="mb-6 flex flex-col items-start justify-between gap-3 rounded-xl border border-ink-100 bg-white p-5 sm:flex-row sm:items-center">
-      <div>
-        <p class="font-hanzi text-xl font-semibold text-ink-900">Ôn tập hôm nay</p>
-        <p class="mt-0.5 text-sm text-ink-500">
-          <span v-if="totalDueToday > 0">{{ totalDueToday }} thẻ đang chờ ôn.</span>
-          <span v-else>Không có thẻ nào đến hạn - học từ mới ở các bài bên dưới nhé.</span>
-        </p>
+    <div class="mb-6 flex flex-col gap-3 sm:flex-row">
+      <StreakBadge variant="detailed" class="shrink-0 rounded-xl border border-ink-100 bg-white p-5 sm:w-56" />
+      <div class="flex flex-1 flex-col items-start justify-between gap-3 rounded-xl border border-ink-100 bg-white p-5 sm:flex-row sm:items-center">
+        <div>
+          <p class="font-hanzi text-xl font-semibold text-ink-900">Ôn tập hôm nay</p>
+          <p class="mt-0.5 text-sm text-ink-500">
+            <span v-if="totalDueToday > 0">{{ totalDueToday }} thẻ đang chờ ôn.</span>
+            <span v-else>Không có thẻ nào đến hạn - học từ mới ở các bài bên dưới nhé.</span>
+          </p>
+        </div>
+        <NuxtLink
+          to="/review"
+          class="shrink-0 rounded-lg bg-seal-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-seal-700"
+        >
+          Ôn tập ngay
+        </NuxtLink>
       </div>
-      <NuxtLink
-        to="/review"
-        class="shrink-0 rounded-lg bg-seal-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-seal-700"
-      >
-        Ôn tập ngay
-      </NuxtLink>
     </div>
 
     <h1 class="font-hanzi text-2xl font-semibold text-ink-900">12 bài học</h1>

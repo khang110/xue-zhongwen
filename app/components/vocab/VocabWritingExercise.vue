@@ -26,6 +26,11 @@ const current = computed(() => queue.value[currentIndex.value] ?? null)
 const total = computed(() => queue.value.length)
 const isDone = computed(() => total.value > 0 && currentIndex.value >= total.value)
 
+const { record } = useStreak()
+watch(isDone, (done) => {
+  if (done) record('lesson_writing')
+})
+
 const isCorrect = computed(() => {
   if (!current.value) return false
   const answer = inputValue.value.trim()
