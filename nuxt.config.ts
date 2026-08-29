@@ -23,10 +23,6 @@ export default defineNuxtConfig({
     display: 'swap'
   },
 
-  runtimeConfig: {
-    allowedGoogleEmail: ''
-  },
-
   nitro: {
     experimental: {
       database: false

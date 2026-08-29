@@ -2,7 +2,41 @@
 definePageMeta({ layout: false })
 
 const route = useRoute()
-const hasError = computed(() => route.query.error === 'oauth')
+const hasOAuthError = computed(() => route.query.error === 'oauth')
+
+const { fetch: refreshSession } = useUserSession()
+
+const mode = ref<'login' | 'register'>('login')
+const email = ref('')
+const password = ref('')
+const name = ref('')
+const errorMessage = ref('')
+const isSubmitting = ref(false)
+
+function toggleMode() {
+  mode.value = mode.value === 'login' ? 'register' : 'login'
+  errorMessage.value = ''
+}
+
+async function handleSubmit() {
+  errorMessage.value = ''
+  isSubmitting.value = true
+  try {
+    const endpoint = mode.value === 'login' ? '/api/auth/login' : '/api/auth/register'
+    const body =
+      mode.value === 'login'
+        ? { email: email.value, password: password.value }
+        : { email: email.value, password: password.value, name: name.value }
+
+    await $fetch(endpoint, { method: 'POST', body })
+    await refreshSession()
+    await navigateTo('/')
+  } catch (err) {
+    errorMessage.value = (err as { data?: { statusMessage?: string } })?.data?.statusMessage ?? 'Có lỗi xảy ra, vui lòng thử lại.'
+  } finally {
+    isSubmitting.value = false
+  }
+}
 </script>
 
 <template>
@@ -16,10 +50,62 @@ const hasError = computed(() => route.query.error === 'oauth')
         <p class="mt-2 text-sm text-ink-300">Sổ tay từ vựng &amp; ngữ pháp cho người học tiếng Việt</p>
       </div>
 
-      <div class="rounded-2xl bg-paper p-6 text-center shadow-2xl shadow-black/40">
-        <p v-if="hasError" class="mb-4 text-sm text-seal-600">
+      <div class="rounded-2xl bg-paper p-6 shadow-2xl shadow-black/40">
+        <p v-if="hasOAuthError" class="mb-4 text-center text-sm text-seal-600">
           Không thể đăng nhập bằng tài khoản Google này.
         </p>
+
+        <form class="flex flex-col gap-3" @submit.prevent="handleSubmit">
+          <input
+            v-if="mode === 'register'"
+            v-model="name"
+            type="text"
+            placeholder="Tên hiển thị (không bắt buộc)"
+            class="rounded-lg border border-ink-200 px-3 py-2 text-sm text-ink-800 focus:border-seal-300 focus:outline-none"
+          >
+          <input
+            v-model="email"
+            type="email"
+            required
+            placeholder="Email"
+            class="rounded-lg border border-ink-200 px-3 py-2 text-sm text-ink-800 focus:border-seal-300 focus:outline-none"
+          >
+          <input
+            v-model="password"
+            type="password"
+            required
+            minlength="8"
+            placeholder="Mật khẩu (tối thiểu 8 ký tự)"
+            class="rounded-lg border border-ink-200 px-3 py-2 text-sm text-ink-800 focus:border-seal-300 focus:outline-none"
+          >
+
+          <p v-if="errorMessage" class="text-center text-sm text-seal-600">{{ errorMessage }}</p>
+
+          <button
+            type="submit"
+            :disabled="isSubmitting"
+            class="mt-1 rounded-lg bg-seal-600 py-2.5 font-medium text-white transition hover:bg-seal-700 disabled:opacity-60"
+          >
+            {{ mode === 'login' ? 'Đăng nhập' : 'Đăng ký' }}
+          </button>
+        </form>
+
+        <p class="mt-3 text-center text-sm text-ink-500">
+          <template v-if="mode === 'login'">
+            Chưa có tài khoản?
+            <button type="button" class="text-seal-600 underline" @click="toggleMode">Đăng ký ngay</button>
+          </template>
+          <template v-else>
+            Đã có tài khoản?
+            <button type="button" class="text-seal-600 underline" @click="toggleMode">Đăng nhập</button>
+          </template>
+        </p>
+
+        <div class="my-4 flex items-center gap-3 text-xs text-ink-300">
+          <div class="h-px flex-1 bg-ink-200" />
+          hoặc
+          <div class="h-px flex-1 bg-ink-200" />
+        </div>
 
         <a
           href="/api/auth/google"

@@ -2,7 +2,7 @@ import { computeNextState, createInitialCardState } from '#shared/utils/srsAlgor
 import type { SrsGrade } from '../../../types/srs'
 
 export default defineEventHandler(async (event) => {
-  await requireUserSession(event)
+  const { user } = await requireUserSession(event)
 
   const body = await readBody<{ itemId?: string; grade?: number }>(event)
   const itemId = body?.itemId
@@ -13,11 +13,11 @@ export default defineEventHandler(async (event) => {
   }
 
   const now = new Date()
-  const current = getCard(itemId) ?? createInitialCardState(itemId, now)
+  const current = getCard(user.id, itemId) ?? createInitialCardState(itemId, now)
   const next = computeNextState(current, grade as SrsGrade, now)
 
-  upsertCard(next)
-  logReview(itemId, grade as SrsGrade, now.toISOString())
+  upsertCard(user.id, next)
+  logReview(user.id, itemId, grade as SrsGrade, now.toISOString())
 
   return next
 })

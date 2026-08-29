@@ -19,21 +19,21 @@ function rowToState(row: StreakStateRow): StreakState {
   }
 }
 
-export function getStreakState(): StreakState | undefined {
+export function getStreakState(userId: number): StreakState | undefined {
   const db = useDb()
-  const row = db.prepare('SELECT * FROM streak_state WHERE id = 1').get() as unknown as
+  const row = db.prepare('SELECT * FROM streak_state WHERE user_id = ?').get(userId) as unknown as
     | StreakStateRow
     | undefined
   return row ? rowToState(row) : undefined
 }
 
-export function upsertStreakState(state: StreakState): void {
+export function upsertStreakState(userId: number, state: StreakState): void {
   const db = useDb()
   db.prepare(
     `
-    INSERT INTO streak_state (id, current_streak, longest_streak, last_activity_date, freezes_available, last_freeze_regen_date)
-    VALUES (1, ?, ?, ?, ?, ?)
-    ON CONFLICT(id) DO UPDATE SET
+    INSERT INTO streak_state (user_id, current_streak, longest_streak, last_activity_date, freezes_available, last_freeze_regen_date)
+    VALUES (?, ?, ?, ?, ?, ?)
+    ON CONFLICT(user_id) DO UPDATE SET
       current_streak = excluded.current_streak,
       longest_streak = excluded.longest_streak,
       last_activity_date = excluded.last_activity_date,
@@ -41,6 +41,7 @@ export function upsertStreakState(state: StreakState): void {
       last_freeze_regen_date = excluded.last_freeze_regen_date
   `
   ).run(
+    userId,
     state.currentStreak,
     state.longestStreak,
     state.lastActivityDate,
@@ -50,12 +51,13 @@ export function upsertStreakState(state: StreakState): void {
 }
 
 export function logStreakActivity(
+  userId: number,
   activityDateIso: string,
   activityType: StreakActivityType,
   recordedAtIso: string
 ): void {
   const db = useDb()
   db.prepare(
-    'INSERT INTO streak_activity_log (activity_date, activity_type, recorded_at) VALUES (?, ?, ?)'
-  ).run(activityDateIso, activityType, recordedAtIso)
+    'INSERT INTO streak_activity_log (user_id, activity_date, activity_type, recorded_at) VALUES (?, ?, ?, ?)'
+  ).run(userId, activityDateIso, activityType, recordedAtIso)
 }

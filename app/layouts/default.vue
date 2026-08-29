@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { lessons } from '../data/lessons'
 
-const { clear } = useUserSession()
+const { user, clear } = useUserSession()
 const useSimplifiedChars = useSimplified()
 const route = useRoute()
 
@@ -56,6 +56,7 @@ async function handleLogout() {
           >
             {{ useSimplifiedChars ? '简' : '繁' }}
           </button>
+          <span class="hidden text-xs text-ink-400 sm:inline">{{ user?.name ?? user?.email }}</span>
           <button type="button" class="text-ink-400 transition hover:text-seal-600" @click="handleLogout">
             Đăng xuất
           </button>

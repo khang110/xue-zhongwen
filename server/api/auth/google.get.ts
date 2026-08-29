@@ -2,19 +2,41 @@ export default defineOAuthGoogleEventHandler({
   config: {
     scope: ['email', 'profile']
   },
-  async onSuccess(event, { user }) {
-    const config = useRuntimeConfig()
-    const allowedEmail = config.allowedGoogleEmail
+  async onSuccess(event, { user: googleUser }) {
+    if (!googleUser.email) {
+      throw createError({ statusCode: 400, statusMessage: 'Tài khoản Google không có email.' })
+    }
 
-    if (!allowedEmail || user.email !== allowedEmail) {
-      throw createError({ statusCode: 403, statusMessage: 'Tài khoản Google này không được phép truy cập.' })
+    const email = String(googleUser.email).trim().toLowerCase()
+    const googleId = String(googleUser.sub)
+
+    let record = findUserByGoogleId(googleId)
+    if (!record) {
+      const existingByEmail = findUserByEmail(email)
+      if (existingByEmail) {
+        linkGoogleAccount(existingByEmail.id, googleId, googleUser.name ?? null, googleUser.picture ?? null)
+        record = {
+          ...existingByEmail,
+          googleId,
+          name: googleUser.name ?? existingByEmail.name,
+          avatar: googleUser.picture ?? existingByEmail.avatar
+        }
+      } else {
+        record = createUser({
+          email,
+          googleId,
+          name: googleUser.name ?? null,
+          avatar: googleUser.picture ?? null
+        })
+      }
     }
 
     await setUserSession(event, {
       user: {
-        email: user.email,
-        name: user.name,
-        avatar: user.picture
+        id: record.id,
+        email: record.email,
+        name: record.name ?? undefined,
+        avatar: record.avatar ?? undefined
       }
     })
 

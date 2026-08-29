@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  await requireUserSession(event)
+  const { user } = await requireUserSession(event)
 
   const query = getQuery(event)
   const idsParam = query.ids
@@ -7,5 +7,5 @@ export default defineEventHandler(async (event) => {
   const asOf =
     typeof query.asOf === 'string' && query.asOf ? query.asOf : new Date().toISOString().slice(0, 10)
 
-  return { dueIds: getDueCardIds(ids, asOf) }
+  return { dueIds: getDueCardIds(user.id, ids, asOf) }
 })

@@ -23,41 +23,42 @@ function rowToState(row: SrsCardRow): SrsCardState {
   }
 }
 
-export function getCardsByIds(ids: string[]): SrsCardState[] {
+export function getCardsByIds(userId: number, ids: string[]): SrsCardState[] {
   if (ids.length === 0) return []
   const db = useDb()
   const placeholders = ids.map(() => '?').join(',')
   const rows = db
-    .prepare(`SELECT * FROM srs_cards WHERE item_id IN (${placeholders})`)
-    .all(...ids) as unknown as SrsCardRow[]
+    .prepare(`SELECT * FROM srs_cards WHERE user_id = ? AND item_id IN (${placeholders})`)
+    .all(userId, ...ids) as unknown as SrsCardRow[]
   return rows.map(rowToState)
 }
 
-export function getCard(itemId: string): SrsCardState | undefined {
+export function getCard(userId: number, itemId: string): SrsCardState | undefined {
   const db = useDb()
-  const row = db.prepare('SELECT * FROM srs_cards WHERE item_id = ?').get(itemId) as unknown as
-    | SrsCardRow
-    | undefined
+  const row = db.prepare('SELECT * FROM srs_cards WHERE user_id = ? AND item_id = ?').get(
+    userId,
+    itemId
+  ) as unknown as SrsCardRow | undefined
   return row ? rowToState(row) : undefined
 }
 
 /** Trong số các itemId cho trước, trả về những id đã đến hạn ôn (due_date <= asOf) hoặc chưa từng ôn. */
-export function getDueCardIds(ids: string[], asOfIsoDate: string): string[] {
+export function getDueCardIds(userId: number, ids: string[], asOfIsoDate: string): string[] {
   if (ids.length === 0) return []
-  const existing = getCardsByIds(ids)
+  const existing = getCardsByIds(userId, ids)
   const existingIds = new Set(existing.map((c) => c.itemId))
   const due = existing.filter((c) => c.dueDate <= asOfIsoDate).map((c) => c.itemId)
   const neverReviewed = ids.filter((id) => !existingIds.has(id))
   return [...due, ...neverReviewed]
 }
 
-export function upsertCard(state: SrsCardState): void {
+export function upsertCard(userId: number, state: SrsCardState): void {
   const db = useDb()
   db.prepare(
     `
-    INSERT INTO srs_cards (item_id, ease_factor, interval_days, repetitions, due_date, last_reviewed_at, lapses)
-    VALUES (?, ?, ?, ?, ?, ?, ?)
-    ON CONFLICT(item_id) DO UPDATE SET
+    INSERT INTO srs_cards (user_id, item_id, ease_factor, interval_days, repetitions, due_date, last_reviewed_at, lapses)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(user_id, item_id) DO UPDATE SET
       ease_factor = excluded.ease_factor,
       interval_days = excluded.interval_days,
       repetitions = excluded.repetitions,
@@ -66,6 +67,7 @@ export function upsertCard(state: SrsCardState): void {
       lapses = excluded.lapses
   `
   ).run(
+    userId,
     state.itemId,
     state.easeFactor,
     state.intervalDays,
@@ -76,9 +78,10 @@ export function upsertCard(state: SrsCardState): void {
   )
 }
 
-export function logReview(itemId: string, grade: SrsGrade, reviewedAtIso: string): void {
+export function logReview(userId: number, itemId: string, grade: SrsGrade, reviewedAtIso: string): void {
   const db = useDb()
-  db.prepare('INSERT INTO review_log (item_id, reviewed_at, grade) VALUES (?, ?, ?)').run(
+  db.prepare('INSERT INTO review_log (user_id, item_id, reviewed_at, grade) VALUES (?, ?, ?, ?)').run(
+    userId,
     itemId,
     reviewedAtIso,
     grade
