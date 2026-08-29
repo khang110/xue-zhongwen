@@ -168,8 +168,8 @@ git push                    # đẩy code mới lên GitHub (làm ở máy local
 
 ### Trạng thái triển khai hiện tại
 
-- **URL**: https://136.65.122.242.nip.io/ (dùng `<PUBLIC_IP>.nip.io` — không cần domain riêng, tự phân giải về IP)
+- **URL**: https://zhongwen.duckdns.org/ (subdomain miễn phí của [DuckDNS](https://www.duckdns.org), trỏ A record về IP VM — cập nhật IP tại trang DuckDNS nếu VM đổi IP)
 - **Project GCP**: `hoc-tieng-trung-b3`
 - **VM**: `hoc-tieng-trung`, zone `us-central1-a`, machine type `e2-micro`, IP `136.65.122.242`
-- Đăng nhập Google dùng chung cấu hình `.env` local (đã copy trực tiếp sang VM) — nhớ đã thêm redirect URI `https://136.65.122.242.nip.io/api/auth/google` vào OAuth client trên Google Cloud Console.
-- Nếu VM bị xoá/tạo lại, IP public sẽ đổi → phải cập nhật lại domain trong `/etc/caddy/Caddyfile` trên VM, đổi link ở mục này, và thêm redirect URI mới vào OAuth client.
+- Đăng nhập Google dùng chung cấu hình `.env` local (đã copy trực tiếp sang VM) — nhớ đã thêm redirect URI `https://zhongwen.duckdns.org/api/auth/google` vào OAuth client trên Google Cloud Console.
+- Nếu VM bị xoá/tạo lại, IP public sẽ đổi → cập nhật lại IP cho subdomain `zhongwen` tại trang DuckDNS (không cần đổi domain), và thêm redirect URI mới vào OAuth client nếu domain đổi.
