@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useEventListener } from '@vueuse/core'
 import type { VocabItem } from '../../../types/vocab'
 
 const props = defineProps<{
@@ -17,6 +18,7 @@ function displayText(item: VocabItem) {
 const queue = ref<VocabItem[]>([])
 const currentIndex = ref(0)
 const correctCount = ref(0)
+const wrongAnswers = ref<VocabItem[]>([])
 const selectedId = ref<string | null>(null)
 const checked = ref(false)
 const options = ref<{ id: string, text: string }[]>([])
@@ -58,6 +60,17 @@ function startSession() {
   queue.value = shuffled(props.vocab)
   currentIndex.value = 0
   correctCount.value = 0
+  wrongAnswers.value = []
+  loadQuestion()
+}
+
+function retryWrongOnly() {
+  if (!wrongAnswers.value.length) return
+  clearAutoNext()
+  queue.value = shuffled(wrongAnswers.value)
+  currentIndex.value = 0
+  correctCount.value = 0
+  wrongAnswers.value = []
   loadQuestion()
 }
 
@@ -79,6 +92,8 @@ function selectOption(optionId: string) {
     if (autoNextOnCorrect.value) {
       autoNextTimer = setTimeout(goNext, 700)
     }
+  } else {
+    wrongAnswers.value.push(current.value)
   }
 }
 
@@ -92,6 +107,24 @@ function optionState(optionId: string) {
 onMounted(startSession)
 watch(() => props.vocab, startSession)
 onUnmounted(clearAutoNext)
+
+useEventListener(window, 'keydown', (e: KeyboardEvent) => {
+  if (!current.value || isDone.value) return
+  const el = e.target as HTMLElement | null
+  if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) return
+
+  if (!checked.value) {
+    const n = Number(e.key)
+    const picked = Number.isInteger(n) && n >= 1 ? options.value[n - 1] : undefined
+    if (picked) {
+      e.preventDefault()
+      selectOption(picked.id)
+    }
+  } else if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault()
+    goNext()
+  }
+})
 </script>
 
 <template>
@@ -103,13 +136,43 @@ onUnmounted(clearAutoNext)
     <div v-else-if="isDone" class="rounded-lg border border-dashed border-jade-300 bg-jade-50 p-10 text-center">
       <p class="font-hanzi text-2xl text-jade-800">做完了！</p>
       <p class="mt-1 text-jade-700">Đúng {{ correctCount }} / {{ total }} câu.</p>
-      <button
-        type="button"
-        class="mt-4 rounded-md bg-ink-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-ink-900"
-        @click="startSession"
-      >
-        Làm lại
-      </button>
+
+      <div v-if="wrongAnswers.length" class="mx-auto mt-6 max-w-lg text-left">
+        <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-ink-400">
+          Các câu sai ({{ wrongAnswers.length }})
+        </h3>
+        <ul class="space-y-2">
+          <li
+            v-for="(w, i) in wrongAnswers"
+            :key="i"
+            class="rounded-lg border border-seal-100 bg-white px-3 py-2 text-left text-sm"
+          >
+            <p class="text-ink-500">{{ w.meaningVi }}</p>
+            <p class="mt-0.5 text-ink-600">
+              Đáp án: <span class="font-hanzi text-base text-ink-900">{{ w.traditional }} / {{ w.simplified }}</span>
+              <span class="ml-1 font-mono-pinyin text-xs text-ink-400">{{ w.pinyin }}</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <button
+          v-if="wrongAnswers.length"
+          type="button"
+          class="rounded-md bg-seal-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-seal-700"
+          @click="retryWrongOnly"
+        >
+          Làm lại câu sai
+        </button>
+        <button
+          type="button"
+          class="rounded-md bg-ink-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-ink-900"
+          @click="startSession"
+        >
+          Bắt đầu bài kiểm tra mới
+        </button>
+      </div>
     </div>
 
     <div v-else-if="current" class="mx-auto max-w-lg">
@@ -143,11 +206,11 @@ onUnmounted(clearAutoNext)
 
       <div class="mt-4 grid grid-cols-2 gap-3">
         <button
-          v-for="option in options"
+          v-for="(option, i) in options"
           :key="option.id"
           type="button"
           :disabled="checked"
-          class="rounded-lg border px-4 py-3 text-center font-hanzi text-2xl transition disabled:cursor-not-allowed"
+          class="flex items-center justify-center gap-2 rounded-lg border px-4 py-3 text-center font-hanzi text-2xl transition disabled:cursor-not-allowed"
           :class="{
             'border-ink-200 hover:border-seal-300': optionState(option.id) === 'idle',
             'border-jade-400 bg-jade-50 text-jade-800': optionState(option.id) === 'correct',
@@ -155,9 +218,14 @@ onUnmounted(clearAutoNext)
           }"
           @click="selectOption(option.id)"
         >
-          {{ option.text }}
+          <span
+            class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded border border-ink-200 font-mono-pinyin text-xs text-ink-400"
+          >{{ i + 1 }}</span>
+          <span>{{ option.text }}</span>
         </button>
       </div>
+
+      <p class="mt-1.5 text-center text-xs text-ink-400">Phím 1–{{ options.length }}: chọn đáp án · Enter: câu tiếp theo</p>
 
       <div v-if="checked" class="mt-4 text-center">
         <p :class="isCorrect ? 'text-jade-700' : 'text-seal-600'" class="text-sm font-medium">

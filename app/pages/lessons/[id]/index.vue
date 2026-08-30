@@ -25,6 +25,12 @@ const showMeaning = useMeaningVisible()
 const vocab1 = computed(() => lesson.value?.vocab.filter((v) => v.group === 'vocab1') ?? [])
 const vocab2 = computed(() => lesson.value?.vocab.filter((v) => v.group === 'vocab2') ?? [])
 
+// Kiểm tra / Viết: gộp từ vựng + cụm từ cố định của bài
+const practiceItems = computed(() => [
+  ...(lesson.value?.vocab ?? []),
+  ...phrasesToVocabItems(lesson.value?.id ?? '', lesson.value?.phrases)
+])
+
 const readingParagraphs = computed(() => {
   const reading = lesson.value?.shortReading
   if (!reading) return []
@@ -140,6 +146,7 @@ const readingParagraphs = computed(() => {
             class="rounded-lg border border-ink-100 bg-white px-3 py-2 text-sm"
           >
             <span class="font-hanzi text-ink-900">{{ useSimplifiedChars ? p.phraseSimplified : p.phraseTraditional }}</span>
+            <SpeakerButton size="sm" :text="p.phraseTraditional" :simplified-text="p.phraseSimplified" class="ml-1 align-middle" />
             <span v-if="showPinyin" class="ml-2 font-mono-pinyin text-xs text-ink-400">{{ p.pinyin }}</span>
             <br>
             <span class="text-ink-600">{{ p.meaningVi }}</span>
@@ -149,11 +156,11 @@ const readingParagraphs = computed(() => {
     </section>
 
     <section v-else-if="activeTab === 'quiz'">
-      <VocabQuizExercise :key="lesson.id" :vocab="lesson.vocab" />
+      <VocabQuizExercise :key="lesson.id" :vocab="practiceItems" />
     </section>
 
     <section v-else-if="activeTab === 'writing'">
-      <VocabWritingExercise :key="lesson.id" :vocab="lesson.vocab" />
+      <VocabWritingExercise :key="lesson.id" :vocab="practiceItems" />
     </section>
 
     <section v-else-if="activeTab === 'grammar'" class="space-y-4">
