@@ -14,6 +14,11 @@ const optionPinyin = computed(() => new Map(props.exercise.options.map((o) => [o
 const selectedId = ref<string | null>(null)
 const checked = ref(false)
 
+const { canSave, saving, savedAtLabel, justSaved, save, clearSaved } = useSavableExercise(
+  props.exercise.id,
+  () => ({ kind: 'multiple-choice' as const, selectedId: selectedId.value, checked: checked.value })
+)
+
 const isCorrect = computed(() => selectedId.value === props.exercise.correctOptionId)
 
 function handleCheck() {
@@ -23,6 +28,7 @@ function handleCheck() {
 function handleReset() {
   selectedId.value = null
   checked.value = false
+  clearSaved()
 }
 
 function optionState(optionId: string) {
@@ -86,6 +92,13 @@ function optionState(optionId: string) {
       <span v-if="checked" :class="isCorrect ? 'text-jade-700' : 'text-seal-600'" class="text-sm font-medium">
         {{ isCorrect ? 'Chính xác!' : 'Chưa đúng.' }}
       </span>
+      <ExerciseSaveButton
+        :can-save="canSave"
+        :saving="saving"
+        :just-saved="justSaved"
+        :saved-at-label="savedAtLabel"
+        @save="save"
+      />
     </div>
 
     <p v-if="checked && exercise.explanationVi" class="mt-2 rounded-md bg-paper px-3 py-2 text-sm text-ink-600">

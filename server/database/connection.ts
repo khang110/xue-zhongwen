@@ -58,6 +58,14 @@ CREATE TABLE IF NOT EXISTS streak_activity_log (
 );
 
 CREATE INDEX IF NOT EXISTS idx_streak_activity_log_user_date ON streak_activity_log (user_id, activity_date);
+
+CREATE TABLE IF NOT EXISTS workbook_progress (
+  user_id      INTEGER NOT NULL REFERENCES users(id),
+  exercise_id  TEXT NOT NULL,
+  state        TEXT NOT NULL,
+  updated_at   TEXT NOT NULL,
+  PRIMARY KEY (user_id, exercise_id)
+);
 `
 
 let _db: DatabaseSync | null = null

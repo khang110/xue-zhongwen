@@ -31,6 +31,15 @@ for (const left of leftItems.value) selected[left] = new Set()
 
 const checked = ref(false)
 
+const { canSave, saving, savedAtLabel, justSaved, save, clearSaved } = useSavableExercise(
+  props.exercise.id,
+  () => ({
+    kind: 'matching' as const,
+    selected: Object.fromEntries(leftItems.value.map((left) => [left, [...(selected[left] ?? [])]])),
+    checked: checked.value
+  })
+)
+
 function toggle(left: string, right: string) {
   if (checked.value) return
   const set = selected[left]
@@ -56,6 +65,7 @@ function handleCheck() {
 function handleReset() {
   for (const left of leftItems.value) selected[left] = new Set()
   checked.value = false
+  clearSaved()
 }
 </script>
 
@@ -107,6 +117,13 @@ function handleReset() {
         Làm lại
       </button>
       <span v-if="checked" class="text-xs text-ink-400">Viền đứt = đáp án đúng bạn chưa chọn</span>
+      <ExerciseSaveButton
+        :can-save="canSave"
+        :saving="saving"
+        :just-saved="justSaved"
+        :saved-at-label="savedAtLabel"
+        @save="save"
+      />
     </div>
   </div>
 </template>

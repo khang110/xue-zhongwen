@@ -60,9 +60,32 @@ export interface CompositionExercise extends BaseExercise {
   maxLength: number
 }
 
+/** workbook I. Listening and Response - 1 object cho mỗi track audio (Phần A hoặc Phần B) */
+export interface ListeningExercise extends BaseExercise {
+  type: 'listening'
+  section: 'listening'
+  /** mã track trong sách, vd "01-1" */
+  audioTrack: string
+  /** đường dẫn phục vụ tĩnh, vd "/audio/workbook/01-1.mp3" */
+  audioSrc: string
+  format: 'multiple-choice' | 'true-false'
+  /** toàn bộ lời thoại của track, hiện sau khi bấm Kiểm tra */
+  transcript: string
+  items: {
+    id: string
+    /** dòng 問題 (trắc nghiệm), câu dẫn (dialogue completion) hoặc mệnh đề (đúng/sai) */
+    question: string
+    /** chỉ dạng 'multiple-choice': các lựa chọn A/B/C */
+    options?: { id: string; text: string }[]
+    /** 'multiple-choice': id lựa chọn đúng; 'true-false': 'O' | 'X' */
+    answer: string
+  }[]
+}
+
 export type Exercise =
   | MultipleChoiceExercise
   | FillBlankExercise
   | MatchingExercise
   | DialogueCompletionExercise
   | CompositionExercise
+  | ListeningExercise

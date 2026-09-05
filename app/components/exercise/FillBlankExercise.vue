@@ -18,6 +18,11 @@ const blanks = computed(() => [...props.exercise.blanks].sort((a, b) => a.index 
 const answers = ref<string[]>(blanks.value.map(() => ''))
 const checked = ref(false)
 
+const { canSave, saving, savedAtLabel, justSaved, save, clearSaved } = useSavableExercise(
+  props.exercise.id,
+  () => ({ kind: 'fill-blank' as const, answers: [...answers.value], checked: checked.value })
+)
+
 function handleCheck() {
   checked.value = true
 }
@@ -25,6 +30,7 @@ function handleCheck() {
 function handleReset() {
   answers.value = blanks.value.map(() => '')
   checked.value = false
+  clearSaved()
 }
 
 function isBlankCorrect(i: number): boolean {
@@ -87,6 +93,13 @@ function isBlankCorrect(i: number): boolean {
       >
         Làm lại
       </button>
+      <ExerciseSaveButton
+        :can-save="canSave"
+        :saving="saving"
+        :just-saved="justSaved"
+        :saved-at-label="savedAtLabel"
+        @save="save"
+      />
     </div>
   </div>
 </template>
