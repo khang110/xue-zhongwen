@@ -1,4 +1,5 @@
 import type { Lesson } from '../../../types/lesson'
+import { listeningExercises } from './listening'
 import { lesson01 } from './lesson-01'
 import { lesson02 } from './lesson-02'
 import { lesson03 } from './lesson-03'
@@ -12,7 +13,7 @@ import { lesson10 } from './lesson-10'
 import { lesson11 } from './lesson-11'
 import { lesson12 } from './lesson-12'
 
-export const lessons: Lesson[] = [
+const rawLessons: Lesson[] = [
   lesson01,
   lesson02,
   lesson03,
@@ -26,6 +27,11 @@ export const lessons: Lesson[] = [
   lesson11,
   lesson12
 ]
+
+export const lessons: Lesson[] = rawLessons.map((lesson) => ({
+  ...lesson,
+  workbookExercises: [...lesson.workbookExercises, ...(listeningExercises[lesson.id] ?? [])]
+}))
 
 export function getLessonById(id: string): Lesson | undefined {
   return lessons.find((lesson) => lesson.id === id)

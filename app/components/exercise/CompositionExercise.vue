@@ -22,6 +22,11 @@ const requiredGrammarPinyin = computed(() => new Map(requiredGrammar.value.map((
 const text = ref('')
 const length = computed(() => text.value.replace(/\s/g, '').length)
 const inRange = computed(() => length.value >= props.exercise.minLength && length.value <= props.exercise.maxLength)
+
+const { canSave, saving, savedAtLabel, justSaved, save } = useSavableExercise(
+  props.exercise.id,
+  () => ({ kind: 'composition' as const, text: text.value })
+)
 </script>
 
 <template>
@@ -59,5 +64,15 @@ const inRange = computed(() => length.value >= props.exercise.minLength && lengt
     <p class="mt-1 text-xs" :class="inRange ? 'text-jade-600' : 'text-ink-400'">
       {{ length }} / {{ exercise.minLength }}-{{ exercise.maxLength }} chữ
     </p>
+
+    <div v-if="canSave" class="mt-3 flex flex-wrap items-center gap-3">
+      <ExerciseSaveButton
+        :can-save="canSave"
+        :saving="saving"
+        :just-saved="justSaved"
+        :saved-at-label="savedAtLabel"
+        @save="save"
+      />
+    </div>
   </div>
 </template>

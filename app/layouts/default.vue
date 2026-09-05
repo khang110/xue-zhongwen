@@ -48,6 +48,7 @@ async function handleLogout() {
           <NuxtLink to="/review" class="transition hover:text-seal-600">Ôn tập</NuxtLink>
           <NuxtLink to="/characters" class="transition hover:text-seal-600">Chữ Hán</NuxtLink>
           <NuxtLink to="/writing" class="transition hover:text-seal-600">Luyện viết</NuxtLink>
+          <NuxtLink to="/profile" class="transition hover:text-seal-600">Cá nhân</NuxtLink>
           <button
             type="button"
             :title="useSimplifiedChars ? 'Đang hiện giản thể - bấm để chuyển sang phồn thể' : 'Đang hiện phồn thể - bấm để chuyển sang giản thể'"

@@ -157,6 +157,14 @@ Vì code đã push lên GitHub, cách nhanh nhất là cho VM tự `git pull` th
 gcloud compute ssh hoc-tieng-trung --zone=us-central1-a --command="cd /opt/hoc-tieng-trung-b3 && sudo -u nuxtapp git init -b master && sudo -u nuxtapp git remote add origin https://github.com/khang110/xue-zhongwen.git && sudo -u nuxtapp git fetch origin master && sudo -u nuxtapp git reset --hard origin/master"
 ```
 
+**Git LFS** (một lần duy nhất): file audio của phần bài tập nghe (`public/audio/workbook/*.mp3`, ~60 MB) được lưu qua Git LFS, nên VM cần cài `git-lfs` thì `git pull` / `git lfs pull` mới lấy được:
+
+```bash
+gcloud compute ssh hoc-tieng-trung --zone=us-central1-a --command="sudo apt-get install -y git-lfs && cd /opt/hoc-tieng-trung-b3 && sudo -u nuxtapp git lfs install && sudo -u nuxtapp git lfs pull"
+```
+
+`deploy/update.sh` đã có sẵn bước `git lfs pull` sau mỗi lần pull (bỏ qua êm nếu chưa cài git-lfs — khi đó trang bài tập vẫn chạy nhưng không phát được audio).
+
 Từ lần sau, mỗi khi sửa code xong, chỉ cần:
 
 ```bash

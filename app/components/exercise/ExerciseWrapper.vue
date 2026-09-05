@@ -12,4 +12,5 @@ defineProps<{
   <MatchingExercise v-else-if="exercise.type === 'matching'" :exercise="exercise" />
   <DialogueCompletionExercise v-else-if="exercise.type === 'dialogue-completion'" :exercise="exercise" />
   <CompositionExercise v-else-if="exercise.type === 'composition'" :exercise="exercise" />
+  <ListeningExercise v-else-if="exercise.type === 'listening'" :exercise="exercise" />
 </template>

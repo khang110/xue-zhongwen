@@ -11,6 +11,11 @@ const showPinyin = usePinyinVisible()
 const userAnswer = ref('')
 const revealed = ref(false)
 
+const { canSave, saving, savedAtLabel, justSaved, save } = useSavableExercise(
+  props.exercise.id,
+  () => ({ kind: 'dialogue-completion' as const, userAnswer: userAnswer.value, revealed: revealed.value })
+)
+
 const pattern = computed(() => {
   const lesson = getLessonById(props.exercise.lessonId)
   return lesson?.grammar.find((g) => g.id === props.exercise.requiredPattern)
@@ -46,7 +51,7 @@ const sampleAnswerPinyin = computed(() => toPinyinText(props.exercise.sampleAnsw
       </div>
     </div>
 
-    <div class="mt-3 flex items-center gap-3">
+    <div class="mt-3 flex flex-wrap items-center gap-3">
       <button
         type="button"
         class="rounded-md border border-ink-200 px-3 py-1.5 text-sm text-ink-600 transition hover:border-seal-300"
@@ -54,6 +59,13 @@ const sampleAnswerPinyin = computed(() => toPinyinText(props.exercise.sampleAnsw
       >
         {{ revealed ? 'Ẩn đáp án tham khảo' : 'Xem đáp án tham khảo' }}
       </button>
+      <ExerciseSaveButton
+        :can-save="canSave"
+        :saving="saving"
+        :just-saved="justSaved"
+        :saved-at-label="savedAtLabel"
+        @save="save"
+      />
     </div>
 
     <div v-if="revealed" class="mt-2 rounded-md bg-paper px-3 py-2">
