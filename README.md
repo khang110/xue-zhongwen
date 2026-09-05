@@ -1,101 +1,103 @@
-# 當代中文課程 3 — Sổ tay từ vựng & ngữ pháp
+# 當代中文課程 3 — Vocabulary & Grammar Companion
 
-Ứng dụng web (Nuxt 4) để học từ vựng, ngữ pháp và luyện bài tập cho giáo trình *當代中文課程 3* (A Course in Contemporary Chinese, Book 3 — MTC/NTNU), hướng đến trình độ **TOCFL B1**. Giao diện tiếng Việt.
+*[Tiếng Việt](README.vi.md)*
 
-- **12 bài học đầy đủ**: hội thoại, từ vựng, điểm ngữ pháp và bài tập sách bài tập (作業本).
-- **Ôn tập lặp lại ngắt quãng (SRS)**: thuật toán SM-2 rút gọn với 4 mức đánh giá (Again / Hard / Good / Easy), hàng đợi ôn tập mỗi ngày gồm thẻ đến hạn + một lô thẻ mới có giới hạn.
-- **Bài tập nghe**: mỗi bài có phần luyện nghe với audio (`public/audio/workbook/*.mp3`, lưu qua Git LFS).
-- **Luyện viết chữ Hán**: thứ tự nét chữ (hanzi-writer).
-- **Liên kết từ vựng chéo bài**: tự động gom các từ dùng chung một chữ Hán, bất kể nằm ở bài nào.
-- **Nhiều tài khoản**: tự đăng ký bằng email/mật khẩu hoặc đăng nhập Google OAuth; mỗi tài khoản có dữ liệu học tập (SRS, streak, tiến độ bài tập) riêng biệt.
-- **Chuỗi ngày học (streak)** với cơ chế "đóng băng" (freeze) để không mất chuỗi khi nghỉ.
-- **Tiến độ bài tập lưu ở server**: làm dở trên máy này, mở máy khác vẫn thấy.
-- Bật/tắt hiển thị pinyin, nghĩa, chữ giản thể/phồn thể; đọc to (text-to-speech); tự chuyển câu khi trả lời đúng.
+A Nuxt 4 web app for studying the vocabulary, grammar, and workbook exercises of *當代中文課程 3* (A Course in Contemporary Chinese, Book 3 — MTC/NTNU), aimed at **TOCFL B1**. The UI is in Vietnamese.
 
-## Yêu cầu
+- **12 complete lessons**: dialogues, vocabulary, grammar points, and workbook (作業本) exercises.
+- **Spaced-repetition review (SRS)**: a reduced SM-2 algorithm with 4 grades (Again / Hard / Good / Easy); each day's queue is due cards plus a capped batch of new cards.
+- **Listening exercises**: every lesson has a listening section with audio (`public/audio/workbook/*.mp3`, stored via Git LFS).
+- **Hanzi writing practice**: stroke-order drills (hanzi-writer).
+- **Cross-lesson vocab linking**: words that share a Hanzi character are grouped automatically, no matter which lesson they belong to.
+- **Multi-user**: self-service email/password registration or Google OAuth; each account has its own isolated learning data (SRS, streak, exercise progress).
+- **Daily streak** with a "freeze" mechanism so a missed day doesn't break the streak.
+- **Exercise progress is stored server-side**: start on one device, resume on another.
+- Toggle pinyin / meaning / simplified vs. traditional; text-to-speech; auto-advance on a correct answer.
 
-- **Node.js 24** (dev được kiểm thử trên v24.x) — dùng module tích hợp sẵn `node:sqlite`, không cần cài driver SQLite ngoài.
+## Requirements
+
+- **Node.js 24** (development is tested on v24.x) — uses the built-in `node:sqlite` module, so no external SQLite driver is needed.
 - npm.
 
-## Cài đặt
+## Setup
 
 ```bash
 npm install
 ```
 
-Tạo file `.env` ở thư mục gốc (xem mẫu `.env.example`):
+Create a `.env` file in the project root (see `.env.example`):
 
-- `NUXT_SESSION_PASSWORD` — **bắt buộc**. Chuỗi bí mật ≥ 32 ký tự để mã hoá cookie phiên đăng nhập. Tạo nhanh:
+- `NUXT_SESSION_PASSWORD` — **required**. A secret string of at least 32 characters used to encrypt the login session cookie. Generate one with:
   ```bash
   node -e "console.log(require('node:crypto').randomBytes(24).toString('hex'))"
   ```
-- `NUXT_OAUTH_GOOGLE_CLIENT_ID`, `NUXT_OAUTH_GOOGLE_CLIENT_SECRET` — **tuỳ chọn**, chỉ cần nếu muốn bật nút "Đăng nhập bằng Google". Không đặt thì vẫn dùng được đăng ký email/mật khẩu bình thường.
+- `NUXT_OAUTH_GOOGLE_CLIENT_ID`, `NUXT_OAUTH_GOOGLE_CLIENT_SECRET` — **optional**, needed only to enable the "Sign in with Google" button. Without them, email/password registration still works.
 
-  Tạo tại [console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials) → **Create Credentials → OAuth client ID → Web application**. Thêm **Authorized redirect URI**:
+  Create credentials at [console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials) → **Create Credentials → OAuth client ID → Web application**. Add an **Authorized redirect URI**:
   - Local dev: `http://localhost:3000/api/auth/google`
-  - Production: `https://<domain-thật>/api/auth/google`
+  - Production: `https://<your-domain>/api/auth/google`
 
-  (Lần đầu tạo OAuth client, Google có thể bắt cấu hình "OAuth consent screen" trước — chọn loại **External**, điền tên app, thêm email của bạn vào Test users nếu app còn ở chế độ Testing.)
+  (On first setup Google may require you to configure the "OAuth consent screen" first — choose **External**, fill in the app name, and add your own email under Test users if the app is still in Testing mode.)
 
-Đăng ký là mở — không có allowlist. Tài khoản Google được tự động liên kết với tài khoản email/mật khẩu sẵn có nếu trùng email đã xác minh.
+Registration is open — there is no allowlist. A Google account is automatically linked to an existing email/password account if the verified email matches.
 
-## Chạy dev
+## Development
 
 ```bash
 npm run dev          # http://localhost:3000
 ```
 
-Mở trang, đăng ký bằng email/mật khẩu hoặc đăng nhập Google. Mọi route đều yêu cầu đăng nhập (trừ `/login`).
+Open the app, then register with email/password or sign in with Google. Every route requires authentication except `/login`.
 
-## Kiểm thử & chất lượng code
+## Testing & code quality
 
 ```bash
-npm run test          # vitest: thuật toán SRS, streak, liên kết từ vựng
-npm run test:watch    # vitest ở chế độ watch
-npx vitest run path/to/file.spec.ts   # chạy một file test
-npx nuxi typecheck    # kiểm tra kiểu TypeScript toàn dự án
+npm run test          # vitest: SRS algorithm, streak logic, vocab linking
+npm run test:watch    # vitest in watch mode
+npx vitest run path/to/file.spec.ts   # run a single test file
+npx nuxi typecheck    # project-wide TypeScript check
 npx eslint .           # lint
 ```
 
-## Cấu trúc dự án
+## Project structure
 
-**Bài học là dữ liệu, không phải CMS.** Mỗi bài là một module TS thuần ở `app/data/lessons/lesson-NN.ts` (hội thoại, từ vựng, ngữ pháp, bài tập), gộp lại trong `app/data/lessons/index.ts`. Bài tập nghe tách riêng ở `app/data/lessons/listening/` và được trộn vào từng bài khi build danh sách. Thêm bài mới = tạo file `lesson-NN.ts` + import vào `index.ts`, không cần đụng code giao diện. Kiểu dữ liệu bài học nằm ở `types/` (`lesson.ts`, `vocab.ts`, `grammar.ts`, `exercise.ts`) — đây là hợp đồng mà các file dữ liệu phải thoả.
+**Lessons are data, not a CMS.** Each lesson is a plain TS module at `app/data/lessons/lesson-NN.ts` (dialogues, vocab, grammar, exercises), combined in `app/data/lessons/index.ts`. Listening exercises live separately under `app/data/lessons/listening/` and are merged into each lesson when the list is built. Adding a lesson means creating a `lesson-NN.ts` file and importing it in `index.ts` — no UI code changes needed. Lesson content shapes are defined in `types/` (`lesson.ts`, `vocab.ts`, `grammar.ts`, `exercise.ts`), which is the contract the data files must satisfy.
 
-**SRS tách phần logic thuần và phần lưu trữ.** `shared/utils/srsAlgorithm.ts` là bản cài SM-2 rút gọn, không có side-effect, được cả server route lẫn test dùng chung. **Server là nguồn dữ liệu duy nhất** cho tiến độ ôn tập:
+**SRS splits pure logic from storage.** `shared/utils/srsAlgorithm.ts` is a side-effect-free reduced SM-2 implementation, shared by both the server route and the tests. **The server is the single source of truth** for review progress:
 
-- `server/api/srs/*`, `server/api/streak/*`, `server/api/workbook/*` — API, lưu vào SQLite qua `server/database/connection.ts` (module `node:sqlite`, một file `server/database/app.db`, **không đưa vào git**).
-- Mọi bảng SRS/streak/bài tập đều khoá theo `user_id` (`server/utils/srsRepository.ts`, `streakRepository.ts`, `workbookRepository.ts`) — route lấy id từ `requireUserSession(event)` nên dữ liệu từng tài khoản độc lập.
-- Frontend không tự tính trạng thái SRS: `app/composables/useSrsStorage.ts` chỉ là lớp `$fetch` mỏng bọc API; `useDailyReview.ts` dựng hàng đợi phiên ôn từ đó. Trạng thái phiên trên máy là tạm thời, việc chấm điểm luôn round-trip qua server để đồng bộ đa thiết bị.
+- `server/api/srs/*`, `server/api/streak/*`, `server/api/workbook/*` — the API, backed by SQLite via `server/database/connection.ts` (the `node:sqlite` module, one file at `server/database/app.db`, **not checked into git**).
+- Every SRS / streak / exercise table is keyed by `user_id` (`server/utils/srsRepository.ts`, `streakRepository.ts`, `workbookRepository.ts`) — routes read the id off `requireUserSession(event)`, so each account's data is isolated.
+- The frontend never computes SRS state itself: `app/composables/useSrsStorage.ts` is a thin `$fetch` wrapper around the API, and `useDailyReview.ts` builds the review-session queue from it. A device's local session state is disposable; grading always round-trips through the server for multi-device sync.
 
-**Xác thực.** `nuxt-auth-utils` quản lý cookie phiên cho hai lối đăng nhập, cả hai cùng trỏ về một dòng trong bảng `users` (`server/utils/userRepository.ts`): Google OAuth (`server/api/auth/google.get.ts`) và email/mật khẩu (`register.post.ts`, `login.post.ts`, băm bằng scrypt của `node:crypto` trong `server/utils/password.ts`). `app/middleware/auth.global.ts` chuyển hướng mọi request chưa đăng nhập về `/login`.
+**Auth.** `nuxt-auth-utils` manages the session cookie for two login paths that both resolve to a row in the `users` table (`server/utils/userRepository.ts`): Google OAuth (`server/api/auth/google.get.ts`) and email/password (`register.post.ts`, `login.post.ts`, hashed with `node:crypto` scrypt in `server/utils/password.ts`). `app/middleware/auth.global.ts` redirects any unauthenticated request to `/login`.
 
-**Liên kết từ vựng chéo bài.** `app/utils/vocabRelations.ts` dựng chỉ mục `chữ Hán -> VocabItem[]` trên **tất cả** bài đã nạp (`buildCharacterIndex`), dùng để hiện "từ liên quan" chia sẻ chữ Hán với từ đang xem.
+**Cross-lesson vocab linking.** `app/utils/vocabRelations.ts` builds a `character -> VocabItem[]` index across **all loaded lessons** (`buildCharacterIndex`), used to show "related words" that share a Hanzi character with the current word.
 
-**Bài tập.** `types/exercise.ts` định nghĩa union phân biệt (`multiple-choice`, `fill-blank`, `matching`, `dialogue-completion`, `composition`, nghe) theo từng mục sách bài tập. Mỗi loại có một component tương ứng ở `app/components/exercise/`, điều phối bởi `ExerciseWrapper.vue`.
+**Exercises.** `types/exercise.ts` defines a discriminated union (`multiple-choice`, `fill-blank`, `matching`, `dialogue-completion`, `composition`, listening) keyed by workbook section. Each type has a matching component under `app/components/exercise/`, dispatched by `ExerciseWrapper.vue`.
 
-**Alias đường dẫn.** `#shared` → `shared/` (logic thuần dùng chéo ranh giới như thuật toán SRS); `~` → `app/`. Cấu hình trong `vitest.config.ts` lẫn mặc định của Nuxt, vì vitest chạy ngoài pipeline build của Nuxt.
+**Path aliases.** `#shared` → `shared/` (cross-boundary pure logic such as the SRS algorithm); `~` → `app/`. Configured in `vitest.config.ts` as well as Nuxt's defaults, since vitest runs outside the Nuxt build pipeline.
 
-### Các trang chính
+### Main routes
 
-| Route | Nội dung |
+| Route | Content |
 | --- | --- |
-| `/` | Danh sách bài học |
-| `/lessons/[id]` | Chi tiết bài: hội thoại, từ vựng, ngữ pháp, bài tập |
-| `/review` | Phiên ôn tập SRS trong ngày |
-| `/writing` | Luyện thứ tự nét chữ Hán |
-| `/characters` | Tra cứu chữ Hán & từ liên quan |
-| `/profile` | Hồ sơ, streak, thống kê |
-| `/login` | Đăng ký / đăng nhập |
+| `/` | Lesson list |
+| `/lessons/[id]` | Lesson detail: dialogues, vocab, grammar, exercises |
+| `/review` | Daily SRS review session |
+| `/writing` | Hanzi stroke-order practice |
+| `/characters` | Hanzi lookup & related words |
+| `/profile` | Profile, streak, stats |
+| `/login` | Register / sign in |
 
-## Build & triển khai
+## Build & deployment
 
 ```bash
 npm run build
 node .output/server/index.mjs
 ```
 
-Vì dùng SQLite trên đĩa cục bộ, app cần chạy trên máy chủ có ổ đĩa bền vững (không hợp môi trường serverless tạm thời). Hướng dẫn triển khai đầy đủ lên VPS miễn phí (Google Cloud `e2-micro` + Caddy + systemd), bao gồm cả cấu hình Git LFS cho audio bài nghe: xem [`deploy/README.md`](deploy/README.md).
+Because it uses SQLite on local disk, the app needs a host with durable storage (not an ephemeral serverless environment). Full deployment instructions for a free VPS (Google Cloud `e2-micro` + Caddy + systemd), including Git LFS setup for the listening audio, are in [`deploy/README.md`](deploy/README.md).
 
-## Tài liệu nguồn
+## Source material
 
-File PDF giáo trình và sách bài tập (`當代中文課程3 – 課本.pdf`, `當代中文課程3 – 作業本.pdf`) không đưa vào git (nặng, có bản quyền). Tự đặt vào thư mục gốc nếu cần đối chiếu khi soạn dữ liệu bài học.
+The textbook and workbook PDFs (`當代中文課程3 – 課本.pdf`, `當代中文課程3 – 作業本.pdf`) are not checked into git (large, copyrighted). Drop them in the project root if you need them for reference while authoring lesson data.
