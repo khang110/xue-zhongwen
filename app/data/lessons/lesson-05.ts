@@ -11,386 +11,415 @@ export const lesson05: Lesson = {
 
   dialogues: [
     [
-      { speaker: '', traditional: '（在宿舍交誼廳）', simplified: '（在宿舍交谊厅）', pinyin: '(Zài sùshè jiāoyì tīng)', english: '(In the dorm common room)', vietnamese: '(Tại phòng sinh hoạt chung của ký túc xá)' },
-      { speaker: '高橋健太', traditional: '敏萱，妳排了兩個小時的隊，就為了買這杯飲料？', simplified: '敏萱，妳排了两个小时的队，就为了买这杯饮料？', pinyin: 'Mǐnxuān, nǐ pái le liǎng ge xiǎoshí de duì, jiù wèile mǎi zhè bēi yǐnliào?', english: 'Minxuan, you stood in line for two hours just to buy this drink?', vietnamese: 'Mẫn Huyên, cậu xếp hàng hai tiếng chỉ để mua ly nước này thôi à?' },
-      { speaker: '陳敏萱', traditional: '對啊，這家店最近超紅的，每個人的社群上都是這杯。我也想拍一張照片。', simplified: '对啊，这家店最近超红的，每个人的社群上都是这杯。我也想拍一张照片。', pinyin: 'Duì a, zhè jiā diàn zuìjìn chāo hóng de, měi ge rén de shèqún shàng dōu shì zhè bēi. Wǒ yě xiǎng pāi yì zhāng zhàopiàn.', english: "Yeah, this place is super hot right now—it's all over everyone's social media. I want a photo too.", vietnamese: 'Ừ, tiệm này dạo này nổi lắm, mạng xã hội của ai cũng thấy ly này. Mình cũng muốn chụp một tấm.' },
-      { speaker: '安德思', traditional: '我不懂，一杯奶茶而已，有必要這樣嗎？', simplified: '我不懂，一杯奶茶而已，有必要这样吗？', pinyin: "Wǒ bù dǒng, yì bēi nǎichá éryǐ, yǒu bìyào zhèyàng ma?", english: "I don't get it. It's just a cup of milk tea—is all this necessary?", vietnamese: 'Mình không hiểu, chỉ là một ly trà sữa thôi, có cần thiết vậy không?' },
-      { speaker: '陳敏萱', traditional: '你不懂啦。這叫「跟上流行」。過了這個月，可能就沒人在乎了。', simplified: '你不懂啦。这叫「跟上流行」。过了这个月，可能就没人在乎了。', pinyin: "Nǐ bù dǒng la. Zhè jiào 'gēnshàng liúxíng'. Guò le zhège yuè, kěnéng jiù méi rén zàihu le.", english: "You don't get it. This is called 'keeping up with the trend.' After this month, no one will care anymore.", vietnamese: 'Cậu không hiểu đâu. Cái này gọi là "bắt kịp mốt". Qua tháng này, có khi chẳng ai còn quan tâm nữa.' },
-      { speaker: '羅珊蒂', traditional: '說到流行，我覺得台灣的流行變得特別快。上個月大家還在玩那個手機遊戲，這個月就換成拍短影片了。', simplified: '说到流行，我觉得台湾的流行变得特别快。上个月大家还在玩那个手机游戏，这个月就换成拍短影片了。', pinyin: 'Shuō dào liúxíng, wǒ juéde Táiwān de liúxíng biàn de tèbié kuài. Shàng ge yuè dàjiā hái zài wán nàge shǒujī yóuxì, zhège yuè jiù huàn chéng pāi duǎnyǐngpiàn le.', english: "Speaking of trends, I think trends in Taiwan change really fast. Last month everyone was playing that phone game; this month it's switched to making short videos.", vietnamese: 'Nói đến mốt, mình thấy mốt ở Đài Loan thay đổi đặc biệt nhanh. Tháng trước mọi người còn chơi game điện thoại kia, tháng này đã chuyển sang quay video ngắn.' },
-      { speaker: '高橋健太', traditional: '這跟社群媒體有很大的關係。一個網紅推薦，東西馬上就賣光。', simplified: '这跟社群媒体有很大的关系。一个网红推荐，东西马上就卖光。', pinyin: 'Zhè gēn shèqún méitǐ yǒu hěn dà de guānxì. Yí ge wǎnghóng tuījiàn, dōngxi mǎshàng jiù màiguāng.', english: 'That has a lot to do with social media. One influencer recommends something and it sells out immediately.', vietnamese: 'Cái này liên quan lớn đến mạng xã hội. Một KOL giới thiệu là hàng lập tức cháy.' },
-      { speaker: '安德思', traditional: '我媽常說，越是大家都在搶的東西，她越不想買。', simplified: '我妈常说，越是大家都在抢的东西，她越不想买。', pinyin: 'Wǒ mā cháng shuō, yuè shì dàjiā dōu zài qiǎng de dōngxi, tā yuè bù xiǎng mǎi.', english: 'My mom always says the more everyone is scrambling for something, the less she wants to buy it.', vietnamese: 'Mẹ mình hay nói, cái gì mọi người càng tranh nhau mua, mẹ càng không muốn mua.' },
-      { speaker: '陳敏萱', traditional: '可是有些流行是好的啊。像現在很多人開始自己帶環保杯，這個習慣就很值得跟。', simplified: '可是有些流行是好的啊。像现在很多人开始自己带环保杯，这个习惯就很值得跟。', pinyin: 'Kěshì yǒuxiē liúxíng shì hǎo de a. Xiàng xiànzài hěn duō rén kāishǐ zìjǐ dài huánbǎobēi, zhège xíguàn jiù hěn zhídé gēn.', english: "But some trends are good. Like now many people bring their own reusable cups—that habit is worth following.", vietnamese: 'Nhưng có những mốt tốt mà. Như bây giờ nhiều người bắt đầu tự mang cốc tái sử dụng, thói quen đó rất đáng theo.' },
-      { speaker: '羅珊蒂', traditional: '這倒是真的。流行並不都是壞事，重點是你有沒有想清楚為什麼要跟。', simplified: '这倒是真的。流行并不都是坏事，重点是你有没有想清楚为什么要跟。', pinyin: 'Zhè dào shì zhēn de. Liúxíng bìng bù dōu shì huàishì, zhòngdiǎn shì nǐ yǒu méiyǒu xiǎng qīngchǔ wèishénme yào gēn.', english: "That's true. Trends aren't all bad things; the point is whether you've thought clearly about why you're following them.", vietnamese: 'Cái đó thì đúng thật. Mốt không phải đều là chuyện xấu, điểm mấu chốt là bạn có nghĩ rõ vì sao mình chạy theo hay không.' },
-      { speaker: '高橋健太', traditional: '我之所以不太追流行，是因為我覺得那樣很累。剛買的東西，過幾個月就過時了。', simplified: '我之所以不太追流行，是因为我觉得那样很累。刚买的东西，过几个月就过时了。', pinyin: 'Wǒ zhī suǒyǐ bú tài zhuī liúxíng, shì yīnwèi wǒ juéde nàyàng hěn lèi. Gāng mǎi de dōngxi, guò jǐ ge yuè jiù guòshí le.', english: "The reason I don't really chase trends is that I find it exhausting. Something you just bought is out of style a few months later.", vietnamese: 'Sở dĩ mình không mấy khi chạy theo mốt là vì mình thấy như vậy rất mệt. Đồ vừa mua, qua vài tháng là lỗi mốt.' },
-      { speaker: '陳敏萱', traditional: '你們男生就是這樣。隨著年紀變大，越來越不在乎別人的看法。', simplified: '你们男生就是这样。随着年纪变大，越来越不在乎别人的看法。', pinyin: 'Nǐmen nánshēng jiùshì zhèyàng. Suízhe niánjì biàn dà, yuè lái yuè bú zàihu biérén de kànfǎ.', english: "You guys are all like this. As you get older, you care less and less about what others think.", vietnamese: 'Con trai các cậu là vậy đấy. Cùng với tuổi tác, càng ngày càng không bận tâm cách nhìn của người khác.' },
-      { speaker: '安德思', traditional: '這不是壞事吧？我倒覺得能做自己比較重要。', simplified: '这不是坏事吧？我倒觉得能做自己比较重要。', pinyin: 'Zhè búshì huàishì ba? Wǒ dào juéde néng zuò zìjǐ bǐjiào zhòngyào.', english: "That's not a bad thing, is it? I'd say being yourself matters more.", vietnamese: 'Đó đâu phải chuyện xấu? Mình lại thấy sống là chính mình quan trọng hơn.' },
-      { speaker: '羅珊蒂', traditional: '其實我發現，真正有自己風格的人，反而不太受流行影響。', simplified: '其实我发现，真正有自己风格的人，反而不太受流行影响。', pinyin: 'Qíshí wǒ fāxiàn, zhēnzhèng yǒu zìjǐ fēnggé de rén, fǎn’ér bú tài shòu liúxíng yǐngxiǎng.', english: "Actually I've noticed that people with real personal style are the ones least affected by trends.", vietnamese: 'Thật ra mình nhận thấy, người thật sự có phong cách riêng lại ít bị mốt ảnh hưởng.' },
-      { speaker: '陳敏萱', traditional: '好啦好啦，你們說得都對。可是這杯我還是要喝，而且要趁它還沒退流行的時候拍照。', simplified: '好啦好啦，你们说得都对。可是这杯我还是要喝，而且要趁它还没退流行的时候拍照。', pinyin: 'Hǎo la hǎo la, nǐmen shuō de dōu duì. Kěshì zhè bēi wǒ háishì yào hē, érqiě yào chèn tā hái méi tuì liúxíng de shíhòu pāizhào.', english: "Fine, fine, you're all right. But I'm still drinking this, and I'm taking the photo while it's still in fashion.", vietnamese: 'Thôi được rồi, các cậu nói đều đúng. Nhưng ly này mình vẫn uống, mà còn phải chụp ảnh lúc nó chưa lỗi mốt.' },
-      { speaker: '高橋健太', traditional: '那妳快喝吧，冰都要化了。', simplified: '那妳快喝吧，冰都要化了。', pinyin: 'Nà nǐ kuài hē ba, bīng dōu yào huà le.', english: "Then drink up—the ice is about to melt.", vietnamese: 'Vậy cậu uống nhanh đi, đá sắp tan hết rồi.' },
-      { speaker: '陳敏萱', traditional: '哎呀，光顧著聊天，我都忘了。', simplified: '哎呀，光顾着聊天，我都忘了。', pinyin: 'Āiyā, guāng gùzhe liáotiān, wǒ dōu wàng le.', english: "Oh no, I was so busy chatting I forgot.", vietnamese: 'Ôi, mải lo nói chuyện, mình quên mất.' }
+      { speaker: '陳敏萱', traditional: '你怎麼了？怎麼那麼沒精神？', simplified: '你怎么了？怎么那么没精神？', pinyin: 'Nǐ zěnme le? Zěnme nàme méi jīngshén?', english: 'What’s wrong? Why so listless?', vietnamese: 'Cậu sao vậy? Sao trông ủ rũ thế?' },
+      { speaker: '高橋健太', traditional: '唉！氣死了！昨天我上網買五月天演唱會的票。沒想到網路塞車，我試了兩、三個鐘頭，等我上線成功，票已經賣完了。真倒楣！', simplified: '唉！气死了！昨天我上网买五月天演唱会的票。没想到网路塞车，我试了两、三个钟头，等我上线成功，票已经卖完了。真倒霉！', pinyin: 'Āi! Qì sǐ le! Zuótiān wǒ shàngwǎng mǎi Wǔyuètiān yǎnchànghuì de piào. Méi xiǎngdào wǎnglù sāichē, wǒ shì le liǎng, sān ge zhōngtóu, děng wǒ shàngxiàn chénggōng, piào yǐjīng mài wán le. Zhēn dǎoméi!', english: 'Argh! I’m so angry that I could just die! Yesterday, I went online to buy tickets to the Mayday concert. I had no idea the internet would be so congested. I tried for two or three hours, and by the time I got connected the tickets were all sold out. What rotten luck!', vietnamese: 'Haizz! Tức chết đi được! Hôm qua mình lên mạng mua vé buổi hòa nhạc của Mayday. Không ngờ mạng bị nghẽn, mình thử hai, ba tiếng đồng hồ, đến khi vào được thì vé đã bán hết rồi. Xui thật!' },
+      { speaker: '陳敏萱', traditional: '你別生氣了。買不到就算了。為什麼非聽不可？', simplified: '你别生气了。买不到就算了。为什么非听不可？', pinyin: 'Nǐ bié shēngqì le. Mǎi bú dào jiù suàn le. Wèishénme fēi tīng bùkě?', english: 'Don’t be angry. If you couldn’t get tickets then just forget about it. Why do you have to go?', vietnamese: 'Cậu đừng giận nữa. Mua không được thì thôi. Sao nhất định phải đi nghe vậy?' },
+      { speaker: '羅珊蒂', traditional: '五月天是誰？什麼演唱會啊？', simplified: '五月天是谁？什么演唱会啊？', pinyin: 'Wǔyuètiān shì shéi? Shénme yǎnchànghuì a?', english: 'Who is Mayday? What concert?', vietnamese: 'Mayday là ai? Hòa nhạc gì vậy?' },
+      { speaker: '高橋健太', traditional: '（拿出手機）妳聽。這就是他們的歌。五月天是華人世界最受歡迎的樂團。下個月他們的演唱會，我當然不能錯過。', simplified: '（拿出手机）妳听。这就是他们的歌。五月天是华人世界最受欢迎的乐团。下个月他们的演唱会，我当然不能错过。', pinyin: '(Ná chū shǒujī) Nǐ tīng. Zhè jiùshì tāmen de gē. Wǔyuètiān shì Huárén shìjiè zuì shòu huānyíng de yuètuán. Xià ge yuè tāmen de yǎnchànghuì, wǒ dāngrán bù néng cuòguò.', english: '(Takes out his cell phone) Listen. This is one of their songs. Mayday is the most popular band among Chinese speaking people. I simply can’t miss their concert next month.', vietnamese: '(Lấy điện thoại ra) Cậu nghe đi. Đây là bài hát của họ. Mayday là ban nhạc được yêu thích nhất trong thế giới người Hoa. Buổi hòa nhạc tháng sau của họ, mình đương nhiên không thể bỏ lỡ.' },
+      { speaker: '陳敏萱', traditional: '我朋友去聽了他們的跨年演唱會。她說，那天體育館擠滿了人，大家都站在椅子上又唱又叫，興奮極了。', simplified: '我朋友去听了他们的跨年演唱会。她说，那天体育馆挤满了人，大家都站在椅子上又唱又叫，兴奋极了。', pinyin: 'Wǒ péngyǒu qù tīng le tāmen de kuànián yǎnchànghuì. Tā shuō, nà tiān tǐyùguǎn jǐ mǎn le rén, dàjiā dōu zhàn zài yǐzi shàng yòu chàng yòu jiào, xìngfèn jí le.', english: 'One of my friends went to listen to their New Year’s Eve concert. She said that the stadium was packed with people that day. Everybody was standing on their seats singing and screaming. It was really exciting.', vietnamese: 'Bạn mình đã đi nghe buổi hòa nhạc đón giao thừa của họ. Bạn ấy kể hôm đó nhà thi đấu chật kín người, ai cũng đứng trên ghế vừa hát vừa hét, phấn khích cực kỳ.' },
+      { speaker: '羅珊蒂', traditional: '他們很帥嗎？為什麼這麼多人迷他們？', simplified: '他们很帅吗？为什么这么多人迷他们？', pinyin: 'Tāmen hěn shuài ma? Wèishénme zhème duō rén mí tāmen?', english: 'Are they handsome? Why do so many people like them?', vietnamese: 'Họ đẹp trai lắm hả? Sao nhiều người mê họ vậy?' },
+      { speaker: '高橋健太', traditional: '大家喜歡他們是因為他們的歌詞不但都寫得很美，而且能說出年輕人心裡的話。高興的時候，要聽；難過的時候，更要聽。', simplified: '大家喜欢他们是因为他们的歌词不但都写得很美，而且能说出年轻人心里的话。高兴的时候，要听；难过的时候，更要听。', pinyin: 'Dàjiā xǐhuān tāmen shì yīnwèi tāmen de gēcí búdàn dōu xiě de hěn měi, érqiě néng shuō chū niánqīng rén xīnlǐ de huà. Gāoxìng de shíhòu, yào tīng; nánguò de shíhòu, gèng yào tīng.', english: 'Everybody likes them because their lyrics are not only all written beautifully; they resonate with young people. They are great to listen to when you’re happy, even better when you’re sad.', vietnamese: 'Mọi người thích họ vì lời bài hát của họ không những đều viết rất hay mà còn nói lên được tiếng lòng của giới trẻ. Lúc vui thì nghe, lúc buồn càng phải nghe.' },
+      { speaker: '陳敏萱', traditional: '演唱會人那麼多，票又不好買，不如在家上網看舒服。', simplified: '演唱会人那么多，票又不好买，不如在家上网看舒服。', pinyin: 'Yǎnchànghuì rén nàme duō, piào yòu bù hǎo mǎi, bùrú zài jiā shàngwǎng kàn shūfu.', english: 'With so many people and tickets so hard to get, it would be better to watch them online from the comfort of your own home.', vietnamese: 'Hòa nhạc đông người như vậy, vé lại khó mua, chẳng bằng ở nhà lên mạng xem cho thoải mái.' },
+      { speaker: '高橋健太', traditional: '聽演唱會當然要去現場，大家一起唱，一起跳，整個體育館都在震動。這樣的感覺沒去過的人是不能了解的。', simplified: '听演唱会当然要去现场，大家一起唱，一起跳，整个体育馆都在震动。这样的感觉没去过的人是不能了解的。', pinyin: 'Tīng yǎnchànghuì dāngrán yào qù xiànchǎng, dàjiā yìqǐ chàng, yìqǐ tiào, zhěng ge tǐyùguǎn dōu zài zhèndòng. Zhèyàng de gǎnjué méi qù guo de rén shì bù néng liǎojiě de.', english: 'Concerts, of course, have to be seen live. When everybody is singing and dancing, it’s like the entire stadium shakes. Somebody who has never gone wouldn’t understand.', vietnamese: 'Nghe hòa nhạc đương nhiên phải đến tận nơi, mọi người cùng hát, cùng nhảy, cả nhà thi đấu rung chuyển. Cảm giác như vậy người chưa từng đi thì không thể hiểu được.' },
+      { speaker: '陳敏萱', traditional: '聲音那麼大，吵死了。還是在家好。', simplified: '声音那么大，吵死了。还是在家好。', pinyin: 'Shēngyīn nàme dà, chǎo sǐ le. Háishi zài jiā hǎo.', english: 'It’s so loud; the noise would drive me crazy. I’d rather stay at home.', vietnamese: 'Ồn thế, ồn chết đi được. Vẫn là ở nhà tốt hơn.' },
+      { speaker: '高橋健太', traditional: '妳整天在家不會太無聊嗎？', simplified: '妳整天在家不会太无聊吗？', pinyin: 'Nǐ zhěng tiān zài jiā bú huì tài wúliáo ma?', english: 'Don’t you get bored staying at home all day?', vietnamese: 'Cậu ở nhà cả ngày không chán quá sao?' },
+      { speaker: '陳敏萱', traditional: '怎麼會呢？有那麼多有趣的漫畫，怎麼會覺得無聊呢？', simplified: '怎么会呢？有那么多有趣的漫画，怎么会觉得无聊呢？', pinyin: 'Zěnme huì ne? Yǒu nàme duō yǒuqù de mànhuà, zěnme huì juéde wúliáo ne?', english: 'No way. With so many interesting comic books, how could I feel bored?', vietnamese: 'Sao lại chán được? Có nhiều truyện tranh thú vị như vậy, sao có thể thấy chán chứ?' },
+      { speaker: '羅珊蒂', traditional: '我媽媽說租書店的漫畫內容都太色情，不適合我們看。', simplified: '我妈妈说租书店的漫画内容都太色情，不适合我们看。', pinyin: 'Wǒ māma shuō zūshū diàn de mànhuà nèiróng dōu tài sèqíng, bú shìhé wǒmen kàn.', english: 'My mom says that the content of book rental store comics are too pornographic and aren’t appropriate for us to read.', vietnamese: 'Mẹ mình nói truyện tranh ở tiệm cho thuê sách nội dung đều quá khiêu dâm, không thích hợp cho tụi mình đọc.' },
+      { speaker: '高橋健太', traditional: '現在誰去租書店啊？大家都用平板電腦跟智慧型手機上網看了。', simplified: '现在谁去租书店啊？大家都用平板电脑跟智慧型手机上网看了。', pinyin: 'Xiànzài shéi qù zūshū diàn a? Dàjiā dōu yòng píngbǎn diànnǎo gēn zhìhuìxíng shǒujī shàngwǎng kàn le.', english: 'Who goes to book rental stores nowadays? Everybody reads them online using tablets and smartphones.', vietnamese: 'Bây giờ ai còn đi tiệm thuê sách nữa? Mọi người đều dùng máy tính bảng và điện thoại thông minh lên mạng đọc rồi.' },
+      { speaker: '羅珊蒂', traditional: '我媽也說她朋友的孩子因為迷漫畫，花了太多時間，影響了功課，所以她不讓我們看。', simplified: '我妈也说她朋友的孩子因为迷漫画，花了太多时间，影响了功课，所以她不让我们看。', pinyin: 'Wǒ mā yě shuō tā péngyǒu de háizi yīnwèi mí mànhuà, huā le tài duō shíjiān, yǐngxiǎng le gōngkè, suǒyǐ tā bú ràng wǒmen kàn.', english: 'My mom says that her friend’s kid is obsessed with comic books and spends so much time reading them that it has affected his school work. That’s why my mom won’t let us read any.', vietnamese: 'Mẹ mình cũng nói con của bạn bà vì mê truyện tranh, tốn quá nhiều thời gian, ảnh hưởng đến bài vở, nên bà không cho tụi mình đọc.' },
+      { speaker: '高橋健太', traditional: '不會啊，好的漫畫也很多啊。看漫畫除了可以放鬆心情，還可以學到很多歷史、文化和傳統。', simplified: '不会啊，好的漫画也很多啊。看漫画除了可以放松心情，还可以学到很多历史、文化和传统。', pinyin: 'Bú huì a, hǎo de mànhuà yě hěn duō a. Kàn mànhuà chúle kěyǐ fàngsōng xīnqíng, hái kěyǐ xuédào hěn duō lìshǐ, wénhuà hé chuántǒng.', english: 'That’s not true. There are also a lot of good comic books. Not only do they help you relax, reading comic books allows you to learn a lot of history, culture, and traditions.', vietnamese: 'Đâu có, truyện tranh hay cũng nhiều mà. Đọc truyện tranh ngoài việc thư giãn còn học được nhiều về lịch sử, văn hóa và truyền thống.' },
+      { speaker: '陳敏萱', traditional: '沒錯。我也是看了漫畫才知道壽司是怎麼做的。', simplified: '没错。我也是看了漫画才知道寿司是怎么做的。', pinyin: 'Méi cuò. Wǒ yě shì kàn le mànhuà cái zhīdào shòusī shì zěnme zuò de.', english: 'That’s right. I didn’t know how to make sushi until I read about it in a comic book.', vietnamese: 'Đúng vậy. Mình cũng là nhờ đọc truyện tranh mới biết sushi được làm thế nào.' },
+      { speaker: '羅珊蒂', traditional: '看漫畫就是為了殺時間。你們想太多啦。', simplified: '看漫画就是为了杀时间。你们想太多啦。', pinyin: 'Kàn mànhuà jiùshì wèile shā shíjiān. Nǐmen xiǎng tài duō la.', english: 'Reading comic books is for killing time. You’re reading too much into it.', vietnamese: 'Đọc truyện tranh chỉ là để giết thời gian thôi. Các cậu nghĩ nhiều quá rồi.' },
+      { speaker: '陳敏萱', traditional: '幾點了？這麼晚啦？我跟朋友約了去看漫畫展，他們在捷運站等我，再不走就來不及了。改天再聊吧。', simplified: '几点了？这么晚啦？我跟朋友约了去看漫画展，他们在捷运站等我，再不走就来不及了。改天再聊吧。', pinyin: 'Jǐ diǎn le? Zhème wǎn la? Wǒ gēn péngyǒu yuē le qù kàn mànhuà zhǎn, tāmen zài jiéyùn zhàn děng wǒ, zài bù zǒu jiù láibùjí le. Gǎitiān zài liáo ba.', english: 'What’s the time? That late? I am meeting up with friends to go see a comic exhibition. They’re at the MRT station waiting for me. If I don’t leave now, I’ll be late. Let’s catch up another day.', vietnamese: 'Mấy giờ rồi? Muộn thế này rồi à? Mình hẹn bạn đi xem triển lãm truyện tranh, họ đang đợi ở ga tàu điện, không đi ngay là không kịp mất. Hôm khác nói chuyện tiếp nhé.' }
     ]
   ],
 
   shortReading: {
     traditional:
-      '流行是怎麼來的？\n\n　　這幾年，只要打開手機，就會看到大家都在討論同一家店、同一個東西。一個新的潮流，常常幾天之內就傳遍全國。這種傳播的速度，在網路還不發達的時候是很難想像的。\n\n　　流行為什麼傳得這麼快？這跟社群媒體有很大的關係。一個網紅或一支短影片，就可能帶動一整個話題。廣告公司也發現，找對人推薦，比花大錢打廣告更有效。於是，一個品牌紅起來，往往只需要很短的時間。\n\n　　不過，跟著潮流走也有問題。看到大家一窩蜂去買，很多人也跟著買，卻沒想過自己是不是真的需要。等到熱潮過去，家裡就多了一堆用不到的東西。專家建議，消費以前先問自己三個問題：我需要嗎？我用得到嗎？沒有它會怎麼樣？\n\n　　其實，流行本身沒有好壞。有些風潮，像自己帶環保杯、假日去做運動，如果能逐漸變成長久的習慣，就是好的改變。重點不是跟不跟流行，而是我們有沒有理性的判斷，和自己的觀念。',
+      '撞衫\n\n　　何雅婷昨天晚上去上西班牙文課的時候，發現班上有個同學穿著一件跟她一模一樣的淺藍色外套。何雅婷馬上脫掉外套，把它塞進背包裡。她覺得怎麼會發生這種事情呢？這件外套是當季款式，她看到連續劇裡的女主角穿了這件衣服看起來很甜美，所以才特別請朋友從國外寄來的。沒想到居然撞衫，害她整個晚上心情都很不好。\n\n　　今天中午下了課以後，何雅婷跟陳敏萱和安德思見面的時候，談到了這件事。陳敏萱覺得不需要為了這種事不高興。既然是最流行的款式，當然會有很多人穿。服裝公司在各種媒體上用不同的方式做廣告，吸引大家去買，撞衫就很難避免。只要能穿出不同的感覺就好了。\n\n　　安德思不懂為什麼有人怕撞衫。他認為何雅婷太小題大作了。衣服、包包跟別人一樣有什麼關係。商人為了賺錢，每年都要推出新的產品，新的款式，像電子產品，如果市場上有了最新型的，自己沒有，就落伍了。如果別人有跟自己一樣的新產品，一定會說個不停，像碰到了知音。既然這樣，女人為什麼怕撞衫呢？\n\n　　何雅婷覺得他說的沒錯，可是很難想像如果自己穿著喇叭褲去上課，會給別人什麼印象。再說，如果不懂流行，不看最受歡迎的連續劇，不去最熱門的餐廳，不玩最流行的電腦遊戲，不知道現在流行化什麼樣的妝，大概就沒什麼朋友了。',
     simplified:
-      '流行是怎么来的？\n\n　　这几年，只要打开手机，就会看到大家都在讨论同一家店、同一个东西。一个新的潮流，常常几天之内就传遍全国。这种传播的速度，在网络还不发达的时候是很难想象的。\n\n　　流行为什么传得这么快？这跟社群媒体有很大的关系。一个网红或一支短影片，就可能带动一整个话题。广告公司也发现，找对人推荐，比花大钱打广告更有效。于是，一个品牌红起来，往往只需要很短的时间。\n\n　　不过，跟着潮流走也有问题。看到大家一窝蜂去买，很多人也跟着买，却没想过自己是不是真的需要。等到热潮过去，家里就多了一堆用不到的东西。专家建议，消费以前先问自己三个问题：我需要吗？我用得到吗？没有它会怎么样？\n\n　　其实，流行本身没有好坏。有些风潮，像自己带环保杯、假日去做运动，如果能逐渐变成长久的习惯，就是好的改变。重点不是跟不跟流行，而是我们有没有理性的判断，和自己的观念。',
+      '撞衫\n\n　　何雅婷昨天晚上去上西班牙文课的时候，发现班上有个同学穿着一件跟她一模一样的浅蓝色外套。何雅婷马上脱掉外套，把它塞进背包里。她觉得怎么会发生这种事情呢？这件外套是当季款式，她看到连续剧里的女主角穿了这件衣服看起来很甜美，所以才特别请朋友从国外寄来的。没想到居然撞衫，害她整个晚上心情都很不好。\n\n　　今天中午下了课以后，何雅婷跟陈敏萱和安德思见面的时候，谈到了这件事。陈敏萱觉得不需要为了这种事不高兴。既然是最流行的款式，当然会有很多人穿。服装公司在各种媒体上用不同的方式做广告，吸引大家去买，撞衫就很难避免。只要能穿出不同的感觉就好了。\n\n　　安德思不懂为什么有人怕撞衫。他认为何雅婷太小题大作了。衣服、包包跟别人一样有什么关系。商人为了赚钱，每年都要推出新的产品，新的款式，像电子产品，如果市场上有了最新型的，自己没有，就落伍了。如果别人有跟自己一样的新产品，一定会说个不停，像碰到了知音。既然这样，女人为什么怕撞衫呢？\n\n　　何雅婷觉得他说的没错，可是很难想像如果自己穿着喇叭裤去上课，会给别人什么印象。再说，如果不懂流行，不看最受欢迎的连续剧，不去最热门的餐厅，不玩最流行的电脑游戏，不知道现在流行化什么样的妆，大概就没什么朋友了。',
     vietnamese:
-      'Mốt từ đâu mà ra?\n\nMấy năm nay, chỉ cần mở điện thoại là thấy mọi người đều bàn về cùng một quán, cùng một món đồ. Một trào lưu mới thường chỉ trong vài ngày là lan khắp cả nước. Tốc độ lan truyền này, vào thời mạng internet còn chưa phát triển thì rất khó tưởng tượng.\n\nVì sao mốt lan nhanh đến vậy? Chuyện này liên quan lớn đến mạng xã hội. Một KOL hay một video ngắn có thể kéo theo cả một chủ đề. Các công ty quảng cáo cũng nhận ra, tìm đúng người để giới thiệu còn hiệu quả hơn bỏ nhiều tiền chạy quảng cáo. Thế là, một thương hiệu nổi lên thường chỉ cần một khoảng thời gian rất ngắn.\n\nTuy nhiên, chạy theo trào lưu cũng có vấn đề. Thấy mọi người đổ xô đi mua, nhiều người cũng mua theo, mà chẳng nghĩ mình có thật sự cần hay không. Đến khi cơn sốt qua đi, trong nhà lại thừa ra một đống đồ không dùng tới. Chuyên gia khuyên, trước khi tiêu dùng hãy tự hỏi ba câu: Mình có cần không? Mình có dùng tới không? Không có nó thì sao?\n\nThật ra, bản thân mốt không tốt cũng không xấu. Có những làn sóng, như tự mang cốc tái sử dụng, ngày nghỉ đi tập thể dục, nếu dần trở thành thói quen lâu dài thì là một thay đổi tốt. Điểm mấu chốt không phải là có chạy theo mốt hay không, mà là chúng ta có sự phán đoán lý trí và quan niệm của riêng mình hay không.'
+      'Đụng hàng (撞衫)\n\nTối qua, khi đi học lớp tiếng Tây Ban Nha, Hà Nhã Đình phát hiện trong lớp có một bạn mặc chiếc áo khoác xanh nhạt giống hệt của cô. Nhã Đình lập tức cởi áo khoác ra, nhét vào ba lô. Cô nghĩ sao lại xảy ra chuyện như vậy chứ? Chiếc áo khoác này là mẫu đúng mùa, cô thấy nữ chính trong bộ phim truyền hình mặc trông rất ngọt ngào, nên mới đặc biệt nhờ bạn từ nước ngoài gửi về. Không ngờ lại đụng hàng, khiến cả buổi tối tâm trạng cô rất tệ.\n\nTrưa nay tan học, khi gặp Trần Mẫn Huyên và An Đức Tư, Nhã Đình kể chuyện này. Mẫn Huyên thấy không cần phải buồn vì chuyện như vậy. Đã là kiểu thịnh hành nhất thì đương nhiên sẽ có nhiều người mặc. Các công ty thời trang quảng cáo trên đủ loại phương tiện truyền thông bằng nhiều cách khác nhau để thu hút mọi người mua, nên đụng hàng rất khó tránh. Chỉ cần mặc ra được cảm giác khác biệt là được.\n\nAn Đức Tư không hiểu vì sao có người sợ đụng hàng. Anh cho rằng Nhã Đình làm quá lên rồi. Quần áo, túi xách giống người khác thì có sao đâu. Thương nhân vì kiếm tiền, mỗi năm đều tung ra sản phẩm mới, kiểu mới, như đồ điện tử, nếu trên thị trường đã có mẫu mới nhất mà mình không có thì bị lạc hậu. Nếu người khác có sản phẩm mới giống mình, chắc chắn sẽ nói không ngừng, như gặp được tri âm. Đã vậy thì tại sao phụ nữ lại sợ đụng hàng chứ?\n\nNhã Đình thấy anh nói không sai, nhưng rất khó tưởng tượng nếu mình mặc quần ống loe đi học thì sẽ để lại ấn tượng gì cho người khác. Hơn nữa, nếu không hiểu xu hướng, không xem bộ phim truyền hình được yêu thích nhất, không đến nhà hàng hot nhất, không chơi trò chơi điện tử thịnh hành nhất, không biết dạo này đang thịnh hành trang điểm kiểu gì, có lẽ sẽ chẳng có bạn bè gì.'
   },
 
   phrases: [
-    { phraseTraditional: '跟上流行', phraseSimplified: '跟上流行', pinyin: 'gēnshàng liúxíng', meaningVi: 'bắt kịp mốt, theo kịp xu hướng' },
-    { phraseTraditional: '退流行', phraseSimplified: '退流行', pinyin: 'tuì liúxíng', meaningVi: 'hết mốt, lỗi mốt' },
-    { phraseTraditional: '賣光', phraseSimplified: '卖光', pinyin: 'màiguāng', meaningVi: 'bán sạch, cháy hàng' },
-    { phraseTraditional: '這倒是真的', phraseSimplified: '这倒是真的', pinyin: 'zhè dào shì zhēn de', meaningVi: 'điều đó thì đúng thật' },
-    { phraseTraditional: '做自己', phraseSimplified: '做自己', pinyin: 'zuò zìjǐ', meaningVi: 'sống là chính mình' },
-    { phraseTraditional: '光顧著…', phraseSimplified: '光顾着…', pinyin: 'guāng gùzhe…', meaningVi: 'mải lo (làm gì) mà quên mất' },
-    { phraseTraditional: '一窩蜂', phraseSimplified: '一窝蜂', pinyin: 'yì wō fēng', meaningVi: 'đổ xô, ùn ùn (như ong vỡ tổ)' }
+    { phraseTraditional: '算了', phraseSimplified: '算了', pinyin: 'suàn le', meaningVi: 'thôi bỏ đi, thôi vậy' },
+    { phraseTraditional: '受歡迎', phraseSimplified: '受欢迎', pinyin: 'shòu huānyíng', meaningVi: 'được yêu thích, được ưa chuộng' },
+    { phraseTraditional: '擠滿', phraseSimplified: '挤满', pinyin: 'jǐmǎn', meaningVi: 'chật kín, đông nghịt' },
+    { phraseTraditional: '租書店', phraseSimplified: '租书店', pinyin: 'zūshū diàn', meaningVi: 'tiệm cho thuê sách' },
+    { phraseTraditional: '平板電腦', phraseSimplified: '平板电脑', pinyin: 'píngbǎn diànnǎo', meaningVi: 'máy tính bảng' },
+    { phraseTraditional: '智慧型手機', phraseSimplified: '智慧型手机', pinyin: 'zhìhuìxíng shǒujī', meaningVi: 'điện thoại thông minh' },
+    { phraseTraditional: '殺時間', phraseSimplified: '杀时间', pinyin: 'shā shíjiān', meaningVi: 'giết thời gian' },
+    { phraseTraditional: '漫畫展', phraseSimplified: '漫画展', pinyin: 'mànhuà zhǎn', meaningVi: 'triển lãm truyện tranh' },
+    { phraseTraditional: '來不及', phraseSimplified: '来不及', pinyin: 'láibùjí', meaningVi: 'không kịp' },
+    { phraseTraditional: '一模一樣', phraseSimplified: '一模一样', pinyin: 'yìmó yíyàng', meaningVi: 'giống hệt nhau' },
+    { phraseTraditional: '淺藍色', phraseSimplified: '浅蓝色', pinyin: 'qiǎn lánsè', meaningVi: 'màu xanh nhạt' },
+    { phraseTraditional: '脫掉', phraseSimplified: '脱掉', pinyin: 'tuōdiào', meaningVi: 'cởi ra (quần áo)' },
+    { phraseTraditional: '小題大作', phraseSimplified: '小题大作', pinyin: 'xiǎotí dàzuò', meaningVi: 'chuyện bé xé ra to, làm quá lên' },
+    { phraseTraditional: '推出', phraseSimplified: '推出', pinyin: 'tuīchū', meaningVi: 'tung ra, giới thiệu (sản phẩm)' },
+    { phraseTraditional: '五月天', phraseSimplified: '五月天', pinyin: 'Wǔyuètiān', meaningVi: 'Mayday (ban nhạc rock nổi tiếng của Đài Loan)' }
   ],
 
   vocab: [
-    { id: 'L5-001', lessonId: 'L5', order: 1, group: 'vocab1', traditional: '流行', simplified: '流行', pinyin: 'liúxíng', wordClass: ['Vs', 'N'], meaningVi: 'thịnh hành, mốt; xu hướng', meaningEn: 'to be popular; trend, fashion', tags: ['mua-sam'], examples: [{ traditional: '這家店最近超紅，因為社群上很流行。', simplified: '这家店最近超红，因为社群上很流行。', vietnamese: 'Tiệm này dạo này rất nổi vì đang thịnh hành trên mạng xã hội.' }] },
-    { id: 'L5-002', lessonId: 'L5', order: 2, group: 'vocab1', traditional: '排隊', simplified: '排队', pinyin: 'páiduì', wordClass: ['V-sep'], meaningVi: 'xếp hàng', meaningEn: 'to line up, to queue', notes: 'Động từ ly hợp: 排了兩個小時的隊。', examples: [{ traditional: '為了買這杯飲料，她排了兩個小時的隊。', simplified: '为了买这杯饮料，她排了两个小时的队。', vietnamese: 'Để mua ly nước này, cô ấy đã xếp hàng hai tiếng.' }] },
-    { id: 'L5-003', lessonId: 'L5', order: 3, group: 'vocab1', traditional: '社群', simplified: '社群', pinyin: 'shèqún', wordClass: ['N'], meaningVi: 'mạng xã hội; cộng đồng mạng', meaningEn: 'social media; online community', examples: [{ traditional: '每個人的社群上都是這家店的照片。', simplified: '每个人的社群上都是这家店的照片。', vietnamese: 'Mạng xã hội của ai cũng đầy ảnh của tiệm này.' }] },
-    { id: 'L5-004', lessonId: 'L5', order: 4, group: 'vocab1', traditional: '拍照', simplified: '拍照', pinyin: 'pāizhào', wordClass: ['V-sep'], meaningVi: 'chụp ảnh', meaningEn: 'to take a photo', examples: [{ traditional: '很多人排隊只是為了拍照放上社群。', simplified: '很多人排队只是为了拍照放上社群。', vietnamese: 'Nhiều người xếp hàng chỉ để chụp ảnh đăng lên mạng xã hội.' }] },
-    { id: 'L5-005', lessonId: 'L5', order: 5, group: 'vocab1', traditional: '跟上', simplified: '跟上', pinyin: 'gēnshàng', wordClass: ['V'], meaningVi: 'theo kịp, bắt kịp', meaningEn: 'to keep up with', examples: [{ traditional: '她排隊就是為了跟上最新的流行。', simplified: '她排队就是为了跟上最新的流行。', vietnamese: 'Cô ấy xếp hàng chính là để bắt kịp mốt mới nhất.' }] },
-    { id: 'L5-006', lessonId: 'L5', order: 6, group: 'vocab1', traditional: '在乎', simplified: '在乎', pinyin: 'zàihu', wordClass: ['Vst'], meaningVi: 'bận tâm, để ý, quan tâm', meaningEn: 'to care about, to mind', examples: [{ traditional: '過了這個月，可能就沒人在乎了。', simplified: '过了这个月，可能就没人在乎了。', vietnamese: 'Qua tháng này, có khi chẳng ai còn bận tâm nữa.' }] },
-    { id: 'L5-007', lessonId: 'L5', order: 7, group: 'vocab1', traditional: '遊戲', simplified: '游戏', pinyin: 'yóuxì', wordClass: ['N'], meaningVi: 'trò chơi', meaningEn: 'game', examples: [{ traditional: '上個月大家還在玩那個手機遊戲。', simplified: '上个月大家还在玩那个手机游戏。', vietnamese: 'Tháng trước mọi người còn chơi game điện thoại kia.' }] },
-    { id: 'L5-008', lessonId: 'L5', order: 8, group: 'vocab1', traditional: '短影片', simplified: '短影片', pinyin: 'duǎnyǐngpiàn', wordClass: ['N'], meaningVi: 'video ngắn', meaningEn: 'short video', examples: [{ traditional: '這個月大家又換成拍短影片了。', simplified: '这个月大家又换成拍短影片了。', vietnamese: 'Tháng này mọi người lại chuyển sang quay video ngắn.' }] },
-    { id: 'L5-009', lessonId: 'L5', order: 9, group: 'vocab1', traditional: '媒體', simplified: '媒体', pinyin: 'méitǐ', wordClass: ['N'], meaningVi: 'truyền thông, phương tiện truyền thông', meaningEn: 'media', examples: [{ traditional: '流行傳得快，跟社群媒體有很大的關係。', simplified: '流行传得快，跟社群媒体有很大的关系。', vietnamese: 'Mốt lan nhanh, liên quan lớn đến mạng xã hội.' }] },
-    { id: 'L5-010', lessonId: 'L5', order: 10, group: 'vocab1', traditional: '網紅', simplified: '网红', pinyin: 'wǎnghóng', wordClass: ['N'], meaningVi: 'người nổi tiếng trên mạng, KOL', meaningEn: 'internet celebrity, influencer', examples: [{ traditional: '一個網紅推薦，東西馬上就賣光。', simplified: '一个网红推荐，东西马上就卖光。', vietnamese: 'Một KOL giới thiệu là hàng lập tức cháy.' }] },
-    { id: 'L5-011', lessonId: 'L5', order: 11, group: 'vocab1', traditional: '推薦', simplified: '推荐', pinyin: 'tuījiàn', wordClass: ['V'], meaningVi: 'giới thiệu, đề xuất', meaningEn: 'to recommend', examples: [{ traditional: '找對人推薦，比花大錢打廣告更有效。', simplified: '找对人推荐，比花大钱打广告更有效。', vietnamese: 'Tìm đúng người giới thiệu còn hiệu quả hơn bỏ nhiều tiền chạy quảng cáo.' }] },
-    { id: 'L5-012', lessonId: 'L5', order: 12, group: 'vocab1', traditional: '搶', simplified: '抢', pinyin: 'qiǎng', wordClass: ['V'], meaningVi: 'giành, tranh (mua); cướp', meaningEn: 'to snatch, to scramble for', examples: [{ traditional: '越是大家都在搶的東西，她越不想買。', simplified: '越是大家都在抢的东西，她越不想买。', vietnamese: 'Cái gì mọi người càng tranh nhau mua, cô ấy càng không muốn mua.' }] },
-    { id: 'L5-013', lessonId: 'L5', order: 13, group: 'vocab1', traditional: '環保', simplified: '环保', pinyin: 'huánbǎo', wordClass: ['Vs-attr', 'N'], meaningVi: 'bảo vệ môi trường; thân thiện môi trường', meaningEn: 'environmental protection; eco-friendly', tags: ['moi-truong'], examples: [{ traditional: '很多人開始自己帶環保杯。', simplified: '很多人开始自己带环保杯。', vietnamese: 'Nhiều người bắt đầu tự mang cốc tái sử dụng.' }] },
-    { id: 'L5-014', lessonId: 'L5', order: 14, group: 'vocab1', traditional: '值得', simplified: '值得', pinyin: 'zhídé', wordClass: ['Vst', 'Vaux'], meaningVi: 'đáng, xứng đáng', meaningEn: 'to be worth', examples: [{ traditional: '這個習慣很值得跟。', simplified: '这个习惯很值得跟。', vietnamese: 'Thói quen này rất đáng để theo.' }] },
-    { id: 'L5-015', lessonId: 'L5', order: 15, group: 'vocab1', traditional: '重點', simplified: '重点', pinyin: 'zhòngdiǎn', wordClass: ['N'], meaningVi: 'điểm mấu chốt, trọng điểm', meaningEn: 'main point, focus', examples: [{ traditional: '重點是你有沒有想清楚為什麼要跟。', simplified: '重点是你有没有想清楚为什么要跟。', vietnamese: 'Điểm mấu chốt là bạn có nghĩ rõ vì sao mình chạy theo hay không.' }] },
-    { id: 'L5-016', lessonId: 'L5', order: 16, group: 'vocab1', traditional: '追', simplified: '追', pinyin: 'zhuī', wordClass: ['V'], meaningVi: 'đuổi theo, chạy theo, theo dõi (phim...)', meaningEn: 'to chase, to follow closely', examples: [{ traditional: '我之所以不追流行，是因為那樣很累。', simplified: '我之所以不追流行，是因为那样很累。', vietnamese: 'Sở dĩ mình không chạy theo mốt là vì như vậy rất mệt.' }] },
-    { id: 'L5-017', lessonId: 'L5', order: 17, group: 'vocab1', traditional: '過時', simplified: '过时', pinyin: 'guòshí', wordClass: ['Vs'], meaningVi: 'lỗi thời, lỗi mốt', meaningEn: 'outdated, out of fashion', examples: [{ traditional: '剛買的東西，過幾個月就過時了。', simplified: '刚买的东西，过几个月就过时了。', vietnamese: 'Đồ vừa mua, qua vài tháng là lỗi mốt.' }] },
-    { id: 'L5-018', lessonId: 'L5', order: 18, group: 'vocab1', traditional: '年紀', simplified: '年纪', pinyin: 'niánjì', wordClass: ['N'], meaningVi: 'tuổi tác', meaningEn: 'age', examples: [{ traditional: '隨著年紀變大，他越來越不在乎別人的看法。', simplified: '随着年纪变大，他越来越不在乎别人的看法。', vietnamese: 'Cùng với tuổi tác, anh ấy càng ngày càng không bận tâm cách nhìn của người khác.' }] },
-    { id: 'L5-019', lessonId: 'L5', order: 19, group: 'vocab1', traditional: '看法', simplified: '看法', pinyin: 'kànfǎ', wordClass: ['N'], meaningVi: 'cách nhìn, quan điểm', meaningEn: 'view, opinion', examples: [{ traditional: '他不太在乎別人的看法。', simplified: '他不太在乎别人的看法。', vietnamese: 'Anh ấy không mấy bận tâm cách nhìn của người khác.' }] },
-    { id: 'L5-020', lessonId: 'L5', order: 20, group: 'vocab1', traditional: '風格', simplified: '风格', pinyin: 'fēnggé', wordClass: ['N'], meaningVi: 'phong cách', meaningEn: 'style', examples: [{ traditional: '真正有自己風格的人，反而不太受流行影響。', simplified: '真正有自己风格的人，反而不太受流行影响。', vietnamese: 'Người thật sự có phong cách riêng lại ít bị mốt ảnh hưởng.' }] },
-    { id: 'L5-021', lessonId: 'L5', order: 21, group: 'vocab1', traditional: '發現', simplified: '发现', pinyin: 'fāxiàn', wordClass: ['V'], meaningVi: 'phát hiện, nhận ra', meaningEn: 'to discover, to find', examples: [{ traditional: '我發現，真正有風格的人不太跟流行。', simplified: '我发现，真正有风格的人不太跟流行。', vietnamese: 'Mình nhận ra, người thật sự có phong cách không mấy khi chạy theo mốt.' }] },
-    { id: 'L5-022', lessonId: 'L5', order: 22, group: 'vocab1', traditional: '趁', simplified: '趁', pinyin: 'chèn', wordClass: ['Prep'], meaningVi: 'nhân lúc, tranh thủ khi', meaningEn: 'to take advantage of (a time/chance)', examples: [{ traditional: '要趁它還沒退流行的時候拍照。', simplified: '要趁它还没退流行的时候拍照。', vietnamese: 'Phải chụp ảnh lúc nó chưa lỗi mốt.' }] },
-    { id: 'L5-023', lessonId: 'L5', order: 23, group: 'vocab1', traditional: '化', simplified: '化', pinyin: 'huà', wordClass: ['Vp'], meaningVi: 'tan (chảy), hóa', meaningEn: 'to melt, to dissolve', examples: [{ traditional: '妳快喝吧，冰都要化了。', simplified: '妳快喝吧，冰都要化了。', vietnamese: 'Cậu uống nhanh đi, đá sắp tan hết rồi.' }] },
-    { id: 'L5-024', lessonId: 'L5', order: 24, group: 'vocab1', traditional: '顧', simplified: '顾', pinyin: 'gù', wordClass: ['V'], meaningVi: 'lo, mải chú tâm vào; trông nom', meaningEn: 'to attend to, to be preoccupied with', examples: [{ traditional: '光顧著聊天，我都忘了喝。', simplified: '光顾着聊天，我都忘了喝。', vietnamese: 'Mải lo nói chuyện, mình quên cả uống.' }] },
-    { id: 'L5-025', lessonId: 'L5', order: 25, group: 'vocab1', traditional: '奶茶', simplified: '奶茶', pinyin: 'nǎichá', wordClass: ['N'], meaningVi: 'trà sữa', meaningEn: 'milk tea', tags: ['am-thuc'], examples: [{ traditional: '一杯奶茶而已，有必要排這麼久嗎？', simplified: '一杯奶茶而已，有必要排这么久吗？', vietnamese: 'Chỉ là một ly trà sữa, có cần xếp hàng lâu vậy không?' }] },
-    { id: 'L5-026', lessonId: 'L5', order: 26, group: 'vocab1', traditional: '環保杯', simplified: '环保杯', pinyin: 'huánbǎobēi', wordClass: ['N'], meaningVi: 'cốc tái sử dụng, ly thân thiện môi trường', meaningEn: 'reusable cup', tags: ['moi-truong'], examples: [{ traditional: '自己帶環保杯，很多店還會給折扣。', simplified: '自己带环保杯，很多店还会给折扣。', vietnamese: 'Tự mang cốc tái sử dụng, nhiều quán còn giảm giá.' }] },
+    // ---- 生詞一 ----
+    { id: 'L5-001', lessonId: 'L5', order: 1, group: 'vocab1', traditional: '流行', simplified: '流行', pinyin: 'liúxíng', wordClass: ['Vst'], meaningVi: 'thịnh hành, thời thượng', meaningEn: 'popular', examples: [{ traditional: '現在流行什麼？', simplified: '现在流行什么？', vietnamese: 'Bây giờ đang thịnh hành gì?' }] },
+    { id: 'L5-002', lessonId: 'L5', order: 2, group: 'vocab1', traditional: '唉', simplified: '唉', pinyin: 'āi', wordClass: ['Ptc'], meaningVi: 'ôi, haizz (than thở)', meaningEn: 'Oh no! Oh boy!', examples: [{ traditional: '唉！氣死了！', simplified: '唉！气死了！', vietnamese: 'Haizz! Tức chết đi được!' }] },
+    { id: 'L5-003', lessonId: 'L5', order: 3, group: 'vocab1', traditional: '演唱會', simplified: '演唱会', pinyin: 'yǎnchànghuì', wordClass: ['N'], meaningVi: 'buổi hòa nhạc, liveshow', meaningEn: 'concert', examples: [{ traditional: '昨天我上網買五月天演唱會的票。', simplified: '昨天我上网买五月天演唱会的票。', vietnamese: 'Hôm qua mình lên mạng mua vé buổi hòa nhạc của Mayday.' }] },
+    { id: 'L5-004', lessonId: 'L5', order: 4, group: 'vocab1', traditional: '塞車', simplified: '塞车', pinyin: 'sāichē', wordClass: ['Vs'], meaningVi: 'kẹt xe, nghẽn (mạng)', meaningEn: 'net congestion, jam', examples: [{ traditional: '沒想到網路塞車。', simplified: '没想到网路塞车。', vietnamese: 'Không ngờ mạng bị nghẽn.' }] },
+    { id: 'L5-005', lessonId: 'L5', order: 5, group: 'vocab1', traditional: '上線', simplified: '上线', pinyin: 'shàngxiàn', wordClass: ['V-sep'], meaningVi: 'lên mạng, đăng nhập trực tuyến', meaningEn: 'to log in, go online', notes: 'Động từ ly hợp: 上了線、上不了線.', examples: [{ traditional: '等我上線成功，票已經賣完了。', simplified: '等我上线成功，票已经卖完了。', vietnamese: 'Đến khi mình vào được mạng thì vé đã bán hết.' }] },
+    { id: 'L5-006', lessonId: 'L5', order: 6, group: 'vocab1', traditional: '成功', simplified: '成功', pinyin: 'chénggōng', wordClass: ['Vp'], meaningVi: 'thành công', meaningEn: 'to succeed', examples: [{ traditional: '等我上線成功，票已經賣完了。', simplified: '等我上线成功，票已经卖完了。', vietnamese: 'Đến khi mình lên mạng thành công, vé đã bán hết.' }] },
+    { id: 'L5-007', lessonId: 'L5', order: 7, group: 'vocab1', traditional: '倒楣', simplified: '倒霉', pinyin: 'dǎoméi', wordClass: ['Vs'], meaningVi: 'xui xẻo, đen đủi', meaningEn: 'out of luck, down on one’s luck', examples: [{ traditional: '真倒楣！', simplified: '真倒霉！', vietnamese: 'Xui thật!' }] },
+    { id: 'L5-008', lessonId: 'L5', order: 8, group: 'vocab1', traditional: '樂團', simplified: '乐团', pinyin: 'yuètuán', wordClass: ['N'], meaningVi: 'ban nhạc, dàn nhạc', meaningEn: '(music) band', examples: [{ traditional: '五月天是華人世界最受歡迎的樂團。', simplified: '五月天是华人世界最受欢迎的乐团。', vietnamese: 'Mayday là ban nhạc được yêu thích nhất trong thế giới người Hoa.' }] },
+    { id: 'L5-009', lessonId: 'L5', order: 9, group: 'vocab1', traditional: '唱', simplified: '唱', pinyin: 'chàng', wordClass: ['V'], meaningVi: 'hát', meaningEn: 'to sing', examples: [{ traditional: '大家都站在椅子上又唱又叫。', simplified: '大家都站在椅子上又唱又叫。', vietnamese: 'Mọi người đứng trên ghế vừa hát vừa hét.' }] },
+    { id: 'L5-010', lessonId: 'L5', order: 10, group: 'vocab1', traditional: '興奮', simplified: '兴奋', pinyin: 'xīngfèn', wordClass: ['Vs'], meaningVi: 'phấn khích, hưng phấn', meaningEn: 'excited', examples: [{ traditional: '大家都又唱又叫，興奮極了。', simplified: '大家都又唱又叫，兴奋极了。', vietnamese: 'Ai cũng vừa hát vừa hét, phấn khích cực kỳ.' }] },
+    { id: 'L5-011', lessonId: 'L5', order: 11, group: 'vocab1', traditional: '迷', simplified: '迷', pinyin: 'mí', wordClass: ['Vst'], meaningVi: 'mê, say mê, cuồng', meaningEn: 'to be enamored with, be into, be enchanted by, be obsessed with', examples: [{ traditional: '為什麼這麼多人迷他們？', simplified: '为什么这么多人迷他们？', vietnamese: 'Sao nhiều người mê họ vậy?' }] },
+    { id: 'L5-012', lessonId: 'L5', order: 12, group: 'vocab1', traditional: '歌詞', simplified: '歌词', pinyin: 'gēcí', wordClass: ['N'], meaningVi: 'lời bài hát', meaningEn: 'lyrics', examples: [{ traditional: '他們的歌詞不但都寫得很美。', simplified: '他们的歌词不但都写得很美。', vietnamese: 'Lời bài hát của họ không những đều viết rất hay.' }] },
+    { id: 'L5-013', lessonId: 'L5', order: 13, group: 'vocab1', traditional: '難過', simplified: '难过', pinyin: 'nánguò', wordClass: ['Vs'], meaningVi: 'buồn, khó chịu trong lòng', meaningEn: 'sad', examples: [{ traditional: '難過的時候，更要聽。', simplified: '难过的时候，更要听。', vietnamese: 'Lúc buồn càng phải nghe.' }] },
+    { id: 'L5-014', lessonId: 'L5', order: 14, group: 'vocab1', traditional: '不如', simplified: '不如', pinyin: 'bùrú', wordClass: ['Vst'], meaningVi: 'không bằng, chi bằng', meaningEn: 'inferior to', notes: 'Xem ngữ pháp III.', examples: [{ traditional: '不如在家上網看舒服。', simplified: '不如在家上网看舒服。', vietnamese: 'Chẳng bằng ở nhà lên mạng xem cho thoải mái.' }] },
+    { id: 'L5-015', lessonId: 'L5', order: 15, group: 'vocab1', traditional: '現場', simplified: '现场', pinyin: 'xiànchǎng', wordClass: ['N'], meaningVi: 'hiện trường, tại chỗ, trực tiếp', meaningEn: 'live; lit. on-site', examples: [{ traditional: '聽演唱會當然要去現場。', simplified: '听演唱会当然要去现场。', vietnamese: 'Nghe hòa nhạc đương nhiên phải đến tận nơi.' }] },
+    { id: 'L5-016', lessonId: 'L5', order: 16, group: 'vocab1', traditional: '跳', simplified: '跳', pinyin: 'tiào', wordClass: ['Vi'], meaningVi: 'nhảy', meaningEn: 'to jump', examples: [{ traditional: '大家一起唱，一起跳。', simplified: '大家一起唱，一起跳。', vietnamese: 'Mọi người cùng hát, cùng nhảy.' }] },
+    { id: 'L5-017', lessonId: 'L5', order: 17, group: 'vocab1', traditional: '整', simplified: '整', pinyin: 'zhěng', wordClass: ['Det'], meaningVi: 'cả, toàn bộ', meaningEn: 'entire, whole', examples: [{ traditional: '整個體育館都在震動。', simplified: '整个体育馆都在震动。', vietnamese: 'Cả nhà thi đấu đều rung chuyển.' }] },
+    { id: 'L5-018', lessonId: 'L5', order: 18, group: 'vocab1', traditional: '震動', simplified: '震动', pinyin: 'zhèndòng', wordClass: ['Vi'], meaningVi: 'rung, rung chuyển', meaningEn: 'to vibrate, to shake', examples: [{ traditional: '整個體育館都在震動。', simplified: '整个体育馆都在震动。', vietnamese: 'Cả nhà thi đấu đều đang rung chuyển.' }] },
+    { id: 'L5-019', lessonId: 'L5', order: 19, group: 'vocab1', traditional: '漫畫', simplified: '漫画', pinyin: 'mànhuà', wordClass: ['N'], meaningVi: 'truyện tranh', meaningEn: 'comics', examples: [{ traditional: '有那麼多有趣的漫畫，怎麼會覺得無聊呢？', simplified: '有那么多有趣的漫画，怎么会觉得无聊呢？', vietnamese: 'Có nhiều truyện tranh thú vị như vậy, sao lại thấy chán chứ?' }] },
+    { id: 'L5-020', lessonId: 'L5', order: 20, group: 'vocab1', traditional: '內容', simplified: '内容', pinyin: 'nèiróng', wordClass: ['N'], meaningVi: 'nội dung', meaningEn: 'content', examples: [{ traditional: '租書店的漫畫內容都太色情。', simplified: '租书店的漫画内容都太色情。', vietnamese: 'Truyện tranh ở tiệm cho thuê nội dung đều quá khiêu dâm.' }] },
+    { id: 'L5-021', lessonId: 'L5', order: 21, group: 'vocab1', traditional: '色情', simplified: '色情', pinyin: 'sèqíng', wordClass: ['Vs'], meaningVi: 'khiêu dâm, đồi trụy', meaningEn: 'pornographic; obscene', examples: [{ traditional: '漫畫內容太色情，不適合我們看。', simplified: '漫画内容太色情，不适合我们看。', vietnamese: 'Nội dung truyện tranh quá khiêu dâm, không thích hợp để chúng ta đọc.' }] },
+    { id: 'L5-022', lessonId: 'L5', order: 22, group: 'vocab1', traditional: '放鬆', simplified: '放松', pinyin: 'fàngsōng', wordClass: ['Vst'], meaningVi: 'thư giãn, thả lỏng', meaningEn: 'to relax', examples: [{ traditional: '看漫畫可以放鬆心情。', simplified: '看漫画可以放松心情。', vietnamese: 'Đọc truyện tranh có thể thư giãn tinh thần.' }] },
+    { id: 'L5-023', lessonId: 'L5', order: 23, group: 'vocab1', traditional: '心情', simplified: '心情', pinyin: 'xīnqíng', wordClass: ['N'], meaningVi: 'tâm trạng', meaningEn: 'mood', examples: [{ traditional: '沒想到居然撞衫，害她整個晚上心情都很不好。', simplified: '没想到居然撞衫，害她整个晚上心情都很不好。', vietnamese: 'Không ngờ lại đụng hàng, khiến cả buổi tối tâm trạng cô ấy rất tệ.' }] },
 
-    { id: 'L5-027', lessonId: 'L5', order: 1, group: 'vocab2', traditional: '潮流', simplified: '潮流', pinyin: 'cháoliú', wordClass: ['N'], meaningVi: 'trào lưu, xu thế', meaningEn: 'trend, current', examples: [{ traditional: '一個新的潮流，常常幾天之內就傳遍全國。', simplified: '一个新的潮流，常常几天之内就传遍全国。', vietnamese: 'Một trào lưu mới thường chỉ trong vài ngày là lan khắp cả nước.' }] },
-    { id: 'L5-028', lessonId: 'L5', order: 2, group: 'vocab2', traditional: '傳播', simplified: '传播', pinyin: 'chuánbò', wordClass: ['V'], meaningVi: 'lan truyền, truyền bá', meaningEn: 'to spread, to disseminate', examples: [{ traditional: '這種傳播的速度，以前很難想像。', simplified: '这种传播的速度，以前很难想象。', vietnamese: 'Tốc độ lan truyền này, trước đây rất khó tưởng tượng.' }] },
-    { id: 'L5-029', lessonId: 'L5', order: 3, group: 'vocab2', traditional: '速度', simplified: '速度', pinyin: 'sùdù', wordClass: ['N'], meaningVi: 'tốc độ', meaningEn: 'speed', examples: [{ traditional: '流行傳播的速度越來越快。', simplified: '流行传播的速度越来越快。', vietnamese: 'Tốc độ lan truyền của mốt ngày càng nhanh.' }] },
-    { id: 'L5-030', lessonId: 'L5', order: 4, group: 'vocab2', traditional: '跟風', simplified: '跟风', pinyin: 'gēnfēng', wordClass: ['V-sep'], meaningVi: 'chạy theo phong trào, a dua', meaningEn: 'to follow the crowd', examples: [{ traditional: '有人只是為了拍照跟風。', simplified: '有人只是为了拍照跟风。', vietnamese: 'Có người chỉ chạy theo phong trào để chụp ảnh.' }] },
-    { id: 'L5-031', lessonId: 'L5', order: 5, group: 'vocab2', traditional: '現象', simplified: '现象', pinyin: 'xiànxiàng', wordClass: ['N'], meaningVi: 'hiện tượng', meaningEn: 'phenomenon', examples: [{ traditional: '一窩蜂消費是一個常見的社會現象。', simplified: '一窝蜂消费是一个常见的社会现象。', vietnamese: 'Tiêu dùng đổ xô là một hiện tượng xã hội thường gặp.' }] },
-    { id: 'L5-032', lessonId: 'L5', order: 6, group: 'vocab2', traditional: '消費', simplified: '消费', pinyin: 'xiāofèi', wordClass: ['V', 'N'], meaningVi: 'tiêu dùng; sự tiêu dùng', meaningEn: 'to consume; consumption', tags: ['mua-sam'], examples: [{ traditional: '消費以前先問自己是不是真的需要。', simplified: '消费以前先问自己是不是真的需要。', vietnamese: 'Trước khi tiêu dùng hãy tự hỏi mình có thật sự cần không.' }] },
-    { id: 'L5-033', lessonId: 'L5', order: 7, group: 'vocab2', traditional: '廣告', simplified: '广告', pinyin: 'guǎnggào', wordClass: ['N'], meaningVi: 'quảng cáo', meaningEn: 'advertisement', tags: ['mua-sam'], examples: [{ traditional: '找對人推薦，比花大錢打廣告更有效。', simplified: '找对人推荐，比花大钱打广告更有效。', vietnamese: 'Tìm đúng người giới thiệu còn hiệu quả hơn bỏ nhiều tiền chạy quảng cáo.' }] },
-    { id: 'L5-034', lessonId: 'L5', order: 8, group: 'vocab2', traditional: '品牌', simplified: '品牌', pinyin: 'pǐnpái', wordClass: ['N'], meaningVi: 'thương hiệu, nhãn hiệu', meaningEn: 'brand', tags: ['mua-sam'], examples: [{ traditional: '一個品牌紅起來，往往只需要很短的時間。', simplified: '一个品牌红起来，往往只需要很短的时间。', vietnamese: 'Một thương hiệu nổi lên thường chỉ cần một khoảng thời gian rất ngắn.' }] },
-    { id: 'L5-035', lessonId: 'L5', order: 9, group: 'vocab2', traditional: '帶動', simplified: '带动', pinyin: 'dàidòng', wordClass: ['V'], meaningVi: 'thúc đẩy, kéo theo', meaningEn: 'to drive, to spur', examples: [{ traditional: '一支短影片就可能帶動一整個話題。', simplified: '一支短影片就可能带动一整个话题。', vietnamese: 'Một video ngắn có thể kéo theo cả một chủ đề.' }] },
-    { id: 'L5-036', lessonId: 'L5', order: 10, group: 'vocab2', traditional: '話題', simplified: '话题', pinyin: 'huàtí', wordClass: ['N'], meaningVi: 'chủ đề, đề tài (bàn tán)', meaningEn: 'topic (of conversation)', examples: [{ traditional: '這件事最近是大家的話題。', simplified: '这件事最近是大家的话题。', vietnamese: 'Chuyện này dạo gần đây là đề tài của mọi người.' }] },
-    { id: 'L5-037', lessonId: 'L5', order: 11, group: 'vocab2', traditional: '一窩蜂', simplified: '一窝蜂', pinyin: 'yìwōfēng', wordClass: ['Adv'], meaningVi: 'ùn ùn, đổ xô (như ong vỡ tổ)', meaningEn: 'in a swarm, like a herd', examples: [{ traditional: '看到大家一窩蜂去買，很多人也跟著買。', simplified: '看到大家一窝蜂去买，很多人也跟着买。', vietnamese: 'Thấy mọi người đổ xô đi mua, nhiều người cũng mua theo.' }] },
-    { id: 'L5-038', lessonId: 'L5', order: 12, group: 'vocab2', traditional: '理性', simplified: '理性', pinyin: 'lǐxìng', wordClass: ['Vs', 'N'], meaningVi: 'lý trí; sự lý trí', meaningEn: 'rational; reason', examples: [{ traditional: '消費的時候要多一點理性，少一點衝動。', simplified: '消费的时候要多一点理性，少一点冲动。', vietnamese: 'Khi tiêu dùng cần lý trí hơn một chút, bốc đồng ít đi một chút.' }] },
-    { id: 'L5-039', lessonId: 'L5', order: 13, group: 'vocab2', traditional: '判斷', simplified: '判断', pinyin: 'pànduàn', wordClass: ['V', 'N'], meaningVi: 'phán đoán, đánh giá', meaningEn: 'to judge; judgment', examples: [{ traditional: '想清楚自己的需求，再做判斷。', simplified: '想清楚自己的需求，再做判断。', vietnamese: 'Nghĩ rõ nhu cầu của mình, rồi hãy đưa ra phán đoán.' }] },
-    { id: 'L5-040', lessonId: 'L5', order: 14, group: 'vocab2', traditional: '需求', simplified: '需求', pinyin: 'xūqiú', wordClass: ['N'], meaningVi: 'nhu cầu', meaningEn: 'need, demand', examples: [{ traditional: '這是不是自己真正的需求？', simplified: '这是不是自己真正的需求？', vietnamese: 'Đây có phải là nhu cầu thật sự của mình không?' }] },
-    { id: 'L5-041', lessonId: 'L5', order: 15, group: 'vocab2', traditional: '風潮', simplified: '风潮', pinyin: 'fēngcháo', wordClass: ['N'], meaningVi: 'làn sóng, phong trào', meaningEn: 'wave, craze', examples: [{ traditional: '這幾年台灣掀起了一股運動風潮。', simplified: '这几年台湾掀起了一股运动风潮。', vietnamese: 'Mấy năm nay Đài Loan dấy lên một làn sóng thể thao.' }] },
-    { id: 'L5-042', lessonId: 'L5', order: 16, group: 'vocab2', traditional: '逐漸', simplified: '逐渐', pinyin: 'zhújiàn', wordClass: ['Adv'], meaningVi: 'dần dần, từ từ', meaningEn: 'gradually', examples: [{ traditional: '有些風潮逐漸變成了長久的習慣。', simplified: '有些风潮逐渐变成了长久的习惯。', vietnamese: 'Một số phong trào dần trở thành thói quen lâu dài.' }] },
-    { id: 'L5-043', lessonId: 'L5', order: 17, group: 'vocab2', traditional: '培養', simplified: '培养', pinyin: 'péiyǎng', wordClass: ['V'], meaningVi: 'bồi dưỡng, nuôi dưỡng (thói quen, năng lực)', meaningEn: 'to cultivate, to develop', examples: [{ traditional: '自己帶環保杯這個習慣很值得培養。', simplified: '自己带环保杯这个习惯很值得培养。', vietnamese: 'Thói quen tự mang cốc tái sử dụng rất đáng để nuôi dưỡng.' }] },
-    { id: 'L5-044', lessonId: 'L5', order: 18, group: 'vocab2', traditional: '觀念', simplified: '观念', pinyin: 'guānniàn', wordClass: ['N'], meaningVi: 'quan niệm', meaningEn: 'concept, idea, notion', examples: [{ traditional: '重點是我們有沒有自己的觀念。', simplified: '重点是我们有没有自己的观念。', vietnamese: 'Điểm mấu chốt là chúng ta có quan niệm của riêng mình hay không.' }] },
-    { id: 'L5-045', lessonId: 'L5', order: 19, group: 'vocab2', traditional: '影響力', simplified: '影响力', pinyin: 'yǐngxiǎnglì', wordClass: ['N'], meaningVi: 'sức ảnh hưởng', meaningEn: 'influence, clout', examples: [{ traditional: '有些網紅的影響力比電視廣告還大。', simplified: '有些网红的影响力比电视广告还大。', vietnamese: 'Sức ảnh hưởng của một số KOL còn lớn hơn quảng cáo truyền hình.' }] }
+    // ---- 生詞二 ----
+    { id: 'L5-024', lessonId: 'L5', order: 1, group: 'vocab2', traditional: '撞衫', simplified: '撞衫', pinyin: 'zhuàngshān', wordClass: ['Vs'], meaningVi: 'đụng hàng (mặc trùng quần áo với người khác)', meaningEn: '“wardrobe clash”, more than one person unintentionally wearing duplicate garments', examples: [{ traditional: '沒想到居然撞衫。', simplified: '没想到居然撞衫。', vietnamese: 'Không ngờ lại đụng hàng.' }] },
+    { id: 'L5-025', lessonId: 'L5', order: 2, group: 'vocab2', traditional: '它', simplified: '它', pinyin: 'tā', wordClass: ['N'], meaningVi: 'nó (chỉ vật)', meaningEn: 'it', examples: [{ traditional: '她把外套脫掉，把它塞進背包裡。', simplified: '她把外套脱掉，把它塞进背包里。', vietnamese: 'Cô cởi áo khoác ra, nhét nó vào ba lô.' }] },
+    { id: 'L5-026', lessonId: 'L5', order: 3, group: 'vocab2', traditional: '塞', simplified: '塞', pinyin: 'sāi', wordClass: ['V'], meaningVi: 'nhét, nhồi', meaningEn: 'to stuff, cram, squeeze (into)', examples: [{ traditional: '何雅婷把外套塞進背包裡。', simplified: '何雅婷把外套塞进背包里。', vietnamese: 'Hà Nhã Đình nhét áo khoác vào ba lô.' }] },
+    { id: 'L5-027', lessonId: 'L5', order: 4, group: 'vocab2', traditional: '當季', simplified: '当季', pinyin: 'dāngjì', wordClass: ['N'], meaningVi: 'đúng mùa, mẫu của mùa này', meaningEn: 'in season', examples: [{ traditional: '這件外套是當季款式。', simplified: '这件外套是当季款式。', vietnamese: 'Chiếc áo khoác này là kiểu của mùa này.' }] },
+    { id: 'L5-028', lessonId: 'L5', order: 5, group: 'vocab2', traditional: '款式', simplified: '款式', pinyin: 'kuǎnshì', wordClass: ['N'], meaningVi: 'kiểu dáng, mẫu mã', meaningEn: 'style (of clothes)', examples: [{ traditional: '既然是最流行的款式，當然會有很多人穿。', simplified: '既然是最流行的款式，当然会有很多人穿。', vietnamese: 'Đã là kiểu thịnh hành nhất thì đương nhiên sẽ có nhiều người mặc.' }] },
+    { id: 'L5-029', lessonId: 'L5', order: 6, group: 'vocab2', traditional: '連續劇', simplified: '连续剧', pinyin: 'liánxùjù', wordClass: ['N'], meaningVi: 'phim truyền hình nhiều tập', meaningEn: 'TV series', examples: [{ traditional: '她看到連續劇裡的女主角穿了這件衣服。', simplified: '她看到连续剧里的女主角穿了这件衣服。', vietnamese: 'Cô thấy nữ chính trong phim truyền hình mặc bộ đồ này.' }] },
+    { id: 'L5-030', lessonId: 'L5', order: 7, group: 'vocab2', traditional: '主角', simplified: '主角', pinyin: 'zhǔjiǎo', wordClass: ['N'], meaningVi: 'nhân vật chính, diễn viên chính', meaningEn: 'leading role, leading actor', examples: [{ traditional: '女主角穿了這件衣服看起來很甜美。', simplified: '女主角穿了这件衣服看起来很甜美。', vietnamese: 'Nữ chính mặc bộ đồ này trông rất ngọt ngào.' }] },
+    { id: 'L5-031', lessonId: 'L5', order: 8, group: 'vocab2', traditional: '甜美', simplified: '甜美', pinyin: 'tiánměi', wordClass: ['Vs'], meaningVi: 'ngọt ngào, dễ thương', meaningEn: 'sweet and cute, lovely', examples: [{ traditional: '穿了這件衣服看起來很甜美。', simplified: '穿了这件衣服看起来很甜美。', vietnamese: 'Mặc bộ đồ này trông rất ngọt ngào.' }] },
+    { id: 'L5-032', lessonId: 'L5', order: 9, group: 'vocab2', traditional: '寄', simplified: '寄', pinyin: 'jì', wordClass: ['V'], meaningVi: 'gửi (thư, bưu kiện)', meaningEn: 'to mail', examples: [{ traditional: '她特別請朋友從國外寄來。', simplified: '她特别请朋友从国外寄来。', vietnamese: 'Cô đặc biệt nhờ bạn gửi từ nước ngoài về.' }] },
+    { id: 'L5-033', lessonId: 'L5', order: 10, group: 'vocab2', traditional: '居然', simplified: '居然', pinyin: 'jūrán', wordClass: ['Adv'], meaningVi: 'không ngờ, thế mà', meaningEn: 'unexpectedly, counter to assumption', notes: 'Xem ngữ pháp VI.', examples: [{ traditional: '沒想到居然撞衫。', simplified: '没想到居然撞衫。', vietnamese: 'Không ngờ lại đụng hàng.' }] },
+    { id: 'L5-034', lessonId: 'L5', order: 11, group: 'vocab2', traditional: '害', simplified: '害', pinyin: 'hài', wordClass: ['V'], meaningVi: 'hại, làm cho (ai) bị ảnh hưởng xấu', meaningEn: 'adversely impacting somebody so that they...', examples: [{ traditional: '撞衫害她整個晚上心情都很不好。', simplified: '撞衫害她整个晚上心情都很不好。', vietnamese: 'Đụng hàng khiến cả buổi tối tâm trạng cô ấy rất tệ.' }] },
+    { id: 'L5-035', lessonId: 'L5', order: 12, group: 'vocab2', traditional: '既然', simplified: '既然', pinyin: 'jìrán', wordClass: ['Conj'], meaningVi: 'đã … thì, một khi đã', meaningEn: 'since, given that...', notes: 'Xem ngữ pháp VII.', examples: [{ traditional: '既然是最流行的款式，當然會有很多人穿。', simplified: '既然是最流行的款式，当然会有很多人穿。', vietnamese: 'Đã là kiểu thịnh hành nhất thì đương nhiên sẽ có nhiều người mặc.' }] },
+    { id: 'L5-036', lessonId: 'L5', order: 13, group: 'vocab2', traditional: '服裝', simplified: '服装', pinyin: 'fúzhuāng', wordClass: ['N'], meaningVi: 'trang phục, quần áo', meaningEn: 'clothing, garments', examples: [{ traditional: '服裝公司在各種媒體上做廣告。', simplified: '服装公司在各种媒体上做广告。', vietnamese: 'Công ty thời trang quảng cáo trên đủ loại phương tiện truyền thông.' }] },
+    { id: 'L5-037', lessonId: 'L5', order: 14, group: 'vocab2', traditional: '媒體', simplified: '媒体', pinyin: 'méitǐ', wordClass: ['N'], meaningVi: 'truyền thông, phương tiện thông tin', meaningEn: 'the media', examples: [{ traditional: '服裝公司在各種媒體上做廣告。', simplified: '服装公司在各种媒体上做广告。', vietnamese: 'Công ty thời trang quảng cáo trên đủ loại phương tiện truyền thông.' }] },
+    { id: 'L5-038', lessonId: 'L5', order: 15, group: 'vocab2', traditional: '方式', simplified: '方式', pinyin: 'fāngshì', wordClass: ['N'], meaningVi: 'cách thức, phương thức', meaningEn: 'method, ways', examples: [{ traditional: '用不同的方式做廣告。', simplified: '用不同的方式做广告。', vietnamese: 'Quảng cáo bằng những cách khác nhau.' }] },
+    { id: 'L5-039', lessonId: 'L5', order: 16, group: 'vocab2', traditional: '吸引', simplified: '吸引', pinyin: 'xīyǐn', wordClass: ['Vst'], meaningVi: 'thu hút, hấp dẫn', meaningEn: 'to attract, to draw', examples: [{ traditional: '廣告吸引大家去買。', simplified: '广告吸引大家去买。', vietnamese: 'Quảng cáo thu hút mọi người đi mua.' }] },
+    { id: 'L5-040', lessonId: 'L5', order: 17, group: 'vocab2', traditional: '避免', simplified: '避免', pinyin: 'bìmiǎn', wordClass: ['V'], meaningVi: 'tránh, tránh khỏi', meaningEn: 'to avoid', examples: [{ traditional: '撞衫就很難避免。', simplified: '撞衫就很难避免。', vietnamese: 'Đụng hàng thì rất khó tránh.' }] },
+    { id: 'L5-041', lessonId: 'L5', order: 18, group: 'vocab2', traditional: '包包', simplified: '包包', pinyin: 'bāobāo', wordClass: ['N'], meaningVi: 'túi xách, ba lô', meaningEn: 'bag, purse', examples: [{ traditional: '衣服、包包跟別人一樣有什麼關係。', simplified: '衣服、包包跟别人一样有什么关系。', vietnamese: 'Quần áo, túi xách giống người khác thì có sao đâu.' }] },
+    { id: 'L5-042', lessonId: 'L5', order: 19, group: 'vocab2', traditional: '商人', simplified: '商人', pinyin: 'shāngrén', wordClass: ['N'], meaningVi: 'thương nhân, người buôn bán', meaningEn: 'businessperson', examples: [{ traditional: '商人為了賺錢，每年都要推出新的產品。', simplified: '商人为了赚钱，每年都要推出新的产品。', vietnamese: 'Thương nhân vì kiếm tiền, mỗi năm đều tung ra sản phẩm mới.' }] },
+    { id: 'L5-043', lessonId: 'L5', order: 20, group: 'vocab2', traditional: '產品', simplified: '产品', pinyin: 'chǎnpǐn', wordClass: ['N'], meaningVi: 'sản phẩm', meaningEn: 'product', examples: [{ traditional: '商人每年都要推出新的產品。', simplified: '商人每年都要推出新的产品。', vietnamese: 'Thương nhân mỗi năm đều phải tung ra sản phẩm mới.' }] },
+    { id: 'L5-044', lessonId: 'L5', order: 21, group: 'vocab2', traditional: '電子', simplified: '电子', pinyin: 'diànzǐ', wordClass: ['N'], meaningVi: 'điện tử', meaningEn: 'electronics', examples: [{ traditional: '像電子產品，如果市場上有了最新型的，自己沒有，就落伍了。', simplified: '像电子产品，如果市场上有了最新型的，自己没有，就落伍了。', vietnamese: 'Như đồ điện tử, nếu thị trường có mẫu mới nhất mà mình không có thì bị lạc hậu.' }] },
+    { id: 'L5-045', lessonId: 'L5', order: 22, group: 'vocab2', traditional: '市場', simplified: '市场', pinyin: 'shìchǎng', wordClass: ['N'], meaningVi: 'thị trường', meaningEn: 'market', examples: [{ traditional: '如果市場上有了最新型的，自己沒有，就落伍了。', simplified: '如果市场上有了最新型的，自己没有，就落伍了。', vietnamese: 'Nếu thị trường có mẫu mới nhất mà mình không có thì bị lạc hậu.' }] },
+    { id: 'L5-046', lessonId: 'L5', order: 23, group: 'vocab2', traditional: '新型', simplified: '新型', pinyin: 'xīnxíng', wordClass: ['Vs-attr'], meaningVi: 'kiểu mới, đời mới', meaningEn: 'new style', examples: [{ traditional: '市場上有了最新型的電子產品。', simplified: '市场上有了最新型的电子产品。', vietnamese: 'Trên thị trường đã có sản phẩm điện tử đời mới nhất.' }] },
+    { id: 'L5-047', lessonId: 'L5', order: 24, group: 'vocab2', traditional: '落伍', simplified: '落伍', pinyin: 'luòwǔ', wordClass: ['Vs'], meaningVi: 'lạc hậu, lỗi thời', meaningEn: 'behind the times, passé, old-fashioned', examples: [{ traditional: '自己沒有，就落伍了。', simplified: '自己没有，就落伍了。', vietnamese: 'Mình không có thì bị lạc hậu.' }] },
+    { id: 'L5-048', lessonId: 'L5', order: 25, group: 'vocab2', traditional: '知音', simplified: '知音', pinyin: 'zhīyīn', wordClass: ['N'], meaningVi: 'tri âm, bạn tri kỷ', meaningEn: 'bosom buddy, confidant', examples: [{ traditional: '一定會說個不停，像碰到了知音。', simplified: '一定会说个不停，像碰到了知音。', vietnamese: 'Chắc chắn sẽ nói không ngừng, như gặp được tri âm.' }] },
+    { id: 'L5-049', lessonId: 'L5', order: 26, group: 'vocab2', traditional: '想像', simplified: '想像', pinyin: 'xiǎngxiàng', wordClass: ['V'], meaningVi: 'tưởng tượng', meaningEn: 'to imagine', examples: [{ traditional: '很難想像自己穿著喇叭褲去上課。', simplified: '很难想像自己穿着喇叭裤去上课。', vietnamese: 'Rất khó tưởng tượng mình mặc quần ống loe đi học.' }] },
+    { id: 'L5-050', lessonId: 'L5', order: 27, group: 'vocab2', traditional: '喇叭褲', simplified: '喇叭裤', pinyin: 'lǎbākù', wordClass: ['N'], meaningVi: 'quần ống loe', meaningEn: 'bell-bottom pants', examples: [{ traditional: '穿著喇叭褲去上課。', simplified: '穿着喇叭裤去上课。', vietnamese: 'Mặc quần ống loe đi học.' }] },
+    { id: 'L5-051', lessonId: 'L5', order: 28, group: 'vocab2', traditional: '印象', simplified: '印象', pinyin: 'yìnxiàng', wordClass: ['N'], meaningVi: 'ấn tượng', meaningEn: 'impression', examples: [{ traditional: '會給別人什麼印象？', simplified: '会给别人什么印象？', vietnamese: 'Sẽ để lại cho người khác ấn tượng gì?' }] },
+    { id: 'L5-052', lessonId: 'L5', order: 29, group: 'vocab2', traditional: '遊戲', simplified: '游戏', pinyin: 'yóuxì', wordClass: ['N'], meaningVi: 'trò chơi', meaningEn: 'game', examples: [{ traditional: '不玩最流行的電腦遊戲。', simplified: '不玩最流行的电脑游戏。', vietnamese: 'Không chơi trò chơi điện tử thịnh hành nhất.' }] },
+    { id: 'L5-053', lessonId: 'L5', order: 30, group: 'vocab2', traditional: '化妝', simplified: '化妆', pinyin: 'huàzhuāng', wordClass: ['V-sep'], meaningVi: 'trang điểm', meaningEn: 'to apply cosmetics, to make up', notes: 'Động từ ly hợp: 化了妝、化什麼樣的妝.', examples: [{ traditional: '不知道現在流行化什麼樣的妝。', simplified: '不知道现在流行化什么样的妆。', vietnamese: 'Không biết dạo này đang thịnh hành trang điểm kiểu gì.' }] }
   ],
 
   grammar: [
     {
-      id: 'L5-G1', lessonId: 'L5', order: 1, pattern: '越 A 越 B / 越來越…',
-      functionVi: 'Mẫu "越 A 越 B" diễn tả B thay đổi theo mức độ tăng của A (A tăng thì B cũng tăng theo). Nếu chỉ có một yếu tố tăng dần theo thời gian, dùng "越來越 + Vs/V".',
-      functionEn: '"越 A 越 B" expresses that B changes in step with A: the more A, the more B. For a single quality increasing over time, use "越來越 + Vs/V".',
+      id: 'L5-G1', lessonId: 'L5', order: 1, pattern: '動詞 + 滿',
+      functionVi: 'Động từ trạng thái 滿 ("đầy") làm bổ ngữ kết quả trong mẫu này. Mẫu câu dùng cách nói phóng đại để chỉ có rất nhiều thứ ở một nơi nào đó.',
+      functionEn: 'The state verb 滿 “full” serves as a result complement in this pattern. This pattern employs exaggeration to indicate a large number of items in a given location.',
       examples: [
-        { traditional: '這家店越紅，排隊的人就越多。', simplified: '这家店越红，排队的人就越多。', english: 'The more popular this shop gets, the longer the line.', vietnamese: 'Tiệm này càng nổi, người xếp hàng càng đông.' },
-        { traditional: '東西越難買，大家越想買。', simplified: '东西越难买，大家越想买。', english: 'The harder something is to get, the more everyone wants it.', vietnamese: 'Đồ càng khó mua, mọi người càng muốn mua.' },
-        { traditional: '他年紀越大，越不在乎別人的看法。', simplified: '他年纪越大，越不在乎别人的看法。', english: 'The older he gets, the less he cares what others think.', vietnamese: 'Anh ấy càng lớn tuổi, càng không bận tâm cách nhìn của người khác.' },
-        { traditional: '短影片越拍越短，內容也越來越簡單。', simplified: '短影片越拍越短，内容也越来越简单。', english: 'Short videos keep getting shorter, and the content simpler and simpler.', vietnamese: 'Video ngắn quay càng ngày càng ngắn, nội dung cũng ngày càng đơn giản.' },
-        { traditional: '我越了解這個流行，越覺得沒有必要跟。', simplified: '我越了解这个流行，越觉得没有必要跟。', english: "The more I understand this trend, the more I feel there's no need to follow it.", vietnamese: 'Tôi càng hiểu về mốt này, càng thấy không cần chạy theo.' }
+        { traditional: '街道的兩邊蓋滿了新的大樓。', simplified: '街道的两边盖满了新的大楼。', english: 'Both sides of the road are bristling with new buildings.', vietnamese: 'Hai bên đường xây đầy những tòa nhà mới.' },
+        { traditional: '101大樓前面擠滿了看跨年煙火的年輕人。', simplified: '101大楼前面挤满了看跨年烟火的年轻人。', english: 'The area in front of Taipei 101 was packed with young people watching the New Year’s Eve fireworks.', vietnamese: 'Phía trước tòa nhà 101 chật kín những người trẻ xem pháo hoa giao thừa.' },
+        { traditional: '客廳牆上掛滿了他去花蓮拍的照片。', simplified: '客厅墙上挂满了他去花莲拍的照片。', english: 'The living room wall was packed with photographs he took while in Hualian.', vietnamese: 'Tường phòng khách treo đầy những bức ảnh anh ấy chụp ở Hoa Liên.' },
+        { traditional: '不到八點，教室裡就坐滿了學生。', simplified: '不到八点，教室里就坐满了学生。', english: 'It’s not even eight o’clock yet and the classroom is filled with students.', vietnamese: 'Chưa đến tám giờ, phòng học đã ngồi kín học sinh.' },
+        { traditional: '這個袋子裡怎麼塞滿了垃圾？', simplified: '这个袋子里怎么塞满了垃圾？', english: 'Why is this bag stuffed full of garbage?', vietnamese: 'Sao cái túi này nhét đầy rác vậy?' }
       ],
-      usageNotesVi: '"越來越" chỉ một sự thay đổi tăng dần một chiều theo thời gian; "越 A 越 B" cần hai vế, thể hiện quan hệ tỉ lệ thuận giữa hai yếu tố. Không nói "很越來越".',
+      usageNotesVi: 'Đây là loại câu tồn tại, cho biết có một danh từ tồn tại ở một nơi chốn: Nơi chốn + V滿了 + Danh từ.',
+      relatedPatterns: [],
       exercises: [
-        { id: 'L5-G1-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個手機遊戲怎麼樣？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['越玩越有意思，我已經玩了一個下午了。'] }], targetPattern: 'L5-G1' },
-        { id: 'L5-G1-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你最近是不是很少上社群了？', textWithBlanks: 'B：對，___。', blanks: [{ index: 0, acceptedAnswers: ['我發現社群看越多，心情越差，所以就少看了。'] }], targetPattern: 'L5-G1' },
-        { id: 'L5-G1-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：天氣好像變了。', textWithBlanks: 'B：對啊，___。', blanks: [{ index: 0, acceptedAnswers: ['越到晚上越冷，你多穿一點。'] }], targetPattern: 'L5-G1' },
-        { id: 'L5-G1-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他中文進步了嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['進步很多，現在越說越流利。'] }], targetPattern: 'L5-G1' },
-        { id: 'L5-G1-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個網紅推薦的東西你要買嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['越是大家都在搶的，我越不想買。'] }], targetPattern: 'L5-G1' }
+        { id: 'L5-G1-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：聽說這棟宿舍大樓裡住了很多外國人，真的嗎？', textWithBlanks: 'B：是真的，這裡面___了從各個國家來的人。', blanks: [{ index: 0, acceptedAnswers: ['住滿'] }], targetPattern: 'L5-G1' },
+        { id: 'L5-G1-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：來海邊，不去沙灘上玩，多可惜啊。', textWithBlanks: 'B：沙灘上___了曬太陽的人，太擠了。還是坐在這裡看風景舒服。', blanks: [{ index: 0, acceptedAnswers: ['躺滿', '擠滿', '坐滿'] }], targetPattern: 'L5-G1' },
+        { id: 'L5-G1-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'B：是啊，今天有電腦展。來參觀的人很多。', textWithBlanks: 'A：展覽館門口為什麼___了人？今天有活動嗎？', blanks: [{ index: 0, acceptedAnswers: ['擠滿', '站滿', '坐滿'] }], targetPattern: 'L5-G1' },
+        { id: 'L5-G1-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：喝完的空杯子，為什麼不放進資源回收桶去呢？', textWithBlanks: 'B：放不進去了。___。', blanks: [{ index: 0, acceptedAnswers: ['回收桶裡已經裝滿了杯子'] }], targetPattern: 'L5-G1' },
+        { id: 'L5-G1-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你的背包怎麼這麼快就破了？', textWithBlanks: 'B：我背包裡每天都___了書。破了，一點也不奇怪。', blanks: [{ index: 0, acceptedAnswers: ['塞滿', '裝滿'] }], targetPattern: 'L5-G1' }
       ]
     },
     {
-      id: 'L5-G2', lessonId: 'L5', order: 2, pattern: '說到…',
-      functionVi: '"說到 X" dùng để đưa ra hoặc chuyển sang một chủ đề X mà cuộc trò chuyện vừa nhắc tới, rồi người nói phát biểu ý kiến về X. Thường đứng đầu câu.',
-      functionEn: '"說到 X" ("speaking of X / as for X") picks up a topic X just mentioned and leads into the speaker\'s comment on it; it opens the sentence.',
+      id: 'L5-G2', lessonId: 'L5', order: 2, pattern: '動詞 + 出（來）',
+      functionVi: 'Khi tiểu từ động từ 出 đi sau một động từ hành động, nó mang nghĩa một thứ gì đó xuất hiện, ra đời hoặc hiện ra trong nhận thức.',
+      functionEn: 'When the verb particle 出 is attached to an action verb, it carries the meaning of something coming into existence or consciousness.',
       examples: [
-        { traditional: '說到流行，台灣的流行變得特別快。', simplified: '说到流行，台湾的流行变得特别快。', english: 'Speaking of trends, trends in Taiwan change especially fast.', vietnamese: 'Nói đến mốt, mốt ở Đài Loan thay đổi đặc biệt nhanh.' },
-        { traditional: '說到網購，我上個月買的東西到現在還沒到。', simplified: '说到网购，我上个月买的东西到现在还没到。', english: "Speaking of online shopping, the thing I bought last month still hasn't arrived.", vietnamese: 'Nói đến mua sắm online, món tôi mua tháng trước đến giờ vẫn chưa tới.' },
-        { traditional: '說到他，他最近好像換工作了。', simplified: '说到他，他最近好像换工作了。', english: 'Speaking of him, he seems to have changed jobs recently.', vietnamese: 'Nhắc đến anh ấy, dạo này hình như anh ấy đổi việc rồi.' },
-        { traditional: '說到環保，其實從自己帶杯子開始就可以了。', simplified: '说到环保，其实从自己带杯子开始就可以了。', english: 'As for being eco-friendly, you can start just by bringing your own cup.', vietnamese: 'Nói về bảo vệ môi trường, thật ra chỉ cần bắt đầu từ việc tự mang cốc là được.' },
-        { traditional: '說到吃的，這附近我最推薦那家牛肉麵。', simplified: '说到吃的，这附近我最推荐那家牛肉面。', english: 'When it comes to food, the beef noodles nearby is what I recommend most.', vietnamese: 'Nói đến chuyện ăn uống, quanh đây tôi giới thiệu nhất là quán mì bò kia.' }
+        { traditional: '我不好意思說出的話，他都幫我說了。', simplified: '我不好意思说出的话，他都帮我说了。', english: 'The things I was too embarrassed to say, he said for me.', vietnamese: 'Những lời mình ngại nói ra, anh ấy đều nói giúp mình.' },
+        { traditional: '一樣的衣服，他穿起來，總是能穿出跟別人完全不同的感覺。', simplified: '一样的衣服，他穿起来，总是能穿出跟别人完全不同的感觉。', english: 'When he wears the same garment as someone else, he always exudes a totally different feeling.', vietnamese: 'Cùng một bộ quần áo, anh ấy mặc vào luôn toát ra cảm giác hoàn toàn khác người.' },
+        { traditional: '他用有機商店買回來的材料做出又酸又辣的泡菜。', simplified: '他用有机商店买回来的材料做出又酸又辣的泡菜。', english: 'He made sour and spicy kimchi out of ingredients purchased at an organic shop.', vietnamese: 'Anh ấy dùng nguyên liệu mua ở cửa hàng hữu cơ làm ra món kim chi vừa chua vừa cay.' },
+        { traditional: '我寫不出這麼讓人感動的歌。', simplified: '我写不出这么让人感动的歌。', english: 'I could never write such a powerful song.', vietnamese: 'Mình không viết ra được bài hát cảm động như thế.' },
+        { traditional: '那位教授花了十年的時間才研究出這種新藥。', simplified: '那位教授花了十年的时间才研究出这种新药。', english: 'That professor spent a decade on research before coming up with this type of new medicine.', vietnamese: 'Vị giáo sư đó mất mười năm mới nghiên cứu ra loại thuốc mới này.' }
       ],
-      usageNotesVi: '"說到" gần với "提到" nhưng "說到" thường dẫn vào nhận xét/bình luận của người nói; "談到、講到" dùng tương tự. Đừng nhầm với "說到做到" (nói được làm được).',
+      usageNotesVi: '1) 出 còn có nghĩa động từ chính (出來, 出去) hoặc là V2 trong V1V2 (拿出去, 走出去…). 2) Cần 來 khi có 把 hoặc tân ngữ đảo lên đầu: 你應該把心裡的話說出來; ngoài ra 來 có thể bỏ. 3) Có dạng khả năng: 想得出辦法 / 想不出來. 4) Phân biệt 出 (từ không thành có, chưa từng có) với 起 (điều đã biết nay nhớ lại): 想出一個辦法來 vs 想起來.',
+      relatedPatterns: [],
       exercises: [
-        { id: 'L5-G2-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我最近迷上了拍短影片。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['說到短影片，你有沒有看過那個很紅的做菜頻道？'] }], targetPattern: 'L5-G2' },
-        { id: 'L5-G2-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個週末想做什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['說到週末，我一直想去那家新開的書店看看。'] }], targetPattern: 'L5-G2' },
-        { id: 'L5-G2-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼對咖啡這麼了解？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['說到咖啡，我以前在咖啡店打過兩年工。'] }], targetPattern: 'L5-G2' },
-        { id: 'L5-G2-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：聽說物價又漲了。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['說到物價，我覺得影響最大的還是租金。'] }], targetPattern: 'L5-G2' },
-        { id: 'L5-G2-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：小林這個人很有想法。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['說到小林，他上次的報告真的讓大家很佩服。'] }], targetPattern: 'L5-G2' }
+        { id: 'L5-G2-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這次考試，你的成績怎麼這麼不理想？（寫）', textWithBlanks: 'B：考試的時候我頭痛，很多我都念過，可是___。', blanks: [{ index: 0, acceptedAnswers: ['寫不出來'] }], targetPattern: 'L5-G2' },
+        { id: 'L5-G2-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：告訴我，是誰讓你不開心的？（說）', textWithBlanks: 'B：我不想說。我怕___有人會不高興。', blanks: [{ index: 0, acceptedAnswers: ['說出來'] }], targetPattern: 'L5-G2' },
+        { id: 'L5-G2-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你那麼喜歡連續劇女主角穿的外套，我們就上網訂，再請我朋友從國外帶回來啊。（想）', textWithBlanks: 'B：這麼好的辦法，你是怎麼___的？', blanks: [{ index: 0, acceptedAnswers: ['想出來'] }], targetPattern: 'L5-G2' },
+        { id: 'L5-G2-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這是我媽做的素餃子，請你嘗嘗。（包）', textWithBlanks: 'B：真沒想到沒有肉，也___這麼好吃的餃子。', blanks: [{ index: 0, acceptedAnswers: ['包得出', '包出'] }], targetPattern: 'L5-G2' },
+        { id: 'L5-G2-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：壽司很好吃，可是有一點貴。我去學做壽司，改天自己做，你覺得怎麼樣？（做）', textWithBlanks: 'B：做壽司看起來容易，但是要___好吃的壽司比你想像的要難得多。', blanks: [{ index: 0, acceptedAnswers: ['做出'] }], targetPattern: 'L5-G2' }
       ]
     },
     {
-      id: 'L5-G3', lessonId: 'L5', order: 3, pattern: '動不動就…',
-      functionVi: '"動不動就 + V" chê trách rằng một hành động hoặc tình huống (thường không mong muốn) xảy ra quá thường xuyên, chỉ cần một lý do nhỏ là xảy ra.',
-      functionEn: '"動不動就 + V" complains that something (usually undesirable) happens far too often, at the slightest excuse.',
+      id: 'L5-G3', lessonId: 'L5', order: 3, pattern: '不如',
+      functionVi: 'Động từ trạng thái có tân ngữ 不如 dùng để so sánh hai vật: danh từ đầu kém hơn, hoặc ít đáng mong muốn hơn danh từ sau.',
+      functionEn: 'The transitive state verb 不如 introduces a comparison between two items. The first noun is inferior to, or less desirable, than the second.',
       examples: [
-        { traditional: '這種便宜的耳機，動不動就壞。', simplified: '这种便宜的耳机，动不动就坏。', english: 'Cheap earphones like these break all the time.', vietnamese: 'Loại tai nghe rẻ này động một tí là hỏng.' },
-        { traditional: '他動不動就換手機，其實舊的還能用。', simplified: '他动不动就换手机，其实旧的还能用。', english: 'He changes phones at the drop of a hat; the old one still works.', vietnamese: 'Anh ấy động tí là đổi điện thoại, thật ra cái cũ vẫn dùng được.' },
-        { traditional: '現在的人動不動就上網罵人。', simplified: '现在的人动不动就上网骂人。', english: 'People nowadays go online to bash others over nothing.', vietnamese: 'Người bây giờ động một tí là lên mạng chửi người khác.' },
-        { traditional: '網路動不動就斷，我沒辦法好好上課。', simplified: '网络动不动就断，我没办法好好上课。', english: "The internet keeps dropping; I can't attend class properly.", vietnamese: 'Mạng động tí là rớt, tôi chẳng học hành gì được.' },
-        { traditional: '你別動不動就說要放棄。', simplified: '你别动不动就说要放弃。', english: 'Stop saying you want to give up at every little thing.', vietnamese: 'Cậu đừng động một tí là đòi bỏ cuộc.' }
+        { traditional: '這件衣服的品質不如那件的好。', simplified: '这件衣服的品质不如那件的好。', english: 'The quality of this garment is not as good as that one.', vietnamese: 'Chất lượng bộ đồ này không tốt bằng bộ kia.' },
+        { traditional: '這家火鍋店的海鮮不如那家的新鮮。', simplified: '这家火锅店的海鲜不如那家的新鲜。', english: 'The seafood in this hot pot restaurant is not as fresh as that one.', vietnamese: 'Hải sản ở quán lẩu này không tươi bằng quán kia.' },
+        { traditional: '搭捷運得轉兩趟車，不如坐公車方便。', simplified: '搭捷运得转两趟车，不如坐公车方便。', english: 'Taking the MRT, you have to transfer twice. It’s not as convenient as taking the bus.', vietnamese: 'Đi tàu điện phải chuyển hai chuyến, không tiện bằng đi xe buýt.' },
+        { traditional: '考試以前才熬夜念書，不如平常就做好準備。', simplified: '考试以前才熬夜念书，不如平常就做好准备。', english: 'Staying up all night to study just before the test isn’t as good as being prepared on a general basis.', vietnamese: 'Sắp thi mới thức khuya học bài, chẳng bằng bình thường đã chuẩn bị tốt.' },
+        { traditional: '太陽這麼大，躺在沙灘上，不如回房間看電視舒服。', simplified: '太阳这么大，躺在沙滩上，不如回房间看电视舒服。', english: 'The sun is scorching. Lying on the beach isn’t as comfortable as returning to the room and watching TV.', vietnamese: 'Nắng gắt thế này, nằm trên bãi cát chẳng thoải mái bằng về phòng xem TV.' }
       ],
-      usageNotesVi: '"動不動就" luôn mang sắc thái phàn nàn, chê trách. Khác với "常常" (chỉ tần suất, trung tính), "動不動就" nhấn mạnh rằng việc đó xảy ra vì lý do quá nhỏ nhặt.',
+      usageNotesVi: '1) Động từ trạng thái ở cuối câu có 不如 phải chỉ tính chất đáng mong muốn; không nói *這支手機不如那支手機舊. 2) Nếu ngữ cảnh rõ, có thể bỏ động từ trạng thái: 修理不如買一支新的（好）. 3) 不如 và 沒有…那麼… gần nghĩa: 不如 hay dùng trong văn viết, 沒有…那麼… khẩu ngữ hơn; 不如 có thể bỏ tính từ cuối câu, 沒有…那麼… thì không: 坐巴士不如坐高鐵（快）, không nói *坐巴士沒有坐高鐵那麼.',
+      relatedPatterns: [],
       exercises: [
-        { id: 'L5-G3-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼不用那個 app 了？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['它動不動就當機，用起來太麻煩了。'] }], targetPattern: 'L5-G3' },
-        { id: 'L5-G3-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你弟弟很愛哭嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['對啊，動不動就哭，一點小事也受不了。'] }], targetPattern: 'L5-G3' },
-        { id: 'L5-G3-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個牌子的衣服你還會買嗎？', textWithBlanks: 'B：不會了，___。', blanks: [{ index: 0, acceptedAnswers: ['洗一次就變形，動不動就破。'] }], targetPattern: 'L5-G3' },
-        { id: 'L5-G3-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他為什麼常常請假？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['他身體不太好，動不動就感冒。'] }], targetPattern: 'L5-G3' },
-        { id: 'L5-G3-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你們老闆好相處嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['不太好，他動不動就生氣，大家都很緊張。'] }], targetPattern: 'L5-G3' }
+        { id: 'L5-G3-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：夏天到了，天氣又濕又熱。你想我買除濕機好還是買冷氣機好？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['買除濕機不如買冷氣機（好）'] }], targetPattern: 'L5-G3' },
+        { id: 'L5-G3-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我的手機最近不知道為什麼總是收不到訊號。我想拿去門市修理。', textWithBlanks: 'B：你那支手機已經用了四年了，___。', blanks: [{ index: 0, acceptedAnswers: ['修理不如買一支新的（好）'] }], targetPattern: 'L5-G3' },
+        { id: 'L5-G3-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你原來念的會計系很熱門，以後應該會有不錯的發展。為什麼要轉系呢？', textWithBlanks: 'B：我對會計一點興趣也沒有，___。', blanks: [{ index: 0, acceptedAnswers: ['念一個沒興趣的系不如轉到喜歡的系'] }], targetPattern: 'L5-G3' },
+        { id: 'L5-G3-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這條魚很新鮮，炸一炸味道一定好得不得了。', textWithBlanks: 'B：炸的魚比較不健康，___。', blanks: [{ index: 0, acceptedAnswers: ['炸的不如蒸的（健康）'] }], targetPattern: 'L5-G3' },
+        { id: 'L5-G3-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我父母考慮搬到鄉下住，可是我有一點擔心。', textWithBlanks: 'B：對年紀大的人來說，___。', blanks: [{ index: 0, acceptedAnswers: ['鄉下的生活不如城市方便'] }], targetPattern: 'L5-G3' }
       ]
     },
     {
-      id: 'L5-G4', lessonId: 'L5', order: 4, pattern: '跟…有關（係）',
-      functionVi: '"A 跟 B 有關（係）" nghĩa là A và B có liên quan với nhau; dạng phủ định "A 跟 B 沒（有）關係". Có thể nói "跟 B 有很大的關係" (liên quan mật thiết).',
-      functionEn: '"A 跟 B 有關（係）" means A is related to B; negative "A 跟 B 沒（有）關係". "跟 B 有很大的關係" = closely related to B.',
+      id: 'L5-G4', lessonId: 'L5', order: 4, pattern: '再不…就…了',
+      functionVi: 'Mẫu điều kiện cấp bách: nêu một điều kiện trước, nếu điều kiện đó không được đáp ứng thì hậu quả không mong muốn sẽ xảy ra. Trong một số ngữ cảnh có thể bỏ 就 và 了.',
+      functionEn: 'This pattern presents a condition first, and if the condition is not met, an undesirable consequence follows. 就 and 了 can be omitted in some contexts.',
       examples: [
-        { traditional: '流行傳得這麼快，跟社群媒體有很大的關係。', simplified: '流行传得这么快，跟社群媒体有很大的关系。', english: 'Trends spread so fast because of social media.', vietnamese: 'Mốt lan nhanh thế này liên quan lớn đến mạng xã hội.' },
-        { traditional: '他睡不好，可能跟壓力太大有關。', simplified: '他睡不好，可能跟压力太大有关。', english: 'His poor sleep may be related to too much stress.', vietnamese: 'Anh ấy ngủ không ngon, có thể liên quan đến áp lực quá lớn.' },
-        { traditional: '這件事跟你沒有關係，你別擔心。', simplified: '这件事跟你没有关系，你别担心。', english: "This has nothing to do with you; don't worry.", vietnamese: 'Việc này không liên quan gì đến cậu, đừng lo.' },
-        { traditional: '一個地方的飲食習慣，常常跟氣候有關。', simplified: '一个地方的饮食习惯，常常跟气候有关。', english: "A region's eating habits are often tied to its climate.", vietnamese: 'Thói quen ăn uống của một nơi thường liên quan đến khí hậu.' },
-        { traditional: '他成功跟他肯努力有很大的關係。', simplified: '他成功跟他肯努力有很大的关系。', english: 'His success has a lot to do with his willingness to work hard.', vietnamese: 'Thành công của anh ấy liên quan nhiều đến việc anh ấy chịu cố gắng.' }
+        { traditional: '已經四個月沒下雨了。再不下雨，我們就沒水喝了。', simplified: '已经四个月没下雨了。再不下雨，我们就没水喝了。', english: 'It hasn’t rained in four months. If it doesn’t rain soon, we won’t have any water to drink.', vietnamese: 'Đã bốn tháng không mưa. Nếu không mưa nữa thì chúng ta hết nước uống.' },
+        { traditional: '天氣這麼潮濕，再不買除濕機，衣服就要發霉了。', simplified: '天气这么潮湿，再不买除湿机，衣服就要发霉了。', english: 'It’s so humid. If we don’t buy a dehumidifier now, our clothes are going to mildew.', vietnamese: 'Trời ẩm thế này, không mua máy hút ẩm nữa thì quần áo sẽ mốc mất.' },
+        { traditional: '五月天演唱會很熱門。今天再不訂票，就訂不到了。', simplified: '五月天演唱会很热门。今天再不订票，就订不到了。', english: 'Mayday concerts are always a popular event. If you don’t book tickets today, there won’t be any left.', vietnamese: 'Hòa nhạc Mayday rất hot. Hôm nay không đặt vé nữa thì sẽ không đặt được.' },
+        { traditional: '上次考試我只有60分。再不用功，恐怕會被當。', simplified: '上次考试我只有60分。再不用功，恐怕会被当。', english: 'On the last test, I only got 60 points. If I don’t start studying hard, I’m afraid I’ll be flunked.', vietnamese: 'Kỳ thi trước mình chỉ được 60 điểm. Không chăm chỉ nữa thì e là sẽ bị đánh rớt.' },
+        { traditional: '發生什麼事了？你快說。你再不說清楚，我就要生氣了。', simplified: '发生什么事了？你快说。你再不说清楚，我就要生气了。', english: 'What happened? Tell me right now. If you don’t explain yourself, I’m going to be mad.', vietnamese: 'Xảy ra chuyện gì vậy? Nói mau. Cậu còn không nói rõ thì mình giận đấy.' }
       ],
-      usageNotesVi: '"有關" có thể làm định ngữ: "跟環保有關的新聞" (tin liên quan đến môi trường). "跟…沒關係" còn dùng để đáp lại lời xin lỗi hoặc cảm ơn với nghĩa "không sao".',
+      usageNotesVi: 'Ở câu sau thường có 就, 會, 要; và trước mẫu này thường có liên từ như 如果 hoặc 要是, ví dụ: 他已經發燒好幾天了。要是再不去看醫生、吃藥，恐怕會越來越嚴重。',
+      relatedPatterns: [],
       exercises: [
-        { id: 'L5-G4-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你為什麼突然對做菜有興趣了？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['這跟我最近看的一個短影片頻道有關。'] }], targetPattern: 'L5-G4' },
-        { id: 'L5-G4-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他的中文怎麼進步得這麼快？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['跟他交了一個台灣女朋友有很大的關係。'] }], targetPattern: 'L5-G4' },
-        { id: 'L5-G4-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這次考壞了，是不是我不夠聰明？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['這跟聰不聰明沒關係，是你準備的時間太少了。'] }], targetPattern: 'L5-G4' },
-        { id: 'L5-G4-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：最近大家都在討論這個話題。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['因為它跟每個人的生活都有關係。'] }], targetPattern: 'L5-G4' },
-        { id: 'L5-G4-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼知道這麼多歷史？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我大學念的科系就跟歷史有關。'] }], targetPattern: 'L5-G4' }
+        { id: 'L5-G4-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 再不 (hậu quả nếu không làm).', textWithBlanks: '麵包在桌上放了兩天了。再不___。', blanks: [{ index: 0, acceptedAnswers: ['吃就壞了'] }], targetPattern: 'L5-G4' },
+        { id: 'L5-G4-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 再不.', textWithBlanks: '他約了我八點見面。現在已經快八點半了。他再不___。', blanks: [{ index: 0, acceptedAnswers: ['來，我就要走了'] }], targetPattern: 'L5-G4' },
+        { id: 'L5-G4-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 再不.', textWithBlanks: '這個月你已經花了兩萬多塊了。再不___。', blanks: [{ index: 0, acceptedAnswers: ['省一點，就沒錢吃飯了'] }], targetPattern: 'L5-G4' },
+        { id: 'L5-G4-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 再不.', textWithBlanks: '已經十點多了。功課那麼多，你再不___。', blanks: [{ index: 0, acceptedAnswers: ['開始寫，就寫不完了'] }], targetPattern: 'L5-G4' },
+        { id: 'L5-G4-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 再不.', textWithBlanks: '你看起來很累。快躺下來休息。你再不___。', blanks: [{ index: 0, acceptedAnswers: ['休息，就要生病了'] }], targetPattern: 'L5-G4' }
       ]
     },
     {
-      id: 'L5-G5', lessonId: 'L5', order: 5, pattern: '並不 / 並沒（有）…',
-      functionVi: '"並" đặt trước 不 / 沒（有）để nhấn mạnh sự phủ định, thường dùng để bác lại một suy nghĩ hoặc kỳ vọng mà người nghe (hay số đông) có sẵn.',
-      functionEn: '"並" before 不 / 沒（有）strengthens the negation, typically to refute an assumption the listener (or people in general) hold.',
+      id: 'L5-G5', lessonId: 'L5', order: 5, pattern: '動詞 + 掉',
+      functionVi: 'Tiểu từ động từ 掉 diễn tả một danh từ bị loại bỏ, tách khỏi chỗ trước đó. Nghĩa chính xác do động từ chính quyết định.',
+      functionEn: 'The verb particle 掉 expresses the meaning that a noun is disposed of, separated from where it was before. Its precise meaning is determined by the main verb.',
       examples: [
-        { traditional: '流行的東西並不一定適合每個人。', simplified: '流行的东西并不一定适合每个人。', english: "What's trendy isn't necessarily right for everyone.", vietnamese: 'Đồ đang mốt chưa chắc hợp với mọi người.' },
-        { traditional: '我並沒有說你錯，只是想聽聽別的看法。', simplified: '我并没有说你错，只是想听听别的看法。', english: "I didn't say you were wrong; I just wanted to hear other views.", vietnamese: 'Tôi đâu có nói cậu sai, chỉ muốn nghe thêm ý kiến khác thôi.' },
-        { traditional: '這家餐廳雖然很紅，可是東西並不好吃。', simplified: '这家餐厅虽然很红，可是东西并不好吃。', english: "This restaurant is popular, but the food really isn't good.", vietnamese: 'Quán này tuy rất nổi, nhưng đồ ăn thật ra không ngon.' },
-        { traditional: '他看起來很兇，其實人並不壞。', simplified: '他看起来很凶，其实人并不坏。', english: "He looks fierce, but he's actually not a bad person.", vietnamese: 'Anh ấy trông dữ, thật ra người không xấu.' },
-        { traditional: '東西貴並不表示品質就一定好。', simplified: '东西贵并不表示品质就一定好。', english: "Expensive doesn't necessarily mean good quality.", vietnamese: 'Đắt tiền không có nghĩa là chất lượng chắc chắn tốt.' }
+        { traditional: '廚房裡的垃圾，我拿出去丟掉了。', simplified: '厨房里的垃圾，我拿出去丢掉了。', english: 'I removed the garbage from the kitchen. (away)', vietnamese: 'Rác trong bếp, mình mang ra ngoài vứt đi rồi.' },
+        { traditional: '誰把我的咖啡喝掉了？', simplified: '谁把我的咖啡喝掉了？', english: 'Who drank my coffee? (up and gone)', vietnamese: 'Ai uống mất ly cà phê của tôi rồi?' },
+        { traditional: '他每次一走進房間，就把鞋子踢掉。', simplified: '他每次一走进房间，就把鞋子踢掉。', english: 'Every time, as soon as he walks into a room, he kicks off his shoes. (off)', vietnamese: 'Lần nào vừa bước vào phòng là anh ấy đá giày ra.' },
+        { traditional: '桌子上的茶，我還沒喝呢，他怎麼拿去倒掉了？', simplified: '桌子上的茶，我还没喝呢，他怎么拿去倒掉了？', english: 'The tea on the table, I hadn’t drunk it yet. Why did he take it and pour it out? (out and away)', vietnamese: 'Trà trên bàn mình còn chưa uống, sao anh ấy lại mang đi đổ mất?' },
+        { traditional: '他上個月把舊車賣掉，買了新車。', simplified: '他上个月把旧车卖掉，买了新车。', english: 'Last month, he sold his old car and bought a new one. (off)', vietnamese: 'Tháng trước anh ấy bán chiếc xe cũ đi rồi mua xe mới.' }
       ],
-      usageNotesVi: '"並" chỉ dùng trước phủ định (不 / 沒 / 未 / 非), không dùng trước khẳng định. Nó thêm sắc thái "trái với điều (bạn) nghĩ". So với 不 đơn thuần, "並不" mang tính phản bác rõ hơn.',
+      usageNotesVi: '1) Có dạng khả năng: V得掉 / V不掉 (衣服上的咖啡洗得掉嗎？). 2) Chỉ động từ hành động có hướng "ra ngoài, tách ra" mới đi với 掉: 丟、脫、忘、賣…; hầu hết động từ chỉ nhận được thứ gì đều không dùng (*他把車買掉 không đúng). 3) Với động từ ngoại động như 喝、吃、忘、賣、脫、倒 (mẫu 把), 掉 thường được lược bỏ: 他上個月把機車賣了. 4) 掉 và 走 hơi trùng nghĩa: 掉 = người thực hiện không đi cùng vật; 走 = người đi cùng vật: 他不小心把我的悠遊卡帶走了 (không nói *帶掉).',
+      relatedPatterns: [],
       exercises: [
-        { id: 'L5-G5-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你一定很喜歡這個網紅吧？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['其實我並不特別喜歡，只是常常看到而已。'] }], targetPattern: 'L5-G5' },
-        { id: 'L5-G5-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：聽說那個科系很好念。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['並沒有大家想的那麼輕鬆，作業很多。'] }], targetPattern: 'L5-G5' },
-        { id: 'L5-G5-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你搬到市中心，生活一定方便多了。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['方便是方便，可是我並不覺得比較快樂。'] }], targetPattern: 'L5-G5' },
-        { id: 'L5-G5-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這麼多人買，應該很好用吧？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我用過，並沒有廣告說的那麼神奇。'] }], targetPattern: 'L5-G5' },
-        { id: 'L5-G5-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你是不是在生我的氣？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我並沒有生氣，只是有點累。'] }], targetPattern: 'L5-G5' }
+        { id: 'L5-G5-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：安德思今天怎麼這麼用功？我從來沒看過他熬夜念書。', textWithBlanks: 'B：他上次考試成績很不理想，讓他覺得壓力很大，擔心被___。', blanks: [{ index: 0, acceptedAnswers: ['當掉'] }], targetPattern: 'L5-G5' },
+        { id: 'L5-G5-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我從來沒放過天燈，不知道怎麼做才對。', textWithBlanks: 'B：別擔心，等一下我說「放」，你就___。', blanks: [{ index: 0, acceptedAnswers: ['放掉'] }], targetPattern: 'L5-G5' },
+        { id: 'L5-G5-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：門口這個袋子裡裝的是什麼東西？為什麼放在這裡？', textWithBlanks: 'B：那是垃圾，先放在那裡，等一下我出去的時候再順便___。', blanks: [{ index: 0, acceptedAnswers: ['丟掉', '倒掉', '拿掉'] }], targetPattern: 'L5-G5' },
+        { id: 'L5-G5-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：王先生是做什麼的？他的工作好像很輕鬆。', textWithBlanks: 'B：他原來是一家公司的老闆，後來把公司___，開始到處旅行。生活快樂得不得了。', blanks: [{ index: 0, acceptedAnswers: ['賣掉'] }], targetPattern: 'L5-G5' },
+        { id: 'L5-G5-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你衣服上紅紅的是什麼？', textWithBlanks: 'B：我也不知道。你幫我___吧。', blanks: [{ index: 0, acceptedAnswers: ['弄掉', '拿掉'] }], targetPattern: 'L5-G5' },
+        { id: 'L5-G5-EX6', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我買回來的牛肉麵怎麼不見了？', textWithBlanks: 'B：我剛剛還看見。不知道是被誰___的。', blanks: [{ index: 0, acceptedAnswers: ['吃掉', '拿掉'] }], targetPattern: 'L5-G5' }
       ]
     },
     {
-      id: 'L5-G6', lessonId: 'L5', order: 6, pattern: '之所以…，是因為…',
-      functionVi: 'Mẫu "A 之所以 B，是因為 C" đưa kết quả hoặc hiện tượng B lên trước, rồi mới giải thích nguyên nhân C. Dùng khi kết quả đã được biết và người nói muốn nhấn mạnh phần lý do.',
-      functionEn: '"A 之所以 B, 是因為 C" fronts the result B and then gives the reason C; used when the result is already known and the speaker wants to stress the cause.',
+      id: 'L5-G6', lessonId: 'L5', order: 6, pattern: '居然',
+      functionVi: 'Phó từ 居然 thể hiện sự ngạc nhiên của người nói khi một việc xảy ra theo cách không ngờ tới. So sánh: A. 今天氣溫只有十度，可是羅珊蒂沒穿外套 (nêu sự thật thông thường). B. …羅珊蒂居然沒穿外套 (ngoại lệ bất ngờ).',
+      functionEn: 'The adverb 居然 expresses the speaker’s surprise that something happened like the way it did.',
       examples: [
-        { traditional: '我之所以不追流行，是因為覺得那樣太累了。', simplified: '我之所以不追流行，是因为觉得那样太累了。', english: "The reason I don't chase trends is that it's exhausting.", vietnamese: 'Sở dĩ tôi không chạy theo mốt là vì thấy như vậy quá mệt.' },
-        { traditional: '這杯飲料之所以這麼紅，是因為很多網紅推薦過。', simplified: '这杯饮料之所以这么红，是因为很多网红推荐过。', english: 'This drink got so popular because many influencers recommended it.', vietnamese: 'Sở dĩ ly nước này nổi như vậy là vì nhiều KOL đã giới thiệu.' },
-        { traditional: '他之所以沒來，是因為臨時有事。', simplified: '他之所以没来，是因为临时有事。', english: 'He didn\'t come because something came up.', vietnamese: 'Sở dĩ anh ấy không đến là vì có việc đột xuất.' },
-        { traditional: '我之所以選這個科系，是因為將來的工作機會比較多。', simplified: '我之所以选这个科系，是因为将来的工作机会比较多。', english: 'I chose this major because it offers more job opportunities.', vietnamese: 'Sở dĩ tôi chọn ngành này là vì cơ hội việc làm sau này nhiều hơn.' },
-        { traditional: '台灣的夜市之所以有名，是因為又便宜又熱鬧。', simplified: '台湾的夜市之所以有名，是因为又便宜又热闹。', english: "Taiwan's night markets are famous because they're cheap and lively.", vietnamese: 'Sở dĩ chợ đêm Đài Loan nổi tiếng là vì vừa rẻ vừa náo nhiệt.' }
+        { traditional: '他是韓國人，居然不吃辣。', simplified: '他是韩国人，居然不吃辣。', english: 'He’s Korean but, surprisingly, doesn’t like spicy food.', vietnamese: 'Anh ấy là người Hàn Quốc mà lại không ăn cay.' },
+        { traditional: '語言中心主任約他今天早上面談，他居然忘了。', simplified: '语言中心主任约他今天早上面谈，他居然忘了。', english: 'The language center director made an appointment to interview him this morning. He surprisingly forgot.', vietnamese: 'Giám đốc trung tâm ngôn ngữ hẹn anh sáng nay phỏng vấn, vậy mà anh ấy lại quên.' },
+        { traditional: '我們看電影的時候，大家都感動得哭了，只有他居然睡著了。', simplified: '我们看电影的时候，大家都感动得哭了，只有他居然睡着了。', english: 'When we were watching the movie, everybody was moved to tears, except for him. Surprisingly, he fell asleep.', vietnamese: 'Lúc xem phim, ai cũng cảm động đến bật khóc, chỉ có anh ấy lại ngủ mất.' },
+        { traditional: '安德思收到帳單的時候才發現，吃到飽居然只是網路，不包括打電話。', simplified: '安德思收到帐单的时候才发现，吃到饱居然只是网路，不包括打电话。', english: 'When An Desi got his bill, to his surprise, he realized that only internet access was unlimited, not phone calls.', vietnamese: 'Lúc nhận hóa đơn, An Đức Tư mới phát hiện gói "ăn no" hóa ra chỉ là mạng, không gồm gọi điện.' },
+        { traditional: '他好不容易才找到一件品質不錯、價錢合適的外套，居然不買了。', simplified: '他好不容易才找到一件品质不错、价钱合适的外套，居然不买了。', english: 'He finally managed to find a good quality coat at a reasonable price and, to my surprise, he didn’t buy it.', vietnamese: 'Khó khăn lắm anh mới tìm được chiếc áo khoác chất lượng tốt, giá hợp lý, vậy mà lại không mua.' }
       ],
-      usageNotesVi: 'Vế "是因為" không thể lược bỏ chữ "是" trong văn viết trang trọng. So với "因為…所以…" (nêu nguyên nhân trước), "之所以…是因為…" nêu kết quả trước, thích hợp khi kết quả là điều đôi bên đã biết.',
+      usageNotesVi: '1) 居然 là phó từ, thường đứng sau chủ ngữ, trước động từ. 2) Thường đi cùng 沒想到 để nhấn mạnh: 今天天氣這麼冷，沒想到羅珊蒂居然沒穿外套。',
+      relatedPatterns: [],
       exercises: [
-        { id: 'L5-G6-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼突然開始運動了？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我之所以開始運動，是因為健康檢查的結果不太好。'] }], targetPattern: 'L5-G6' },
-        { id: 'L5-G6-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這本書為什麼賣得這麼好？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['它之所以賣得好，是因為改編成電視劇了。'] }], targetPattern: 'L5-G6' },
-        { id: 'L5-G6-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你為什麼不用信用卡？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我之所以只用現金，是因為這樣比較能控制花費。'] }], targetPattern: 'L5-G6' },
-        { id: 'L5-G6-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他們公司為什麼決定搬到南部？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['之所以搬到南部，是因為那裡的租金和人力都比較便宜。'] }], targetPattern: 'L5-G6' },
-        { id: 'L5-G6-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼對這個城市這麼熟？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我之所以這麼熟，是因為我在這裡住了快十年了。'] }], targetPattern: 'L5-G6' }
+        { id: 'L5-G6-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Thêm 居然 vào câu để nhấn mạnh sự ngạc nhiên: 公車路線那麼複雜，他第一次搭，沒迷路。', textWithBlanks: '___', blanks: [{ index: 0, acceptedAnswers: ['公車路線那麼複雜，他第一次搭，居然沒迷路。'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Thêm 居然 vào câu để nhấn mạnh sự ngạc nhiên: 我原來以為談茶文化很無聊，沒想到這麼有趣。', textWithBlanks: '___', blanks: [{ index: 0, acceptedAnswers: ['我原來以為談茶文化很無聊，沒想到居然這麼有趣。'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Thêm 居然 vào câu để nhấn mạnh sự ngạc nhiên: 台灣人的婚禮上，新娘要換三次禮服。', textWithBlanks: '___', blanks: [{ index: 0, acceptedAnswers: ['台灣人的婚禮上，新娘居然要換三次禮服。'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Thêm 居然 vào câu để nhấn mạnh sự ngạc nhiên: 大家都羨慕他念熱門科系，沒想到他覺得很痛苦。', textWithBlanks: '___', blanks: [{ index: 0, acceptedAnswers: ['大家都羨慕他念熱門科系，沒想到他居然覺得很痛苦。'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Thêm 居然 vào câu để nhấn mạnh sự ngạc nhiên: 我來台北以後才知道，有的書店是二十四小時營業的。', textWithBlanks: '___', blanks: [{ index: 0, acceptedAnswers: ['我來台北以後才知道，有的書店居然是二十四小時營業的。'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX6', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 居然.', textWithBlanks: '他平常對穿衣服並不講究，沒想到___。', blanks: [{ index: 0, acceptedAnswers: ['他居然花了一個月的薪水買一件外套'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX7', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 居然.', textWithBlanks: '這麼熱的天，他居然___。', blanks: [{ index: 0, acceptedAnswers: ['穿著外套'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX8', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 居然.', textWithBlanks: '這麼有名的餐廳，居然___。', blanks: [{ index: 0, acceptedAnswers: ['沒有客人'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX9', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 居然.', textWithBlanks: '最好的朋友結婚，___。', blanks: [{ index: 0, acceptedAnswers: ['他居然忘了去參加婚禮'] }], targetPattern: 'L5-G6' },
+        { id: 'L5-G6-EX10', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với 居然.', textWithBlanks: '我以為羊毛外套很貴，沒想到___。', blanks: [{ index: 0, acceptedAnswers: ['居然這麼便宜'] }], targetPattern: 'L5-G6' }
       ]
     },
     {
-      id: 'L5-G7', lessonId: 'L5', order: 7, pattern: '隨著…',
-      functionVi: '"隨著 A，B" diễn tả B thay đổi hoặc phát triển cùng với sự thay đổi của A. A thường là một quá trình hoặc yếu tố biến đổi theo thời gian.',
-      functionEn: '"隨著 A, B" expresses that B changes or develops along with A; A is usually a process or factor that changes over time.',
+      id: 'L5-G7', lessonId: 'L5', order: 7, pattern: '既然…（就）…',
+      functionVi: 'Mẫu nhượng bộ: người nói chấp nhận hoàn cảnh (đã như vậy) và đưa ra kế hoạch, quyết định tiếp theo: "đã … thì …".',
+      functionEn: 'This pattern presents the speaker’s acceptance of the circumstances and his or her subsequent plans.',
       examples: [
-        { traditional: '隨著社群媒體越來越發達，流行傳播的速度也越來越快。', simplified: '随着社群媒体越来越发达，流行传播的速度也越来越快。', english: 'As social media grows, trends spread faster and faster.', vietnamese: 'Cùng với sự phát triển của mạng xã hội, tốc độ lan truyền của mốt cũng ngày càng nhanh.' },
-        { traditional: '隨著年紀變大，他慢慢不那麼在乎別人的看法了。', simplified: '随着年纪变大，他慢慢不那么在乎别人的看法了。', english: "As he got older, he gradually stopped caring so much about others' opinions.", vietnamese: 'Cùng với tuổi tác, anh ấy dần không còn bận tâm cách nhìn của người khác.' },
-        { traditional: '隨著天氣變冷，來這家火鍋店的人多了起來。', simplified: '随着天气变冷，来这家火锅店的人多了起来。', english: 'As the weather turned cold, more people came to this hotpot place.', vietnamese: 'Trời càng lạnh, khách đến quán lẩu này càng đông.' },
-        { traditional: '隨著網購越來越方便，逛街的人越來越少了。', simplified: '随着网购越来越方便，逛街的人越来越少了。', english: 'As online shopping got more convenient, fewer people go to the shops.', vietnamese: 'Mua sắm online càng tiện, người đi dạo phố càng ít.' },
-        { traditional: '隨著時間過去，這件事大家慢慢就忘了。', simplified: '随着时间过去，这件事大家慢慢就忘了。', english: 'As time passed, people gradually forgot about it.', vietnamese: 'Thời gian trôi qua, dần dần mọi người quên chuyện đó.' }
+        { traditional: '既然天氣這麼不穩定，我們就別去海邊了吧。', simplified: '既然天气这么不稳定，我们就别去海边了吧。', english: 'Since the weather is so unpredictable, let’s not go to the seaside.', vietnamese: 'Đã là thời tiết thất thường thế này thì chúng ta đừng ra biển nữa nhé.' },
+        { traditional: '既然網路塞車，那就先去運動，晚一點再上網。', simplified: '既然网路塞车，那就先去运动，晚一点再上网。', english: 'Since the internet is congested, let’s go exercise first and go online later.', vietnamese: 'Mạng đã nghẽn thì đi tập thể dục trước, lát nữa hãy lên mạng.' },
+        { traditional: '既然刷Visa卡可以再打九五折，當然要刷Visa卡。', simplified: '既然刷Visa卡可以再打九五折，当然要刷Visa卡。', english: 'Since I can get 5% off if I use a Visa Card, then, of course, I’ll use my Visa Card.', vietnamese: 'Đã quẹt thẻ Visa được giảm thêm 5% thì đương nhiên phải quẹt thẻ Visa.' },
+        { traditional: '既然吃素對保護地球環境有幫助，以後我們就常吃素食。', simplified: '既然吃素对保护地球环境有帮助，以后我们就常吃素食。', english: 'Since eating vegetarian food helps protect the earth’s environment, we should eat vegetarian food more often.', vietnamese: 'Đã ăn chay có ích cho việc bảo vệ môi trường Trái Đất thì sau này chúng ta hãy ăn chay thường xuyên.' },
+        { traditional: '既然你整天都會待在這裡，我就先去一趟銀行，再回來找你。', simplified: '既然你整天都会待在这里，我就先去一趟银行，再回来找你。', english: 'Since you’ll be here all day, I’ll go to the bank and come back later.', vietnamese: 'Cậu đã ở đây cả ngày thì mình đi ngân hàng một chuyến trước, rồi quay lại tìm cậu.' }
       ],
-      usageNotesVi: '"隨著" mang tính văn viết hơn "跟著". Sau "隨著" thường là danh từ hoặc cụm chủ-vị chỉ quá trình biến đổi (…的發展、…的增加、…變大). Vế B thường có "也 / 就" và các từ như "慢慢、逐漸".',
+      usageNotesVi: 'Cũng như các liên từ khác, 既然 có thể đứng trước hoặc sau chủ ngữ: 既然你不去，我就不去了 / 你既然不去，我就不去了.',
+      relatedPatterns: [],
       exercises: [
-        { id: 'L5-G7-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你們鄉下這幾年變化大嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['隨著高鐵通車，來玩的人越來越多了。'] }], targetPattern: 'L5-G7' },
-        { id: 'L5-G7-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：現在的小孩跟以前很不一樣。', textWithBlanks: 'B：對，___。', blanks: [{ index: 0, acceptedAnswers: ['隨著網路越來越普遍，他們得到資訊的方式完全不同了。'] }], targetPattern: 'L5-G7' },
-        { id: 'L5-G7-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他的想法怎麼變了這麼多？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['隨著出國念書的經驗，他看事情的角度也改變了。'] }], targetPattern: 'L5-G7' },
-        { id: 'L5-G7-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個地區的房子怎麼越來越貴？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['隨著捷運站蓋好，附近的房價就一直漲。'] }], targetPattern: 'L5-G7' },
-        { id: 'L5-G7-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你對這份工作還有熱情嗎？', textWithBlanks: 'B：說實話，___。', blanks: [{ index: 0, acceptedAnswers: ['隨著時間過去，我的熱情的確少了一些。'] }], targetPattern: 'L5-G7' }
+        { id: 'L5-G7-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：網路上說，這家商店沒有招牌，恐怕不好找。', textWithBlanks: 'B：既然___。', blanks: [{ index: 0, acceptedAnswers: ['不好找，我們就早一點出門'] }], targetPattern: 'L5-G7' },
+        { id: 'L5-G7-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：朋友告訴我，有一所高中在找中文老師。我想去試試。', textWithBlanks: 'B：既然___。', blanks: [{ index: 0, acceptedAnswers: ['你有興趣，就去試試看吧'] }], targetPattern: 'L5-G7' },
+        { id: 'L5-G7-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: '顧客：這兩個款式我都喜歡，真的很難決定。', textWithBlanks: '店員：既然___。', blanks: [{ index: 0, acceptedAnswers: ['兩個都喜歡，就兩個都買吧'] }], targetPattern: 'L5-G7' },
+        { id: 'L5-G7-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我覺得選科系的時候，一定得考慮到將來的發展。', textWithBlanks: 'B：既然這樣，___。', blanks: [{ index: 0, acceptedAnswers: ['你就多問問學長姐，再做決定吧'] }], targetPattern: 'L5-G7' },
+        { id: 'L5-G7-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：老闆說國外的分公司有一個機會，問我想不想去。我很想試試，可是，我的家人怎麼辦？', textWithBlanks: 'B：既然___。', blanks: [{ index: 0, acceptedAnswers: ['你很想去，就跟家人好好談一談'] }], targetPattern: 'L5-G7' }
+      ]
+    },
+    {
+      id: 'L5-G8', lessonId: 'L5', order: 8, pattern: '動詞 + 個不停',
+      functionVi: 'Mẫu này nhấn mạnh việc một sự việc cứ diễn ra không ngừng, thường gây khó chịu cho người nói.',
+      functionEn: 'This pattern stresses the incessant happening of an event, much to the displeasure of the speaker.',
+      examples: [
+        { traditional: '雨下個不停，真不知道什麼時候天氣才會變好。', simplified: '雨下个不停，真不知道什么时候天气才会变好。', english: 'It just keeps raining. I have no idea when the weather will change for the better.', vietnamese: 'Mưa mãi không dứt, thật không biết bao giờ thời tiết mới tốt lên.' },
+        { traditional: '什麼事讓你這麼生氣，罵個不停？', simplified: '什么事让你这么生气，骂个不停？', english: 'You keep harping on and on. What’s got you so pissed off?', vietnamese: 'Chuyện gì làm cậu giận thế, mắng mãi không thôi?' },
+        { traditional: '她一走進百貨公司就買個不停，連跟我說話的時間都沒有。', simplified: '她一走进百货公司就买个不停，连跟我说话的时间都没有。', english: 'As soon as she stepped into the department store, she just kept buying. She didn’t even have time to talk to me.', vietnamese: 'Cô ấy vừa bước vào trung tâm thương mại là mua không ngừng, đến thời gian nói chuyện với mình cũng không có.' },
+        { traditional: '我感冒了，鼻水流個不停，真討厭。', simplified: '我感冒了，鼻水流个不停，真讨厌。', english: 'I have a cold and my nose keeps running. What a pain.', vietnamese: 'Mình bị cảm, nước mũi chảy mãi không ngừng, phiền chết đi được.' },
+        { traditional: '你不是已經吃過晚飯了嗎？怎麼一看到蛋糕，還是吃個不停？', simplified: '你不是已经吃过晚饭了吗？怎么一看到蛋糕，还是吃个不停？', english: 'Haven’t you already eaten dinner? How is it that as soon as you see cake, you just keep shoveling it in?', vietnamese: 'Không phải cậu đã ăn tối rồi sao? Sao vừa thấy bánh kem lại ăn mãi không thôi?' }
+      ],
+      usageNotesVi: '1) Chỉ dùng với động từ hành động có thể kéo dài một lúc; động từ trạng thái (Vs) và động từ quá trình (Vp) không dùng được: *他高興個不停, *這件事結束個不停 đều không đúng. 2) 個 ở đây không phải lượng từ mà là dấu hiệu sự việc (event marker).',
+      relatedPatterns: [],
+      exercises: [
+        { id: 'L5-G8-EX1', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với V個不停.', textWithBlanks: '火鍋很好吃嗎？他怎麼一坐下來就___？', blanks: [{ index: 0, acceptedAnswers: ['吃個不停'] }], targetPattern: 'L5-G8' },
+        { id: 'L5-G8-EX2', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với V個不停.', textWithBlanks: '我知道他很熱心，想給我介紹台灣的風俗習慣，可是他每次一說起話來，就___，有時候讓我很受不了。', blanks: [{ index: 0, acceptedAnswers: ['說個不停'] }], targetPattern: 'L5-G8' },
+        { id: 'L5-G8-EX3', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với V個不停.', textWithBlanks: '他低著頭在寫什麼，___？他打算把我說的話都寫下來嗎？', blanks: [{ index: 0, acceptedAnswers: ['寫個不停'] }], targetPattern: 'L5-G8' },
+        { id: 'L5-G8-EX4', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với V個不停.', textWithBlanks: '他們兩個___，都不跟我說話。', blanks: [{ index: 0, acceptedAnswers: ['玩手機玩個不停', '聊個不停', '笑個不停'] }], targetPattern: 'L5-G8' },
+        { id: 'L5-G8-EX5', lessonId: 'L5', section: 'textbook-practice', type: 'fill-blank', prompt: 'Hoàn thành câu với V個不停.', textWithBlanks: '她又在唱歌了！整天___，吵死了。', blanks: [{ index: 0, acceptedAnswers: ['唱個不停'] }], targetPattern: 'L5-G8' }
       ]
     }
   ],
 
   workbookExercises: [
     {
-      id: 'L5-WB-match-collocation', lessonId: 'L5', section: 'pairs', type: 'matching',
-      prompt: 'Ghép danh từ với vị ngữ thường đi cùng (collocation).',
-      pairs: [
-        { left: '流行', right: '退 (hết mốt)' },
-        { left: '隊', right: '排 (xếp hàng)' },
-        { left: '照片', right: '拍 (chụp)' },
-        { left: '網紅', right: '推薦 (giới thiệu)' },
-        { left: '習慣', right: '培養 (nuôi dưỡng)' },
-        { left: '影響力', right: '大 (lớn)' }
-      ]
-    },
-    {
-      id: 'L5-WB-match-response', lessonId: 'L5', section: 'pairs', type: 'matching',
-      prompt: 'Nối mỗi tình huống (cột trái) với cách phản ứng phù hợp (cột phải).',
-      pairs: [
-        { left: '想跟上最新的流行', right: '多看社群和短影片' },
-        { left: '不想一窩蜂跟風', right: '先想清楚自己要不要' },
-        { left: '東西快退流行了', right: '趕快拍張照片' },
-        { left: '想養成環保習慣', right: '自己帶環保杯' },
-        { left: '網紅推薦的東西賣光了', right: '等下一批貨或找別家' },
-        { left: '朋友一直勸你買', right: '謝謝他，但按自己的需求決定' }
-      ]
-    },
-
-    { id: 'L5-WB-fw-1', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '這家店最近超紅，門口每天都有人___(páiduì)，很多人只是為了___(pāizhào)。', blanks: [{ index: 0, acceptedAnswers: ['排隊'] }, { index: 1, acceptedAnswers: ['拍照'] }] },
-    { id: 'L5-WB-fw-2', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '一個___(wǎnghóng)___(tuījiàn)，那個牌子的鞋子馬上就賣光了。', blanks: [{ index: 0, acceptedAnswers: ['網紅'] }, { index: 1, acceptedAnswers: ['推薦'] }] },
-    { id: 'L5-WB-fw-3', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '買東西之前應該想清楚自己的___(xūqiú)，不要看到大家在___(qiǎng)就跟著買。', blanks: [{ index: 0, acceptedAnswers: ['需求'] }, { index: 1, acceptedAnswers: ['搶'] }] },
-    { id: 'L5-WB-fw-4', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '自己帶___(huánbǎobēi)這個習慣很值得___(péiyǎng)。', blanks: [{ index: 0, acceptedAnswers: ['環保杯'] }, { index: 1, acceptedAnswers: ['培養'] }] },
-    { id: 'L5-WB-fw-5', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '流行的東西過幾個月常常就___(guòshí)了，所以他從來不___(zhuī)流行。', blanks: [{ index: 0, acceptedAnswers: ['過時'] }, { index: 1, acceptedAnswers: ['追'] }] },
-    { id: 'L5-WB-fw-6', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '隨著社群___(méitǐ)越來越發達，一個___(huàtí)可以在一天之內傳遍全國。', blanks: [{ index: 0, acceptedAnswers: ['媒體'] }, { index: 1, acceptedAnswers: ['話題'] }] },
-
-    {
       id: 'L5-WB-fb-1', lessonId: 'L5', section: 'fill-bank', type: 'fill-blank',
-      prompt: 'Điền từ thích hợp vào đoạn văn (mỗi từ chỉ dùng 1 lần).',
-      wordBank: ['潮流', '一窩蜂', '理性', '判斷', '需求', '影響'],
-      textWithBlanks: '現在資訊傳得很快，只要一個東西紅了，大家就1.___地去買。這種跟著2.___走的習慣，其實不一定對自己有好處。買東西以前，我們應該先想想這是不是自己真正的3.___，再做4.___。廣告和網紅的話多少會有一點5.___，可是最後決定的還是自己。多一點6.___，少一點衝動，才不會買了一堆用不到的東西。',
+      prompt: 'Điền từ thích hợp vào chỗ trống (mỗi từ chỉ dùng 1 lần).',
+      wordBank: ['了', '滿', '出', '掉', '成', '走', '到', '出來'],
+      textWithBlanks: '她到現在居然都還忘不1.___她第一個男朋友。可不可以請你從這裡面把我們最新的產品拿2.___？這件衣服的大小、顏色都很適合你，為什麼你要丟3.___？這家電信公司真好。去再遠的地方，我的手機也收得4.___訊號。幸虧我早一點出門，要不然腳踏車又要被我妹妹騎5.___了。她把這個民族的一個古老故事拍6.___了電影，沒想到那麼受歡迎。為了保護環境，這位教授最大的願望就是能研究7.___一個更好的資源回收方式。這家鞋店只賣當季款式的鞋，而且價錢便宜，所以店裡面常擠8.___了人，尤其是學生。',
       blanks: [
-        { index: 1, acceptedAnswers: ['一窩蜂'] },
-        { index: 2, acceptedAnswers: ['潮流'] },
-        { index: 3, acceptedAnswers: ['需求'] },
-        { index: 4, acceptedAnswers: ['判斷'] },
-        { index: 5, acceptedAnswers: ['影響'] },
-        { index: 6, acceptedAnswers: ['理性'] }
+        { index: 1, acceptedAnswers: ['了'] },
+        { index: 2, acceptedAnswers: ['出來'] },
+        { index: 3, acceptedAnswers: ['掉'] },
+        { index: 4, acceptedAnswers: ['到'] },
+        { index: 5, acceptedAnswers: ['走'] },
+        { index: 6, acceptedAnswers: ['成'] },
+        { index: 7, acceptedAnswers: ['出'] },
+        { index: 8, acceptedAnswers: ['滿'] }
+      ]
+    },
+
+    { id: 'L5-WB-fw-1', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '他說他從來沒這麼___(dǎoméi)過，不但平板電腦被偷了，連他剛買的手機也不見了，所以現在___(xīnqíng)很差。', blanks: [{ index: 0, acceptedAnswers: ['倒楣'] }, { index: 1, acceptedAnswers: ['心情'] }] },
+    { id: 'L5-WB-fw-2', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '他跟他哥哥長得幾乎___(yìmó yíyàng)，又常穿___(kuǎnshì)差不多的衣服，難怪大家常弄錯。', blanks: [{ index: 0, acceptedAnswers: ['一模一樣'] }, { index: 1, acceptedAnswers: ['款式'] }] },
+    { id: 'L5-WB-fw-3', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '我每天都一定要看一下___(liánxùjù)，不管是日本的還是韓國的，我都愛看。很多人以為我是為了___(shā)時間，但是對我來說，這是___(fàngsōng)的最好方式。另外，從那些___(nèiróng)我也學到了很多日本和韓國的文化。', blanks: [{ index: 0, acceptedAnswers: ['連續劇'] }, { index: 1, acceptedAnswers: ['殺'] }, { index: 2, acceptedAnswers: ['放鬆'] }, { index: 3, acceptedAnswers: ['內容'] }] },
+    { id: 'L5-WB-fw-4', lessonId: 'L5', section: 'fill-write', type: 'fill-blank', textWithBlanks: '這個網路遊戲公司下個月會___(tuīchū)一個新的遊戲。最近到處可以看到這個遊戲的廣告，很多___(mí)網路遊戲的人都___(xīngfèn)極了，不難___(xiǎngxiàng)下個月遊戲開始賣的時候，一定會___(xīyǐn)很多人去買。', blanks: [{ index: 0, acceptedAnswers: ['推出'] }, { index: 1, acceptedAnswers: ['迷'] }, { index: 2, acceptedAnswers: ['興奮'] }, { index: 3, acceptedAnswers: ['想像'] }, { index: 4, acceptedAnswers: ['吸引'] }] },
+
+    {
+      id: 'L5-WB-fb-2', lessonId: 'L5', section: 'fill-bank', type: 'fill-blank',
+      prompt: 'Điền từ thích hợp vào đoạn văn (có từ thừa: 趁, 熱門, 步步高升).',
+      wordBank: ['害', '趁', '落伍', '避免', '印象', '熱門', '受歡迎', '來不及', '步步高升', '小題大作'],
+      textWithBlanks: '林太太的女兒因為長得很甜美，個性活潑，考試成績也很好，所以大家對她的1.___都很好。她在學校裡非常2.___，而且總是有很多男孩子在她的身邊，3.___林太太擔心得不得了，怕她女兒太早交男朋友。不過林先生認為林太太太4.___了。這不是什麼嚴重的問題，再說，中學生不能交男女朋友的想法也太5.___了。雖然林太太並不反對林先生的說法，但是還是認為女兒年紀還小，交男朋友的事應該6.___。因為要是發生問題的話，可能就7.___了。',
+      blanks: [
+        { index: 1, acceptedAnswers: ['印象'] },
+        { index: 2, acceptedAnswers: ['受歡迎'] },
+        { index: 3, acceptedAnswers: ['害'] },
+        { index: 4, acceptedAnswers: ['小題大作'] },
+        { index: 5, acceptedAnswers: ['落伍'] },
+        { index: 6, acceptedAnswers: ['避免'] },
+        { index: 7, acceptedAnswers: ['來不及'] }
       ]
     },
 
     {
       id: 'L5-WB-read-a1', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '小美：你也買了那個限量的杯子？\n阿明：沒有。我本來想買，可是想一想，我家已經有五六個杯子了，就算再好看也用不完。',
-      question: '阿明最後為什麼沒買？',
-      options: [{ id: 'a', text: '那個杯子已經賣光了。' }, { id: 'b', text: '他覺得家裡的杯子夠用了。' }, { id: 'c', text: '他不喜歡那個顏色。' }],
+      prompt: '阿華：我對會計沒有興趣，可是我媽非要我去念會計系不可。\n阿得：既然你不想念，那就好好地跟你媽說清楚啊。',
+      question: '阿得的意思是什麼？',
+      options: [{ id: 'a', text: '當然要弄清楚自己想念什麼系。' }, { id: 'b', text: '如果真的對會計系沒興趣，就要告訴她媽媽。' }, { id: 'c', text: '再不跟她媽媽說就來不及了。' }],
       correctOptionId: 'b',
-      explanationVi: '"我家已經有五六個杯子…用不完" nghĩa là anh ấy thấy cốc ở nhà đã đủ dùng.'
+      explanationVi: '既然…就… nghĩa là "đã không muốn học thì hãy nói rõ với mẹ".'
     },
     {
       id: 'L5-WB-read-a2', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '玉真：這件外套上個月還很流行，怎麼現在打對折了？\n店員：流行過得很快，這一季大家又開始穿別的款式了。',
-      question: '這件外套為什麼降價？',
-      options: [{ id: 'a', text: '品質有問題。' }, { id: 'b', text: '已經退流行了。' }, { id: 'c', text: '店要關門了。' }],
-      correctOptionId: 'b',
-      explanationVi: '"流行過得很快…開始穿別的款式" cho thấy áo đã lỗi mốt.'
+      prompt: '大同：妳這次報告寫得真不錯。\n小珊：才70幾分哪裡算好？如果下次再交不出好報告，這門課恐怕會被當掉。',
+      question: '小珊的意思是什麼？',
+      options: [{ id: 'a', text: '她的報告成績不好，可能會被當。' }, { id: 'b', text: '她的報告寫得不好，只好再寫一次。' }, { id: 'c', text: '幸虧這次的報告寫得不錯，要不然就被當了。' }],
+      correctOptionId: 'a',
+      explanationVi: '小珊 nói mới hơn 70 điểm chưa được coi là tốt, nếu lần sau còn nộp không ra báo cáo tốt thì môn này e sẽ bị đánh rớt.'
     },
     {
       id: 'L5-WB-read-a3', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '高橋：你怎麼知道這家店的？我以為只有我知道。\n安同：拜託，這家店的短影片在社群上有好幾萬個讚，現在誰不知道。',
-      question: '安同的意思是：',
-      options: [{ id: 'a', text: '這家店其實沒什麼人知道。' }, { id: 'b', text: '這家店因為社群已經很有名了。' }, { id: 'c', text: '他也是剛剛才知道這家店。' }],
+      prompt: '高橋：我現在要趕快回家看電視。今天台北體育館有籃球比賽，是日本和德國的比賽，我要幫日本加油！\n德思：媒體上說，今天的比賽很重要，很值得看。不過我覺得在家看電視不如去現場看，那種氣氛更讓人感動啊！',
+      question: '德思的意思是什麼？',
+      options: [{ id: 'a', text: '比賽很好看，體育館一定會坐滿了人。' }, { id: 'b', text: '應該去體育館看比賽，感覺會更好。' }, { id: 'c', text: '在家看電視也能幫日本加油。' }],
       correctOptionId: 'b',
-      explanationVi: '"短影片…好幾萬個讚，現在誰不知道" nghĩa là nhờ mạng xã hội quán đã rất nổi.'
+      explanationVi: '"在家看電視不如去現場看" — xem tại sân thích hơn xem TV ở nhà.'
     },
 
     {
       id: 'L5-WB-read-b1', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '這幾年，台灣掀起了一股運動風潮。走在路上，常常看得到揹著瑜伽墊的人；很多公司也開始為員工辦運動課。這股風潮一開始也是從社群媒體來的：一些網紅分享自己運動的照片和影片，讓運動看起來很酷。剛開始，有人只是為了拍照跟風，可是運動一段時間以後，不少人真的養成了習慣，就算沒有人看，也繼續做下去。專家說，流行本身沒有好壞，重點是它有沒有帶動一個對大家有好處的改變。運動風潮就是一個例子：它從一個看起來很表面的流行，慢慢變成了一種生活方式。',
-      question: '這股運動風潮一開始是從電視廣告來的。',
+      prompt: '大明是我的老朋友。他很關心社會的發展，所以常把社會實際的情形寫進歌詞裡，希望能吸引更多的人來關心這個社會。他的歌詞原來在音樂市場上不太受歡迎，有的人聽不懂，也有的人覺得他寫的內容太色情了一點，可能不適合大家聽。他聽到這些話的時候，一開始很難過，覺得沒有知音，沒有人欣賞他的歌詞。可是後來他想，寫得再好，如果沒有人聽，對社會也就沒有什麼影響。所以他開始用不同的方式把自己的想法寫出來。有一個很有名的樂團買了他的歌詞，加上好聽的音樂，寫出了幾首非常流行的歌，現在他的歌詞非常受歡迎了。',
+      question: '他寫的歌詞有很多跟社會有關係的內容。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'false',
-      explanationVi: '"這股風潮一開始也是從社群媒體來的".'
+      correctOptionId: 'true',
+      explanationVi: '"常把社會實際的情形寫進歌詞裡" — thường đưa tình hình thực tế xã hội vào lời bài hát.'
     },
     {
       id: 'L5-WB-read-b2', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '這幾年，台灣掀起了一股運動風潮。走在路上，常常看得到揹著瑜伽墊的人；很多公司也開始為員工辦運動課。這股風潮一開始也是從社群媒體來的：一些網紅分享自己運動的照片和影片，讓運動看起來很酷。剛開始，有人只是為了拍照跟風，可是運動一段時間以後，不少人真的養成了習慣，就算沒有人看，也繼續做下去。專家說，流行本身沒有好壞，重點是它有沒有帶動一個對大家有好處的改變。運動風潮就是一個例子：它從一個看起來很表面的流行，慢慢變成了一種生活方式。',
-      question: '有些人一開始運動只是為了拍照。',
+      prompt: '大明是我的老朋友。他很關心社會的發展，所以常把社會實際的情形寫進歌詞裡，希望能吸引更多的人來關心這個社會。他的歌詞原來在音樂市場上不太受歡迎，有的人聽不懂，也有的人覺得他寫的內容太色情了一點，可能不適合大家聽。他聽到這些話的時候，一開始很難過，覺得沒有知音，沒有人欣賞他的歌詞。可是後來他想，寫得再好，如果沒有人聽，對社會也就沒有什麼影響。所以他開始用不同的方式把自己的想法寫出來。有一個很有名的樂團買了他的歌詞，加上好聽的音樂，寫出了幾首非常流行的歌，現在他的歌詞非常受歡迎了。',
+      question: '他原來寫的歌詞有一點難懂。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
       correctOptionId: 'true',
-      explanationVi: '"有人只是為了拍照跟風".'
+      explanationVi: '"有的人聽不懂" — có người nghe không hiểu lời bài hát ban đầu của anh.'
     },
     {
       id: 'L5-WB-read-b3', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '這幾年，台灣掀起了一股運動風潮。走在路上，常常看得到揹著瑜伽墊的人；很多公司也開始為員工辦運動課。這股風潮一開始也是從社群媒體來的：一些網紅分享自己運動的照片和影片，讓運動看起來很酷。剛開始，有人只是為了拍照跟風，可是運動一段時間以後，不少人真的養成了習慣，就算沒有人看，也繼續做下去。專家說，流行本身沒有好壞，重點是它有沒有帶動一個對大家有好處的改變。運動風潮就是一個例子：它從一個看起來很表面的流行，慢慢變成了一種生活方式。',
-      question: '專家認為所有的流行都是不好的。',
+      prompt: '大明是我的老朋友。他很關心社會的發展，所以常把社會實際的情形寫進歌詞裡，希望能吸引更多的人來關心這個社會。他的歌詞原來在音樂市場上不太受歡迎，有的人聽不懂，也有的人覺得他寫的內容太色情了一點，可能不適合大家聽。他聽到這些話的時候，一開始很難過，覺得沒有知音，沒有人欣賞他的歌詞。可是後來他想，寫得再好，如果沒有人聽，對社會也就沒有什麼影響。所以他開始用不同的方式把自己的想法寫出來。有一個很有名的樂團買了他的歌詞，加上好聽的音樂，寫出了幾首非常流行的歌，現在他的歌詞非常受歡迎了。',
+      question: '他以前覺得大家都不了解他寫的歌詞。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'false',
-      explanationVi: '"流行本身沒有好壞".'
+      correctOptionId: 'true',
+      explanationVi: '"覺得沒有知音，沒有人欣賞他的歌詞" — anh từng thấy không có tri âm, không ai thưởng thức lời của mình.'
     },
     {
       id: 'L5-WB-read-b4', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '這幾年，台灣掀起了一股運動風潮。走在路上，常常看得到揹著瑜伽墊的人；很多公司也開始為員工辦運動課。這股風潮一開始也是從社群媒體來的：一些網紅分享自己運動的照片和影片，讓運動看起來很酷。剛開始，有人只是為了拍照跟風，可是運動一段時間以後，不少人真的養成了習慣，就算沒有人看，也繼續做下去。專家說，流行本身沒有好壞，重點是它有沒有帶動一個對大家有好處的改變。運動風潮就是一個例子：它從一個看起來很表面的流行，慢慢變成了一種生活方式。',
-      question: '有些人後來就算沒有人看，也繼續運動。',
+      prompt: '大明是我的老朋友。他很關心社會的發展，所以常把社會實際的情形寫進歌詞裡，希望能吸引更多的人來關心這個社會。他的歌詞原來在音樂市場上不太受歡迎，有的人聽不懂，也有的人覺得他寫的內容太色情了一點，可能不適合大家聽。他聽到這些話的時候，一開始很難過，覺得沒有知音，沒有人欣賞他的歌詞。可是後來他想，寫得再好，如果沒有人聽，對社會也就沒有什麼影響。所以他開始用不同的方式把自己的想法寫出來。有一個很有名的樂團買了他的歌詞，加上好聽的音樂，寫出了幾首非常流行的歌，現在他的歌詞非常受歡迎了。',
+      question: '他一直認為跟影響社會比起來，歌詞寫得好更重要。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'true',
-      explanationVi: '"就算沒有人看，也繼續做下去".'
+      correctOptionId: 'false',
+      explanationVi: 'Sau đó anh nghĩ: viết hay đến đâu mà không ai nghe thì cũng chẳng ảnh hưởng gì đến xã hội — nên anh không luôn cho rằng viết hay quan trọng hơn.'
     },
     {
       id: 'L5-WB-read-b5', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '這幾年，台灣掀起了一股運動風潮。走在路上，常常看得到揹著瑜伽墊的人；很多公司也開始為員工辦運動課。這股風潮一開始也是從社群媒體來的：一些網紅分享自己運動的照片和影片，讓運動看起來很酷。剛開始，有人只是為了拍照跟風，可是運動一段時間以後，不少人真的養成了習慣，就算沒有人看，也繼續做下去。專家說，流行本身沒有好壞，重點是它有沒有帶動一個對大家有好處的改變。運動風潮就是一個例子：它從一個看起來很表面的流行，慢慢變成了一種生活方式。',
-      question: '作者認為運動風潮最後變成了一種生活方式。',
+      prompt: '大明是我的老朋友。他很關心社會的發展，所以常把社會實際的情形寫進歌詞裡，希望能吸引更多的人來關心這個社會。他的歌詞原來在音樂市場上不太受歡迎，有的人聽不懂，也有的人覺得他寫的內容太色情了一點，可能不適合大家聽。他聽到這些話的時候，一開始很難過，覺得沒有知音，沒有人欣賞他的歌詞。可是後來他想，寫得再好，如果沒有人聽，對社會也就沒有什麼影響。所以他開始用不同的方式把自己的想法寫出來。有一個很有名的樂團買了他的歌詞，加上好聽的音樂，寫出了幾首非常流行的歌，現在他的歌詞非常受歡迎了。',
+      question: '現在大家都想買他寫的歌詞。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'true',
-      explanationVi: '"慢慢變成了一種生活方式".'
+      correctOptionId: 'false',
+      explanationVi: 'Bài chỉ nói lời của anh nay rất được yêu thích (một ban nhạc nổi tiếng đã mua), không nói ai cũng muốn mua.'
     },
 
-    {
-      id: 'L5-WB-read-c1', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '【動起來 App】還在為了跟上流行而運動嗎？我們希望你為了自己。下載「動起來」，每天只要十五分鐘，在家就能練。前一個月免費，不滿意隨時取消。現在加入，還能參加線上社團，跟幾萬個一起努力的人互相加油。健康不是一時的流行，是一輩子的習慣。',
-      question: '這個 App 主要希望使用者為了什麼運動？',
-      options: [{ id: 'a', text: '為了跟上流行。' }, { id: 'b', text: '為了自己的健康。' }, { id: 'c', text: '為了拍照放上社群。' }],
-      correctOptionId: 'b',
-      explanationVi: '"我們希望你為了自己" và "健康不是一時的流行，是一輩子的習慣".'
-    },
-    {
-      id: 'L5-WB-read-c2', lessonId: 'L5', section: 'reading', type: 'multiple-choice',
-      prompt: '【動起來 App】還在為了跟上流行而運動嗎？我們希望你為了自己。下載「動起來」，每天只要十五分鐘，在家就能練。前一個月免費，不滿意隨時取消。現在加入，還能參加線上社團，跟幾萬個一起努力的人互相加油。健康不是一時的流行，是一輩子的習慣。',
-      question: '關於這個 App，下面哪個正確？',
-      options: [{ id: 'a', text: '一定要到健身房才能用。' }, { id: 'b', text: '前一個月不用付錢，可以隨時取消。' }, { id: 'c', text: '只能一個人使用，沒有社團功能。' }],
-      correctOptionId: 'b',
-      explanationVi: '"前一個月免費，不滿意隨時取消" + "參加線上社團".'
-    },
-
-    { id: 'L5-WB-dc-1', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G1', turns: [{ speaker: 'A', text: '這個遊戲你不是說很無聊嗎？', isBlank: false }, { speaker: 'B', text: '（越…越…）', isBlank: true }], sampleAnswer: '一開始覺得無聊，可是越玩越有意思，停不下來。' },
-    { id: 'L5-WB-dc-2', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G6', turns: [{ speaker: 'A', text: '你怎麼都不跟流行？', isBlank: false }, { speaker: 'B', text: '（之所以…是因為…）', isBlank: true }], sampleAnswer: '我之所以不跟流行，是因為東西買回來沒多久就退流行了，太浪費。' },
-    { id: 'L5-WB-dc-3', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G3', turns: [{ speaker: 'A', text: '你的舊手機呢？怎麼又換了？', isBlank: false }, { speaker: 'B', text: '（動不動就）', isBlank: true }], sampleAnswer: '別提了，那支動不動就當機，我實在受不了才換的。' },
-    { id: 'L5-WB-dc-4', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G7', turns: [{ speaker: 'A', text: '你們鄉下這幾年觀光客變多了嗎？', isBlank: false }, { speaker: 'B', text: '（隨著）', isBlank: true }], sampleAnswer: '隨著社群上分享的人變多，週末來拍照的觀光客越來越多。' },
-    { id: 'L5-WB-dc-5', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G5', turns: [{ speaker: 'A', text: '這家餐廳這麼多人排隊，一定很好吃吧？', isBlank: false }, { speaker: 'B', text: '（並不 / 並沒有）', isBlank: true }], sampleAnswer: '我上次吃過，並沒有想像中好吃，可能大家只是為了拍照。' },
+    { id: 'L5-WB-dc-1', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G6', turns: [{ speaker: 'A', text: '他平常碰到你，不是多少都會跟你聊一下嗎？今天怎麼了？', isBlank: false }, { speaker: 'B', text: '對啊，（居然）', isBlank: true }], sampleAnswer: '對啊，他今天居然假裝沒看到我，一句話也沒說。' },
+    { id: 'L5-WB-dc-2', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G8', turns: [{ speaker: 'A', text: '我覺得她好像受到他朋友的影響，變得很愛說話。', isBlank: false }, { speaker: 'B', text: '（V個不停）', isBlank: true }], sampleAnswer: '是啊，她現在一見到人就說個不停。' },
+    { id: 'L5-WB-dc-3', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G3', turns: [{ speaker: 'A', text: '我媽媽生日快到了，真不知道要買什麼禮物？我想就包個紅包，讓她自己去買喜歡的東西吧。', isBlank: false }, { speaker: 'B', text: '（不如）', isBlank: true }], sampleAnswer: '買禮物不如帶她去吃一頓好吃的，她一定會更高興。' },
+    { id: 'L5-WB-dc-4', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G4', turns: [{ speaker: 'A', text: '他這學期好幾次考試成績都不到六十分，讓人擔心啊！', isBlank: false }, { speaker: 'B', text: '是啊，（再不…就…）', isBlank: true }], sampleAnswer: '是啊，他再不認真念書，就要被當掉了。' },
+    { id: 'L5-WB-dc-5', lessonId: 'L5', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L5-G7', turns: [{ speaker: 'A', text: '我們對將來的理想完全不同，怎麼可能結婚呢？', isBlank: false }, { speaker: 'B', text: '（既然）', isBlank: true }], sampleAnswer: '既然你們的理想完全不同，就應該好好談一談，再決定要不要結婚。' },
 
     {
       id: 'L5-WB-comp-1', lessonId: 'L5', section: 'composition', type: 'composition',
-      topicVi: 'Hãy viết về một "mốt" (流行) mà bạn từng chạy theo hoặc cố tình không chạy theo. Đó là gì, vì sao bạn quyết định như vậy, và bây giờ nhìn lại bạn nghĩ sao?',
-      requiredWords: ['L5-001', 'L5-016', 'L5-019', 'L5-020', 'L5-014', 'L5-021', 'L5-006', 'L5-030'],
-      requiredPatterns: ['L5-G1', 'L5-G5', 'L5-G6'],
+      topicVi: 'Giới thiệu với bạn Đài Loan một ban nhạc thịnh hành mà bạn rất thích. Bạn bắt đầu thích từ khi nào? Vì sao bạn thích? Thích đến mức nào? Ban nhạc này thích hợp với những người như thế nào?',
+      requiredWords: ['L5-008', 'L5-012', 'L5-011', 'L5-003', 'L5-010', 'L5-013', 'L5-023', 'L5-001'],
+      requiredPatterns: ['L5-G1', 'L5-G2', 'L5-G3', 'L5-G4', 'L5-G5', 'L5-G6', 'L5-G7', 'L5-G8'],
       minLength: 200, maxLength: 250
     },
     {
       id: 'L5-WB-comp-2', lessonId: 'L5', section: 'composition', type: 'composition',
-      topicVi: 'Có người nói mạng xã hội khiến mốt lan quá nhanh và khiến người ta mua sắm thiếu suy nghĩ. Bạn đồng ý hay không? Vì sao?',
-      requiredWords: ['L5-003', 'L5-009', 'L5-010', 'L5-028', 'L5-032', 'L5-037', 'L5-038', 'L5-040'],
-      requiredPatterns: ['L5-G3', 'L5-G4', 'L5-G7'],
+      topicVi: 'Giới thiệu với bạn Đài Loan điều gì đang thịnh hành ở nước bạn (âm nhạc, thể thao…). Bạn thích những gì? Không thích những gì? Vì sao? Đồng thời so sánh với văn hóa thịnh hành của Đài Loan.',
+      requiredWords: ['L5-001', 'L5-037', 'L5-052', 'L5-029', 'L5-051', 'L5-047', 'L5-045', 'L5-043'],
+      requiredPatterns: ['L5-G1', 'L5-G2', 'L5-G3', 'L5-G4', 'L5-G5', 'L5-G6', 'L5-G7', 'L5-G8'],
       minLength: 200, maxLength: 250
     }
   ]
