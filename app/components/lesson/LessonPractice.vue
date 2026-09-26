@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Lesson } from '../../../types/lesson'
-import type { ExerciseSection } from '../../../types/exercise'
+import { WORKBOOK_SECTION_ORDER, sectionHeading } from '../../utils/exerciseSections'
 
 const props = defineProps<{
   lesson: Lesson
@@ -9,21 +9,8 @@ const props = defineProps<{
 const exerciseIds = computed(() => props.lesson.workbookExercises.map((ex) => ex.id))
 const progress = provideWorkbookProgress(exerciseIds)
 
-const sectionOrder: ExerciseSection[] = ['listening', 'pairs', 'fill-write', 'fill-bank', 'reading', 'dialogue', 'composition']
-
-const sectionLabels: Record<ExerciseSection, string> = {
-  'textbook-practice': 'Luyện điền ngữ pháp (練習)',
-  listening: 'Nghe hiểu',
-  pairs: 'Nối từ',
-  'fill-write': 'Điền pinyin, viết chữ Hán',
-  'fill-bank': 'Điền từ vào đoạn văn',
-  reading: 'Đọc hiểu',
-  dialogue: 'Hoàn thành hội thoại',
-  composition: 'Viết đoạn văn'
-}
-
 const groups = computed(() =>
-  sectionOrder
+  WORKBOOK_SECTION_ORDER
     .map((section) => ({
       section,
       items: props.lesson.workbookExercises.filter((ex) => ex.section === section)
@@ -53,10 +40,13 @@ const groups = computed(() =>
 
     <div v-for="group in groups" :key="group.section">
       <h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-400">
-        {{ sectionLabels[group.section] }}
+        {{ sectionHeading(group.section) }}
       </h2>
       <div class="space-y-3">
-        <ExerciseWrapper v-for="ex in group.items" :key="ex.id" :exercise="ex" />
+        <div v-for="(ex, i) in group.items" :key="ex.id" class="flex items-start gap-3">
+          <ExerciseNumberBadge :number="i + 1" />
+          <ExerciseWrapper :exercise="ex" class="min-w-0 flex-1" />
+        </div>
       </div>
     </div>
   </div>

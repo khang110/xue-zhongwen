@@ -3,22 +3,18 @@ import { lessons } from '../../data/lessons'
 import type { Exercise, ExerciseSection } from '../../../types/exercise'
 import type { WorkbookProgressEntry } from '../../../types/workbook'
 import { summarizeSaved } from '../../utils/workbookSaved'
+import { WORKBOOK_SECTION_ORDER, sectionHeading } from '../../utils/exerciseSections'
 
 const { user } = useUserSession()
 
-const sectionLabels: Record<ExerciseSection, string> = {
-  'textbook-practice': 'Luyện điền ngữ pháp (練習)',
-  listening: 'Nghe hiểu',
-  pairs: 'Nối từ',
-  'fill-write': 'Điền pinyin, viết chữ Hán',
-  'fill-bank': 'Điền từ vào đoạn văn',
-  reading: 'Đọc hiểu',
-  dialogue: 'Hoàn thành hội thoại',
-  composition: 'Viết đoạn văn'
-}
-
 const exerciseIndex = new Map<string, { exercise: Exercise; lessonNumber: number; lessonTitle: string }>()
+/** Số thứ tự (1-based) của bài tập trong mục của nó, đúng thứ tự sách. */
+const sectionPosition = new Map<string, number>()
 for (const lesson of lessons) {
+  for (const section of WORKBOOK_SECTION_ORDER) {
+    const inSection = lesson.workbookExercises.filter((ex) => ex.section === section)
+    inSection.forEach((ex, i) => sectionPosition.set(ex.id, i + 1))
+  }
   for (const ex of lesson.workbookExercises) {
     exerciseIndex.set(ex.id, { exercise: ex, lessonNumber: lesson.number, lessonTitle: lesson.titleVi })
   }
@@ -42,23 +38,36 @@ async function load() {
 onMounted(load)
 
 const groups = computed(() => {
-  const byLesson = new Map<number, { title: string; rows: ReturnType<typeof toRow>[] }>()
+  const byLesson = new Map<number, { title: string; bySection: Map<ExerciseSection, ReturnType<typeof toRow>[]> }>()
   for (const entry of entries.value) {
     const meta = exerciseIndex.get(entry.exerciseId)
     const num = meta?.lessonNumber ?? 999
-    if (!byLesson.has(num)) byLesson.set(num, { title: meta?.lessonTitle ?? 'Không rõ bài', rows: [] })
-    byLesson.get(num)!.rows.push(toRow(entry))
+    const section = meta?.exercise.section ?? 'textbook-practice'
+    if (!byLesson.has(num)) byLesson.set(num, { title: meta?.lessonTitle ?? 'Không rõ bài', bySection: new Map() })
+    const lessonGroup = byLesson.get(num)!
+    if (!lessonGroup.bySection.has(section)) lessonGroup.bySection.set(section, [])
+    lessonGroup.bySection.get(section)!.push(toRow(entry))
   }
   return [...byLesson.entries()]
     .sort((a, b) => a[0] - b[0])
-    .map(([num, g]) => ({ num, title: g.title, rows: g.rows }))
+    .map(([num, g]) => ({
+      num,
+      title: g.title,
+      sections: WORKBOOK_SECTION_ORDER
+        .filter((section) => g.bySection.has(section))
+        .map((section) => ({
+          section,
+          label: sectionHeading(section),
+          rows: g.bySection.get(section)!.sort((a, b) => a.number - b.number)
+        }))
+    }))
 })
 
 function toRow(entry: WorkbookProgressEntry) {
   const meta = exerciseIndex.get(entry.exerciseId)
   return {
     exerciseId: entry.exerciseId,
-    sectionLabel: meta ? sectionLabels[meta.exercise.section] : 'Bài tập',
+    number: sectionPosition.get(entry.exerciseId) ?? 0,
     prompt: meta?.exercise.prompt ?? '',
     savedAtLabel: formatSavedAt(entry.updatedAt),
     summary: summarizeSaved(meta?.exercise, entry.state)
@@ -126,42 +135,54 @@ function exportSaved() {
       Chưa có bài tập nào được lưu. Vào tab <span class="font-medium">Bài tập</span> của một bài học rồi bấm “Lưu lại”.
     </p>
 
-    <div v-else class="space-y-8">
+    <div v-else class="space-y-10">
       <section v-for="group in groups" :key="group.num">
-        <h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-400">
+        <h2 class="mb-4 rounded-md border-l-4 border-jade-500 bg-jade-50 py-2 pl-3 text-base font-semibold text-ink-800">
           Bài {{ group.num }}: {{ group.title }}
         </h2>
-        <div class="space-y-3">
-          <article v-for="row in group.rows" :key="row.exerciseId" class="rounded-lg border border-ink-100 bg-white p-4">
-            <div class="flex items-start justify-between gap-3">
-              <div class="min-w-0">
-                <p class="text-xs uppercase tracking-wide text-ink-400">{{ row.sectionLabel }}</p>
-                <p v-if="row.prompt" class="mt-0.5 text-sm text-ink-600">{{ row.prompt }}</p>
-              </div>
-              <button
-                type="button"
-                class="shrink-0 text-xs text-ink-400 transition hover:text-seal-600"
-                @click="removeOne(row.exerciseId)"
+
+        <div class="space-y-6 pl-1">
+          <div v-for="sec in group.sections" :key="sec.section">
+            <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
+              {{ sec.label }}
+            </h3>
+            <div class="space-y-3">
+              <article
+                v-for="row in sec.rows"
+                :key="row.exerciseId"
+                class="flex items-start gap-3 rounded-lg border border-ink-100 bg-white p-4"
               >
-                Xoá
-              </button>
+                <ExerciseNumberBadge :number="row.number" />
+                <div class="min-w-0 flex-1">
+                  <div class="flex items-start justify-between gap-3">
+                    <p v-if="row.prompt" class="min-w-0 text-sm text-ink-600">{{ row.prompt }}</p>
+                    <button
+                      type="button"
+                      class="shrink-0 rounded-md border border-seal-200 px-2.5 py-1 text-xs text-seal-600 transition hover:bg-seal-50"
+                      @click="removeOne(row.exerciseId)"
+                    >
+                      Xoá
+                    </button>
+                  </div>
+
+                  <p v-if="row.summary.freeText !== undefined" class="mt-2 whitespace-pre-line font-hanzi text-sm text-ink-800">
+                    {{ row.summary.freeText || '(chưa viết)' }}
+                  </p>
+                  <ul v-else class="mt-2 space-y-0.5 text-sm">
+                    <li v-for="(ln, i) in row.summary.lines" :key="i">
+                      <span class="text-ink-400"><template v-if="ln.label">{{ ln.label }}: </template></span>
+                      <span class="font-hanzi text-ink-800">{{ ln.value }}</span>
+                    </li>
+                  </ul>
+
+                  <p v-if="row.summary.score" class="mt-1 text-xs font-medium text-jade-700">
+                    Kết quả: {{ row.summary.score }}
+                  </p>
+                  <p class="mt-2 text-xs text-ink-400">Đã lưu lúc {{ row.savedAtLabel }}</p>
+                </div>
+              </article>
             </div>
-
-            <p v-if="row.summary.freeText !== undefined" class="mt-2 whitespace-pre-line font-hanzi text-sm text-ink-800">
-              {{ row.summary.freeText || '(chưa viết)' }}
-            </p>
-            <ul v-else class="mt-2 space-y-0.5 text-sm">
-              <li v-for="(ln, i) in row.summary.lines" :key="i">
-                <span class="text-ink-400"><template v-if="ln.label">{{ ln.label }}: </template></span>
-                <span class="font-hanzi text-ink-800">{{ ln.value }}</span>
-              </li>
-            </ul>
-
-            <p v-if="row.summary.score" class="mt-1 text-xs font-medium text-jade-700">
-              Kết quả: {{ row.summary.score }}
-            </p>
-            <p class="mt-2 text-xs text-ink-400">Đã lưu lúc {{ row.savedAtLabel }}</p>
-          </article>
+          </div>
         </div>
       </section>
     </div>
