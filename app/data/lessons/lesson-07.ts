@@ -11,386 +11,420 @@ export const lesson07: Lesson = {
 
   dialogues: [
     [
-      { speaker: '', traditional: '（在陳敏萱家客廳，一隻狗趴在旁邊）', simplified: '（在陈敏萱家客厅，一只狗趴在旁边）', pinyin: '(Zài Chén Mǐnxuān jiā kètīng, yì zhī gǒu pā zài pángbiān)', english: "(In Chen Minxuan's living room, a dog lying nearby)", vietnamese: '(Trong phòng khách nhà Trần Mẫn Huyên, một con chó nằm bên cạnh)' },
-      { speaker: '安德思', traditional: '這就是妳常常在照片裡放的那隻狗吧？牠好乖。', simplified: '这就是妳常常在照片里放的那只狗吧？它好乖。', pinyin: 'Zhè jiùshì nǐ chángcháng zài zhàopiàn lǐ fàng de nà zhī gǒu ba? Tā hǎo guāi.', english: "This is the dog you often post in photos, right? It's so well-behaved.", vietnamese: 'Đây chính là con chó cậu hay đăng trong ảnh nhỉ? Nó ngoan thật.' },
-      { speaker: '陳敏萱', traditional: '對，牠叫小黑。我把牠當成家人，不是寵物。', simplified: '对，它叫小黑。我把它当成家人，不是宠物。', pinyin: 'Duì, tā jiào Xiǎohēi. Wǒ bǎ tā dàngchéng jiārén, búshì chǒngwù.', english: "Yeah, his name is Xiaohei. I treat him as family, not a pet.", vietnamese: 'Ừ, nó tên Tiểu Hắc. Mình coi nó như người nhà, không phải thú cưng.' },
-      { speaker: '羅珊蒂', traditional: '養牠多久了？', simplified: '养它多久了？', pinyin: 'Yǎng tā duōjiǔ le?', english: 'How long have you had him?', vietnamese: 'Nuôi nó bao lâu rồi?' },
-      { speaker: '陳敏萱', traditional: '三年了。自從把牠帶回家以來，我的生活完全變了。以前下班只想躺著，現在再晚也要帶牠去散步。', simplified: '三年了。自从把它带回家以来，我的生活完全变了。以前下班只想躺着，现在再晚也要带它去散步。', pinyin: 'Sān nián le. Zìcóng bǎ tā dài huí jiā yǐlái, wǒ de shēnghuó wánquán biàn le. Yǐqián xiàbān zhǐ xiǎng tǎngzhe, xiànzài zài wǎn yě yào dài tā qù sànbù.', english: "Three years. Since I brought him home, my life has completely changed. I used to just want to lie down after work; now, no matter how late, I take him for a walk.", vietnamese: 'Ba năm rồi. Từ khi mang nó về nhà, cuộc sống của mình thay đổi hoàn toàn. Trước đây tan làm chỉ muốn nằm, giờ dù muộn đến mấy cũng phải dẫn nó đi dạo.' },
-      { speaker: '高橋健太', traditional: '這樣不會很麻煩嗎？', simplified: '这样不会很麻烦吗？', pinyin: 'Zhèyàng bú huì hěn máfan ma?', english: "Isn't that a hassle?", vietnamese: 'Như vậy không phiền lắm à?' },
-      { speaker: '陳敏萱', traditional: '一開始會。可是現在少了牠，我反而覺得家裡空空的。', simplified: '一开始会。可是现在少了它，我反而觉得家里空空的。', pinyin: 'Yì kāishǐ huì. Kěshì xiànzài shǎo le tā, wǒ fǎn’ér juéde jiā lǐ kōngkōng de.', english: "At first, yeah. But now without him, the house actually feels empty.", vietnamese: 'Lúc đầu thì có. Nhưng bây giờ thiếu nó, mình lại thấy nhà trống trải.' },
-      { speaker: '安德思', traditional: '牠是你買的還是……', simplified: '它是你买的还是……', pinyin: 'Tā shì nǐ mǎi de háishì……', english: 'Did you buy him, or…', vietnamese: 'Nó là cậu mua hay là…' },
-      { speaker: '陳敏萱', traditional: '領養的。當初在收容所看到牠，牠一直看著我，好像在說「帶我走」一樣。我就決定了。', simplified: '领养的。当初在收容所看到它，它一直看着我，好像在说「带我走」一样。我就决定了。', pinyin: 'Lǐngyǎng de. Dāngchū zài shōuróngsuǒ kàndào tā, tā yìzhí kànzhe wǒ, hǎoxiàng zài shuō "dài wǒ zǒu" yíyàng. Wǒ jiù juédìng le.', english: 'Adopted. When I first saw him at the shelter, he kept looking at me, as if to say "take me with you." So I decided.', vietnamese: 'Nhận nuôi. Hồi đó nhìn thấy nó ở trại cứu hộ, nó cứ nhìn mình, như thể đang nói "mang tôi đi theo" vậy. Thế là mình quyết định.' },
-      { speaker: '羅珊蒂', traditional: '我一直想養一隻貓，可是我媽說養寵物責任很大，要想清楚，免得養了又後悔。', simplified: '我一直想养一只猫，可是我妈说养宠物责任很大，要想清楚，免得养了又后悔。', pinyin: 'Wǒ yìzhí xiǎng yǎng yì zhī māo, kěshì wǒ mā shuō yǎng chǒngwù zérèn hěn dà, yào xiǎng qīngchǔ, miǎnde yǎng le yòu hòuhuǐ.', english: "I've always wanted a cat, but my mom says keeping a pet is a big responsibility—think it through, so you don't regret it later.", vietnamese: 'Mình luôn muốn nuôi một con mèo, nhưng mẹ mình nói nuôi thú cưng trách nhiệm rất lớn, phải nghĩ kỹ, kẻo nuôi rồi lại hối hận.' },
-      { speaker: '陳敏萱', traditional: '妳媽說得對。養了就是一輩子的事。生病要看醫生，出國要找人照顧，什麼都得先安排好。', simplified: '妳妈说得对。养了就是一辈子的事。生病要看医生，出国要找人照顾，什么都得先安排好。', pinyin: 'Nǐ mā shuō de duì. Yǎng le jiùshì yíbèizi de shì. Shēngbìng yào kàn yīshēng, chūguó yào zhǎo rén zhàogù, shénme dōu děi xiān ānpái hǎo.', english: "Your mom is right. Once you keep one, it's for life. Vet visits when sick, someone to look after them when you go abroad—everything has to be arranged in advance.", vietnamese: 'Mẹ cậu nói đúng. Nuôi rồi là chuyện cả đời. Ốm phải đi khám, ra nước ngoài phải tìm người chăm, cái gì cũng phải sắp xếp trước.' },
-      { speaker: '高橋健太', traditional: '我爺爺一個人住，我們也在想要不要讓他養一隻狗，至少有個伴。', simplified: '我爷爷一个人住，我们也在想要不要让他养一只狗，至少有个伴。', pinyin: 'Wǒ yéye yí ge rén zhù, wǒmen yě zài xiǎng yào bú yào ràng tā yǎng yì zhī gǒu, zhìshǎo yǒu ge bàn.', english: "My grandpa lives alone. We're thinking about whether to let him get a dog, so at least he'd have company.", vietnamese: 'Ông mình sống một mình, bọn mình cũng đang nghĩ có nên để ông nuôi một con chó không, ít ra có người bầu bạn.' },
-      { speaker: '陳敏萱', traditional: '那對老人家很好。有研究說，養寵物的老人比較不容易覺得孤單。', simplified: '那对老人家很好。有研究说，养宠物的老人比较不容易觉得孤单。', pinyin: 'Nà duì lǎorénjiā hěn hǎo. Yǒu yánjiū shuō, yǎng chǒngwù de lǎorén bǐjiào bù róngyì juéde gūdān.', english: "That's good for the elderly. Studies say seniors with pets are less likely to feel lonely.", vietnamese: 'Cái đó tốt cho người già lắm. Có nghiên cứu nói, người già nuôi thú cưng ít có cảm giác cô đơn hơn.' },
-      { speaker: '安德思', traditional: '可是萬一牠先走了，老人家會不會更難過？', simplified: '可是万一它先走了，老人家会不会更难过？', pinyin: 'Kěshì wànyī tā xiān zǒu le, lǎorénjiā huì bú huì gèng nánguò?', english: "But if it passes away first, wouldn't that make the elderly person even sadder?", vietnamese: 'Nhưng lỡ nó đi trước, người già liệu có buồn hơn không?' },
-      { speaker: '陳敏萱', traditional: '這是最難的部分。我朋友的狗去年走了，她哭了好久，說再也不要養了。可是上個月，她又領養了一隻。', simplified: '这是最难的部分。我朋友的狗去年走了，她哭了好久，说再也不要养了。可是上个月，她又领养了一只。', pinyin: 'Zhè shì zuì nán de bùfèn. Wǒ péngyǒu de gǒu qùnián zǒu le, tā kū le hǎojiǔ, shuō zài yě bú yào yǎng le. Kěshì shàng ge yuè, tā yòu lǐngyǎng le yì zhī.', english: "That's the hardest part. My friend's dog died last year; she cried for a long time and said she'd never keep one again. But last month, she adopted another.", vietnamese: 'Đây là phần khó nhất. Con chó của bạn mình năm ngoái mất, cô ấy khóc rất lâu, nói không bao giờ nuôi nữa. Nhưng tháng trước, cô ấy lại nhận nuôi một con.' },
-      { speaker: '羅珊蒂', traditional: '為什麼？', simplified: '为什么？', pinyin: 'Wèishénme?', english: 'Why?', vietnamese: 'Tại sao?' },
-      { speaker: '陳敏萱', traditional: '她說，那幾年的陪伴太珍貴了，就算會難過，她還是願意再愛一次。', simplified: '她说，那几年的陪伴太珍贵了，就算会难过，她还是愿意再爱一次。', pinyin: 'Tā shuō, nà jǐ nián de péibàn tài zhēnguì le, jiùsuàn huì nánguò, tā háishì yuànyì zài ài yí cì.', english: "She said those years of companionship were too precious; even if it means grief, she's still willing to love again.", vietnamese: 'Cô ấy nói, sự đồng hành mấy năm đó quá quý giá, dù có buồn, cô ấy vẫn sẵn lòng yêu thương thêm một lần.' }
+      { speaker: '羅珊蒂', traditional: '何雅婷，昨天我們去打籃球，妳怎麼沒去？', simplified: '罗珊蒂：何雅婷，昨天我们去打篮球，妳怎么没去？', pinyin: 'Hé Yǎtíng, zuótiān wǒmen qù dǎ lánqiú, nǐ zěnme méi qù?', english: "He Yating, yesterday we went to play basketball. Why didn't you go?", vietnamese: 'Hà Nhã Đình, hôm qua bọn mình đi chơi bóng rổ, sao cậu không đi vậy?' },
+      { speaker: '何雅婷', traditional: '我媽說我爺爺跌倒，叫我去看他。', simplified: '我妈说我爷爷跌倒，叫我去看他。', pinyin: 'Wǒ mā shuō wǒ yéye diédǎo, jiào wǒ qù kàn tā.', english: 'My mom said my grandpa had a fall and told me to go see him.', vietnamese: 'Mẹ mình nói ông nội mình bị ngã, bảo mình đến thăm ông.' },
+      { speaker: '羅珊蒂', traditional: '妳爺爺還好吧？', simplified: '妳爷爷还好吧？', pinyin: 'Nǐ yéye hái hǎo ba?', english: 'Is your grandpa OK?', vietnamese: 'Ông cậu ổn chứ?' },
+      { speaker: '何雅婷', traditional: '還好。幸虧鄰居聽見狗一直叫，很快地過來幫忙，所以沒什麼關係。', simplified: '还好。幸亏邻居听见狗一直叫，很快地过来帮忙，所以没什么关系。', pinyin: 'Hái hǎo. Xìngkuī línjū tīngjiàn gǒu yìzhí jiào, hěn kuài de guòlái bāngmáng, suǒyǐ méi shénme guānxi.', english: "He's all right. Luckily, the neighbors heard his dog's non-stop barking and quickly went over to help, so it wasn't a big deal.", vietnamese: 'Ổn rồi. May mà hàng xóm nghe thấy chó sủa mãi, chạy qua giúp ngay, nên không sao cả.' },
+      { speaker: '羅珊蒂', traditional: '妳爺爺一個人住啊？', simplified: '妳爷爷一个人住啊？', pinyin: 'Nǐ yéye yí ge rén zhù a?', english: 'Does your grandpa live alone?', vietnamese: 'Ông cậu sống một mình à?' },
+      { speaker: '何雅婷', traditional: '嗯，奶奶過世以後，爺爺就一個人住。我爸擔心爺爺，所以領養了一隻狗陪他。', simplified: '嗯，奶奶过世以后，爷爷就一个人住。我爸担心爷爷，所以领养了一只狗陪他。', pinyin: 'En, nǎinai guòshì yǐhòu, yéye jiù yí ge rén zhù. Wǒ bà dānxīn yéye, suǒyǐ lǐngyǎng le yì zhī gǒu péi tā.', english: "Uh-huh. Since my grandma died, my grandpa has been living alone. My dad is worried about him, so he adopted a dog to keep him company.", vietnamese: 'Ừ, từ khi bà mất, ông sống một mình. Bố mình lo cho ông, nên nhận nuôi một con chó để bầu bạn với ông.' },
+      { speaker: '羅珊蒂', traditional: '幸虧有這隻可愛的狗，要不然就太孤單了。', simplified: '幸亏有这只可爱的狗，要不然就太孤单了。', pinyin: 'Xìngkuī yǒu zhè zhī kě\'ài de gǒu, yàobùrán jiù tài gūdān le.', english: "Luckily he has the cute dog. Otherwise, he would be really lonely.", vietnamese: 'May mà có con chó dễ thương này, không thì buồn lắm.' },
+      { speaker: '何雅婷', traditional: '我爺爺很愛牠，把牠當成家人一樣，晚上還讓牠睡在自己的床上。', simplified: '我爷爷很爱它，把它当成家人一样，晚上还让它睡在自己的床上。', pinyin: 'Wǒ yéye hěn ài tā, bǎ tā dāngchéng jiārén yíyàng, wǎnshàng hái ràng tā shuì zài zìjǐ de chuáng shàng.', english: "My grandpa loves it and considers it family. At night, he even lets it sleep with him in his own bed.", vietnamese: 'Ông mình rất thương nó, coi nó như người nhà, tối còn cho nó ngủ trên giường của mình.' },
+      { speaker: '', traditional: '（李文彥走過來）', simplified: '（李文彦走过来）', pinyin: '(Lǐ Wényàn zǒu guòlái)', english: '(Li Wenyan walks over)', vietnamese: '(Lý Văn Ngạn đi tới)' },
+      { speaker: '李文彥', traditional: '什麼？睡在他床上？狗不髒嗎？不怕牠把床弄髒嗎？', simplified: '什么？睡在他床上？狗不脏吗？不怕它把床弄脏吗？', pinyin: 'Shénme? Shuì zài tā chuáng shàng? Gǒu bù zāng ma? Bú pà tā bǎ chuáng nòng zāng ma?', english: "What?! Sleep in his bed? Aren't dogs dirty? Isn't he afraid it'll get the bed dirty?", vietnamese: 'Gì cơ? Ngủ trên giường ông? Chó không bẩn à? Không sợ nó làm bẩn giường à?' },
+      { speaker: '何雅婷', traditional: '我爺爺常給狗洗澡，牠乾淨得很。', simplified: '我爷爷常给狗洗澡，它干净得很。', pinyin: 'Wǒ yéye cháng gěi gǒu xǐzǎo, tā gānjìng de hěn.', english: 'My grandpa often washes the dog. It\'s extremely clean.', vietnamese: 'Ông mình hay tắm cho chó, nó sạch lắm.' },
+      { speaker: '李文彥', traditional: '以前我女朋友養了一隻狗，整天亂叫、亂咬東西。有一天，我忍不住打了牠，我女朋友氣得要跟我分手。', simplified: '以前我女朋友养了一只狗，整天乱叫、乱咬东西。有一天，我忍不住打了它，我女朋友气得要跟我分手。', pinyin: 'Yǐqián wǒ nǚpéngyǒu yǎng le yì zhī gǒu, zhěngtiān luàn jiào, luàn yǎo dōngxi. Yǒu yì tiān, wǒ rěn bú zhù dǎ le tā, wǒ nǚpéngyǒu qì de yào gēn wǒ fēnshǒu.', english: 'My girlfriend once had a dog. It barked all day long and chewed everything up. One day my patience ran out and I hit it. My girlfriend was so angry that she wanted to break up with me.', vietnamese: 'Trước đây bạn gái mình nuôi một con chó, suốt ngày sủa bậy, cắn bậy đồ đạc. Có lần mình không kìm được đánh nó, bạn gái mình giận đến mức đòi chia tay.' },
+      { speaker: '羅珊蒂', traditional: '你怎麼可以打狗？狗是人最好的朋友。很多研究報告都說，人緊張的時候，摸摸狗會減輕壓力。', simplified: '你怎么可以打狗？狗是人最好的朋友。很多研究报告都说，人紧张的时候，摸摸狗会减轻压力。', pinyin: 'Nǐ zěnme kěyǐ dǎ gǒu? Gǒu shì rén zuì hǎo de péngyǒu. Hěn duō yánjiū bàogào dōu shuō, rén jǐnzhāng de shíhòu, mōmō gǒu huì jiǎnqīng yālì.', english: "How could you hit a dog? Dogs are a man's best friend. Many studies say that when a person is tense, patting a dog can reduce stress.", vietnamese: 'Sao cậu lại đánh chó? Chó là người bạn tốt nhất của con người. Nhiều báo cáo nghiên cứu nói rằng, lúc người ta căng thẳng, vuốt ve chó sẽ giảm bớt áp lực.' },
+      { speaker: '李文彥', traditional: '不過台灣人對狗太好了。不但送狗去美容院，還帶狗去餐廳慶祝生日。現在狗連路都不必走了，坐在推車裡讓主人推著逛街。', simplified: '不过台湾人对狗太好了。不但送狗去美容院，还带狗去餐厅庆祝生日。现在狗连路都不必走了，坐在推车里让主人推着逛街。', pinyin: 'Búguò Táiwān rén duì gǒu tài hǎo le. Búdàn sòng gǒu qù měiróngyuàn, hái dài gǒu qù cāntīng qìngzhù shēngrì. Xiànzài gǒu lián lù dōu búbì zǒu le, zuò zài tuīchē lǐ ràng zhǔrén tuī zhe guàngjiē.', english: "But Taiwanese are too good to dogs. Not only do they take them to beauty salons, they even bring them to restaurants to celebrate their birthdays. Dogs today don't even have to walk. They sit in dog strollers that their owners push as they window shop.", vietnamese: 'Nhưng người Đài Loan tốt với chó quá rồi. Không những đưa chó đi làm đẹp, còn đưa chó đến nhà hàng mừng sinh nhật. Bây giờ chó còn chẳng cần tự đi đường nữa, ngồi trong xe đẩy để chủ đẩy đi dạo phố.' },
+      { speaker: '羅珊蒂', traditional: '對狗好有什麼不對？現代社會大家各忙各的，常常回到家就只有一個人。人跟狗相處的時間有時候比家人還長呢。', simplified: '对狗好有什么不对？现代社会大家各忙各的，常常回到家就只有一个人。人跟狗相处的时间有时候比家人还长呢。', pinyin: 'Duì gǒu hǎo yǒu shénme búduì? Xiàndài shèhuì dàjiā gè máng gè de, chángcháng huídào jiā jiù zhǐyǒu yí ge rén. Rén gēn gǒu xiāngchǔ de shíjiān yǒu shíhòu bǐ jiārén hái cháng ne.', english: "What's wrong with treating dogs well? Nowadays, everybody's busy with their own things and often when they get home, they are alone. Sometimes, people spend more time with dogs than with family.", vietnamese: 'Tốt với chó thì có gì sai? Xã hội hiện đại ai cũng bận rộn việc của mình, thường về đến nhà chỉ có một mình. Thời gian người ở cùng chó đôi khi còn dài hơn ở cùng người nhà ấy.' },
+      { speaker: '何雅婷', traditional: '是啊，現在有些人覺得生活壓力太大，養不起孩子，就算結了婚也不生孩子，寧可養寵物。還有很多單身的人，他們一個人住，寵物對他們來說，比家人還親。', simplified: '是啊，现在有些人觉得生活压力太大，养不起孩子，就算结了婚也不生孩子，宁可养宠物。还有很多单身的人，他们一个人住，宠物对他们来说，比家人还亲。', pinyin: 'Shì a, xiànzài yǒuxiē rén juéde shēnghuó yālì tài dà, yǎng bù qǐ háizi, jiùsuàn jié le hūn yě bù shēng háizi, níngkě yǎng chǒngwù. Hái yǒu hěn duō dānshēn de rén, tāmen yí ge rén zhù, chǒngwù duì tāmen lái shuō, bǐ jiārén hái qīn.', english: "That's right. Some people today feel that life is filled with stress. They can't afford to raise children and even if they do get married, they don't have any. They'd rather raise pets. There are also many single people who live alone. To them, pets are closer than family.", vietnamese: 'Đúng vậy, bây giờ có người thấy áp lực cuộc sống quá lớn, nuôi không nổi con, dù kết hôn cũng không sinh con, thà nuôi thú cưng. Còn nhiều người độc thân, sống một mình, thú cưng đối với họ còn thân hơn cả người nhà.' },
+      { speaker: '李文彥', traditional: '不管怎麼說，狗不是人。你生病的時候，牠不能照顧你，幫你買晚飯，陪你去醫院。而且，你有問題的時候，也不能問牠的意見。人還是應該建立跟人的關係。', simplified: '不管怎么说，狗不是人。你生病的时候，它不能照顾你，帮你买晚饭，陪你去医院。而且，你有问题的时候，也不能问它的意见。人还是应该建立跟人的关系。', pinyin: 'Bùguǎn zěnme shuō, gǒu bú shì rén. Nǐ shēngbìng de shíhòu, tā bù néng zhàogù nǐ, bāng nǐ mǎi wǎnfàn, péi nǐ qù yīyuàn. Érqiě, nǐ yǒu wèntí de shíhòu, yě bù néng wèn tā de yìjiàn. Rén háishì yīnggāi jiànlì gēn rén de guānxi.', english: "In any case, a dog isn't a person. When you're sick, it can't take care of you, buy dinner for you, or go with you to the hospital. And when you have problems, you can't ask its opinion. People should still build relationships with people.", vietnamese: 'Dù sao thì chó cũng không phải là người. Lúc cậu ốm, nó không thể chăm sóc cậu, mua cơm tối cho cậu, đưa cậu đi bệnh viện. Hơn nữa, lúc cậu có vấn đề, cũng không thể hỏi ý kiến nó được. Con người vẫn nên xây dựng mối quan hệ với con người.' },
+      { speaker: '羅珊蒂', traditional: '可是狗可以幫你建立跟別人的關係。', simplified: '可是狗可以帮你建立跟别人的关系。', pinyin: 'Kěshì gǒu kěyǐ bāng nǐ jiànlì gēn biérén de guānxi.', english: 'But dogs can help you build relationships with others.', vietnamese: 'Nhưng chó có thể giúp cậu xây dựng mối quan hệ với người khác mà.' },
+      { speaker: '何雅婷', traditional: '是啊，我爺爺養狗以後，快樂多了。每天帶著狗去散步，認識了很多朋友。他們有說不完的話，回家以後還上網繼續聊。', simplified: '是啊，我爷爷养狗以后，快乐多了。每天带着狗去散步，认识了很多朋友。他们有说不完的话，回家以后还上网继续聊。', pinyin: 'Shì a, wǒ yéye yǎng gǒu yǐhòu, kuàilè duō le. Měitiān dàizhe gǒu qù sànbù, rènshì le hěn duō péngyǒu. Tāmen yǒu shuō bù wán de huà, huí jiā yǐhòu hái shàngwǎng jìxù liáo.', english: "That's right. After my grandfather started raising a dog, he was much happier. Every day, he took the dog on walks where he made many friends. They had a lot to talk about and after they got home, they would continue chatting online.", vietnamese: 'Đúng đó, từ khi ông mình nuôi chó, ông vui hơn nhiều. Ngày nào cũng dắt chó đi dạo, quen được nhiều bạn. Họ có bao nhiêu chuyện để nói, về nhà rồi còn lên mạng tiếp tục trò chuyện.' },
+      { speaker: '李文彥', traditional: '妳們說的也對。可是我還是覺得一個人應該有家庭，更應該有孩子，一家人熱熱鬧鬧地一起生活才是真正的幸福。', simplified: '妳们说的也对。可是我还是觉得一个人应该有家庭，更应该有孩子，一家人热热闹闹地一起生活才是真正的幸福。', pinyin: 'Nǐmen shuō de yě duì. Kěshì wǒ háishì juéde yí ge rén yīnggāi yǒu jiātíng, gèng yīnggāi yǒu háizi, yì jiārén rèrènàonào de yìqǐ shēnghuó cái shì zhēnzhèng de xìngfú.', english: "You're probably right. But I still think that people should have families and more importantly, they should have children. True happiness is a family living together, full of life.", vietnamese: 'Các cậu nói cũng đúng. Nhưng mình vẫn thấy một người nên có gia đình, càng nên có con cái, cả nhà sống vui vẻ náo nhiệt cùng nhau mới là hạnh phúc thật sự.' }
     ]
   ],
 
   shortReading: {
     traditional:
-      '寵物，也是家人\n\n　　近年來，越來越多台灣家庭養寵物，甚至有人說，現在的寵物比小孩還多。對這些家庭來說，狗和貓不是「動物」，而是家裡的一個成員：一起吃飯、一起睡覺，出去玩也要帶著。\n\n　　寵物帶來的好處不只是熱鬧。心理方面的研究發現，跟寵物相處可以讓人的情緒比較穩定，也讓一個人住的老人比較不覺得孤獨。很多人下班再累，只要看到狗搖著尾巴跑過來，一天的壓力就少了一半。\n\n　　不過，動物團體提醒，養寵物是一份十幾年的責任。每年還是有很多動物被棄養，變成流浪狗、流浪貓。牠們有的是因為主人搬家不能養，有的是因為長大以後不像小時候那麼可愛。\n\n　　因此，這些團體一直推廣「領養代替購買」，希望大家給收容所裡的動物一個機會，也希望減少不好的繁殖。他們說，決定養一隻動物以前，最重要的問題不是「牠可不可愛」，而是「我能不能照顧牠一輩子、陪牠面對生老病死」。這是一個承諾，也是對一條生命的尊重。',
+      '多元家庭\n\n　　李文彥的阿姨一個人帶著孩子住在台北。她的先生因為工作的關係，大部分的時間都在國外。阿姨白天在學校教書，下了班，接了孩子回家，就忙著做飯、陪孩子做功課。好不容易等孩子睡了，才能開始改學生的作業，準備第二天上課的資料。週末的時候，還要上市場幫公公買一個星期的菜。家裡大大小小的事全靠她一個人。她常說，她雖然不是單親媽媽，可是生活比單親媽媽更辛苦。\n\n　　阿姨很羨慕她的同學——美真。美真是一個單身貴族。大學時代，在學校就是一個風雲人物，不但人長得美，而且能力強，追她的人多得不得了。可是她一直不想結婚，一來怕結了婚不自由，不能發展自己的興趣，二來，她的經濟獨立，可以把自己的生活安排得很好。雖然大部分的時候她都很享受單身生活，但是一個人旅行的時候，她也常想，要是身邊有個伴也不錯。\n\n　　美真的朋友——家華，也不願意結婚。他雖然跟女朋友已經同居好幾年了，但是一想到成家以後，得負擔起養家的責任，他就下不了決心。而且，要是結了婚，就會有生孩子的壓力。現在社會這麼亂，怎麼教養孩子？他想來想去，覺得還是現在的生活比較好。雖然女朋友跟他說過幾次，年紀不小，應該結婚了，他還是沒答應。\n\n　　現在社會慢慢地接受了各種家庭的組成方式。同居不再被認為是不道德的事了，一個人也能是一個「單身家庭」。因此，只要有愛，愛自己、愛家人，就是一個完整的家。',
     simplified:
-      '宠物，也是家人\n\n　　近年来，越来越多台湾家庭养宠物，甚至有人说，现在的宠物比小孩还多。对这些家庭来说，狗和猫不是「动物」，而是家里的一个成员：一起吃饭、一起睡觉，出去玩也要带着。\n\n　　宠物带来的好处不只是热闹。心理方面的研究发现，跟宠物相处可以让人的情绪比较稳定，也让一个人住的老人比较不觉得孤独。很多人下班再累，只要看到狗摇着尾巴跑过来，一天的压力就少了一半。\n\n　　不过，动物团体提醒，养宠物是一份十几年的责任。每年还是有很多动物被弃养，变成流浪狗、流浪猫。它们有的是因为主人搬家不能养，有的是因为长大以后不像小时候那么可爱。\n\n　　因此，这些团体一直推广「领养代替购买」，希望大家给收容所里的动物一个机会，也希望减少不好的繁殖。他们说，决定养一只动物以前，最重要的问题不是「它可不可爱」，而是「我能不能照顾它一辈子、陪它面对生老病死」。这是一个承诺，也是对一条生命的尊重。',
+      '多元家庭\n\n　　李文彦的阿姨一个人带着孩子住在台北。她的先生因为工作的关系，大部分的时间都在国外。阿姨白天在学校教书，下了班，接了孩子回家，就忙着做饭、陪孩子做功课。好不容易等孩子睡了，才能开始改学生的作业，准备第二天上课的资料。周末的时候，还要上市场帮公公买一个星期的菜。家里大大小小的事全靠她一个人。她常说，她虽然不是单亲妈妈，可是生活比单亲妈妈更辛苦。\n\n　　阿姨很羡慕她的同学——美真。美真是一个单身贵族。大学时代，在学校就是一个风云人物，不但人长得美，而且能力强，追她的人多得不得了。可是她一直不想结婚，一来怕结了婚不自由，不能发展自己的兴趣，二来，她的经济独立，可以把自己的生活安排得很好。虽然大部分的时候她都很享受单身生活，但是一个人旅行的时候，她也常想，要是身边有个伴也不错。\n\n　　美真的朋友——家华，也不愿意结婚。他虽然跟女朋友已经同居好几年了，但是一想到成家以后，得负担起养家的责任，他就下不了决心。而且，要是结了婚，就会有生孩子的压力。现在社会这么乱，怎么教养孩子？他想来想去，觉得还是现在的生活比较好。虽然女朋友跟他说过几次，年纪不小，应该结婚了，他还是没答应。\n\n　　现在社会慢慢地接受了各种家庭的组成方式。同居不再被认为是不道德的事了，一个人也能是一个「单身家庭」。因此，只要有爱，爱自己、爱家人，就是一个完整的家。',
     vietnamese:
-      'Thú cưng cũng là người nhà\n\nNhững năm gần đây, ngày càng nhiều gia đình Đài Loan nuôi thú cưng, thậm chí có người nói, bây giờ thú cưng còn nhiều hơn trẻ con. Đối với những gia đình này, chó và mèo không phải là "động vật", mà là một thành viên trong nhà: cùng ăn, cùng ngủ, đi chơi cũng phải mang theo.\n\nLợi ích mà thú cưng mang lại không chỉ là sự náo nhiệt. Nghiên cứu về mặt tâm lý phát hiện, ở bên thú cưng có thể khiến cảm xúc con người ổn định hơn, cũng khiến người già sống một mình bớt cảm thấy cô độc. Nhiều người tan làm dù mệt đến mấy, chỉ cần thấy con chó vẫy đuôi chạy tới, áp lực cả ngày liền vơi đi một nửa.\n\nTuy nhiên, các tổ chức bảo vệ động vật nhắc nhở, nuôi thú cưng là trách nhiệm mười mấy năm. Mỗi năm vẫn có rất nhiều con vật bị bỏ rơi, trở thành chó hoang, mèo hoang. Có con vì chủ chuyển nhà không nuôi được, có con vì lớn lên không còn dễ thương như hồi nhỏ.\n\nVì vậy, các tổ chức này luôn cổ vũ "nhận nuôi thay vì mua", mong mọi người cho những con vật trong trại cứu hộ một cơ hội, cũng mong giảm bớt việc nhân giống không tốt. Họ nói, trước khi quyết định nuôi một con vật, câu hỏi quan trọng nhất không phải "nó có dễ thương không", mà là "mình có thể chăm nó cả đời, ở bên nó đối mặt với sinh lão bệnh tử không". Đó là một lời cam kết, cũng là sự tôn trọng đối với một sinh mệnh.'
+      'Gia đình đa dạng\n\nDì của Lý Văn Ngạn một mình nuôi con ở Đài Bắc. Vì công việc, chồng dì phần lớn thời gian ở nước ngoài. Ban ngày dì dạy học ở trường, tan làm đón con về nhà, liền bận nấu cơm, kèm con làm bài tập. Mãi đến khi con ngủ rồi, dì mới có thể bắt đầu chấm bài cho học sinh, chuẩn bị tài liệu cho buổi học hôm sau. Cuối tuần còn phải ra chợ mua đồ ăn cả tuần cho bố chồng. Mọi việc lớn nhỏ trong nhà đều một tay dì lo liệu. Dì thường nói, tuy không phải mẹ đơn thân, nhưng cuộc sống còn vất vả hơn cả mẹ đơn thân.\n\nDì rất ngưỡng mộ bạn học của mình — Mỹ Chân. Mỹ Chân là một "quý tộc độc thân". Thời đại học, cô là nhân vật nổi bật ở trường, không chỉ xinh đẹp mà còn năng lực giỏi, người theo đuổi cô nhiều không đếm xuể. Nhưng cô luôn không muốn kết hôn. Một là sợ kết hôn rồi sẽ mất tự do, không thể phát triển sở thích của mình; hai là, cô độc lập về kinh tế, có thể sắp xếp cuộc sống của mình thật tốt. Tuy phần lớn thời gian cô rất tận hưởng cuộc sống độc thân, nhưng lúc đi du lịch một mình, cô cũng thường nghĩ, giá mà bên cạnh có một người bạn đồng hành thì cũng tốt.\n\nBạn của Mỹ Chân — Gia Hoa, cũng không muốn kết hôn. Anh tuy đã sống chung với bạn gái mấy năm nay, nhưng hễ nghĩ đến chuyện lập gia đình rồi phải gánh trách nhiệm nuôi gia đình, anh lại không quyết tâm được. Hơn nữa, nếu kết hôn, sẽ có áp lực phải sinh con. Xã hội bây giờ hỗn loạn thế này, biết dạy con thế nào? Anh nghĩ đi nghĩ lại, thấy cuộc sống hiện tại vẫn tốt hơn. Dù bạn gái đã nói với anh mấy lần, tuổi không còn nhỏ nữa, nên kết hôn rồi, anh vẫn chưa đồng ý.\n\nXã hội hiện nay dần dần chấp nhận các kiểu cấu trúc gia đình khác nhau. Sống chung không còn bị coi là chuyện trái đạo đức nữa, một người cũng có thể là một "gia đình đơn thân". Vì vậy, chỉ cần có tình yêu — yêu bản thân, yêu người thân — thì đó chính là một gia đình trọn vẹn.'
   },
 
   phrases: [
-    { phraseTraditional: '把…當家人', phraseSimplified: '把…当家人', pinyin: 'bǎ… dàng jiārén', meaningVi: 'coi… như người nhà' },
-    { phraseTraditional: '空空的', phraseSimplified: '空空的', pinyin: 'kōngkōng de', meaningVi: 'trống trải, trống rỗng' },
-    { phraseTraditional: '帶我走', phraseSimplified: '带我走', pinyin: 'dài wǒ zǒu', meaningVi: 'mang tôi đi (theo)' },
-    { phraseTraditional: '一輩子的事', phraseSimplified: '一辈子的事', pinyin: 'yíbèizi de shì', meaningVi: 'chuyện cả đời' },
-    { phraseTraditional: '有個伴', phraseSimplified: '有个伴', pinyin: 'yǒu ge bàn', meaningVi: 'có một người bầu bạn' },
-    { phraseTraditional: '再也不…', phraseSimplified: '再也不…', pinyin: 'zài yě bù…', meaningVi: 'không bao giờ… nữa' },
-    { phraseTraditional: '搖尾巴', phraseSimplified: '摇尾巴', pinyin: 'yáo wěibā', meaningVi: 'vẫy đuôi' }
+    { phraseTraditional: '跌倒', phraseSimplified: '跌倒', pinyin: 'diédǎo', meaningVi: 'ngã, té' },
+    { phraseTraditional: '當成', phraseSimplified: '当成', pinyin: 'dāngchéng', meaningVi: 'coi như, xem như' },
+    { phraseTraditional: '忍不住', phraseSimplified: '忍不住', pinyin: 'rěn bú zhù', meaningVi: 'không kìm được, không nhịn được' },
+    { phraseTraditional: '風雲人物', phraseSimplified: '风云人物', pinyin: 'fēngyún rénwù', meaningVi: 'nhân vật nổi bật, ngôi sao' },
+    { phraseTraditional: '下決心', phraseSimplified: '下决心', pinyin: 'xià juéxīn', meaningVi: 'quyết tâm, hạ quyết tâm' },
+    { phraseTraditional: '各V各的', phraseSimplified: '各V各的', pinyin: 'gè V gè de', meaningVi: 'ai làm việc nấy, mạnh ai nấy làm' },
+    { phraseTraditional: '說不完的話', phraseSimplified: '说不完的话', pinyin: 'shuō bù wán de huà', meaningVi: 'nói mãi không hết chuyện' },
+    { phraseTraditional: '熱熱鬧鬧', phraseSimplified: '热热闹闹', pinyin: 'rèrènàonào', meaningVi: 'náo nhiệt, vui vẻ rộn ràng' },
+    { phraseTraditional: '單身貴族', phraseSimplified: '单身贵族', pinyin: 'dānshēn guìzú', meaningVi: '"quý tộc độc thân" (người độc thân, có điều kiện tốt)' },
+    { phraseTraditional: '養不起', phraseSimplified: '养不起', pinyin: 'yǎng bù qǐ', meaningVi: 'nuôi không nổi' },
+    { phraseTraditional: '下不了決心', phraseSimplified: '下不了决心', pinyin: 'xià bùliǎo juéxīn', meaningVi: 'không quyết tâm được' },
+    { phraseTraditional: '身邊有個伴', phraseSimplified: '身边有个伴', pinyin: 'shēnbiān yǒu ge bàn', meaningVi: 'bên cạnh có người đồng hành' },
+    { phraseTraditional: '比家人還親', phraseSimplified: '比家人还亲', pinyin: 'bǐ jiārén hái qīn', meaningVi: 'còn thân hơn cả người nhà' },
+    { phraseTraditional: '人最好的朋友', phraseSimplified: '人最好的朋友', pinyin: 'rén zuì hǎo de péngyǒu', meaningVi: 'người bạn tốt nhất của con người' },
+    { phraseTraditional: '整天亂叫', phraseSimplified: '整天乱叫', pinyin: 'zhěngtiān luàn jiào', meaningVi: 'sủa bậy cả ngày' }
   ],
 
   vocab: [
-    { id: 'L7-001', lessonId: 'L7', order: 1, group: 'vocab1', traditional: '乖', simplified: '乖', pinyin: 'guāi', wordClass: ['Vs'], meaningVi: 'ngoan', meaningEn: 'well-behaved, obedient', examples: [{ traditional: '這隻狗好乖，都不亂叫。', simplified: '这只狗好乖，都不乱叫。', vietnamese: 'Con chó này ngoan thật, không sủa bậy.' }] },
-    { id: 'L7-002', lessonId: 'L7', order: 2, group: 'vocab1', traditional: '寵物', simplified: '宠物', pinyin: 'chǒngwù', wordClass: ['N'], meaningVi: 'thú cưng, vật nuôi', meaningEn: 'pet', tags: ['thu-cung'], examples: [{ traditional: '我把牠當成家人，不是寵物。', simplified: '我把它当成家人，不是宠物。', vietnamese: 'Mình coi nó như người nhà, không phải thú cưng.' }] },
-    { id: 'L7-003', lessonId: 'L7', order: 3, group: 'vocab1', traditional: '當成', simplified: '当成', pinyin: 'dàngchéng', wordClass: ['V'], meaningVi: 'coi như, xem như', meaningEn: 'to regard as, to treat as', notes: 'Xem ngữ pháp I: 把 A 當（成）B.', examples: [{ traditional: '他把公司當成自己的家。', simplified: '他把公司当成自己的家。', vietnamese: 'Anh ấy coi công ty như nhà mình.' }] },
-    { id: 'L7-004', lessonId: 'L7', order: 4, group: 'vocab1', traditional: '家人', simplified: '家人', pinyin: 'jiārén', wordClass: ['N'], meaningVi: 'người nhà, người trong gia đình', meaningEn: 'family member', tags: ['gia-dinh'], examples: [{ traditional: '對我來說，牠就是家人。', simplified: '对我来说，它就是家人。', vietnamese: 'Đối với mình, nó chính là người nhà.' }] },
-    { id: 'L7-005', lessonId: 'L7', order: 5, group: 'vocab1', traditional: '陪伴', simplified: '陪伴', pinyin: 'péibàn', wordClass: ['V', 'N'], meaningVi: 'bầu bạn, đồng hành; sự đồng hành', meaningEn: 'to accompany; companionship', tags: ['thu-cung'], examples: [{ traditional: '那幾年的陪伴太珍貴了。', simplified: '那几年的陪伴太珍贵了。', vietnamese: 'Sự đồng hành mấy năm đó quá quý giá.' }] },
-    { id: 'L7-006', lessonId: 'L7', order: 6, group: 'vocab1', traditional: '空', simplified: '空', pinyin: 'kōng', wordClass: ['Vs'], meaningVi: 'trống, rỗng', meaningEn: 'empty', examples: [{ traditional: '少了牠，我覺得家裡空空的。', simplified: '少了它，我觉得家里空空的。', vietnamese: 'Thiếu nó, mình thấy nhà trống trải.' }] },
-    { id: 'L7-007', lessonId: 'L7', order: 7, group: 'vocab1', traditional: '領養', simplified: '领养', pinyin: 'lǐngyǎng', wordClass: ['V'], meaningVi: 'nhận nuôi (con vật, trẻ)', meaningEn: 'to adopt', tags: ['thu-cung'], examples: [{ traditional: '牠是領養的，不是買的。', simplified: '它是领养的，不是买的。', vietnamese: 'Nó là nhận nuôi, không phải mua.' }] },
-    { id: 'L7-008', lessonId: 'L7', order: 8, group: 'vocab1', traditional: '收容所', simplified: '收容所', pinyin: 'shōuróngsuǒ', wordClass: ['N'], meaningVi: 'trại cứu hộ, trạm thu nhận động vật', meaningEn: 'animal shelter', tags: ['thu-cung'], examples: [{ traditional: '當初在收容所看到牠，我就決定了。', simplified: '当初在收容所看到它，我就决定了。', vietnamese: 'Hồi đó nhìn thấy nó ở trại cứu hộ, mình liền quyết định.' }] },
-    { id: 'L7-009', lessonId: 'L7', order: 9, group: 'vocab1', traditional: '責任', simplified: '责任', pinyin: 'zérèn', wordClass: ['N'], meaningVi: 'trách nhiệm', meaningEn: 'responsibility', examples: [{ traditional: '養寵物責任很大，要想清楚。', simplified: '养宠物责任很大，要想清楚。', vietnamese: 'Nuôi thú cưng trách nhiệm rất lớn, phải nghĩ kỹ.' }] },
-    { id: 'L7-010', lessonId: 'L7', order: 10, group: 'vocab1', traditional: '後悔', simplified: '后悔', pinyin: 'hòuhuǐ', wordClass: ['Vst'], meaningVi: 'hối hận', meaningEn: 'to regret', examples: [{ traditional: '要想清楚，免得養了又後悔。', simplified: '要想清楚，免得养了又后悔。', vietnamese: 'Phải nghĩ kỹ, kẻo nuôi rồi lại hối hận.' }] },
-    { id: 'L7-011', lessonId: 'L7', order: 11, group: 'vocab1', traditional: '一輩子', simplified: '一辈子', pinyin: 'yíbèizi', wordClass: ['N'], meaningVi: 'cả đời, một đời', meaningEn: 'a lifetime, all one’s life', examples: [{ traditional: '養了就是一輩子的事。', simplified: '养了就是一辈子的事。', vietnamese: 'Nuôi rồi là chuyện cả đời.' }] },
-    { id: 'L7-012', lessonId: 'L7', order: 12, group: 'vocab1', traditional: '照顧', simplified: '照顾', pinyin: 'zhàogù', wordClass: ['V'], meaningVi: 'chăm sóc', meaningEn: 'to take care of', examples: [{ traditional: '出國要找人照顧牠。', simplified: '出国要找人照顾它。', vietnamese: 'Ra nước ngoài phải tìm người chăm nó.' }] },
-    { id: 'L7-013', lessonId: 'L7', order: 13, group: 'vocab1', traditional: '安排', simplified: '安排', pinyin: 'ānpái', wordClass: ['V', 'N'], meaningVi: 'sắp xếp; sự sắp xếp', meaningEn: 'to arrange; arrangement', examples: [{ traditional: '什麼都得先安排好。', simplified: '什么都得先安排好。', vietnamese: 'Cái gì cũng phải sắp xếp trước.' }] },
-    { id: 'L7-014', lessonId: 'L7', order: 14, group: 'vocab1', traditional: '伴', simplified: '伴', pinyin: 'bàn', wordClass: ['N'], meaningVi: 'bạn đồng hành, người bầu bạn', meaningEn: 'companion', examples: [{ traditional: '養一隻狗，至少有個伴。', simplified: '养一只狗，至少有个伴。', vietnamese: 'Nuôi một con chó, ít ra có người bầu bạn.' }] },
-    { id: 'L7-015', lessonId: 'L7', order: 15, group: 'vocab1', traditional: '老人家', simplified: '老人家', pinyin: 'lǎorénjiā', wordClass: ['N'], meaningVi: 'người già, cụ già', meaningEn: 'elderly person', examples: [{ traditional: '養寵物對老人家很好。', simplified: '养宠物对老人家很好。', vietnamese: 'Nuôi thú cưng rất tốt cho người già.' }] },
-    { id: 'L7-016', lessonId: 'L7', order: 16, group: 'vocab1', traditional: '研究', simplified: '研究', pinyin: 'yánjiū', wordClass: ['N', 'V'], meaningVi: 'nghiên cứu', meaningEn: 'research, study; to research', examples: [{ traditional: '有研究說，養寵物的老人比較不孤單。', simplified: '有研究说，养宠物的老人比较不孤单。', vietnamese: 'Có nghiên cứu nói, người già nuôi thú cưng ít cô đơn hơn.' }] },
-    { id: 'L7-017', lessonId: 'L7', order: 17, group: 'vocab1', traditional: '難過', simplified: '难过', pinyin: 'nánguò', wordClass: ['Vs'], meaningVi: 'buồn, đau lòng', meaningEn: 'sad, upset', examples: [{ traditional: '牠走了以後，她難過了好久。', simplified: '它走了以后，她难过了好久。', vietnamese: 'Sau khi nó mất, cô ấy buồn rất lâu.' }] },
-    { id: 'L7-018', lessonId: 'L7', order: 18, group: 'vocab1', traditional: '陪', simplified: '陪', pinyin: 'péi', wordClass: ['V'], meaningVi: 'đi cùng, ở bên', meaningEn: 'to accompany, to keep company', examples: [{ traditional: '再晚也要帶牠去散步，陪牠一下。', simplified: '再晚也要带它去散步，陪它一下。', vietnamese: 'Dù muộn đến mấy cũng phải dẫn nó đi dạo, ở bên nó một chút.' }] },
-    { id: 'L7-019', lessonId: 'L7', order: 19, group: 'vocab1', traditional: '珍貴', simplified: '珍贵', pinyin: 'zhēnguì', wordClass: ['Vs'], meaningVi: 'quý giá', meaningEn: 'precious, valuable', examples: [{ traditional: '那幾年的回憶對我來說很珍貴。', simplified: '那几年的回忆对我来说很珍贵。', vietnamese: 'Ký ức mấy năm đó với mình rất quý giá.' }] },
-    { id: 'L7-020', lessonId: 'L7', order: 20, group: 'vocab1', traditional: '忠心', simplified: '忠心', pinyin: 'zhōngxīn', wordClass: ['Vs'], meaningVi: 'trung thành', meaningEn: 'loyal, faithful', examples: [{ traditional: '狗對主人很忠心。', simplified: '狗对主人很忠心。', vietnamese: 'Chó rất trung thành với chủ.' }] },
-    { id: 'L7-021', lessonId: 'L7', order: 21, group: 'vocab1', traditional: '趴', simplified: '趴', pinyin: 'pā', wordClass: ['Vi'], meaningVi: 'nằm phủ phục, nằm sấp', meaningEn: 'to lie prone, to lie down (of animals)', examples: [{ traditional: '那隻狗安靜地趴在門口。', simplified: '那只狗安静地趴在门口。', vietnamese: 'Con chó nằm yên lặng trước cửa.' }] },
-    { id: 'L7-022', lessonId: 'L7', order: 22, group: 'vocab1', traditional: '牽', simplified: '牵', pinyin: 'qiān', wordClass: ['V'], meaningVi: 'dắt (dây, tay)', meaningEn: 'to lead by the hand/leash', examples: [{ traditional: '出門一定要牽好狗鏈。', simplified: '出门一定要牵好狗链。', vietnamese: 'Ra ngoài nhất định phải giữ chặt dây dắt chó.' }] },
-    { id: 'L7-023', lessonId: 'L7', order: 23, group: 'vocab1', traditional: '陌生', simplified: '陌生', pinyin: 'mòshēng', wordClass: ['Vs'], meaningVi: 'xa lạ', meaningEn: 'unfamiliar, strange', examples: [{ traditional: '剛領養的貓對新環境很陌生。', simplified: '刚领养的猫对新环境很陌生。', vietnamese: 'Con mèo vừa nhận nuôi rất lạ lẫm với môi trường mới.' }] },
-    { id: 'L7-024', lessonId: 'L7', order: 24, group: 'vocab1', traditional: '感情', simplified: '感情', pinyin: 'gǎnqíng', wordClass: ['N'], meaningVi: 'tình cảm', meaningEn: 'feelings, emotional bond', examples: [{ traditional: '相處久了，人跟寵物之間就有了感情。', simplified: '相处久了，人跟宠物之间就有了感情。', vietnamese: 'Ở bên nhau lâu, giữa người và thú cưng nảy sinh tình cảm.' }] },
-    { id: 'L7-025', lessonId: 'L7', order: 25, group: 'vocab1', traditional: '依賴', simplified: '依赖', pinyin: 'yīlài', wordClass: ['V'], meaningVi: 'dựa dẫm, phụ thuộc (tình cảm)', meaningEn: 'to rely on, to depend on', examples: [{ traditional: '這隻狗很依賴主人，主人一離開就叫。', simplified: '这只狗很依赖主人，主人一离开就叫。', vietnamese: 'Con chó này rất bám chủ, chủ vừa đi là sủa.' }] },
-    { id: 'L7-026', lessonId: 'L7', order: 26, group: 'vocab1', traditional: '走', simplified: '走', pinyin: 'zǒu', wordClass: ['Vp'], meaningVi: '(nói giảm) mất, qua đời', meaningEn: 'to pass away (euphemism)', examples: [{ traditional: '我朋友的狗去年走了。', simplified: '我朋友的狗去年走了。', vietnamese: 'Con chó của bạn mình năm ngoái đã mất.' }] },
+    { id: 'L7-001', lessonId: 'L7', order: 1, group: 'vocab1', traditional: '親', simplified: '亲', pinyin: 'qīn', wordClass: ['Vs'], meaningVi: 'gần gũi, thân thiết (quan hệ gia đình)', meaningEn: 'close (as of familial relationship)', examples: [{ traditional: '寵物對他們來說，比家人還親。', simplified: '宠物对他们来说，比家人还亲。', vietnamese: 'Thú cưng đối với họ còn thân hơn cả người nhà.' }] },
+    { id: 'L7-002', lessonId: 'L7', order: 2, group: 'vocab1', traditional: '爺爺', simplified: '爷爷', pinyin: 'yéye', wordClass: ['N'], meaningVi: 'ông nội', meaningEn: "grandpa (father's side)", tags: ['gia-dinh'], examples: [{ traditional: '我媽說我爺爺跌倒，叫我去看他。', simplified: '我妈说我爷爷跌倒，叫我去看他。', vietnamese: 'Mẹ mình nói ông nội mình bị ngã, bảo mình đến thăm ông.' }] },
+    { id: 'L7-003', lessonId: 'L7', order: 3, group: 'vocab1', traditional: '鄰居', simplified: '邻居', pinyin: 'línjū', wordClass: ['N'], meaningVi: 'hàng xóm', meaningEn: 'neighbor', examples: [{ traditional: '幸虧鄰居聽見狗一直叫，很快地過來幫忙。', simplified: '幸亏邻居听见狗一直叫，很快地过来帮忙。', vietnamese: 'May mà hàng xóm nghe thấy chó sủa mãi, chạy qua giúp ngay.' }] },
+    { id: 'L7-004', lessonId: 'L7', order: 4, group: 'vocab1', traditional: '狗', simplified: '狗', pinyin: 'gǒu', wordClass: ['N'], meaningVi: 'chó', meaningEn: 'dog', tags: ['thu-cung'], examples: [{ traditional: '我爸擔心爺爺，所以領養了一隻狗陪他。', simplified: '我爸担心爷爷，所以领养了一只狗陪他。', vietnamese: 'Bố mình lo cho ông, nên nhận nuôi một con chó để bầu bạn với ông.' }] },
+    { id: 'L7-005', lessonId: 'L7', order: 5, group: 'vocab1', traditional: '叫', simplified: '叫', pinyin: 'jiào', wordClass: ['Vi'], meaningVi: 'sủa, kêu', meaningEn: 'to bark', examples: [{ traditional: '幸虧鄰居聽見狗一直叫。', simplified: '幸亏邻居听见狗一直叫。', vietnamese: 'May mà hàng xóm nghe thấy chó sủa mãi.' }] },
+    { id: 'L7-006', lessonId: 'L7', order: 6, group: 'vocab1', traditional: '嗯', simplified: '嗯', pinyin: 'en', wordClass: ['Ptc'], meaningVi: 'ừm (từ đệm biểu thị đồng ý)', meaningEn: "an interjection indicating the speaker's agreement", examples: [{ traditional: '嗯，奶奶過世以後，爺爺就一個人住。', simplified: '嗯，奶奶过世以后，爷爷就一个人住。', vietnamese: 'Ừ, từ khi bà mất, ông sống một mình.' }] },
+    { id: 'L7-007', lessonId: 'L7', order: 7, group: 'vocab1', traditional: '奶奶', simplified: '奶奶', pinyin: 'nǎinai', wordClass: ['N'], meaningVi: 'bà nội', meaningEn: "grandma (father's side)", tags: ['gia-dinh'], examples: [{ traditional: '奶奶過世以後，爺爺就一個人住。', simplified: '奶奶过世以后，爷爷就一个人住。', vietnamese: 'Từ khi bà mất, ông sống một mình.' }] },
+    { id: 'L7-008', lessonId: 'L7', order: 8, group: 'vocab1', traditional: '過世', simplified: '过世', pinyin: 'guòshì', wordClass: ['Vp'], meaningVi: 'qua đời, mất (kính ngữ)', meaningEn: 'to die, to pass away (honorific)', examples: [{ traditional: '奶奶過世以後，爺爺就一個人住。', simplified: '奶奶过世以后，爷爷就一个人住。', vietnamese: 'Từ khi bà mất, ông sống một mình.' }] },
+    { id: 'L7-009', lessonId: 'L7', order: 9, group: 'vocab1', traditional: '領養', simplified: '领养', pinyin: 'lǐngyǎng', wordClass: ['V'], meaningVi: 'nhận nuôi', meaningEn: 'to adopt', tags: ['thu-cung'], examples: [{ traditional: '我爸擔心爺爺，所以領養了一隻狗陪他。', simplified: '我爸担心爷爷，所以领养了一只狗陪他。', vietnamese: 'Bố mình lo cho ông, nên nhận nuôi một con chó để bầu bạn với ông.' }] },
+    { id: 'L7-010', lessonId: 'L7', order: 10, group: 'vocab1', traditional: '隻', simplified: '只', pinyin: 'zhī', wordClass: ['M'], meaningVi: 'lượng từ cho động vật', meaningEn: 'measure word for animals', examples: [{ traditional: '領養了一隻狗陪他。', simplified: '领养了一只狗陪他。', vietnamese: 'Nhận nuôi một con chó để bầu bạn với ông.' }] },
+    { id: 'L7-011', lessonId: 'L7', order: 11, group: 'vocab1', traditional: '可愛', simplified: '可爱', pinyin: 'kě\'ài', wordClass: ['Vs'], meaningVi: 'dễ thương', meaningEn: 'cute', examples: [{ traditional: '幸虧有這隻可愛的狗，要不然就太孤單了。', simplified: '幸亏有这只可爱的狗，要不然就太孤单了。', vietnamese: 'May mà có con chó dễ thương này, không thì buồn lắm.' }] },
+    { id: 'L7-012', lessonId: 'L7', order: 12, group: 'vocab1', traditional: '孤單', simplified: '孤单', pinyin: 'gūdān', wordClass: ['Vs'], meaningVi: 'cô đơn', meaningEn: 'lonely', examples: [{ traditional: '要不然就太孤單了。', simplified: '要不然就太孤单了。', vietnamese: 'Không thì buồn lắm.' }] },
+    { id: 'L7-013', lessonId: 'L7', order: 13, group: 'vocab1', traditional: '牠', simplified: '它', pinyin: 'tā', wordClass: ['N'], meaningVi: 'nó (động vật)', meaningEn: 'it (animals)', examples: [{ traditional: '我爺爺很愛牠，把牠當成家人一樣。', simplified: '我爷爷很爱它，把它当成家人一样。', vietnamese: 'Ông mình rất thương nó, coi nó như người nhà.' }] },
+    { id: 'L7-014', lessonId: 'L7', order: 14, group: 'vocab1', traditional: '髒', simplified: '脏', pinyin: 'zāng', wordClass: ['Vs'], meaningVi: 'bẩn', meaningEn: 'dirty', examples: [{ traditional: '狗不髒嗎？不怕牠把床弄髒嗎？', simplified: '狗不脏吗？不怕它把床弄脏吗？', vietnamese: 'Chó không bẩn à? Không sợ nó làm bẩn giường à?' }] },
+    { id: 'L7-015', lessonId: 'L7', order: 15, group: 'vocab1', traditional: '洗澡', simplified: '洗澡', pinyin: 'xǐzǎo', wordClass: ['V-sep'], meaningVi: 'tắm', meaningEn: 'to take a bath', examples: [{ traditional: '我爺爺常給狗洗澡，牠乾淨得很。', simplified: '我爷爷常给狗洗澡，它干净得很。', vietnamese: 'Ông mình hay tắm cho chó, nó sạch lắm.' }] },
+    { id: 'L7-016', lessonId: 'L7', order: 16, group: 'vocab1', traditional: '養', simplified: '养', pinyin: 'yǎng', wordClass: ['V'], meaningVi: 'nuôi', meaningEn: 'to raise, to keep', tags: ['thu-cung'], examples: [{ traditional: '以前我女朋友養了一隻狗。', simplified: '以前我女朋友养了一只狗。', vietnamese: 'Trước đây bạn gái mình nuôi một con chó.' }] },
+    { id: 'L7-017', lessonId: 'L7', order: 17, group: 'vocab1', traditional: '亂', simplified: '乱', pinyin: 'luàn', wordClass: ['Adv'], meaningVi: 'bừa bãi, tùy tiện', meaningEn: 'arbitrarily, without rhyme or reason', notes: 'Xem ngữ pháp I: 亂 + V.', examples: [{ traditional: '整天亂叫、亂咬東西。', simplified: '整天乱叫、乱咬东西。', vietnamese: 'Suốt ngày sủa bậy, cắn bậy đồ đạc.' }] },
+    { id: 'L7-018', lessonId: 'L7', order: 18, group: 'vocab1', traditional: '咬', simplified: '咬', pinyin: 'yǎo', wordClass: ['V'], meaningVi: 'cắn', meaningEn: 'to bite', examples: [{ traditional: '整天亂叫、亂咬東西。', simplified: '整天乱叫、乱咬东西。', vietnamese: 'Suốt ngày sủa bậy, cắn bậy đồ đạc.' }] },
+    { id: 'L7-019', lessonId: 'L7', order: 19, group: 'vocab1', traditional: '打', simplified: '打', pinyin: 'dǎ', wordClass: ['V'], meaningVi: 'đánh', meaningEn: 'to hit, to beat, to smack, to slap', examples: [{ traditional: '我忍不住打了牠。', simplified: '我忍不住打了它。', vietnamese: 'Mình không kìm được đánh nó.' }] },
+    { id: 'L7-020', lessonId: 'L7', order: 20, group: 'vocab1', traditional: '分手', simplified: '分手', pinyin: 'fēnshǒu', wordClass: ['Vp'], meaningVi: 'chia tay', meaningEn: 'to break up (romantic relationships)', examples: [{ traditional: '我女朋友氣得要跟我分手。', simplified: '我女朋友气得要跟我分手。', vietnamese: 'Bạn gái mình giận đến mức đòi chia tay.' }] },
+    { id: 'L7-021', lessonId: 'L7', order: 21, group: 'vocab1', traditional: '緊張', simplified: '紧张', pinyin: 'jǐnzhāng', wordClass: ['Vs'], meaningVi: 'căng thẳng', meaningEn: 'tense', examples: [{ traditional: '人緊張的時候，摸摸狗會減輕壓力。', simplified: '人紧张的时候，摸摸狗会减轻压力。', vietnamese: 'Lúc người ta căng thẳng, vuốt ve chó sẽ giảm bớt áp lực.' }] },
+    { id: 'L7-022', lessonId: 'L7', order: 22, group: 'vocab1', traditional: '減輕', simplified: '减轻', pinyin: 'jiǎnqīng', wordClass: ['V'], meaningVi: 'giảm nhẹ', meaningEn: 'to reduce', examples: [{ traditional: '摸摸狗會減輕壓力。', simplified: '摸摸狗会减轻压力。', vietnamese: 'Vuốt ve chó sẽ giảm bớt áp lực.' }] },
+    { id: 'L7-023', lessonId: 'L7', order: 23, group: 'vocab1', traditional: '送', simplified: '送', pinyin: 'sòng', wordClass: ['V'], meaningVi: 'đưa đến', meaningEn: 'to take to', examples: [{ traditional: '不但送狗去美容院，還帶狗去餐廳慶祝生日。', simplified: '不但送狗去美容院，还带狗去餐厅庆祝生日。', vietnamese: 'Không những đưa chó đi làm đẹp, còn đưa chó đến nhà hàng mừng sinh nhật.' }] },
+    { id: 'L7-024', lessonId: 'L7', order: 24, group: 'vocab1', traditional: '美容院', simplified: '美容院', pinyin: 'měiróngyuàn', wordClass: ['N'], meaningVi: 'thẩm mỹ viện', meaningEn: 'beauty salon', examples: [{ traditional: '不但送狗去美容院。', simplified: '不但送狗去美容院。', vietnamese: 'Không những đưa chó đi làm đẹp.' }] },
+    { id: 'L7-025', lessonId: 'L7', order: 25, group: 'vocab1', traditional: '推車', simplified: '推车', pinyin: 'tuīchē', wordClass: ['N'], meaningVi: 'xe đẩy', meaningEn: 'stroller', examples: [{ traditional: '坐在推車裡讓主人推著逛街。', simplified: '坐在推车里让主人推着逛街。', vietnamese: 'Ngồi trong xe đẩy để chủ đẩy đi dạo phố.' }] },
+    { id: 'L7-026', lessonId: 'L7', order: 26, group: 'vocab1', traditional: '主人', simplified: '主人', pinyin: 'zhǔrén', wordClass: ['N'], meaningVi: 'chủ nhân', meaningEn: 'master, owner', examples: [{ traditional: '坐在推車裡讓主人推著逛街。', simplified: '坐在推车里让主人推着逛街。', vietnamese: 'Ngồi trong xe đẩy để chủ đẩy đi dạo phố.' }] },
+    { id: 'L7-027', lessonId: 'L7', order: 27, group: 'vocab1', traditional: '相處', simplified: '相处', pinyin: 'xiāngchǔ', wordClass: ['Vi'], meaningVi: 'sống chung, qua lại với nhau', meaningEn: 'to get along (with), to spend time together', examples: [{ traditional: '人跟狗相處的時間有時候比家人還長呢。', simplified: '人跟狗相处的时间有时候比家人还长呢。', vietnamese: 'Thời gian người ở cùng chó đôi khi còn dài hơn ở cùng người nhà ấy.' }] },
+    { id: 'L7-028', lessonId: 'L7', order: 28, group: 'vocab1', traditional: '生', simplified: '生', pinyin: 'shēng', wordClass: ['V'], meaningVi: 'sinh (con)', meaningEn: 'to give birth to, to bear', examples: [{ traditional: '就算結了婚也不生孩子。', simplified: '就算结了婚也不生孩子。', vietnamese: 'Dù kết hôn cũng không sinh con.' }] },
+    { id: 'L7-029', lessonId: 'L7', order: 29, group: 'vocab1', traditional: '寵物', simplified: '宠物', pinyin: 'chǒngwù', wordClass: ['N'], meaningVi: 'thú cưng', meaningEn: 'pet', tags: ['thu-cung'], examples: [{ traditional: '寧可養寵物。', simplified: '宁可养宠物。', vietnamese: 'Thà nuôi thú cưng.' }] },
+    { id: 'L7-030', lessonId: 'L7', order: 30, group: 'vocab1', traditional: '單身', simplified: '单身', pinyin: 'dānshēn', wordClass: ['Vs'], meaningVi: 'độc thân', meaningEn: 'to be single', examples: [{ traditional: '還有很多單身的人，他們一個人住。', simplified: '还有很多单身的人，他们一个人住。', vietnamese: 'Còn nhiều người độc thân, sống một mình.' }] },
+    { id: 'L7-031', lessonId: 'L7', order: 31, group: 'vocab1', traditional: '醫院', simplified: '医院', pinyin: 'yīyuàn', wordClass: ['N'], meaningVi: 'bệnh viện', meaningEn: 'hospital', examples: [{ traditional: '牠不能照顧你，陪你去醫院。', simplified: '它不能照顾你，陪你去医院。', vietnamese: 'Nó không thể chăm sóc cậu, đưa cậu đi bệnh viện.' }] },
+    { id: 'L7-032', lessonId: 'L7', order: 32, group: 'vocab1', traditional: '意見', simplified: '意见', pinyin: 'yìjiàn', wordClass: ['N'], meaningVi: 'ý kiến', meaningEn: 'suggestion, opinion', examples: [{ traditional: '你有問題的時候，也不能問牠的意見。', simplified: '你有问题的时候，也不能问它的意见。', vietnamese: 'Lúc cậu có vấn đề, cũng không thể hỏi ý kiến nó được.' }] },
+    { id: 'L7-033', lessonId: 'L7', order: 33, group: 'vocab1', traditional: '建立', simplified: '建立', pinyin: 'jiànlì', wordClass: ['V'], meaningVi: 'xây dựng, thiết lập', meaningEn: 'to establish', examples: [{ traditional: '人還是應該建立跟人的關係。', simplified: '人还是应该建立跟人的关系。', vietnamese: 'Con người vẫn nên xây dựng mối quan hệ với con người.' }] },
+    { id: 'L7-034', lessonId: 'L7', order: 34, group: 'vocab1', traditional: '散步', simplified: '散步', pinyin: 'sànbù', wordClass: ['V-sep'], meaningVi: 'đi dạo', meaningEn: 'to take a walk', examples: [{ traditional: '每天帶著狗去散步，認識了很多朋友。', simplified: '每天带着狗去散步，认识了很多朋友。', vietnamese: 'Ngày nào cũng dắt chó đi dạo, quen được nhiều bạn.' }] },
+    { id: 'L7-035', lessonId: 'L7', order: 35, group: 'vocab1', traditional: '家庭', simplified: '家庭', pinyin: 'jiātíng', wordClass: ['N'], meaningVi: 'gia đình', meaningEn: 'family', tags: ['gia-dinh'], examples: [{ traditional: '一個人應該有家庭，更應該有孩子。', simplified: '一个人应该有家庭，更应该有孩子。', vietnamese: 'Một người nên có gia đình, càng nên có con cái.' }] },
+    { id: 'L7-036', lessonId: 'L7', order: 36, group: 'vocab1', traditional: '真正', simplified: '真正', pinyin: 'zhēnzhèng', wordClass: ['Vs-attr'], meaningVi: 'thật sự, chân chính', meaningEn: 'real, true, genuine', examples: [{ traditional: '一家人熱熱鬧鬧地一起生活才是真正的幸福。', simplified: '一家人热热闹闹地一起生活才是真正的幸福。', vietnamese: 'Cả nhà sống vui vẻ náo nhiệt cùng nhau mới là hạnh phúc thật sự.' }] },
+    { id: 'L7-037', lessonId: 'L7', order: 37, group: 'vocab1', traditional: '幸福', simplified: '幸福', pinyin: 'xìngfú', wordClass: ['N'], meaningVi: 'hạnh phúc', meaningEn: 'happiness, blessing', examples: [{ traditional: '一家人熱熱鬧鬧地一起生活才是真正的幸福。', simplified: '一家人热热闹闹地一起生活才是真正的幸福。', vietnamese: 'Cả nhà sống vui vẻ náo nhiệt cùng nhau mới là hạnh phúc thật sự.' }] },
+    { id: 'L7-038', lessonId: 'L7', order: 38, group: 'vocab1', traditional: '跌倒', simplified: '跌倒', pinyin: 'diédǎo', wordClass: ['Other'], meaningVi: 'ngã, té', meaningEn: 'to fall down', examples: [{ traditional: '我媽說我爺爺跌倒，叫我去看他。', simplified: '我妈说我爷爷跌倒，叫我去看他。', vietnamese: 'Mẹ mình nói ông nội mình bị ngã, bảo mình đến thăm ông.' }] },
+    { id: 'L7-039', lessonId: 'L7', order: 39, group: 'vocab1', traditional: '當成', simplified: '当成', pinyin: 'dāngchéng', wordClass: ['Other'], meaningVi: 'coi như, xem như', meaningEn: 'to consider, to view as, to regard as', examples: [{ traditional: '把牠當成家人一樣。', simplified: '把它当成家人一样。', vietnamese: 'Coi nó như người nhà.' }] },
+    { id: 'L7-040', lessonId: 'L7', order: 40, group: 'vocab1', traditional: '忍不住', simplified: '忍不住', pinyin: 'rěn bú zhù', wordClass: ['Other'], meaningVi: 'không kìm được, không nhịn được', meaningEn: 'to be beyond the limits of endurance', examples: [{ traditional: '我忍不住打了牠。', simplified: '我忍不住打了它。', vietnamese: 'Mình không kìm được đánh nó.' }] },
 
-    { id: 'L7-027', lessonId: 'L7', order: 1, group: 'vocab2', traditional: '家庭', simplified: '家庭', pinyin: 'jiātíng', wordClass: ['N'], meaningVi: 'gia đình', meaningEn: 'family, household', tags: ['gia-dinh'], examples: [{ traditional: '越來越多台灣家庭養寵物。', simplified: '越来越多台湾家庭养宠物。', vietnamese: 'Ngày càng nhiều gia đình Đài Loan nuôi thú cưng.' }] },
-    { id: 'L7-028', lessonId: 'L7', order: 2, group: 'vocab2', traditional: '成員', simplified: '成员', pinyin: 'chéngyuán', wordClass: ['N'], meaningVi: 'thành viên', meaningEn: 'member', tags: ['gia-dinh'], examples: [{ traditional: '狗和貓是家裡的一個成員。', simplified: '狗和猫是家里的一个成员。', vietnamese: 'Chó và mèo là một thành viên trong nhà.' }] },
-    { id: 'L7-029', lessonId: 'L7', order: 3, group: 'vocab2', traditional: '購買', simplified: '购买', pinyin: 'gòumǎi', wordClass: ['V'], meaningVi: 'mua (cách nói trang trọng)', meaningEn: 'to purchase', tags: ['mua-sam'], examples: [{ traditional: '團體推廣「領養代替購買」。', simplified: '团体推广「领养代替购买」。', vietnamese: 'Các tổ chức cổ vũ "nhận nuôi thay vì mua".' }] },
-    { id: 'L7-030', lessonId: 'L7', order: 4, group: 'vocab2', traditional: '繁殖', simplified: '繁殖', pinyin: 'fánzhí', wordClass: ['V'], meaningVi: 'sinh sản, nhân giống', meaningEn: 'to breed, to reproduce', examples: [{ traditional: '他們希望減少不好的繁殖。', simplified: '他们希望减少不好的繁殖。', vietnamese: 'Họ mong giảm bớt việc nhân giống không tốt.' }] },
-    { id: 'L7-031', lessonId: 'L7', order: 5, group: 'vocab2', traditional: '棄養', simplified: '弃养', pinyin: 'qìyǎng', wordClass: ['V'], meaningVi: 'bỏ rơi (thú nuôi)', meaningEn: 'to abandon (a pet)', tags: ['thu-cung'], examples: [{ traditional: '每年還是有很多動物被棄養。', simplified: '每年还是有很多动物被弃养。', vietnamese: 'Mỗi năm vẫn có rất nhiều con vật bị bỏ rơi.' }] },
-    { id: 'L7-032', lessonId: 'L7', order: 6, group: 'vocab2', traditional: '流浪', simplified: '流浪', pinyin: 'liúlàng', wordClass: ['Vi'], meaningVi: 'lang thang, vô gia cư', meaningEn: 'to roam, to be stray', tags: ['thu-cung'], examples: [{ traditional: '被棄養的動物變成流浪狗、流浪貓。', simplified: '被弃养的动物变成流浪狗、流浪猫。', vietnamese: 'Những con vật bị bỏ rơi trở thành chó hoang, mèo hoang.' }] },
-    { id: 'L7-033', lessonId: 'L7', order: 7, group: 'vocab2', traditional: '結紮', simplified: '结扎', pinyin: 'jiézhá', wordClass: ['V'], meaningVi: 'triệt sản', meaningEn: 'to sterilize, to neuter', examples: [{ traditional: '這些狗貓都已經做過結紮。', simplified: '这些狗猫都已经做过结扎。', vietnamese: 'Những con chó mèo này đều đã triệt sản.' }] },
-    { id: 'L7-034', lessonId: 'L7', order: 8, group: 'vocab2', traditional: '疫苗', simplified: '疫苗', pinyin: 'yìmiáo', wordClass: ['N'], meaningVi: 'vắc-xin', meaningEn: 'vaccine', examples: [{ traditional: '領養前，牠們都打過疫苗了。', simplified: '领养前，它们都打过疫苗了。', vietnamese: 'Trước khi nhận nuôi, chúng đều đã được tiêm vắc-xin.' }] },
-    { id: 'L7-035', lessonId: 'L7', order: 9, group: 'vocab2', traditional: '心理', simplified: '心理', pinyin: 'xīnlǐ', wordClass: ['N'], meaningVi: 'tâm lý', meaningEn: 'psychology, mental state', examples: [{ traditional: '心理方面的研究發現，寵物能讓人情緒穩定。', simplified: '心理方面的研究发现，宠物能让人情绪稳定。', vietnamese: 'Nghiên cứu về tâm lý phát hiện, thú cưng giúp cảm xúc con người ổn định.' }] },
-    { id: 'L7-036', lessonId: 'L7', order: 10, group: 'vocab2', traditional: '情緒', simplified: '情绪', pinyin: 'qíngxù', wordClass: ['N'], meaningVi: 'cảm xúc, tâm trạng', meaningEn: 'emotion, mood', examples: [{ traditional: '跟寵物相處可以讓情緒比較穩定。', simplified: '跟宠物相处可以让情绪比较稳定。', vietnamese: 'Ở bên thú cưng có thể khiến cảm xúc ổn định hơn.' }] },
-    { id: 'L7-037', lessonId: 'L7', order: 11, group: 'vocab2', traditional: '孤獨', simplified: '孤独', pinyin: 'gūdú', wordClass: ['Vs'], meaningVi: 'cô độc', meaningEn: 'lonely, solitary', examples: [{ traditional: '養寵物讓一個人住的老人比較不覺得孤獨。', simplified: '养宠物让一个人住的老人比较不觉得孤独。', vietnamese: 'Nuôi thú cưng khiến người già sống một mình bớt cảm thấy cô độc.' }] },
-    { id: 'L7-038', lessonId: 'L7', order: 12, group: 'vocab2', traditional: '生命', simplified: '生命', pinyin: 'shēngmìng', wordClass: ['N'], meaningVi: 'sinh mệnh, sự sống', meaningEn: 'life', examples: [{ traditional: '養寵物是對一條生命的尊重。', simplified: '养宠物是对一条生命的尊重。', vietnamese: 'Nuôi thú cưng là sự tôn trọng đối với một sinh mệnh.' }] },
-    { id: 'L7-039', lessonId: 'L7', order: 13, group: 'vocab2', traditional: '尊重', simplified: '尊重', pinyin: 'zūnzhòng', wordClass: ['V'], meaningVi: 'tôn trọng', meaningEn: 'to respect', examples: [{ traditional: '好好照顧牠，就是一種尊重。', simplified: '好好照顾它，就是一种尊重。', vietnamese: 'Chăm sóc nó tử tế chính là một sự tôn trọng.' }] },
-    { id: 'L7-040', lessonId: 'L7', order: 14, group: 'vocab2', traditional: '負責', simplified: '负责', pinyin: 'fùzé', wordClass: ['Vi', 'Vs'], meaningVi: 'chịu trách nhiệm; có trách nhiệm', meaningEn: 'to be responsible for; responsible', examples: [{ traditional: '養牠就要對牠的一輩子負責。', simplified: '养它就要对它的一辈子负责。', vietnamese: 'Nuôi nó thì phải chịu trách nhiệm cho cả đời nó.' }] },
-    { id: 'L7-041', lessonId: 'L7', order: 15, group: 'vocab2', traditional: '面對', simplified: '面对', pinyin: 'miànduì', wordClass: ['V'], meaningVi: 'đối mặt', meaningEn: 'to face, to confront', examples: [{ traditional: '要陪牠面對生老病死。', simplified: '要陪它面对生老病死。', vietnamese: 'Phải ở bên nó đối mặt với sinh lão bệnh tử.' }] },
-    { id: 'L7-042', lessonId: 'L7', order: 16, group: 'vocab2', traditional: '失去', simplified: '失去', pinyin: 'shīqù', wordClass: ['V'], meaningVi: 'mất đi', meaningEn: 'to lose', examples: [{ traditional: '失去牠的那段時間，她非常難過。', simplified: '失去它的那段时间，她非常难过。', vietnamese: 'Khoảng thời gian mất nó, cô ấy vô cùng đau lòng.' }] },
-    { id: 'L7-043', lessonId: 'L7', order: 17, group: 'vocab2', traditional: '醫療', simplified: '医疗', pinyin: 'yīliáo', wordClass: ['N'], meaningVi: 'y tế, chữa trị', meaningEn: 'medical care', examples: [{ traditional: '寵物老了，醫療費用會越來越高。', simplified: '宠物老了，医疗费用会越来越高。', vietnamese: 'Thú cưng già đi, chi phí y tế sẽ ngày càng cao.' }] },
-    { id: 'L7-044', lessonId: 'L7', order: 18, group: 'vocab2', traditional: '費用', simplified: '费用', pinyin: 'fèiyòng', wordClass: ['N'], meaningVi: 'chi phí, phí tổn', meaningEn: 'cost, expense', examples: [{ traditional: '養寵物的費用不只是飼料。', simplified: '养宠物的费用不只是饲料。', vietnamese: 'Chi phí nuôi thú cưng không chỉ là thức ăn.' }] },
-    { id: 'L7-045', lessonId: 'L7', order: 19, group: 'vocab2', traditional: '承諾', simplified: '承诺', pinyin: 'chéngnuò', wordClass: ['N', 'V'], meaningVi: 'cam kết, lời hứa; hứa hẹn', meaningEn: 'promise, commitment; to promise', examples: [{ traditional: '養一隻動物是一個十幾年的承諾。', simplified: '养一只动物是一个十几年的承诺。', vietnamese: 'Nuôi một con vật là một lời cam kết mười mấy năm.' }] }
+    { id: 'L7-041', lessonId: 'L7', order: 1, group: 'vocab2', traditional: '多元', simplified: '多元', pinyin: 'duōyuán', wordClass: ['Vs-attr'], meaningVi: 'đa dạng, đa nguyên', meaningEn: 'diverse, diversified', examples: [{ traditional: '多元家庭', simplified: '多元家庭', vietnamese: 'Gia đình đa dạng (nhiều kiểu cấu trúc khác nhau).' }] },
+    { id: 'L7-042', lessonId: 'L7', order: 2, group: 'vocab2', traditional: '阿姨', simplified: '阿姨', pinyin: 'āyí', wordClass: ['N'], meaningVi: 'dì (chị/em gái của mẹ)', meaningEn: "aunt (mother's sisters)", tags: ['gia-dinh'], examples: [{ traditional: '李文彥的阿姨一個人帶著孩子住在台北。', simplified: '李文彦的阿姨一个人带着孩子住在台北。', vietnamese: 'Dì của Lý Văn Ngạn một mình nuôi con ở Đài Bắc.' }] },
+    { id: 'L7-043', lessonId: 'L7', order: 3, group: 'vocab2', traditional: '先生', simplified: '先生', pinyin: 'xiānshēng', wordClass: ['N'], meaningVi: 'chồng', meaningEn: 'husband', tags: ['gia-dinh'], examples: [{ traditional: '她的先生因為工作的關係，大部分的時間都在國外。', simplified: '她的先生因为工作的关系，大部分的时间都在国外。', vietnamese: 'Vì công việc, chồng dì phần lớn thời gian ở nước ngoài.' }] },
+    { id: 'L7-044', lessonId: 'L7', order: 4, group: 'vocab2', traditional: '下班', simplified: '下班', pinyin: 'xiàbān', wordClass: ['V-sep'], meaningVi: 'tan làm', meaningEn: 'to get off work', examples: [{ traditional: '下了班，接了孩子回家。', simplified: '下了班，接了孩子回家。', vietnamese: 'Tan làm đón con về nhà.' }] },
+    { id: 'L7-045', lessonId: 'L7', order: 5, group: 'vocab2', traditional: '改', simplified: '改', pinyin: 'gǎi', wordClass: ['V'], meaningVi: 'chấm, sửa (bài)', meaningEn: 'to correct, to check (homework)', examples: [{ traditional: '才能開始改學生的作業。', simplified: '才能开始改学生的作业。', vietnamese: 'Dì mới có thể bắt đầu chấm bài cho học sinh.' }] },
+    { id: 'L7-046', lessonId: 'L7', order: 6, group: 'vocab2', traditional: '公公', simplified: '公公', pinyin: 'gōnggōng', wordClass: ['N'], meaningVi: 'bố chồng', meaningEn: 'father-in-law (of a female)', tags: ['gia-dinh'], examples: [{ traditional: '還要上市場幫公公買一個星期的菜。', simplified: '还要上市场帮公公买一个星期的菜。', vietnamese: 'Còn phải ra chợ mua đồ ăn cả tuần cho bố chồng.' }] },
+    { id: 'L7-047', lessonId: 'L7', order: 7, group: 'vocab2', traditional: '全', simplified: '全', pinyin: 'quán', wordClass: ['Adv'], meaningVi: 'hoàn toàn, tất cả', meaningEn: 'completely, entirely', examples: [{ traditional: '家裡大大小小的事全靠她一個人。', simplified: '家里大大小小的事全靠她一个人。', vietnamese: 'Mọi việc lớn nhỏ trong nhà đều một tay dì lo liệu.' }] },
+    { id: 'L7-048', lessonId: 'L7', order: 8, group: 'vocab2', traditional: '靠', simplified: '靠', pinyin: 'kào', wordClass: ['V'], meaningVi: 'dựa vào, nhờ cậy', meaningEn: 'to depend on, to rely on', examples: [{ traditional: '家裡大大小小的事全靠她一個人。', simplified: '家里大大小小的事全靠她一个人。', vietnamese: 'Mọi việc lớn nhỏ trong nhà đều một tay dì lo liệu.' }] },
+    { id: 'L7-049', lessonId: 'L7', order: 9, group: 'vocab2', traditional: '單親', simplified: '单亲', pinyin: 'dānqīn', wordClass: ['Vs-attr'], meaningVi: 'đơn thân (cha/mẹ đơn thân)', meaningEn: 'single parent', tags: ['gia-dinh'], examples: [{ traditional: '她雖然不是單親媽媽，可是生活比單親媽媽更辛苦。', simplified: '她虽然不是单亲妈妈，可是生活比单亲妈妈更辛苦。', vietnamese: 'Dì tuy không phải mẹ đơn thân, nhưng cuộc sống còn vất vả hơn cả mẹ đơn thân.' }] },
+    { id: 'L7-050', lessonId: 'L7', order: 10, group: 'vocab2', traditional: '貴族', simplified: '贵族', pinyin: 'guìzú', wordClass: ['N'], meaningVi: 'quý tộc', meaningEn: 'nobility, aristocrat', examples: [{ traditional: '美真是一個單身貴族。', simplified: '美真是一个单身贵族。', vietnamese: 'Mỹ Chân là một "quý tộc độc thân".' }] },
+    { id: 'L7-051', lessonId: 'L7', order: 11, group: 'vocab2', traditional: '時代', simplified: '时代', pinyin: 'shídài', wordClass: ['N'], meaningVi: 'thời đại', meaningEn: 'period, time of', examples: [{ traditional: '大學時代，在學校就是一個風雲人物。', simplified: '大学时代，在学校就是一个风云人物。', vietnamese: 'Thời đại học, cô là nhân vật nổi bật ở trường.' }] },
+    { id: 'L7-052', lessonId: 'L7', order: 12, group: 'vocab2', traditional: '強', simplified: '强', pinyin: 'qiáng', wordClass: ['Vs'], meaningVi: 'mạnh, giỏi', meaningEn: 'strong', examples: [{ traditional: '不但人長得美，而且能力強。', simplified: '不但人长得美，而且能力强。', vietnamese: 'Không chỉ xinh đẹp mà còn năng lực giỏi.' }] },
+    { id: 'L7-053', lessonId: 'L7', order: 13, group: 'vocab2', traditional: '追', simplified: '追', pinyin: 'zhuī', wordClass: ['V'], meaningVi: 'theo đuổi (tình cảm)', meaningEn: 'to go after someone trying to establish a relationship of love, to chase', examples: [{ traditional: '追她的人多得不得了。', simplified: '追她的人多得不得了。', vietnamese: 'Người theo đuổi cô nhiều không đếm xuể.' }] },
+    { id: 'L7-054', lessonId: 'L7', order: 14, group: 'vocab2', traditional: '自由', simplified: '自由', pinyin: 'zìyóu', wordClass: ['Vs'], meaningVi: 'tự do', meaningEn: 'free', examples: [{ traditional: '一來怕結了婚不自由，不能發展自己的興趣。', simplified: '一来怕结了婚不自由，不能发展自己的兴趣。', vietnamese: 'Một là sợ kết hôn rồi sẽ mất tự do, không thể phát triển sở thích của mình.' }] },
+    { id: 'L7-055', lessonId: 'L7', order: 15, group: 'vocab2', traditional: '獨立', simplified: '独立', pinyin: 'dúlì', wordClass: ['Vs'], meaningVi: 'độc lập', meaningEn: 'independent', examples: [{ traditional: '她的經濟獨立，可以把自己的生活安排得很好。', simplified: '她的经济独立，可以把自己的生活安排得很好。', vietnamese: 'Cô độc lập về kinh tế, có thể sắp xếp cuộc sống của mình thật tốt.' }] },
+    { id: 'L7-056', lessonId: 'L7', order: 16, group: 'vocab2', traditional: '安排', simplified: '安排', pinyin: 'ānpái', wordClass: ['V'], meaningVi: 'sắp xếp', meaningEn: 'to handle, to arrange', examples: [{ traditional: '她的經濟獨立，可以把自己的生活安排得很好。', simplified: '她的经济独立，可以把自己的生活安排得很好。', vietnamese: 'Cô độc lập về kinh tế, có thể sắp xếp cuộc sống của mình thật tốt.' }] },
+    { id: 'L7-057', lessonId: 'L7', order: 17, group: 'vocab2', traditional: '享受', simplified: '享受', pinyin: 'xiǎngshòu', wordClass: ['Vst'], meaningVi: 'hưởng thụ', meaningEn: 'to enjoy', examples: [{ traditional: '大部分的時候她都很享受單身生活。', simplified: '大部分的时候她都很享受单身生活。', vietnamese: 'Phần lớn thời gian cô rất tận hưởng cuộc sống độc thân.' }] },
+    { id: 'L7-058', lessonId: 'L7', order: 18, group: 'vocab2', traditional: '身邊', simplified: '身边', pinyin: 'shēnbiān', wordClass: ['N'], meaningVi: 'bên cạnh', meaningEn: "by one's side", examples: [{ traditional: '要是身邊有個伴也不錯。', simplified: '要是身边有个伴也不错。', vietnamese: 'Giá mà bên cạnh có một người bạn đồng hành thì cũng tốt.' }] },
+    { id: 'L7-059', lessonId: 'L7', order: 19, group: 'vocab2', traditional: '伴', simplified: '伴', pinyin: 'bàn', wordClass: ['N'], meaningVi: 'bạn đồng hành', meaningEn: 'companion', examples: [{ traditional: '要是身邊有個伴也不錯。', simplified: '要是身边有个伴也不错。', vietnamese: 'Giá mà bên cạnh có một người bạn đồng hành thì cũng tốt.' }] },
+    { id: 'L7-060', lessonId: 'L7', order: 20, group: 'vocab2', traditional: '同居', simplified: '同居', pinyin: 'tóngjū', wordClass: ['Vi'], meaningVi: 'sống chung (như vợ chồng)', meaningEn: 'to live together (as a couple), to cohabit', examples: [{ traditional: '他雖然跟女朋友已經同居好幾年了。', simplified: '他虽然跟女朋友已经同居好几年了。', vietnamese: 'Anh tuy đã sống chung với bạn gái mấy năm nay.' }] },
+    { id: 'L7-061', lessonId: 'L7', order: 21, group: 'vocab2', traditional: '成家', simplified: '成家', pinyin: 'chéngjiā', wordClass: ['Vp'], meaningVi: 'lập gia đình (góc độ nam giới)', meaningEn: "to set up a family, to marry (from the male's perspective)", examples: [{ traditional: '一想到成家以後，得負擔起養家的責任。', simplified: '一想到成家以后，得负担起养家的责任。', vietnamese: 'Hễ nghĩ đến chuyện lập gia đình rồi phải gánh trách nhiệm nuôi gia đình.' }] },
+    { id: 'L7-062', lessonId: 'L7', order: 22, group: 'vocab2', traditional: '負擔', simplified: '负担', pinyin: 'fùdān', wordClass: ['V'], meaningVi: 'gánh vác (trách nhiệm)', meaningEn: 'to bear (a burden, responsibility)', examples: [{ traditional: '得負擔起養家的責任。', simplified: '得负担起养家的责任。', vietnamese: 'Phải gánh trách nhiệm nuôi gia đình.' }] },
+    { id: 'L7-063', lessonId: 'L7', order: 23, group: 'vocab2', traditional: '養家', simplified: '养家', pinyin: 'yǎngjiā', wordClass: ['V-sep'], meaningVi: 'nuôi gia đình', meaningEn: "to support one's family", examples: [{ traditional: '得負擔起養家的責任。', simplified: '得负担起养家的责任。', vietnamese: 'Phải gánh trách nhiệm nuôi gia đình.' }] },
+    { id: 'L7-064', lessonId: 'L7', order: 24, group: 'vocab2', traditional: '責任', simplified: '责任', pinyin: 'zérèn', wordClass: ['N'], meaningVi: 'trách nhiệm', meaningEn: 'responsibility', examples: [{ traditional: '得負擔起養家的責任。', simplified: '得负担起养家的责任。', vietnamese: 'Phải gánh trách nhiệm nuôi gia đình.' }] },
+    { id: 'L7-065', lessonId: 'L7', order: 25, group: 'vocab2', traditional: '亂', simplified: '乱', pinyin: 'luàn', wordClass: ['Vs'], meaningVi: 'hỗn loạn', meaningEn: 'to be in turmoil, to be in chaos', examples: [{ traditional: '現在社會這麼亂，怎麼教養孩子？', simplified: '现在社会这么乱，怎么教养孩子？', vietnamese: 'Xã hội bây giờ hỗn loạn thế này, biết dạy con thế nào?' }] },
+    { id: 'L7-066', lessonId: 'L7', order: 26, group: 'vocab2', traditional: '教養', simplified: '教养', pinyin: 'jiàoyǎng', wordClass: ['V'], meaningVi: 'giáo dưỡng, nuôi dạy', meaningEn: 'to raise, to bring up, to train, to educate (one\'s children)', examples: [{ traditional: '現在社會這麼亂，怎麼教養孩子？', simplified: '现在社会这么乱，怎么教养孩子？', vietnamese: 'Xã hội bây giờ hỗn loạn thế này, biết dạy con thế nào?' }] },
+    { id: 'L7-067', lessonId: 'L7', order: 27, group: 'vocab2', traditional: '接受', simplified: '接受', pinyin: 'jiēshòu', wordClass: ['V'], meaningVi: 'chấp nhận', meaningEn: 'to accept', examples: [{ traditional: '現在社會慢慢地接受了各種家庭的組成方式。', simplified: '现在社会慢慢地接受了各种家庭的组成方式。', vietnamese: 'Xã hội hiện nay dần dần chấp nhận các kiểu cấu trúc gia đình khác nhau.' }] },
+    { id: 'L7-068', lessonId: 'L7', order: 28, group: 'vocab2', traditional: '組成', simplified: '组成', pinyin: 'zǔchéng', wordClass: ['V'], meaningVi: 'tạo thành, cấu thành', meaningEn: 'to form', examples: [{ traditional: '現在社會慢慢地接受了各種家庭的組成方式。', simplified: '现在社会慢慢地接受了各种家庭的组成方式。', vietnamese: 'Xã hội hiện nay dần dần chấp nhận các kiểu cấu trúc gia đình khác nhau.' }] },
+    { id: 'L7-069', lessonId: 'L7', order: 29, group: 'vocab2', traditional: '道德', simplified: '道德', pinyin: 'dàodé', wordClass: ['Vs'], meaningVi: 'đạo đức', meaningEn: 'moral', examples: [{ traditional: '同居不再被認為是不道德的事了。', simplified: '同居不再被认为是不道德的事了。', vietnamese: 'Sống chung không còn bị coi là chuyện trái đạo đức nữa.' }] },
+    { id: 'L7-070', lessonId: 'L7', order: 30, group: 'vocab2', traditional: '因此', simplified: '因此', pinyin: 'yīncǐ', wordClass: ['Conj'], meaningVi: 'vì vậy, do đó', meaningEn: 'therefore, so', examples: [{ traditional: '因此，只要有愛，就是一個完整的家。', simplified: '因此，只要有爱，就是一个完整的家。', vietnamese: 'Vì vậy, chỉ cần có tình yêu thì đó chính là một gia đình trọn vẹn.' }] },
+    { id: 'L7-071', lessonId: 'L7', order: 31, group: 'vocab2', traditional: '完整', simplified: '完整', pinyin: 'wánzhěng', wordClass: ['Vs'], meaningVi: 'hoàn chỉnh, trọn vẹn', meaningEn: 'complete, integral, whole', examples: [{ traditional: '只要有愛，就是一個完整的家。', simplified: '只要有爱，就是一个完整的家。', vietnamese: 'Chỉ cần có tình yêu thì đó chính là một gia đình trọn vẹn.' }] },
+    { id: 'L7-072', lessonId: 'L7', order: 32, group: 'vocab2', traditional: '風雲人物', simplified: '风云人物', pinyin: 'fēngyún rénwù', wordClass: ['Other'], meaningVi: 'nhân vật nổi bật, ngôi sao', meaningEn: 'mover and shaker, popular and influential person', examples: [{ traditional: '在學校就是一個風雲人物。', simplified: '在学校就是一个风云人物。', vietnamese: 'Cô là nhân vật nổi bật ở trường.' }] },
+    { id: 'L7-073', lessonId: 'L7', order: 33, group: 'vocab2', traditional: '下決心', simplified: '下决心', pinyin: 'xià juéxīn', wordClass: ['Other'], meaningVi: 'quyết tâm, hạ quyết tâm', meaningEn: "to resolve oneself, make up one's mind (to do something)", examples: [{ traditional: '他就下不了決心。', simplified: '他就下不了决心。', vietnamese: 'Anh ấy cứ không quyết tâm được.' }] }
   ],
 
   grammar: [
     {
-      id: 'L7-G1', lessonId: 'L7', order: 1, pattern: '把 A 當（成）B',
-      functionVi: '"把 A 當（成）B" nghĩa là đối xử với A như thể A là B, coi A là B (dù thực tế có thể không phải). B thường là danh từ. Có thể dùng "把 A 當作 / 看成 B".',
-      functionEn: '"把 A 當（成）B" means to treat A as if it were B, to regard A as B (even if it isn\'t literally). B is usually a noun. Variants: 當作, 看成.',
+      id: 'L7-G1', lessonId: 'L7', order: 1, pattern: '亂 + V',
+      functionVi: '亂 là phó từ, diễn tả hành động làm một cách bừa bãi, tùy tiện, thiếu trách nhiệm, có thể dẫn đến hậu quả không mong muốn.',
+      functionEn: '亂 is an adverb and refers to doing some action in a disorderly, irresponsible, destructive manner, risking undesirable consequences.',
       examples: [
-        { traditional: '我把小黑當成家人，不是寵物。', simplified: '我把小黑当成家人，不是宠物。', english: 'I treat Xiaohei as family, not a pet.', vietnamese: 'Tôi coi Tiểu Hắc như người nhà, không phải thú cưng.' },
-        { traditional: '他把公司當成自己的家，每天最晚走。', simplified: '他把公司当成自己的家，每天最晚走。', english: 'He treats the company like his own home, leaving latest every day.', vietnamese: 'Anh ấy coi công ty như nhà mình, ngày nào cũng về muộn nhất.' },
-        { traditional: '別把我的話當成耳邊風。', simplified: '别把我的话当成耳边风。', english: "Don't treat what I say as in one ear and out the other.", vietnamese: 'Đừng coi lời tôi nói như gió thoảng bên tai.' },
-        { traditional: '老師把每個學生都當成自己的孩子。', simplified: '老师把每个学生都当成自己的孩子。', english: 'The teacher treats every student as her own child.', vietnamese: 'Cô giáo coi mỗi học sinh như con của mình.' },
-        { traditional: '剛來的時候我把地圖上的每條路都當成一樣的，常常迷路。', simplified: '刚来的时候我把地图上的每条路都当成一样的，常常迷路。', english: 'When I first arrived I saw every road on the map as the same and often got lost.', vietnamese: 'Hồi mới đến tôi coi mọi con đường trên bản đồ đều như nhau, thường bị lạc.' }
+        { traditional: '你不能亂倒垃圾，得等垃圾車來才能倒。', simplified: '你不能乱倒垃圾，得等垃圾车来才能倒。', english: "You can't just dump your garbage anywhere. You need to wait for the garbage truck before you can dump it.", vietnamese: 'Cậu không được vứt rác bừa bãi, phải đợi xe rác đến mới được đổ.' },
+        { traditional: '功課要好好地寫，不能亂寫。', simplified: '功课要好好地写，不能乱写。', english: "You need to do a good job on your homework. You can't just do it haphazardly.", vietnamese: 'Bài tập phải làm cho cẩn thận, không được làm bừa.' },
+        { traditional: '這些座位都有人坐，不能亂坐。', simplified: '这些座位都有人坐，不能乱坐。', english: "These seats are all occupied. You can't just sit anywhere you please.", vietnamese: 'Những chỗ ngồi này đều có người ngồi rồi, không được ngồi bừa.' },
+        { traditional: '你的感冒雖然不嚴重，可是不能自己亂買藥吃。', simplified: '你的感冒虽然不严重，可是不能自己乱买药吃。', english: "Your cold isn't serious, but you can't just go and buy any meds you want.", vietnamese: 'Cảm của cậu tuy không nặng, nhưng không được tự ý mua thuốc uống bừa.' },
+        { traditional: '媽媽怕孩子亂花錢，不敢給孩子太多錢。', simplified: '妈妈怕孩子乱花钱，不敢给孩子太多钱。', english: "Moms are afraid their kids will spend money like there's no tomorrow, so they don't dare give them too much.", vietnamese: 'Mẹ sợ con tiêu tiền bừa bãi, không dám cho con quá nhiều tiền.' }
       ],
-      usageNotesVi: '"當" ở đây đọc là dàng (thanh 4). "當成 / 當作" nhấn mạnh kết quả của việc nhìn nhận. Không nhầm với "當 (dāng)" nghĩa "làm, đảm nhiệm" (當老師).',
+      usageNotesVi: '亂 luôn mang nghĩa tiêu cực. Ví dụ: 亂寫、亂做、亂選、亂走、亂翻譯、亂交朋友、亂打電話… đều gợi ý thái độ làm việc cẩu thả, tùy tiện. Khác với 隨便 trong 隨便走走、隨便拿一個、隨便坐 — 隨便 không mang sắc thái tiêu cực. 亂 + V đôi khi còn dùng để khiêm tốn, tự hạ thấp mình, ví dụ: A：妳真會穿，妳的衣服都很講究。B：哪裡，我是亂穿的。',
       exercises: [
-        { id: 'L7-G1-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你為什麼對那隻流浪貓這麼好？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['因為我早就把牠當成家裡的一份子了。'] }], targetPattern: 'L7-G1' },
-        { id: 'L7-G1-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他怎麼對這份工作這麼認真？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['他把工作當成自己的事業，不只是賺錢而已。'] }], targetPattern: 'L7-G1' },
-        { id: 'L7-G1-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你不要太在意他說的話。', textWithBlanks: 'B：放心，___。', blanks: [{ index: 0, acceptedAnswers: ['我沒有把那些話當真。'] }], targetPattern: 'L7-G1' },
-        { id: 'L7-G1-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這裡的鄰居對你好嗎？', textWithBlanks: 'B：好得不得了，___。', blanks: [{ index: 0, acceptedAnswers: ['他們把我當成自己的孩子一樣照顧。'] }], targetPattern: 'L7-G1' },
-        { id: 'L7-G1-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼記得這麼多老歌？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我媽以前天天放，我早就把那些歌當成生活的一部分了。'] }], targetPattern: 'L7-G1' }
+        { id: 'L7-G1-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這張申請表要是你不知道怎麼填，就別___。填錯就麻煩了。', blanks: [{ index: 0, acceptedAnswers: ['亂填'] }], targetPattern: 'L7-G1' },
+        { id: 'L7-G1-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '考試的時候別___，成績不好會被當的。', blanks: [{ index: 0, acceptedAnswers: ['亂寫'] }], targetPattern: 'L7-G1' },
+        { id: 'L7-G1-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '你們店的招牌不能___，鄰居會生氣的。', blanks: [{ index: 0, acceptedAnswers: ['亂掛'] }], targetPattern: 'L7-G1' },
+        { id: 'L7-G1-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '你一定能畢業的，別___。有問題就給我打電話。', blanks: [{ index: 0, acceptedAnswers: ['亂想'] }], targetPattern: 'L7-G1' },
+        { id: 'L7-G1-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這些資料很重要，別___。要是找不到就麻煩了。', blanks: [{ index: 0, acceptedAnswers: ['亂放'] }], targetPattern: 'L7-G1' }
       ]
     },
     {
-      id: 'L7-G2', lessonId: 'L7', order: 2, pattern: '自從…以來',
-      functionVi: '"自從 A 以來，B" nêu một mốc thời gian hoặc sự kiện A ở quá khứ, và B là tình hình kéo dài từ đó đến hiện tại. Có thể rút gọn thành "自從 A，B" hoặc "自從 A 以後，B".',
-      functionEn: '"自從 A 以來, B" marks a past point or event A, with B being an ongoing situation from then until now. Can be shortened to "自從 A, B" or "自從 A 以後, B".',
+      id: 'L7-G2', lessonId: 'L7', order: 2, pattern: '各 V 各的',
+      functionVi: '各 đứng trước động từ lặp lại hai lần, mỗi lần chỉ một chủ thể trong nhóm làm việc riêng của mình, không cùng chung một hành động.',
+      functionEn: 'This pattern refers to each member of a given group engaged in her/his own pursuit.',
       examples: [
-        { traditional: '自從把小黑帶回家以來，我的生活完全變了。', simplified: '自从把小黑带回家以来，我的生活完全变了。', english: 'Since I brought Xiaohei home, my life has completely changed.', vietnamese: 'Từ khi mang Tiểu Hắc về nhà, cuộc sống của tôi thay đổi hoàn toàn.' },
-        { traditional: '自從搬到鄉下以後，他很少感冒了。', simplified: '自从搬到乡下以后，他很少感冒了。', english: 'Since moving to the countryside, he rarely catches colds.', vietnamese: 'Từ khi chuyển về nông thôn, anh ấy hiếm khi bị cảm.' },
-        { traditional: '自從有了手機，大家寫信的機會就越來越少。', simplified: '自从有了手机，大家写信的机会就越来越少。', english: 'Since phones, people write letters less and less.', vietnamese: 'Từ khi có điện thoại, cơ hội viết thư của mọi người ngày càng ít.' },
-        { traditional: '自從那次生病以來，他就特別注意飲食。', simplified: '自从那次生病以来，他就特别注意饮食。', english: "Since that illness, he's been especially careful about his diet.", vietnamese: 'Từ lần ốm đó, anh ấy đặc biệt chú ý ăn uống.' },
-        { traditional: '自從奶奶養了那隻狗，她每天都出門散步。', simplified: '自从奶奶养了那只狗，她每天都出门散步。', english: 'Since Grandma got that dog, she goes out for a walk every day.', vietnamese: 'Từ khi bà nuôi con chó đó, ngày nào bà cũng ra ngoài đi dạo.' }
+        { traditional: '他們結婚以後，因為在不同的城市上班，還是各住各的。', simplified: '他们结婚以后，因为在不同的城市上班，还是各住各的。', english: "Since they've been married, because they work in different cities, each lives his or her own life.", vietnamese: 'Sau khi kết hôn, vì làm việc ở thành phố khác nhau, họ vẫn sống riêng ai nấy ở.' },
+        { traditional: '他們各說各的，沒辦法一起討論。', simplified: '他们各说各的，没办法一起讨论。', english: 'Everyone was talking past each other. There was no way to get any discussion done.', vietnamese: 'Họ ai nói nấy nghe, không cách nào thảo luận chung được.' },
+        { traditional: '我們雖然一起去故宮博物院，可是我們的興趣不同，各看各的。', simplified: '我们虽然一起去故宫博物院，可是我们的兴趣不同，各看各的。', english: 'Although we went to the Palace Museum together, each of us has his own interest, so each visited what he wanted to see.', vietnamese: 'Tuy cùng đi Bảo tàng Cố Cung, nhưng sở thích khác nhau, ai xem phần nấy.' },
+        { traditional: '他們同居好幾年了，可是晚飯常常是各吃各的。', simplified: '他们同居好几年了，可是晚饭常常是各吃各的。', english: 'They have lived together for many years, but they often eat their meals on their own.', vietnamese: 'Họ sống chung mấy năm rồi, nhưng bữa tối thường ai ăn nấy.' },
+        { traditional: '他們一起去夜市，可是各逛各的。', simplified: '他们一起去夜市，可是各逛各的。', english: 'They went to the night market together, but split so each could check out what they wanted to see.', vietnamese: 'Họ cùng đi chợ đêm, nhưng ai đi xem phần nấy.' }
       ],
-      usageNotesVi: '"自從" chỉ dùng cho mốc thời gian trong quá khứ, không dùng cho tương lai. Sau "自從" là một sự kiện đã hoàn thành. "以來" nhấn mạnh khoảng thời gian liên tục kéo dài đến hiện tại.',
+      usageNotesVi: '各 V 各的 nhấn mạnh mỗi người trong nhóm làm một việc riêng, độc lập với nhau, dù đang ở cùng một hoàn cảnh hay nhóm. Thường mang hàm ý thiếu sự gắn kết hoặc thống nhất.',
       exercises: [
-        { id: 'L7-G2-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你最近氣色很好。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['自從開始每天運動以來，我睡得好多了。'] }], targetPattern: 'L7-G2' },
-        { id: 'L7-G2-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你們社區怎麼變得這麼乾淨？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['自從大家一起訂了打掃的規則以後，就一直很乾淨。'] }], targetPattern: 'L7-G2' },
-        { id: 'L7-G2-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他好像不太一樣了。', textWithBlanks: 'B：對，___。', blanks: [{ index: 0, acceptedAnswers: ['自從當了爸爸以來，他成熟了很多。'] }], targetPattern: 'L7-G2' },
-        { id: 'L7-G2-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼開始對歷史有興趣了？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['自從去年去了一趟台南，我就迷上台灣的老故事。'] }], targetPattern: 'L7-G2' },
-        { id: 'L7-G2-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這家店生意怎麼變這麼好？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['自從一個網紅來拍過影片以來，週末都要排隊。'] }], targetPattern: 'L7-G2' }
+        { id: 'L7-G2-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你常常跟同學一起去玩嗎？', textWithBlanks: 'B：我們興趣不同，平常都是___。', blanks: [{ index: 0, acceptedAnswers: ['各玩各的'] }], targetPattern: 'L7-G2' },
+        { id: 'L7-G2-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你覺得早一點結婚好，還是晚一點結婚好？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我覺得每個人的情況不一樣，應該各過各的生活步調，不用一定要早或晚。'] }], targetPattern: 'L7-G2' },
+        { id: 'L7-G2-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：妳常常跟妳姐姐交換包包用嗎？', textWithBlanks: 'B：我們喜歡的款式不一樣，我們都___。', blanks: [{ index: 0, acceptedAnswers: ['各買各的'] }], targetPattern: 'L7-G2' },
+        { id: 'L7-G2-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你今天跟同學一起吃飯，誰請客？', textWithBlanks: 'B：沒有人請客。我們___。', blanks: [{ index: 0, acceptedAnswers: ['各付各的'] }], targetPattern: 'L7-G2' },
+        { id: 'L7-G2-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你跟你弟弟都賣寵物。你們一起在媒體上做廣告嗎？', textWithBlanks: 'B：我們各賣各的，所以也___。', blanks: [{ index: 0, acceptedAnswers: ['各打各的廣告'] }], targetPattern: 'L7-G2' }
       ]
     },
     {
-      id: 'L7-G3', lessonId: 'L7', order: 3, pattern: '少了…就…',
-      functionVi: '"少了 A，(就) B" nêu nếu thiếu hoặc không còn A thì tình hình B (thường tiêu cực) sẽ xảy ra. Nhấn mạnh vai trò quan trọng của A.',
-      functionEn: '"少了 A, (就) B" states that without A, situation B (usually negative) results; it stresses how important A is.',
+      id: 'L7-G3', lessonId: 'L7', order: 3, pattern: '就算…，也…',
+      functionVi: '就算 S1…，也 S2… diễn tả: dù điều kiện S1 có xảy ra (hoặc đúng), S2 vẫn sẽ đúng/xảy ra.',
+      functionEn: 'The pattern indicates that even if a condition (S1) is met, (S2) would still be true.',
       examples: [
-        { traditional: '現在少了牠，我反而覺得家裡空空的。', simplified: '现在少了它，我反而觉得家里空空的。', english: 'Now without it, the house actually feels empty.', vietnamese: 'Bây giờ thiếu nó, tôi lại thấy nhà trống trải.' },
-        { traditional: '少了你的幫忙，這件事我一個人根本做不完。', simplified: '少了你的帮忙，这件事我一个人根本做不完。', english: 'Without your help, I could never finish this alone.', vietnamese: 'Thiếu sự giúp đỡ của cậu, việc này một mình tôi không thể làm xong.' },
-        { traditional: '這道菜少了一點鹽，味道就差很多。', simplified: '这道菜少了一点盐，味道就差很多。', english: 'This dish is missing a bit of salt, and the taste is much worse.', vietnamese: 'Món này thiếu chút muối là vị kém hẳn.' },
-        { traditional: '一個團隊少了溝通，很容易出問題。', simplified: '一个团队少了沟通，很容易出问题。', english: 'A team without communication easily runs into problems.', vietnamese: 'Một đội thiếu giao tiếp thì rất dễ nảy sinh vấn đề.' },
-        { traditional: '過年少了一家人團聚，就沒有氣氛了。', simplified: '过年少了一家人团聚，就没有气氛了。', english: 'Chinese New Year without the family reunion loses its feel.', vietnamese: 'Tết mà thiếu cả nhà đoàn tụ thì mất không khí.' }
+        { traditional: '我爸爸常說：就算我做不動了，也不要靠孩子。', simplified: '我爸爸常说：就算我做不动了，也不要靠孩子。', english: "My dad often says, 'Even if I can't move anymore, I don't want to depend on my kids.'", vietnamese: 'Bố mình thường nói: "Dù có không làm nổi nữa, cũng không muốn dựa vào con cái."' },
+        { traditional: '就算你的能力比老闆強，你也應該聽老闆的意見。', simplified: '就算你的能力比老板强，你也应该听老板的意见。', english: "Even if you're more capable than the boss, you should still listen to his suggestions.", vietnamese: 'Dù năng lực cậu giỏi hơn sếp, cậu cũng nên nghe ý kiến của sếp.' },
+        { traditional: '就算男人有養家的責任，家庭經濟也不能完全讓男人負擔啊。', simplified: '就算男人有养家的责任，家庭经济也不能完全让男人负担啊。', english: 'Even if men have the responsibility of taking care of their families, the household finances cannot be the sole responsibility of the man.', vietnamese: 'Dù đàn ông có trách nhiệm nuôi gia đình, kinh tế gia đình cũng không thể hoàn toàn để đàn ông gánh vác.' },
+        { traditional: '他的婚禮，我就算再忙，也要參加。', simplified: '他的婚礼，我就算再忙，也要参加。', english: 'No matter how busy I am, I will be at his wedding.', vietnamese: 'Đám cưới của anh ấy, dù mình có bận đến mấy cũng phải tham dự.' },
+        { traditional: '就算你覺得孤單，也不能隨便打擾別人。', simplified: '就算你觉得孤单，也不能随便打扰别人。', english: "Even if you feel lonely, you can't go around bothering others.", vietnamese: 'Dù cậu thấy cô đơn, cũng không được tùy tiện làm phiền người khác.' }
       ],
-      usageNotesVi: '"少了" ở đây = "thiếu, không có". Vế sau thường có 就 và nêu hệ quả. Có thể đảo: "沒有 A，B 就…". Khác với "除非…要不然…" (Bài 4), "少了…就…" tập trung vào giá trị hoặc vai trò của A.',
+      usageNotesVi: 'Đây là mẫu câu khẩu ngữ rất thông dụng. Chủ ngữ có thể đứng trước hoặc sau 就算, ví dụ câu 1 ở trên chủ ngữ đứng trước 就算, câu 4 chủ ngữ đứng sau 就算.',
       exercises: [
-        { id: 'L7-G3-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼這幾天心情不好？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我的狗送去給朋友照顧了，家裡少了牠就覺得怪怪的。'] }], targetPattern: 'L7-G3' },
-        { id: 'L7-G3-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這次活動辦得很成功。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['是啊，可是少了志工幫忙，我們根本辦不起來。'] }], targetPattern: 'L7-G3' },
-        { id: 'L7-G3-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他退休以後，辦公室有什麼不一樣？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['少了他，大家開會的時候少了很多笑聲。'] }], targetPattern: 'L7-G3' },
-        { id: 'L7-G3-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這杯咖啡怎麼喝起來怪怪的？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['少了糖跟牛奶，你當然喝不習慣。'] }], targetPattern: 'L7-G3' },
-        { id: 'L7-G3-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你覺得那部電影好看嗎？', textWithBlanks: 'B：故事不錯，可是___。', blanks: [{ index: 0, acceptedAnswers: ['少了好的配樂，很多感人的地方就沒那麼有感覺。'] }], targetPattern: 'L7-G3' }
+        { id: 'L7-G3-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：聽說妳的男朋友以前結過婚，妳還要跟他結婚嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['就算他以前結過婚，我也要跟他結婚，我愛的是現在的他。'] }], targetPattern: 'L7-G3' },
+        { id: 'L7-G3-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你喜歡狗，聽說領養手續很簡單，你想領養一隻嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['就算手續簡單，我也不會隨便領養，養狗是一輩子的責任。'] }], targetPattern: 'L7-G3' },
+        { id: 'L7-G3-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：美美說在網路上交朋友，也能找到幸福。你要不要試試？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['就算在網路上交朋友，也不一定能找到幸福，還是要小心一點。'] }], targetPattern: 'L7-G3' },
+        { id: 'L7-G3-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：大明的爸爸幫他安排了一份不錯的工作。我羨慕死了。', textWithBlanks: 'B：我喜歡自己找工作，___。', blanks: [{ index: 0, acceptedAnswers: ['就算沒有人幫忙安排，我也要自己找工作。'] }], targetPattern: 'L7-G3' },
+        { id: 'L7-G3-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：現代社會進步得很快，原住民文化恐怕會消失了。', textWithBlanks: 'B：不會吧，___。', blanks: [{ index: 0, acceptedAnswers: ['就算社會進步得很快，原住民文化也不會消失，因為有很多人在努力保護它。'] }], targetPattern: 'L7-G3' }
       ]
     },
     {
-      id: 'L7-G4', lessonId: 'L7', order: 4, pattern: '再也不 / 再也沒…（了）',
-      functionVi: '"再也不 + V" nghĩa là từ nay về sau tuyệt đối không V nữa (nhấn mạnh sự dứt khoát). "再也沒 + V（過）" nghĩa là từ sau một thời điểm nào đó đã không còn V nữa.',
-      functionEn: '"再也不 + V" = never V again (emphatic, forward-looking). "再也沒 + V（過）" = have not V-ed anymore since some point.',
+      id: 'L7-G4', lessonId: 'L7', order: 4, pattern: '因為 NP，S…',
+      functionVi: '"因為 NP，S…" nêu một cụm danh từ (NP) làm lý do, cách giải thích hoặc động cơ cho mệnh đề sau. 因為 trong mẫu này là giới từ, không phải liên từ.',
+      functionEn: 'This pattern presents an NP (a reason, an explanation or a motivation), for the subsequent clause. 因為 in this pattern is a preposition, not a conjunction, and is thus used with an NP.',
       examples: [
-        { traditional: '她的狗走了以後，她說再也不要養了。', simplified: '她的狗走了以后，她说再也不要养了。', english: "After her dog died, she said she'd never keep one again.", vietnamese: 'Sau khi con chó của cô ấy mất, cô ấy nói không bao giờ nuôi nữa.' },
-        { traditional: '上次被騙以後，我再也不網購那家店的東西了。', simplified: '上次被骗以后，我再也不网购那家店的东西了。', english: 'After being cheated last time, I never buy from that shop online again.', vietnamese: 'Sau lần bị lừa đó, tôi không bao giờ mua online của tiệm đó nữa.' },
-        { traditional: '自從搬家以後，我再也沒見過那個老鄰居。', simplified: '自从搬家以后，我再也没见过那个老邻居。', english: "Since moving, I've never seen that old neighbor again.", vietnamese: 'Từ khi chuyển nhà, tôi chưa gặp lại người hàng xóm cũ đó lần nào.' },
-        { traditional: '那次爬山累壞了，他說再也不去了，結果隔年又去了。', simplified: '那次爬山累坏了，他说再也不去了，结果隔年又去了。', english: 'That hike wore him out; he said never again, then went the next year.', vietnamese: 'Lần leo núi đó mệt lử, anh ấy nói không đi nữa, kết quả năm sau lại đi.' },
-        { traditional: '學會了以後，這種錯我再也不會犯了。', simplified: '学会了以后，这种错我再也不会犯了。', english: "Now that I've learned, I'll never make this mistake again.", vietnamese: 'Học được rồi, lỗi này tôi sẽ không bao giờ mắc lại.' }
+        { traditional: '因為氣溫的變化，今年的芒果熟得比較早。', simplified: '因为气温的变化，今年的芒果熟得比较早。', english: 'Due to changes in the temperature, mangoes are ripening relatively early this year.', vietnamese: 'Vì sự thay đổi nhiệt độ, xoài năm nay chín sớm hơn.' },
+        { traditional: '因為工作的關係，我需要懂越南語的翻譯人員。', simplified: '因为工作的关系，我需要懂越南语的翻译人员。', english: 'For the sake of my job, I need a translator in Vietnamese.', vietnamese: 'Vì lý do công việc, mình cần một phiên dịch viên tiếng Việt.' },
+        { traditional: '因為成家晚的關係，他的孩子年紀還很小。', simplified: '因为成家晚的关系，他的孩子年纪还很小。', english: "Because he didn't get married until later in life, his kids are still very young.", vietnamese: 'Vì lập gia đình muộn, con cái anh ấy vẫn còn nhỏ.' },
+        { traditional: '因為週年慶的關係，百貨公司裡擠滿了人。', simplified: '因为周年庆的关系，百货公司里挤满了人。', english: 'The department stores are packed with people because the anniversary sale is on.', vietnamese: 'Vì dịp kỷ niệm thành lập, trong trung tâm thương mại chật kín người.' },
+        { traditional: '因為連續劇的影響，街上賣韓國炸雞的店越來越多。', simplified: '因为连续剧的影响，街上卖韩国炸鸡的店越来越多。', english: "Because of the influence of the TV series, an increasing number of street shops are selling Korean-style fried chicken.", vietnamese: 'Vì ảnh hưởng của phim truyền hình, các tiệm bán gà rán kiểu Hàn trên phố ngày càng nhiều.' }
       ],
-      usageNotesVi: '"再也不" hướng tới tương lai (quyết tâm); "再也沒" nói về quá khứ đến hiện tại (thực tế không xảy ra nữa). Thường có 了 ở cuối câu để nhấn mạnh sự thay đổi.',
+      usageNotesVi: '因為 ở đây là giới từ, không phải liên từ, nên theo sau là một cụm danh từ (NP). Vế sau vẫn có thể có liên từ riêng, ví dụ: 因為氣溫的變化，因此（或所以）今年的芒果熟得比較早。',
       exercises: [
-        { id: 'L7-G4-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你還會再借他錢嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['不會了，上次借了到現在還沒還，我再也不借了。'] }], targetPattern: 'L7-G4' },
-        { id: 'L7-G4-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你們後來還有聯絡嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['沒有，自從那次吵架以後，我們再也沒聯絡過。'] }], targetPattern: 'L7-G4' },
-        { id: 'L7-G4-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這家餐廳你還想去嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['服務那麼差，我再也不會去了。'] }], targetPattern: 'L7-G4' },
-        { id: 'L7-G4-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你戒菸成功了？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['對，那次進醫院以後，我再也沒碰過。'] }], targetPattern: 'L7-G4' },
-        { id: 'L7-G4-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這種事以後還會發生嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我保證再也不會了，你放心。'] }], targetPattern: 'L7-G4' }
+        { id: 'L7-G4-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他的錢怎麼這麼快就花光了？（喜歡享受的關係）', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['因為喜歡享受的關係，他的錢很快就花光了。'] }], targetPattern: 'L7-G4' },
+        { id: 'L7-G4-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你爺爺為什麼答應搬到台北來跟你們一起住？（奶奶過世的關係）', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['因為奶奶過世的關係，爺爺才答應搬到台北來跟我們一起住。'] }], targetPattern: 'L7-G4' },
+        { id: 'L7-G4-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：為什麼迷網路遊戲的人越來越多？（社會環境的影響）', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['因為社會環境的影響，迷網路遊戲的人越來越多。'] }], targetPattern: 'L7-G4' },
+        { id: 'L7-G4-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：現代人為什麼越來越晚結婚？（時代的變化）', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['因為時代的變化，現代人越來越晚結婚。'] }], targetPattern: 'L7-G4' },
+        { id: 'L7-G4-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：為什麼最近很多人感冒？（季節的變化）', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['因為季節的變化，最近很多人感冒。'] }], targetPattern: 'L7-G4' }
       ]
     },
     {
-      id: 'L7-G5', lessonId: 'L7', order: 5, pattern: '好像…一樣 / 似的',
-      functionVi: '"好像 A 一樣 / 似的" dùng để so sánh, ví von: sự việc hoặc trạng thái giống như A (thực tế không phải A). "一樣" và "似的" đứng ở cuối, có thể lược một trong hai.',
-      functionEn: '"好像 A 一樣 / 似的" makes a simile: something is like A (though not actually A). "一樣" or "似的" comes at the end; either may be dropped.',
+      id: 'L7-G5', lessonId: 'L7', order: 5, pattern: '一來…，二來…',
+      functionVi: '一來…，二來… nêu hai lý do hoặc hai cách giải thích cho một khẳng định đã đưa ra trước đó.',
+      functionEn: 'This pattern offers two reasons or explanations for a statement already presented.',
       examples: [
-        { traditional: '牠一直看著我，好像在說「帶我走」一樣。', simplified: '它一直看着我，好像在说「带我走」一样。', english: 'It kept looking at me, as if to say "take me with you."', vietnamese: 'Nó cứ nhìn tôi, như thể đang nói "mang tôi đi theo" vậy.' },
-        { traditional: '他累得好像三天沒睡似的。', simplified: '他累得好像三天没睡似的。', english: "He's tired as if he hadn't slept for three days.", vietnamese: 'Anh ấy mệt như thể ba ngày chưa ngủ.' },
-        { traditional: '這裡安靜得好像沒有人住一樣。', simplified: '这里安静得好像没有人住一样。', english: "It's so quiet here it's as if nobody lived here.", vietnamese: 'Ở đây yên tĩnh như thể không có ai ở.' },
-        { traditional: '他說得那麼詳細，好像親眼看過一樣。', simplified: '他说得那么详细，好像亲眼看过一样。', english: "He described it in such detail, as if he'd seen it himself.", vietnamese: 'Anh ấy kể chi tiết đến thế, như thể tận mắt chứng kiến.' },
-        { traditional: '那隻狗一看到主人回來，就高興得好像過年似的。', simplified: '那只狗一看到主人回来，就高兴得好像过年似的。', english: 'The dog, seeing its owner back, got as happy as if it were New Year.', vietnamese: 'Con chó thấy chủ về là mừng như thể Tết đến.' }
+        { traditional: '我不信任他，一來我們認識不久，二來聽說他會騙人。', simplified: '我不信任他，一来我们认识不久，二来听说他会骗人。', english: "I don't trust him. First, we have not known each other for very long. Second, I've heard that he cheats.", vietnamese: 'Mình không tin anh ta, một là bọn mình quen biết chưa lâu, hai là nghe nói anh ta hay lừa người.' },
+        { traditional: '我不跟你們到綠島去玩，一來我怕坐船，二來我不會游泳，去了沒意思。', simplified: '我不跟你们到绿岛去玩，一来我怕坐船，二来我不会游泳，去了没意思。', english: "I'm not going to go with you to Green Island. On the one hand, I'm afraid of boat rides. On the other, I can't swim. It'll be boring if I go.", vietnamese: 'Mình không đi Lục Đảo chơi cùng các cậu đâu, một là mình sợ đi tàu, hai là mình không biết bơi, đi cũng chẳng có gì thú vị.' },
+        { traditional: '我最近吃素，一來天氣太熱，吃不下油膩的東西，二來吃青菜對健康比較好。', simplified: '我最近吃素，一来天气太热，吃不下油腻的东西，二来吃青菜对健康比较好。', english: "I've been eating vegetarian food a lot lately. First of all, it's been too hot out; I can't handle oily food. Second, eating vegetables is better for health.", vietnamese: 'Gần đây mình ăn chay, một là trời quá nóng, ăn không nổi đồ dầu mỡ, hai là ăn rau tốt cho sức khỏe hơn.' },
+        { traditional: '我們今年的收成不錯，一來天氣好，沒有颱風，二來我種的是新品種。', simplified: '我们今年的收成不错，一来天气好，没有台风，二来我种的是新品种。', english: 'Our harvest this year was pretty good. On the one hand, the weather was good--no typhoons. On the other, I planted a new strain of crops.', vietnamese: 'Vụ mùa năm nay nhà mình khá tốt, một là thời tiết tốt, không có bão, hai là mình trồng giống mới.' },
+        { traditional: '養寵物，一來讓我們不孤單，二來給我們很多快樂。所以現在養寵物的人越來越多。', simplified: '养宠物，一来让我们不孤单，二来给我们很多快乐。所以现在养宠物的人越来越多。', english: 'Keeping pets, on the one hand, takes away loneliness, and on the other, brings us a lot of joy, so an increasing number of people are keeping pets.', vietnamese: 'Nuôi thú cưng, một là giúp chúng ta bớt cô đơn, hai là mang lại cho chúng ta nhiều niềm vui. Vì vậy bây giờ người nuôi thú cưng ngày càng nhiều.' }
       ],
-      usageNotesVi: '"好像…一樣 / 似的" khác với "好像…" đơn thuần (phỏng đoán "hình như"). Ở đây là phép so sánh tu từ, thường mô tả mức độ hoặc trạng thái sinh động, không phải phỏng đoán sự thật.',
+      usageNotesVi: 'Cách dùng của mẫu này giống 一方面…，一方面…(Bài 6), nhưng 一來…，二來… có thể dùng để nêu nhiều lý do hơn, ví dụ: 一來…，二來…，三來…. Ngoài ra, 一來…，二來… mang tính khẩu ngữ hơn 一方面…，一方面….',
       exercises: [
-        { id: 'L7-G5-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他今天怎麼這麼安靜？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['不知道，好像有什麼心事一樣。'] }], targetPattern: 'L7-G5' },
-        { id: 'L7-G5-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個地方你第一次來嗎？', textWithBlanks: 'B：對，可是___。', blanks: [{ index: 0, acceptedAnswers: ['我覺得好像來過一樣，很熟悉。'] }], targetPattern: 'L7-G5' },
-        { id: 'L7-G5-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：颱風天的海邊怎麼樣？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['浪大得好像要把整個沙灘吃掉似的。'] }], targetPattern: 'L7-G5' },
-        { id: 'L7-G5-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他們兩個很好嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['好得好像一個人一樣，做什麼都在一起。'] }], targetPattern: 'L7-G5' },
-        { id: 'L7-G5-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：小狗看到你就一直搖尾巴。', textWithBlanks: 'B：對啊，___。', blanks: [{ index: 0, acceptedAnswers: ['牠每次都高興得好像很久沒看到我一樣。'] }], targetPattern: 'L7-G5' }
+        { id: 'L7-G5-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：為什麼到鄉下住一晚變成了現在熱門的休閒活動？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['一來可以接近大自然，放鬆心情，二來也能體驗不一樣的生活方式，所以越來越多人喜歡到鄉下住一晚。'] }], targetPattern: 'L7-G5' },
+        { id: 'L7-G5-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你認為鄉下有便利商店好不好？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我覺得不好，一來便利商店會讓鄉下變得跟城市一樣，二來也會影響傳統小店的生意。'] }], targetPattern: 'L7-G5' },
+        { id: 'L7-G5-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：現代人為什麼晚結婚？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['一來現代人經濟壓力大，二來大家比較重視自己的事業和興趣，所以越來越晚結婚。'] }], targetPattern: 'L7-G5' },
+        { id: 'L7-G5-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你認為結婚以前應該先同居嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我覺得應該先同居，一來可以了解彼此的生活習慣，二來也能確定兩個人真的適合在一起。'] }], targetPattern: 'L7-G5' },
+        { id: 'L7-G5-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你買東西喜歡刷卡嗎？為什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我喜歡刷卡，一來不用帶很多現金，比較方便，二來刷卡還能累積紅利點數。'] }], targetPattern: 'L7-G5' }
       ]
     },
     {
-      id: 'L7-G6', lessonId: 'L7', order: 6, pattern: '免得…',
-      functionVi: '"V + O，免得 + tình huống xấu" nêu làm việc trước (mệnh đề đầu) để tránh một hậu quả không mong muốn (sau 免得). "免得" luôn đứng trước điều muốn tránh.',
-      functionEn: '"do X, 免得 (so as to avoid) bad situation Y" — the first clause is done in order to prevent Y. "免得" always precedes the thing to be avoided.',
+      id: 'L7-G6', lessonId: 'L7', order: 6, pattern: 'V 來 V 去',
+      functionVi: 'V 來 V 去 dùng với động từ hành động, diễn tả việc lặp đi lặp lại nhiều lần, thường là qua lại không dứt khoát.',
+      functionEn: 'This pattern is used with action verbs and indicates repetitive execution, oftentimes in vain.',
       examples: [
-        { traditional: '養寵物要先想清楚，免得養了又後悔。', simplified: '养宠物要先想清楚，免得养了又后悔。', english: "Think it through before keeping a pet, so you don't regret it later.", vietnamese: 'Nuôi thú cưng phải nghĩ kỹ trước, kẻo nuôi rồi lại hối hận.' },
-        { traditional: '出門前檢查一下瓦斯，免得發生危險。', simplified: '出门前检查一下瓦斯，免得发生危险。', english: 'Check the gas before leaving, to avoid danger.', vietnamese: 'Trước khi ra khỏi nhà kiểm tra ga, kẻo xảy ra nguy hiểm.' },
-        { traditional: '早點出發，免得塞車遲到。', simplified: '早点出发，免得塞车迟到。', english: "Leave early so you don't get stuck in traffic and be late.", vietnamese: 'Đi sớm chút, kẻo kẹt xe rồi muộn.' },
-        { traditional: '這件事你最好自己跟他說，免得他聽別人講會誤會。', simplified: '这件事你最好自己跟他说，免得他听别人讲会误会。', english: "Better tell him yourself, so he doesn't misunderstand hearing it from others.", vietnamese: 'Chuyện này tốt nhất tự cậu nói với anh ấy, kẻo nghe người khác kể lại sẽ hiểu lầm.' },
-        { traditional: '把重要的東西記下來，免得忘記。', simplified: '把重要的东西记下来，免得忘记。', english: "Write down the important things so you don't forget.", vietnamese: 'Ghi lại những thứ quan trọng, kẻo quên.' }
+        { traditional: '孩子總是喜歡打來打去，你別擔心。', simplified: '孩子总是喜欢打来打去，你别担心。', english: "Kids are always hitting each other. It's nothing to worry about.", vietnamese: 'Trẻ con lúc nào cũng thích đánh nhau qua lại, cậu đừng lo.' },
+        { traditional: '他很講究吃，他說吃來吃去，還是台南的牛肉湯最好喝。', simplified: '他很讲究吃，他说吃来吃去，还是台南的牛肉汤最好喝。', english: "He's very particular about what he eats. He says he's eaten around and he still feels that the beef soup in Tainan is the best.", vietnamese: 'Anh ấy rất kén ăn, anh nói ăn thử khắp nơi rồi, vẫn thấy canh bò Đài Nam ngon nhất.' },
+        { traditional: '他們想來想去，最後決定帶狗去旅行，不送牠去狗旅館住。', simplified: '他们想来想去，最后决定带狗去旅行，不送它去狗旅馆住。', english: 'After thinking about it for a while, they decided to bring their dog along with them on their trip and not put him in a dog hotel.', vietnamese: 'Họ suy nghĩ đi suy nghĩ lại, cuối cùng quyết định mang chó đi du lịch cùng, không gửi nó ở khách sạn thú cưng.' },
+        { traditional: '他想換班，可是換來換去都不適合，最後只好回到原來的班。', simplified: '他想换班，可是换来换去都不适合，最后只好回到原来的班。', english: 'He wanted to change classes, but he changed several times and none of them were a good fit. In the end, he had no choice but to return to his original class.', vietnamese: 'Anh ấy muốn đổi lớp, nhưng đổi tới đổi lui đều không hợp, cuối cùng đành quay lại lớp cũ.' },
+        { traditional: '小孩子逛市場喜歡摸來摸去，讓老闆很不高興。', simplified: '小孩子逛市场喜欢摸来摸去，让老板很不高兴。', english: "Kids like to touch things when they're wandering about markets, making the vendors really unhappy.", vietnamese: 'Trẻ con đi chợ thích sờ hết thứ này đến thứ khác, khiến chủ quán rất khó chịu.' }
       ],
-      usageNotesVi: '"免得" gần nghĩa "以免" (trang trọng hơn) và "省得". Mệnh đề đầu là hành động chủ động; sau "免得" là điều tiêu cực muốn ngăn. Không đặt "免得" ở đầu câu.',
+      usageNotesVi: '1. Nếu có tân ngữ, phải đưa lên đầu câu làm chủ đề, ví dụ: 電腦，我不想帶來帶去，累死了。／他寫的文章，看來看去都跟吃有關。2. Cấu trúc V來V去 thường đi kèm nhận xét của người nói ở phía sau, ví dụ: 這幾個辦法，他想來想去，都覺得不好。',
       exercises: [
-        { id: 'L7-G6-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼提早這麼多到機場？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['早點來，免得臨時有狀況來不及。'] }], targetPattern: 'L7-G6' },
-        { id: 'L7-G6-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這些藥要放哪裡？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['放高一點，免得小孩拿到。'] }], targetPattern: 'L7-G6' },
-        { id: 'L7-G6-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我想直接把心裡的話跟他說。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['好，你自己跟他說清楚，免得以後越想越氣。'] }], targetPattern: 'L7-G6' },
-        { id: 'L7-G6-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：出國前還要辦什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['記得先換一點現金，免得到了那邊找不到換錢的地方。'] }], targetPattern: 'L7-G6' },
-        { id: 'L7-G6-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個週末的民宿要現在訂嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['對，現在就訂，免得到時候客滿。'] }], targetPattern: 'L7-G6' }
+        { id: 'L7-G6-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你畢業以後打算念研究所，還是找工作？決定了沒有？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我想來想去，還是決定先找工作。'] }], targetPattern: 'L7-G6' },
+        { id: 'L7-G6-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：鞋這麼舊了，你怎麼還留著？丟掉吧。', textWithBlanks: 'B：不行，___。', blanks: [{ index: 0, acceptedAnswers: ['這雙鞋我穿來穿去還是最舒服，捨不得丟。'] }], targetPattern: 'L7-G6' },
+        { id: 'L7-G6-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：上次你請客，今天應該我請你了。', textWithBlanks: 'B：我們___，還是各付各的吧。', blanks: [{ index: 0, acceptedAnswers: ['討論來討論去'] }], targetPattern: 'L7-G6' },
+        { id: 'L7-G6-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：好多人給他介紹女朋友，他選了誰？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['他選來選去，還是選了第一個認識的那個女生。'] }], targetPattern: 'L7-G6' },
+        { id: 'L7-G6-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你最近為什麼不上網玩遊戲了？', textWithBlanks: 'B：沒什麼新遊戲，___。', blanks: [{ index: 0, acceptedAnswers: ['玩來玩去都是舊的那幾個，膩了。'] }], targetPattern: 'L7-G6' }
       ]
     },
     {
-      id: 'L7-G7', lessonId: 'L7', order: 7, pattern: '什麼…都 / 也…',
-      functionVi: '"什麼 + (N) + 都 / 也 + V" diễn tả tính bao quát: mọi thứ (không trừ cái gì) đều thế. Ở dạng phủ định "什麼都不 / 沒…" = chẳng cái gì cả.',
-      functionEn: '"什麼 + (N) + 都 / 也 + V" expresses totality: everything (without exception). Negative "什麼都不 / 沒…" = nothing at all.',
+      id: 'L7-G7', lessonId: 'L7', order: 7, pattern: '不再…了',
+      functionVi: '不再…了 diễn tả việc từ bỏ một thói quen, hành vi hoặc niềm tin cũ. 不再 đặt trước động từ/tính từ, câu luôn kết thúc bằng 了 để nhấn mạnh sự thay đổi trạng thái.',
+      functionEn: "The use of this structure indicates that the subject abandons an old routine, habit or belief.",
       examples: [
-        { traditional: '養了就是一輩子的事，什麼都得先安排好。', simplified: '养了就是一辈子的事，什么都得先安排好。', english: "Once you keep one, it's for life; everything has to be arranged in advance.", vietnamese: 'Nuôi rồi là chuyện cả đời, cái gì cũng phải sắp xếp trước.' },
-        { traditional: '他剛到台灣的時候，什麼都覺得新鮮。', simplified: '他刚到台湾的时候，什么都觉得新鲜。', english: 'When he first came to Taiwan, everything seemed new.', vietnamese: 'Hồi mới đến Đài Loan, cái gì anh ấy cũng thấy mới lạ.' },
-        { traditional: '那天我太累了，回家以後什麼都不想做。', simplified: '那天我太累了，回家以后什么都不想做。', english: "I was so tired that day I didn't want to do anything after getting home.", vietnamese: 'Hôm đó tôi mệt quá, về nhà chẳng muốn làm gì.' },
-        { traditional: '這家店什麼都賣，從蔬菜到電池都有。', simplified: '这家店什么都卖，从蔬菜到电池都有。', english: 'This shop sells everything, from vegetables to batteries.', vietnamese: 'Tiệm này bán đủ thứ, từ rau đến pin đều có.' },
-        { traditional: '關於這隻狗的事，你問她就對了，她什麼都知道。', simplified: '关于这只狗的事，你问她就对了，她什么都知道。', english: 'For anything about this dog, just ask her—she knows everything.', vietnamese: 'Chuyện gì về con chó này, cứ hỏi cô ấy, cô ấy biết hết.' }
+        { traditional: '他覺得自己長大了，可以獨立了，就不再接受父母的幫助了。', simplified: '他觉得自己长大了，可以独立了，就不再接受父母的帮助了。', english: "He feels that he has grown up and can be independent, so he doesn't accept his parents' help anymore.", vietnamese: 'Anh ấy cảm thấy mình đã lớn, có thể tự lập, nên không nhận sự giúp đỡ của cha mẹ nữa.' },
+        { traditional: '我已經跟我男朋友分手了，我們不再見面了。', simplified: '我已经跟我男朋友分手了，我们不再见面了。', english: 'I have broken up with my boyfriend. We no longer see each other.', vietnamese: 'Mình đã chia tay với bạn trai rồi, bọn mình không gặp nhau nữa.' },
+        { traditional: '那家店的東西品質不是很好，而且價錢很貴，我不再去了。', simplified: '那家店的东西品质不是很好，而且价钱很贵，我不再去了。', english: 'The quality of the products in that store isn\'t all that good and the prices are expensive. I no longer go there.', vietnamese: 'Chất lượng đồ ở tiệm đó không tốt lắm, giá lại đắt, mình không đến đó nữa.' },
+        { traditional: '漫畫不再吸引我了。現在我喜歡看談歷史的書。', simplified: '漫画不再吸引我了。现在我喜欢看谈历史的书。', english: 'Comics no longer have the draw on me than they used to. I now like to read books on history.', vietnamese: 'Truyện tranh không còn hấp dẫn mình nữa. Bây giờ mình thích đọc sách về lịch sử.' },
+        { traditional: '他現在越來越喜歡狗了，覺得養狗很快樂，不再是負擔了。', simplified: '他现在越来越喜欢狗了，觉得养狗很快乐，不再是负担了。', english: 'He likes dogs more and more. He feels that raising dogs is a joy and no longer a burden.', vietnamese: 'Anh ấy bây giờ ngày càng thích chó, thấy nuôi chó rất vui, không còn là gánh nặng nữa.' }
       ],
-      usageNotesVi: 'Cùng nhóm với "誰都…", "哪裡都…", "怎麼都…". "什麼" ở đây không phải để hỏi mà mang nghĩa khái quát "bất cứ gì". Vế sau bắt buộc có 都 hoặc 也.',
+      usageNotesVi: '不再…了 thường dùng để nhấn mạnh sự thay đổi so với trước đây: chủ thể đã từng V, nhưng từ nay (hoặc từ một mốc nào đó) không còn V nữa. Có thể kết hợp với 從…以後 hoặc 自從…以來 để nêu rõ mốc thời gian thay đổi.',
       exercises: [
-        { id: 'L7-G7-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：搬新家還缺什麼嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['不缺了，該買的什麼都買齊了。'] }], targetPattern: 'L7-G7' },
-        { id: 'L7-G7-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他生氣的時候好相處嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['不好，他一生氣就什麼都不說，只是坐在那裡。'] }], targetPattern: 'L7-G7' },
-        { id: 'L7-G7-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個週末你想去哪裡？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我什麼地方都可以，你決定就好。'] }], targetPattern: 'L7-G7' },
-        { id: 'L7-G7-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你相信他說的話嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['他這個人，你問什麼他都說「還好」，很難知道他真正的想法。'] }], targetPattern: 'L7-G7' },
-        { id: 'L7-G7-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：剛領養的貓還很怕人嗎？', textWithBlanks: 'B：對，___。', blanks: [{ index: 0, acceptedAnswers: ['什麼聲音都會嚇到牠，得慢慢來。'] }], targetPattern: 'L7-G7' }
+        { id: 'L7-G7-EX1', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他在公司裡還受老闆重視嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['他已經不再受老闆重視了，因為最近常常遲到。'] }], targetPattern: 'L7-G7' },
+        { id: 'L7-G7-EX2', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：在你的國家幾歲的孩子可以獨立不靠父母？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['在我的國家，孩子大概十八歲以後就不再靠父母了。'] }], targetPattern: 'L7-G7' },
+        { id: 'L7-G7-EX3', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：以前教養孩子只是媽媽的責任，現在還一樣嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['不一樣了，現在教養孩子不再只是媽媽的責任，爸爸也要一起負擔。'] }], targetPattern: 'L7-G7' },
+        { id: 'L7-G7-EX4', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：美美大學時代是學校的風雲人物，念研究所的時候還是嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['不是了，念研究所以後，她不再是風雲人物了，大家都忙著做研究。'] }], targetPattern: 'L7-G7' },
+        { id: 'L7-G7-EX5', lessonId: 'L7', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這家公司的產品出問題以後，大家還信任他們嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['出問題以後，大家不再信任他們了，很多人都不買他們的產品了。'] }], targetPattern: 'L7-G7' }
       ]
     }
   ],
-
   workbookExercises: [
     {
-      id: 'L7-WB-match-collocation', lessonId: 'L7', section: 'pairs', type: 'matching',
-      prompt: 'Ghép danh từ với vị ngữ thường đi cùng (collocation).',
+      id: 'L7-WB-pairs-1', lessonId: 'L7', section: 'pairs', type: 'matching',
+      prompt: 'Ghép động từ với danh từ thường đi cùng (collocation).',
       pairs: [
-        { left: '責任', right: '負 (gánh)' },
-        { left: '寵物', right: '領養 (nhận nuôi)' },
-        { left: '狗', right: '牽 (dắt)' },
-        { left: '疫苗', right: '打 (tiêm)' },
-        { left: '情緒', right: '穩定 (ổn định)' },
-        { left: '承諾', right: '守 (giữ)' }
-      ]
-    },
-    {
-      id: 'L7-WB-match-response', lessonId: 'L7', section: 'pairs', type: 'matching',
-      prompt: 'Nối mỗi tình huống (cột trái) với cách phản ứng phù hợp (cột phải).',
-      pairs: [
-        { left: '想養寵物又怕不能負責', right: '先想清楚再決定，免得後悔' },
-        { left: '要出國一個星期', right: '提早安排人照顧寵物' },
-        { left: '想幫助流浪動物', right: '用領養代替購買' },
-        { left: '家裡老人一個人住', right: '考慮讓他養一隻狗作伴' },
-        { left: '寵物生病了', right: '帶去看醫生，別拖' },
-        { left: '寵物過世很難過', right: '給自己時間慢慢面對' }
+        { left: '組成', right: '樂團 (thành lập ban nhạc)' },
+        { left: '建立', right: '關係 (xây dựng mối quan hệ)' },
+        { left: '享受', right: '美食 (hưởng thụ ẩm thực)' },
+        { left: '減輕', right: '負擔 (giảm bớt gánh nặng)' },
+        { left: '生', right: '孩子 (sinh con)' },
+        { left: '改', right: '作業 (chấm bài)' }
       ]
     },
 
-    { id: 'L7-WB-fw-1', lessonId: 'L7', section: 'fill-write', type: 'fill-blank', textWithBlanks: '我把小黑___(dàngchéng)___(jiārén)，不是___(chǒngwù)。', blanks: [{ index: 0, acceptedAnswers: ['當成'] }, { index: 1, acceptedAnswers: ['家人'] }, { index: 2, acceptedAnswers: ['寵物'] }] },
-    { id: 'L7-WB-fw-2', lessonId: 'L7', section: 'fill-write', type: 'fill-blank', textWithBlanks: '這隻狗是從___(shōuróngsuǒ)___(lǐngyǎng)的，不是買的。', blanks: [{ index: 0, acceptedAnswers: ['收容所'] }, { index: 1, acceptedAnswers: ['領養'] }] },
-    { id: 'L7-WB-fw-3', lessonId: 'L7', section: 'fill-write', type: 'fill-blank', textWithBlanks: '養寵物___(zérèn)很大，生病要看醫生，出國要找人___(zhàogù)。', blanks: [{ index: 0, acceptedAnswers: ['責任'] }, { index: 1, acceptedAnswers: ['照顧'] }] },
-    { id: 'L7-WB-fw-4', lessonId: 'L7', section: 'fill-write', type: 'fill-blank', textWithBlanks: '自從養了牠___(yǐlái)，我每天再晚也會___(péi)牠散步。', blanks: [{ index: 0, acceptedAnswers: ['以來'] }, { index: 1, acceptedAnswers: ['陪'] }] },
-    { id: 'L7-WB-fw-5', lessonId: 'L7', section: 'fill-write', type: 'fill-blank', textWithBlanks: '有___(yánjiū)說，養寵物的___(lǎorénjiā)比較不容易覺得___(gūdú)。', blanks: [{ index: 0, acceptedAnswers: ['研究'] }, { index: 1, acceptedAnswers: ['老人家'] }, { index: 2, acceptedAnswers: ['孤獨'] }] },
-    { id: 'L7-WB-fw-6', lessonId: 'L7', section: 'fill-write', type: 'fill-blank', textWithBlanks: '那幾年的___(péibàn)太___(zhēnguì)了，就算會___(nánguò)，她還是願意再愛一次。', blanks: [{ index: 0, acceptedAnswers: ['陪伴'] }, { index: 1, acceptedAnswers: ['珍貴'] }, { index: 2, acceptedAnswers: ['難過'] }] },
+    {
+      id: 'L7-WB-fw-1', lessonId: 'L7', section: 'fill-write', type: 'fill-blank',
+      textWithBlanks: '王爺爺七十多歲了。他太太最近因為生病___(guòshì)了。兒子、女兒都有自己的___(jiātíng)，沒辦法回老家去照顧他。他們一直要王爺爺搬來台北一起住，可是王爺爺不喜歡住在台北。王爺爺的朋友認為他應該再找個___(bàn)。有人陪他，孩子比較放心。王爺爺___(rěn bú zhù)告訴他們：不要替我___(ānpái)生活，我誰也不___(kào)。大家不用擔心，我會過得很好的。',
+      blanks: [
+        { index: 0, acceptedAnswers: ['過世'] },
+        { index: 1, acceptedAnswers: ['家庭'] },
+        { index: 2, acceptedAnswers: ['伴'] },
+        { index: 3, acceptedAnswers: ['忍不住'] },
+        { index: 4, acceptedAnswers: ['安排'] },
+        { index: 5, acceptedAnswers: ['靠'] }
+      ]
+    },
 
     {
       id: 'L7-WB-fb-1', lessonId: 'L7', section: 'fill-bank', type: 'fill-blank',
-      prompt: 'Điền từ thích hợp vào đoạn văn (mỗi từ chỉ dùng 1 lần).',
-      wordBank: ['成員', '購買', '棄養', '負責', '面對', '生命'],
-      textWithBlanks: '對很多人來說，寵物早就是家庭的1.___之一。可是養寵物是一輩子的承諾。有些人只因為牠可愛就2.___，等到牠長大、生病，或是自己搬家，就把牠3.___。動物團體常常提醒大家：養以前先問自己，能不能為這條4.___5.___十幾年？如果還沒準備好，就先不要養。真正愛動物，是願意跟牠一起6.___生活裡所有的麻煩。',
+      prompt: 'Điền từ thích hợp vào đoạn văn (có từ thừa: 道德、孤單).',
+      wordBank: ['道德', '接受', '領養', '當成', '真正', '孤單', '親', '教養'],
+      textWithBlanks: '阿智是個快樂的孩子。有一天阿智發現自己是李家1.___的孩子。他很難過——生他的父母為什麼不要他？後來他想爸媽對他真好，不但讓他念私立小學，而且只要他有興趣的事，都送他去學，也常帶他拜訪親戚、參觀博物館，把他2.___成一個大家都喜歡的孩子。爸媽把他3.___自己生的孩子，而且關係也比一般父子、母子還4.___。爸媽才是5.___愛他的人。想清楚以後，就不再難過了。',
       blanks: [
-        { index: 1, acceptedAnswers: ['成員'] },
-        { index: 2, acceptedAnswers: ['購買'] },
-        { index: 3, acceptedAnswers: ['棄養'] },
-        { index: 4, acceptedAnswers: ['生命'] },
-        { index: 5, acceptedAnswers: ['負責'] },
-        { index: 6, acceptedAnswers: ['面對'] }
+        { index: 1, acceptedAnswers: ['領養'] },
+        { index: 2, acceptedAnswers: ['教養'] },
+        { index: 3, acceptedAnswers: ['當成'] },
+        { index: 4, acceptedAnswers: ['親'] },
+        { index: 5, acceptedAnswers: ['真正'] }
       ]
     },
 
     {
       id: 'L7-WB-read-a1', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '小雅：你怎麼突然決定養狗了？你不是說很麻煩嗎？\n阿宏：上個月去朋友家，那隻狗一直跟著我。回家以後我一直想牠，就知道自己準備好了。',
-      question: '阿宏決定養狗的原因是：',
-      options: [{ id: 'a', text: '朋友送了他一隻狗。' }, { id: 'b', text: '他跟那隻狗相處以後，發現自己想養。' }, { id: 'c', text: '他覺得養狗其實不麻煩。' }],
-      correctOptionId: 'b',
-      explanationVi: '"回家以後我一直想牠，就知道自己準備好了".'
+      prompt: '王太太：我一直想去美國留學，可是孩子還小，沒辦法帶他一起去。我真捨不得把他留在台灣跟奶奶一起住。還是單身好啊！沒有負擔。\n林美月：就算單身，也有很多問題。你就快決定吧。',
+      question: '林美月的意思是：',
+      options: [{ id: 'a', text: '王太太算是單身，所以有很多問題。' }, { id: 'b', text: '單身比較好，什麼問題都沒有。' }, { id: 'c', text: '單身不一定比較好。' }],
+      correctOptionId: 'c',
+      explanationVi: '"就算單身，也有很多問題" 是用來反駁"單身沒有負擔、比較好"的說法，暗示單身不一定比較好。'
     },
     {
       id: 'L7-WB-read-a2', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '高橋：聽說你們家的貓十七歲了？\n陳敏萱：對，牠陪我從高中到現在。牠年紀大了，我們把牠當長輩一樣照顧。',
-      question: '陳敏萱一家怎麼對待這隻老貓？',
-      options: [{ id: 'a', text: '覺得牠太老了，想送走。' }, { id: 'b', text: '像照顧家裡的長輩一樣照顧牠。' }, { id: 'c', text: '因為牠不能動了，很少理牠。' }],
+      prompt: '小張：我媽幾乎每天問我什麼時候成家，可是我很享受單身生活，不想這麼早有負擔。\n小美：我也一樣。而且我交過幾個男朋友，選來選去找不到一個理想的。',
+      question: '小美的意思是：',
+      options: [{ id: 'a', text: '她想早一點結婚。' }, { id: 'b', text: '她找不到理想的男朋友，寧可享受單身生活。' }, { id: 'c', text: '她去了很多地方，都找不到男朋友。' }],
       correctOptionId: 'b',
-      explanationVi: '"把牠當長輩一樣照顧".'
+      explanationVi: '"選來選去找不到一個理想的" 加上前面小張說的"享受單身生活"，可知小美也是找不到理想對象，寧可維持單身。'
     },
     {
       id: 'L7-WB-read-a3', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '安同：你上次不是說狗走了以後再也不養了？\n玉真：對啊，我也這樣以為。可是家裡真的太安靜了，我才知道自己有多需要一個伴。',
-      question: '玉真後來的想法有什麼改變？',
-      options: [{ id: 'a', text: '她還是決定再也不養了。' }, { id: 'b', text: '她發現自己其實很需要寵物的陪伴。' }, { id: 'c', text: '她覺得家裡安靜一點比較好。' }],
+      prompt: '麗麗：小陳在學校不但成績好，棒球也打得好，是學校裡的風雲人物。可是，怎麼沒什麼朋友？總是孤孤單單的一個人。\n小張：可能是因為個性的關係，不會建立跟人的關係。',
+      question: '根據麗麗跟小張的對話，下面哪一個對？',
+      options: [{ id: 'a', text: '小陳總是孤孤單單的，是因為他是學校裡的風雲人物。' }, { id: 'b', text: '小陳不會建立跟人的關係，所以沒有朋友。' }, { id: 'c', text: '小陳的個性讓他成績好，棒球也打得好。' }],
       correctOptionId: 'b',
-      explanationVi: '"我才知道自己有多需要一個伴".'
+      explanationVi: '小張說"可能是因為個性的關係，不會建立跟人的關係"，直接指出小陳沒朋友的原因。'
     },
 
     {
       id: 'L7-WB-read-b1', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '近年來，越來越多台灣家庭養寵物，甚至有人說，現在的寵物比小孩還多。對這些家庭來說，狗和貓不是「動物」，而是家裡的一個成員：一起吃飯、一起睡覺，出去玩也要帶著。不過，動物團體提醒，養寵物是一份十幾年的責任。每年還是有很多動物被棄養，變成流浪狗、流浪貓。牠們有的是因為主人搬家不能養，有的是因為長大以後不像小時候那麼可愛。團體一直推廣「領養代替購買」，希望大家給收容所裡的動物一個機會。他們說，決定養一隻動物以前，最重要的問題不是「牠可不可愛」，而是「我能不能照顧牠一輩子」。',
-      question: '現在有些人覺得台灣的寵物比小孩還多。',
+      prompt: '麗雅從小在單親家庭長大，可是沒有受到爸爸、媽媽意見不合的影響；她快樂、活潑，喜歡幫助別人。她有這樣的個性，可能跟她從小接受過很多人的幫助有關係。她媽媽只有高中畢業，找不到好工作，為了賺錢養她，一個人要做兩、三份工作。有一次媽媽生病了躺在床上起不來，不能工作，也沒有收入。還好麗雅的老師知道了，上網找了一些資源來幫助她們。這件事讓她知道社會很溫馨。雖然麗雅的爸爸從來沒關心過她，可是有這麼多人愛她，她不再抱怨了。以後她有能力，也要幫助別人。',
+      question: '麗雅的家庭是個完整的家庭。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'true',
-      explanationVi: '"甚至有人說，現在的寵物比小孩還多".'
+      correctOptionId: 'false',
+      explanationVi: '"麗雅從小在單親家庭長大"，是單親家庭，不是（傳統定義的）完整家庭。'
     },
     {
       id: 'L7-WB-read-b2', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '近年來，越來越多台灣家庭養寵物，甚至有人說，現在的寵物比小孩還多。對這些家庭來說，狗和貓不是「動物」，而是家裡的一個成員：一起吃飯、一起睡覺，出去玩也要帶著。不過，動物團體提醒，養寵物是一份十幾年的責任。每年還是有很多動物被棄養，變成流浪狗、流浪貓。牠們有的是因為主人搬家不能養，有的是因為長大以後不像小時候那麼可愛。團體一直推廣「領養代替購買」，希望大家給收容所裡的動物一個機會。他們說，決定養一隻動物以前，最重要的問題不是「牠可不可愛」，而是「我能不能照顧牠一輩子」。',
-      question: '這些家庭把寵物當成一般的動物看待。',
+      prompt: '麗雅從小在單親家庭長大，可是沒有受到爸爸、媽媽意見不合的影響；她快樂、活潑，喜歡幫助別人。她有這樣的個性，可能跟她從小接受過很多人的幫助有關係。她媽媽只有高中畢業，找不到好工作，為了賺錢養她，一個人要做兩、三份工作。有一次媽媽生病了躺在床上起不來，不能工作，也沒有收入。還好麗雅的老師知道了，上網找了一些資源來幫助她們。這件事讓她知道社會很溫馨。雖然麗雅的爸爸從來沒關心過她，可是有這麼多人愛她，她不再抱怨了。以後她有能力，也要幫助別人。',
+      question: '爸爸、媽媽意見不合，讓她的個性變得很奇怪。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
       correctOptionId: 'false',
-      explanationVi: '"不是「動物」，而是家裡的一個成員".'
+      explanationVi: '文章說她"沒有受到爸爸、媽媽意見不合的影響"，而且個性"快樂、活潑"，不是奇怪。'
     },
     {
       id: 'L7-WB-read-b3', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '近年來，越來越多台灣家庭養寵物，甚至有人說，現在的寵物比小孩還多。對這些家庭來說，狗和貓不是「動物」，而是家裡的一個成員：一起吃飯、一起睡覺，出去玩也要帶著。不過，動物團體提醒，養寵物是一份十幾年的責任。每年還是有很多動物被棄養，變成流浪狗、流浪貓。牠們有的是因為主人搬家不能養，有的是因為長大以後不像小時候那麼可愛。團體一直推廣「領養代替購買」，希望大家給收容所裡的動物一個機會。他們說，決定養一隻動物以前，最重要的問題不是「牠可不可愛」，而是「我能不能照顧牠一輩子」。',
-      question: '每年被棄養的動物已經很少了。',
+      prompt: '麗雅從小在單親家庭長大，可是沒有受到爸爸、媽媽意見不合的影響；她快樂、活潑，喜歡幫助別人。她有這樣的個性，可能跟她從小接受過很多人的幫助有關係。她媽媽只有高中畢業，找不到好工作，為了賺錢養她，一個人要做兩、三份工作。有一次媽媽生病了躺在床上起不來，不能工作，也沒有收入。還好麗雅的老師知道了，上網找了一些資源來幫助她們。這件事讓她知道社會很溫馨。雖然麗雅的爸爸從來沒關心過她，可是有這麼多人愛她，她不再抱怨了。以後她有能力，也要幫助別人。',
+      question: '麗雅活潑快樂是受到父親的影響。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
       correctOptionId: 'false',
-      explanationVi: '"每年還是有很多動物被棄養".'
+      explanationVi: '文章說"麗雅的爸爸從來沒關心過她"，她活潑快樂跟她從小接受很多人的幫助有關，不是父親的影響。'
     },
     {
       id: 'L7-WB-read-b4', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '近年來，越來越多台灣家庭養寵物，甚至有人說，現在的寵物比小孩還多。對這些家庭來說，狗和貓不是「動物」，而是家裡的一個成員：一起吃飯、一起睡覺，出去玩也要帶著。不過，動物團體提醒，養寵物是一份十幾年的責任。每年還是有很多動物被棄養，變成流浪狗、流浪貓。牠們有的是因為主人搬家不能養，有的是因為長大以後不像小時候那麼可愛。團體一直推廣「領養代替購買」，希望大家給收容所裡的動物一個機會。他們說，決定養一隻動物以前，最重要的問題不是「牠可不可愛」，而是「我能不能照顧牠一輩子」。',
-      question: '有些動物被棄養是因為長大後不夠可愛。',
+      prompt: '麗雅從小在單親家庭長大，可是沒有受到爸爸、媽媽意見不合的影響；她快樂、活潑，喜歡幫助別人。她有這樣的個性，可能跟她從小接受過很多人的幫助有關係。她媽媽只有高中畢業，找不到好工作，為了賺錢養她，一個人要做兩、三份工作。有一次媽媽生病了躺在床上起不來，不能工作，也沒有收入。還好麗雅的老師知道了，上網找了一些資源來幫助她們。這件事讓她知道社會很溫馨。雖然麗雅的爸爸從來沒關心過她，可是有這麼多人愛她，她不再抱怨了。以後她有能力，也要幫助別人。',
+      question: '她媽媽賺錢不容易。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
       correctOptionId: 'true',
-      explanationVi: '"有的是因為長大以後不像小時候那麼可愛".'
+      explanationVi: '"只有高中畢業，找不到好工作，為了賺錢養她，一個人要做兩、三份工作"，可知賺錢很不容易。'
     },
     {
       id: 'L7-WB-read-b5', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '近年來，越來越多台灣家庭養寵物，甚至有人說，現在的寵物比小孩還多。對這些家庭來說，狗和貓不是「動物」，而是家裡的一個成員：一起吃飯、一起睡覺，出去玩也要帶著。不過，動物團體提醒，養寵物是一份十幾年的責任。每年還是有很多動物被棄養，變成流浪狗、流浪貓。牠們有的是因為主人搬家不能養，有的是因為長大以後不像小時候那麼可愛。團體一直推廣「領養代替購買」，希望大家給收容所裡的動物一個機會。他們說，決定養一隻動物以前，最重要的問題不是「牠可不可愛」，而是「我能不能照顧牠一輩子」。',
-      question: '動物團體認為養寵物前最該問的是「牠可不可愛」。',
+      prompt: '麗雅從小在單親家庭長大，可是沒有受到爸爸、媽媽意見不合的影響；她快樂、活潑，喜歡幫助別人。她有這樣的個性，可能跟她從小接受過很多人的幫助有關係。她媽媽只有高中畢業，找不到好工作，為了賺錢養她，一個人要做兩、三份工作。有一次媽媽生病了躺在床上起不來，不能工作，也沒有收入。還好麗雅的老師知道了，上網找了一些資源來幫助她們。這件事讓她知道社會很溫馨。雖然麗雅的爸爸從來沒關心過她，可是有這麼多人愛她，她不再抱怨了。以後她有能力，也要幫助別人。',
+      question: '麗雅的老師利用社會資源幫助她。',
+      options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
+      correctOptionId: 'true',
+      explanationVi: '"麗雅的老師知道了，上網找了一些資源來幫助她們".'
+    },
+    {
+      id: 'L7-WB-read-b6', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
+      prompt: '麗雅從小在單親家庭長大，可是沒有受到爸爸、媽媽意見不合的影響；她快樂、活潑，喜歡幫助別人。她有這樣的個性，可能跟她從小接受過很多人的幫助有關係。她媽媽只有高中畢業，找不到好工作，為了賺錢養她，一個人要做兩、三份工作。有一次媽媽生病了躺在床上起不來，不能工作，也沒有收入。還好麗雅的老師知道了，上網找了一些資源來幫助她們。這件事讓她知道社會很溫馨。雖然麗雅的爸爸從來沒關心過她，可是有這麼多人愛她，她不再抱怨了。以後她有能力，也要幫助別人。',
+      question: '大家熱心幫忙，讓麗雅更生父親的氣。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
       correctOptionId: 'false',
-      explanationVi: '"而是「我能不能照顧牠一輩子」".'
+      explanationVi: '文章說"有這麼多人愛她，她不再抱怨了"，是不再抱怨，不是更生氣。'
     },
 
     {
       id: 'L7-WB-read-c1', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '【週末送養會】這個星期六下午兩點到五點，在市民公園舉行。現場有二十隻等待家的狗和貓，都已經打過疫苗、做過結紮。想領養的人請帶身分證，並先想清楚家裡的情況：有沒有時間陪牠？家人都同意嗎？以後搬家怎麼辦？我們希望每一隻動物只需要找一次家。',
-      question: '這些等待領養的動物，健康方面已經做了什麼？',
-      options: [{ id: 'a', text: '什麼都還沒做。' }, { id: 'b', text: '已經打過疫苗、做過結紮。' }, { id: 'c', text: '只做了結紮，還沒打疫苗。' }],
-      correctOptionId: 'b',
-      explanationVi: '"都已經打過疫苗、做過結紮".'
+      prompt: '【交友廣告】姓名：張德華　生日：1984年　星座：金牛座　血型：B　職業：百萬年薪超級推銷員　希望對方條件：身高160~170、體重48~60、長髮、大眼睛、喜愛小動物。有以上條件的18-25歲未婚小姐請跟我聯絡。電話：0918-753-321',
+      question: '這是什麼樣的廣告？什麼樣的人會對這個廣告有興趣？',
+      options: [{ id: 'a', text: '徵婚（交友）廣告，年輕未婚、喜歡小動物的女性會有興趣。' }, { id: 'b', text: '徵才（找工作）廣告，想找推銷員工作的人會有興趣。' }, { id: 'c', text: '寵物店廣告，想養狗的人會有興趣。' }],
+      correctOptionId: 'a',
+      explanationVi: '內容列出對方條件（年齡、身高、體重、外貌、喜好）並請未婚小姐聯絡，是交友徵婚廣告。'
     },
     {
       id: 'L7-WB-read-c2', lessonId: 'L7', section: 'reading', type: 'multiple-choice',
-      prompt: '【週末送養會】這個星期六下午兩點到五點，在市民公園舉行。現場有二十隻等待家的狗和貓，都已經打過疫苗、做過結紮。想領養的人請帶身分證，並先想清楚家裡的情況：有沒有時間陪牠？家人都同意嗎？以後搬家怎麼辦？我們希望每一隻動物只需要找一次家。',
-      question: '主辦單位希望想領養的人先做什麼？',
-      options: [{ id: 'a', text: '先付一筆錢。' }, { id: 'b', text: '先想清楚家裡的情況和以後的安排。' }, { id: 'c', text: '先在網路上報名。' }],
-      correctOptionId: 'b',
-      explanationVi: '"先想清楚家裡的情況：有沒有時間陪牠？家人都同意嗎？以後搬家怎麼辦？"'
+      prompt: '張德華希望對方條件：身高160~170、體重48~60、18-25歲、未婚。\nA：21歲，身高172，體重55。\nB：33歲，身高160，體重65。\nC：22歲，身高165，體重50。',
+      question: '誰比較適合張先生開出的條件？',
+      options: [{ id: 'a', text: 'A' }, { id: 'b', text: 'B' }, { id: 'c', text: 'C' }],
+      correctOptionId: 'c',
+      explanationVi: 'A身高172超過170的範圍；B的33歲超過25歲，體重65也超過60；只有C（22歲、身高165、體重50）完全符合張先生開出的條件。'
     },
 
-    { id: 'L7-WB-dc-1', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G1', turns: [{ speaker: 'A', text: '你對那隻狗也太好了吧？', isBlank: false }, { speaker: 'B', text: '（把…當…）', isBlank: true }], sampleAnswer: '我早就把牠當成家人了，牠不只是一隻狗。' },
-    { id: 'L7-WB-dc-2', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G2', turns: [{ speaker: 'A', text: '你怎麼變得這麼早睡早起？', isBlank: false }, { speaker: 'B', text: '（自從…以來）', isBlank: true }], sampleAnswer: '自從養了狗以來，我每天都得早起帶牠出門。' },
-    { id: 'L7-WB-dc-3', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G3', turns: [{ speaker: 'A', text: '牠只是去朋友家住幾天，你怎麼一直看照片？', isBlank: false }, { speaker: 'B', text: '（少了…就…）', isBlank: true }], sampleAnswer: '少了牠在家，我怎麼看都覺得客廳空空的。' },
-    { id: 'L7-WB-dc-4', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G6', turns: [{ speaker: 'A', text: '我想馬上就去把那隻小狗帶回家。', isBlank: false }, { speaker: 'B', text: '（免得）', isBlank: true }], sampleAnswer: '你先跟家人商量好再決定，免得帶回來以後大家有意見。' },
-    { id: 'L7-WB-dc-5', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G5', turns: [{ speaker: 'A', text: '你的狗看到你回家反應好大。', isBlank: false }, { speaker: 'B', text: '（好像…一樣）', isBlank: true }], sampleAnswer: '對啊，牠每次都高興得好像一整天沒看到我一樣。' },
+    { id: 'L7-WB-dc-1', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G5', turns: [{ speaker: 'A', text: '既然到了墾丁，就去玩玩水上活動吧。怎麼一個人坐在海邊？', isBlank: false }, { speaker: 'B', text: '（一來…，二來…）', isBlank: true }], sampleAnswer: '一來我不太會游泳，二來我比較喜歡安靜地看海，所以就自己坐在這裡。' },
+    { id: 'L7-WB-dc-2', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G2', turns: [{ speaker: 'A', text: '這裡的牛肉湯跟鹹粥都好大一碗，我們每種點一碗，兩個人一起吃好不好？', isBlank: false }, { speaker: 'B', text: '我不習慣這樣，（各V各的）', isBlank: true }], sampleAnswer: '我不習慣這樣，我們還是各點各的吧。' },
+    { id: 'L7-WB-dc-3', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G3', turns: [{ speaker: 'A', text: '聽說這個網站連最新的智慧型手機都打八折，要不要買一支？', isBlank: false }, { speaker: 'B', text: '不可能吧。不過（就算…也…）', isBlank: true }], sampleAnswer: '不可能吧。不過就算是真的打八折，我也不會買，因為我現在的手機還很新。' },
+    { id: 'L7-WB-dc-4', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G6', turns: [{ speaker: 'A', text: '那個小孩子怎麼跌倒了？他不是跟大家玩得很高興嗎？', isBlank: false }, { speaker: 'B', text: '（V來V去）', isBlank: true }], sampleAnswer: '他跑來跑去，一不小心就跌倒了。' },
+    { id: 'L7-WB-dc-5', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G1', turns: [{ speaker: 'A', text: '聽說小美把每個月打工賺的錢都花光了，有時候還跟同學借錢。', isBlank: false }, { speaker: 'B', text: '（亂V）', isBlank: true }], sampleAnswer: '她一定是亂花錢，才會每個月都花光還要借錢。' },
+    { id: 'L7-WB-dc-6', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G4', turns: [{ speaker: 'A', text: '你怎麼突然決定搬出去自己住？', isBlank: false }, { speaker: 'B', text: '（因為 NP，S…）', isBlank: true }], sampleAnswer: '因為工作的關係，我需要住得離公司近一點，才決定搬出去的。' },
+    { id: 'L7-WB-dc-7', lessonId: 'L7', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L7-G7', turns: [{ speaker: 'A', text: '你還會常常去那家寵物店買東西嗎？', isBlank: false }, { speaker: 'B', text: '（不再…了）', isBlank: true }], sampleAnswer: '不會了，自從上次服務態度不好以後，我就不再去那家店了。' },
 
     {
       id: 'L7-WB-comp-1', lessonId: 'L7', section: 'composition', type: 'composition',
-      topicVi: 'Hãy giới thiệu một con vật nuôi (của bạn hoặc của người quen). Nó là con vật gì, đến với gia đình như thế nào, và nó có ý nghĩa gì với mọi người?',
-      requiredWords: ['L7-002', 'L7-003', 'L7-004', 'L7-007', 'L7-012', 'L7-018', 'L7-019', 'L7-024'],
-      requiredPatterns: ['L7-G1', 'L7-G2', 'L7-G7'],
-      minLength: 200, maxLength: 250
-    },
-    {
-      id: 'L7-WB-comp-2', lessonId: 'L7', section: 'composition', type: 'composition',
-      topicVi: 'Có người cho rằng nên "nhận nuôi thay vì mua" thú cưng, và phải suy nghĩ thật kỹ trước khi nuôi. Bạn có đồng ý không? Vì sao?',
-      requiredWords: ['L7-009', 'L7-029', 'L7-031', 'L7-032', 'L7-040', 'L7-041', 'L7-042', 'L7-045'],
-      requiredPatterns: ['L7-G4', 'L7-G5', 'L7-G6'],
+      topicVi: '你認為哪一種家庭的組成方式最理想？單身？同居？還是結婚？（要不要生孩子？可以跟先生或是太太的父母住在一起嗎？）為什麼？',
+      requiredWords: ['L7-012', 'L7-020', 'L7-022', 'L7-037', 'L7-048', 'L7-051', 'L7-054', 'L7-059', 'L7-062', 'L7-064', 'L7-066', 'L7-071'],
+      requiredPatterns: ['L7-G1', 'L7-G2', 'L7-G3', 'L7-G4', 'L7-G5', 'L7-G6', 'L7-G7'],
       minLength: 200, maxLength: 250
     }
   ]
