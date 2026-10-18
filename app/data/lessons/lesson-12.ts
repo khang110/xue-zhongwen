@@ -11,387 +11,499 @@ export const lesson12: Lesson = {
 
   dialogues: [
     [
-      { speaker: '', traditional: '（在陳敏萱家看電視，螢幕上在報選舉新聞）', simplified: '（在陈敏萱家看电视，萤幕上在报选举新闻）', pinyin: '(Zài Chén Mǐnxuān jiā kàn diànshì, yíngmù shàng zài bào xuǎnjǔ xīnwén)', english: '(Watching TV at Chen Minxuan\'s home, election news on screen)', vietnamese: '(Xem tivi ở nhà Trần Mẫn Huyên, trên màn hình đang đưa tin bầu cử)' },
-      { speaker: '羅珊蒂', traditional: '這幾天路上到處都是旗子和廣播車，好熱鬧。', simplified: '这几天路上到处都是旗子和广播车，好热闹。', pinyin: 'Zhè jǐ tiān lù shàng dàochù dōu shì qízi hé guǎngbò chē, hǎo rènào.', english: "These days the streets are full of flags and loudspeaker vans—so lively.", vietnamese: 'Mấy ngày nay trên đường đâu đâu cũng cờ và xe phát thanh, náo nhiệt thật.' },
-      { speaker: '陳敏萱', traditional: '對啊，星期六就要投票了。這是我第一次能投，剛滿二十歲。', simplified: '对啊，星期六就要投票了。这是我第一次能投，刚满二十岁。', pinyin: 'Duì a, xīngqíliù jiù yào tóupiào le. Zhè shì wǒ dì-yī cì néng tóu, gāng mǎn èrshí suì.', english: "Yeah, we vote on Saturday. It's my first time able to vote—I just turned twenty.", vietnamese: 'Ừ, thứ Bảy là bỏ phiếu rồi. Đây là lần đầu tiên mình được bỏ, vừa đủ hai mươi tuổi.' },
-      { speaker: '安德思', traditional: '在你們這裡，凡是滿二十歲的公民都可以投票嗎？', simplified: '在你们这里，凡是满二十岁的公民都可以投票吗？', pinyin: 'Zài nǐmen zhèlǐ, fánshì mǎn èrshí suì de gōngmín dōu kěyǐ tóupiào ma?', english: "Here, can any citizen who's turned twenty vote?", vietnamese: 'Ở chỗ các cậu, hễ là công dân đủ hai mươi tuổi đều được bỏ phiếu à?' },
-      { speaker: '陳敏萱', traditional: '對，凡是有身分證、年滿二十歲的人都有投票權。這次除了選人，還有幾個公投的題目。', simplified: '对，凡是有身分证、年满二十岁的人都有投票权。这次除了选人，还有几个公投的题目。', pinyin: 'Duì, fánshì yǒu shēnfènzhèng, nián mǎn èrshí suì de rén dōu yǒu tóupiàoquán. Zhè cì chúle xuǎn rén, hái yǒu jǐ ge gōngtóu de tímù.', english: "Right, anyone with an ID card who's at least twenty has the right to vote. This time, besides electing people, there are also a few referendum questions.", vietnamese: 'Đúng, hễ là người có chứng minh thư, đủ hai mươi tuổi đều có quyền bỏ phiếu. Lần này ngoài bầu người, còn có vài câu hỏi trưng cầu dân ý.' },
-      { speaker: '高橋健太', traditional: '就制度而言，台灣的選舉算是相當公開的。開票的時候，一票一票唱出來，大家都看得到。', simplified: '就制度而言，台湾的选举算是相当公开的。开票的时候，一票一票唱出来，大家都看得到。', pinyin: 'Jiù zhìdù ér yán, Táiwān de xuǎnjǔ suànshì xiāngdāng gōngkāi de. Kāipiào de shíhòu, yí piào yí piào chàng chūlái, dàjiā dōu kàn de dào.', english: "In terms of the system, Taiwan's elections are quite transparent. When counting votes, each ballot is read aloud one by one, and everyone can watch.", vietnamese: 'Xét về mặt chế độ, bầu cử Đài Loan tương đối công khai. Lúc kiểm phiếu, từng lá phiếu được xướng lên, ai cũng nhìn thấy.' },
-      { speaker: '羅珊蒂', traditional: '可是我有點看不懂那些政見。每個候選人講的好像都差不多。', simplified: '可是我有点看不懂那些政见。每个候选人讲的好像都差不多。', pinyin: 'Kěshì wǒ yǒudiǎn kàn bù dǒng nàxiē zhèngjiàn. Měi ge hòuxuǎnrén jiǎng de hǎoxiàng dōu chàbùduō.', english: "But I can't quite make sense of those platforms. Every candidate seems to say more or less the same thing.", vietnamese: 'Nhưng mình hơi khó hiểu mấy cương lĩnh tranh cử đó. Ứng viên nào nói cũng na ná nhau.' },
-      { speaker: '陳敏萱', traditional: '所以我打算週末以前，把幾個我在意的議題整理一下，換句話說，先想清楚我自己要什麼，再去看誰的主張比較接近。', simplified: '所以我打算周末以前，把几个我在意的议题整理一下，换句话说，先想清楚我自己要什么，再去看谁的主张比较接近。', pinyin: 'Suǒyǐ wǒ dǎsuàn zhōumò yǐqián, bǎ jǐ ge wǒ zàiyì de yìtí zhěnglǐ yíxià, huàn jù huà shuō, xiān xiǎng qīngchǔ wǒ zìjǐ yào shénme, zài qù kàn shéi de zhǔzhāng bǐjiào jiējìn.', english: "So before the weekend I'm going to sort out a few issues I care about—in other words, figure out what I want first, then see whose positions come closest.", vietnamese: 'Nên trước cuối tuần mình định sắp xếp lại vài vấn đề mình quan tâm, nói cách khác, nghĩ rõ mình muốn gì trước, rồi xem chủ trương của ai gần với mình hơn.' },
-      { speaker: '安德思', traditional: '你會受家人影響嗎？', simplified: '你会受家人影响吗？', pinyin: 'Nǐ huì shòu jiārén yǐngxiǎng ma?', english: 'Will you be influenced by your family?', vietnamese: 'Cậu có bị người nhà ảnh hưởng không?' },
-      { speaker: '陳敏萱', traditional: '多少會。可是我爸媽也說，這是我的一票，要我自己決定。', simplified: '多少会。可是我爸妈也说，这是我的一票，要我自己决定。', pinyin: 'Duōshǎo huì. Kěshì wǒ bàmā yě shuō, zhè shì wǒ de yí piào, yào wǒ zìjǐ juédìng.', english: "Somewhat. But my parents also said this is my vote and I should decide for myself.", vietnamese: 'Ít nhiều thì có. Nhưng bố mẹ mình cũng nói, đây là lá phiếu của mình, phải để mình tự quyết định.' },
-      { speaker: '高橋健太', traditional: '從長遠的角度來看，年輕人願意去了解、去投票，是好事。就算這次選的人沒選上，你的聲音還是被算進去了。', simplified: '从长远的角度来看，年轻人愿意去了解、去投票，是好事。就算这次选的人没选上，你的声音还是被算进去了。', pinyin: 'Cóng chángyuǎn de jiǎodù lái kàn, niánqīng rén yuànyì qù liǎojiě, qù tóupiào, shì hǎoshì. Jiùsuàn zhè cì xuǎn de rén méi xuǎnshàng, nǐ de shēngyīn háishì bèi suàn jìnqù le.', english: "From a long-term perspective, young people being willing to inform themselves and vote is a good thing. Even if the person you voted for doesn't win, your voice still gets counted.", vietnamese: 'Nhìn từ góc độ lâu dài, người trẻ chịu tìm hiểu, chịu đi bỏ phiếu là điều tốt. Dù người mình bầu lần này không trúng, tiếng nói của cậu vẫn được tính vào.' },
-      { speaker: '羅珊蒂', traditional: '我聽說有些人覺得「投不投都一樣」，就乾脆不去。', simplified: '我听说有些人觉得「投不投都一样」，就干脆不去。', pinyin: 'Wǒ tīngshuō yǒuxiē rén juéde "tóu bù tóu dōu yíyàng", jiù gāncuì bú qù.', english: "I've heard some people feel 'it makes no difference whether you vote,' so they just don't go.", vietnamese: 'Mình nghe nói có người thấy "bỏ hay không cũng như nhau", nên dứt khoát không đi.' },
-      { speaker: '陳敏萱', traditional: '這種想法我能理解，可是儘管一票很小，如果大家都這樣想，結果就會由少數人決定。', simplified: '这种想法我能理解，可是尽管一票很小，如果大家都这样想，结果就会由少数人决定。', pinyin: 'Zhè zhǒng xiǎngfǎ wǒ néng lǐjiě, kěshì jǐnguǎn yí piào hěn xiǎo, rúguǒ dàjiā dōu zhèyàng xiǎng, jiéguǒ jiù huì yóu shǎoshù rén juédìng.', english: "I can understand that view, but although one vote is small, if everyone thinks that way, the outcome ends up decided by a few people.", vietnamese: 'Suy nghĩ này mình hiểu được, nhưng mặc dù một lá phiếu rất nhỏ, nếu ai cũng nghĩ vậy, kết quả sẽ do thiểu số quyết định.' },
-      { speaker: '安德思', traditional: '為了不排太久的隊，那天要早點去嗎？', simplified: '为了不排太久的队，那天要早点去吗？', pinyin: 'Wèile bù pái tài jiǔ de duì, nà tiān yào zǎodiǎn qù ma?', english: "To avoid a long line, should we go early that day?", vietnamese: 'Để khỏi xếp hàng lâu, hôm đó phải đi sớm à?' },
-      { speaker: '陳敏萱', traditional: '為了保險起見，我打算一早就去。而且投完票，還可以順便去吃早餐，很多店那天都有優惠。', simplified: '为了保险起见，我打算一早就去。而且投完票，还可以顺便去吃早餐，很多店那天都有优惠。', pinyin: 'Wèile bǎoxiǎn qǐjiàn, wǒ dǎsuàn yìzǎo jiù qù. Érqiě tóu wán piào, hái kěyǐ shùnbiàn qù chī zǎocān, hěn duō diàn nà tiān dōu yǒu yōuhuì.', english: "Just to be safe, I plan to go first thing in the morning. And after voting, we can grab breakfast—many shops have deals that day.", vietnamese: 'Cho chắc ăn, mình định sáng sớm đã đi. Với lại bỏ phiếu xong, còn tiện đi ăn sáng, nhiều quán hôm đó đều có ưu đãi.' },
-      { speaker: '高橋健太', traditional: '這倒是台灣選舉日的另一個特色。', simplified: '这倒是台湾选举日的另一个特色。', pinyin: 'Zhè dào shì Táiwān xuǎnjǔ rì de lìng yí ge tèsè.', english: "That's another feature of Taiwan's election day, actually.", vietnamese: 'Cái đó đúng là một nét riêng khác của ngày bầu cử ở Đài Loan.' },
-      { speaker: '羅珊蒂', traditional: '那我星期六陪妳去，我想看看投票所長什麼樣子。', simplified: '那我星期六陪妳去，我想看看投票所长什么样子。', pinyin: 'Nà wǒ xīngqíliù péi nǐ qù, wǒ xiǎng kànkan tóupiàosuǒ zhǎng shénme yàngzi.', english: "Then I'll go with you on Saturday—I want to see what a polling station looks like.", vietnamese: 'Vậy thứ Bảy mình đi cùng cậu, mình muốn xem điểm bỏ phiếu trông thế nào.' }
+      { speaker: '何雅婷', traditional: '真抱歉，今天晚上我不能跟你們去聽演唱會了。', simplified: '真抱歉，今天晚上我不能跟你们去听演唱会了。', pinyin: 'Zhēn bàoqiàn, jīntiān wǎnshàng wǒ bù néng gēn nǐmen qù tīng yǎnchànghuì le.', english: "I'm very sorry. I can no longer go with you to the concert tonight.", vietnamese: 'Thật xin lỗi, tối nay mình không thể đi nghe hòa nhạc với các cậu được nữa rồi.' },
+      { speaker: '高橋健太', traditional: '不是說好了嗎？怎麼不去了？', simplified: '不是说好了吗？怎么不去了？', pinyin: 'Bú shì shuō hǎo le ma? Zěnme bú qù le?', english: "Didn't we agree? Why you are not going now?", vietnamese: 'Chẳng phải đã nói hẹn rồi sao? Sao lại không đi nữa?' },
+      { speaker: '何雅婷', traditional: '我表妹從香港回來了。我阿姨叫我過去吃晚飯。', simplified: '我表妹从香港回来了。我阿姨叫我过去吃晚饭。', pinyin: 'Wǒ biǎomèi cóng Xiānggǎng huílái le. Wǒ āyí jiào wǒ guòqù chī wǎnfàn.', english: 'My cousin is back from Hong Kong. My aunt asked me to go over and have dinner.', vietnamese: 'Em họ mình từ Hồng Kông về rồi. Dì mình gọi mình qua ăn tối.' },
+      { speaker: '陳敏萱', traditional: '妳表妹不是在香港念書嗎？現在不是假期，她怎麼回來了？', simplified: '你表妹不是在香港念书吗？现在不是假期，她怎么回来了？', pinyin: 'Nǐ biǎomèi bú shì zài Xiānggǎng niànshū ma? Xiànzài bú shì jiàqī, tā zěnme huílái le?', english: "Isn't your cousin studying in Hong Kong? It's not a holiday now. How come she's back?", vietnamese: 'Em họ cậu chẳng phải đang học ở Hồng Kông à? Bây giờ không phải kỳ nghỉ, sao cô ấy lại về vậy?' },
+      { speaker: '何雅婷', traditional: '她要參加這個週末的反核遊行。我阿姨擔心她對政治太熱衷，會影響她的前途，讓我過去勸勸她。', simplified: '她要参加这个周末的反核游行。我阿姨担心她对政治太热衷，会影响她的前途，让我过去劝劝她。', pinyin: 'Tā yào cānjiā zhège zhōumò de fǎnhé yóuxíng. Wǒ āyí dānxīn tā duì zhèngzhì tài rèzhōng, huì yǐngxiǎng tā de qiántú, ràng wǒ guòqù quànquan tā.', english: 'She wants to take part in the anti-nuclear power demonstration this weekend. My aunt is concerned that she is too zealous about politics and that it will affect her career, so she\'s having me go over to have a talk with her.', vietnamese: 'Cô ấy định tham gia cuộc biểu tình phản hạt nhân cuối tuần này. Dì mình lo cô ấy quá nhiệt tình với chính trị, sẽ ảnh hưởng đến tương lai, nên bảo mình qua khuyên cô ấy.' },
+      { speaker: '陳敏萱', traditional: '只不過參加遊行而已，妳阿姨想太多了吧。在民主社會，人民參加遊行，直接表達意見是很普遍的。妳表妹關心公共議題是件很好的事啊。', simplified: '只不过参加游行而已，你阿姨想太多了吧。在民主社会，人民参加游行，直接表达意见是很普遍的。你表妹关心公共议题是件很好的事啊。', pinyin: 'Zhǐ búguò cānjiā yóuxíng éryǐ, nǐ āyí xiǎng tài duō le ba. Zài mínzhǔ shèhuì, rénmín cānjiā yóuxíng, zhíjiē biǎodá yìjiàn shì hěn pǔbiàn de. Nǐ biǎomèi guānxīn gōnggòng yìtí shì jiàn hěn hǎo de shì a.', english: "She's just taking part in a demonstration. Your aunt is over-analyzing the situation. In democratic societies, it's very common for the people to participate in marches to directly express their views. Your cousin's concern about public issues is a good thing.", vietnamese: 'Chỉ là tham gia biểu tình thôi mà, dì cậu nghĩ nhiều quá rồi. Trong xã hội dân chủ, người dân tham gia biểu tình, trực tiếp bày tỏ ý kiến là chuyện rất phổ biến. Em họ cậu quan tâm đến các vấn đề công cộng là việc rất tốt đấy.' },
+      { speaker: '高橋健太', traditional: '妳的話雖然有道理，可是要不要核能電廠是一個專業的問題，應該由專家來討論、決定。再說，一般人對這個問題沒有辦法全面了解。既然我們選了民意代表，就應該由他們代表人民處理這些問題，不是嗎？', simplified: '你的话虽然有道理，可是要不要核能电厂是一个专业的问题，应该由专家来讨论、决定。再说，一般人对这个问题没有办法全面了解。既然我们选了民意代表，就应该由他们代表人民处理这些问题，不是吗？', pinyin: 'Nǐ de huà suīrán yǒu dàolǐ, kěshì yào bú yào hénéng diànchǎng shì yí ge zhuānyè de wèntí, yīnggāi yóu zhuānjiā lái tǎolùn, juédìng. Zàishuō, yìbān rén duì zhège wèntí méiyǒu bànfǎ quánmiàn liǎojiě. Jìrán wǒmen xuǎn le mínyì dàibiǎo, jiù yīnggāi yóu tāmen dàibiǎo rénmín chǔlǐ zhèxiē wèntí, bú shì ma?', english: "What you say makes sense, but whether or not we have nuclear power plants is a specialized problem and should be discussed and decided by experts. What's more, most people are unable to understand the big picture in regards to this issue. Since we elected public representatives, they should represent the people and deal with these problems, right?", vietnamese: 'Lời cậu nói tuy có lý, nhưng việc có nên xây nhà máy điện hạt nhân hay không là một vấn đề chuyên môn, nên để chuyên gia thảo luận, quyết định. Hơn nữa, người bình thường không có cách nào hiểu toàn diện vấn đề này. Đã bầu ra đại diện dân ý rồi, thì nên để họ đại diện người dân xử lý những vấn đề này chứ, phải không?' },
+      { speaker: '何雅婷', traditional: '政治是很複雜的。我覺得民意代表關心的常常不是人民的利益，而是他們自己或是政黨的利益。我怎麼能相信他們呢？', simplified: '政治是很复杂的。我觉得民意代表关心的常常不是人民的利益，而是他们自己或是政党的利益。我怎么能相信他们呢？', pinyin: 'Zhèngzhì shì hěn fùzá de. Wǒ juéde mínyì dàibiǎo guānxīn de chángcháng bú shì rénmín de lìyì, érshì tāmen zìjǐ huòshì zhèngdǎng de lìyì. Wǒ zěnme néng xiāngxìn tāmen ne?', english: 'Politics is complicated. I believe that what concerns public representatives often is not the interests of the people; rather, it\'s their own or their party\'s interests. How can I trust them?', vietnamese: 'Chính trị rất phức tạp. Mình thấy điều mà đại diện dân ý quan tâm thường không phải lợi ích của người dân, mà là lợi ích của bản thân họ hoặc của đảng phái. Mình làm sao có thể tin họ được?' },
+      { speaker: '陳敏萱', traditional: '難道妳從來不去投票嗎？', simplified: '难道你从来不去投票吗？', pinyin: 'Nándào nǐ cónglái bú qù tóupiào ma?', english: "Don't you ever vote?", vietnamese: 'Chẳng lẽ cậu chưa bao giờ đi bỏ phiếu à?' },
+      { speaker: '何雅婷', traditional: '我今年滿二十歲。按照憲法的規定，有投票權了。不過年底的選舉我不會去投票的。', simplified: '我今年满二十岁。按照宪法的规定，有投票权了。不过年底的选举我不会去投票的。', pinyin: 'Wǒ jīnnián mǎn èrshí suì. Ànzhào xiànfǎ de guīdìng, yǒu tóupiàoquán le. Búguò niándǐ de xuǎnjǔ wǒ bú huì qù tóupiào de.', english: 'I turned 20 this year. According to provisions in the constitution, I have the right to vote. But I won\'t go vote in the year-end elections.', vietnamese: 'Năm nay mình vừa tròn hai mươi tuổi. Theo quy định của hiến pháp, mình đã có quyền bỏ phiếu rồi. Nhưng cuộc bầu cử cuối năm mình sẽ không đi bỏ phiếu đâu.' },
+      { speaker: '高橋健太', traditional: '我覺得妳應該去投票。如果妳不去，不就放棄了表達意見的權利嗎？', simplified: '我觉得你应该去投票。如果你不去，不就放弃了表达意见的权利吗？', pinyin: 'Wǒ juéde nǐ yīnggāi qù tóupiào. Rúguǒ nǐ bú qù, bú jiù fàngqì le biǎodá yìjiàn de quánlì ma?', english: "I think you should go vote. If you don't go, aren't you forfeiting your right to express your opinion?", vietnamese: 'Mình thấy cậu nên đi bỏ phiếu. Nếu cậu không đi, chẳng phải là từ bỏ quyền bày tỏ ý kiến sao?' },
+      { speaker: '何雅婷', traditional: '不去投票也是表達意見的一種方式。這樣做表示我對所有的候選人都不滿意。', simplified: '不去投票也是表达意见的一种方式。这样做表示我对所有的候选人都不满意。', pinyin: 'Bú qù tóupiào yě shì biǎodá yìjiàn de yì zhǒng fāngshì. Zhèyàng zuò biǎoshì wǒ duì suǒyǒu de hòuxuǎnrén dōu bù mǎnyì.', english: 'Not going to vote is another way of expressing your views. Doing so means that I am unhappy with all of the candidates.', vietnamese: 'Không đi bỏ phiếu cũng là một cách bày tỏ ý kiến. Làm vậy nghĩa là mình không hài lòng với tất cả các ứng viên.' },
+      { speaker: '高橋健太', traditional: '可是如果大家都像妳一樣，不去投票，投票的結果就不能反映真正的民意，不是嗎？', simplified: '可是如果大家都像你一样，不去投票，投票的结果就不能反映真正的民意，不是吗？', pinyin: 'Kěshì rúguǒ dàjiā dōu xiàng nǐ yíyàng, bú qù tóupiào, tóupiào de jiéguǒ jiù bù néng fǎnyìng zhēnzhèng de mínyì, bú shì ma?', english: "But if everybody is like you, not going to vote, then the ballot results don't really reflect the will of the people, right?", vietnamese: 'Nhưng nếu ai cũng giống như cậu, không đi bỏ phiếu, thì kết quả bỏ phiếu sẽ không phản ánh đúng ý dân thật sự, phải không?' },
+      { speaker: '陳敏萱', traditional: '對啊。再說，還是有一些有理想的候選人，願意出來為人民服務。妳應該支持這些又熱心、又有能力的人，讓他們有機會為大家做事。', simplified: '对啊。再说，还是有一些有理想的候选人，愿意出来为人民服务。你应该支持这些又热心、又有能力的人，让他们有机会为大家做事。', pinyin: 'Duì a. Zàishuō, háishì yǒu yìxiē yǒu lǐxiǎng de hòuxuǎnrén, yuànyì chūlái wèi rénmín fúwù. Nǐ yīnggāi zhīchí zhèxiē yòu rèxīn yòu yǒu nénglì de rén, ràng tāmen yǒu jīhuì wèi dàjiā zuòshì.', english: "That's right. In addition, there are still some candidates with ideals who are willing to come forward and serve the people. You should support enthusiastic and capable individuals like these, allowing them to have the opportunity to serve everybody.", vietnamese: 'Đúng vậy. Hơn nữa, vẫn có một số ứng viên có lý tưởng, sẵn lòng đứng ra phục vụ người dân. Cậu nên ủng hộ những người vừa nhiệt tình vừa có năng lực này, để họ có cơ hội làm việc cho mọi người.' },
+      { speaker: '高橋健太', traditional: '民主政治有一個好處，就是每一個職位都有任期。如果選民不滿意當選的人，下次別再選他就好了。', simplified: '民主政治有一个好处，就是每一个职位都有任期。如果选民不满意当选的人，下次别再选他就好了。', pinyin: 'Mínzhǔ zhèngzhì yǒu yí ge hǎochù, jiùshì měi yí ge zhíwèi dōu yǒu rènqí. Rúguǒ xuǎnmín bù mǎnyì dāngxuǎn de rén, xiàcì bié zài xuǎn tā jiù hǎo le.', english: 'Democracy has one advantage—every position has a term limit. If the voters are unhappy with an elected individual, then next time, simply don\'t re-elect him.', vietnamese: 'Chính trị dân chủ có một điểm tốt, đó là mỗi chức vụ đều có nhiệm kỳ. Nếu cử tri không hài lòng với người trúng cử, lần sau đừng bầu người đó nữa là được.' },
+      { speaker: '陳敏萱', traditional: '雖然民主制度並不完美，但是選民還是應該積極地表達自己的意見，這樣社會才會更好。如果我是妳，我一定會去投票的。', simplified: '虽然民主制度并不完美，但是选民还是应该积极地表达自己的意见，这样社会才会更好。如果我是你，我一定会去投票的。', pinyin: 'Suīrán mínzhǔ zhìdù bìng bù wánměi, dànshì xuǎnmín háishì yīnggāi jījí de biǎodá zìjǐ de yìjiàn, zhèyàng shèhuì cái huì gèng hǎo. Rúguǒ wǒ shì nǐ, wǒ yídìng huì qù tóupiào de.', english: "The democratic system isn't perfect, but voters should still take it upon themselves to express their own opinions. Only in that way will society improve. If I were you, I would definitely go vote.", vietnamese: 'Tuy chế độ dân chủ không hoàn hảo, nhưng cử tri vẫn nên tích cực bày tỏ ý kiến của mình, như vậy xã hội mới có thể tốt hơn. Nếu mình là cậu, mình chắc chắn sẽ đi bỏ phiếu.' },
+      { speaker: '何雅婷', traditional: '好吧，我會好好考慮考慮的。謝謝。你們真是民主政治的最佳推銷員。', simplified: '好吧，我会好好考虑考虑的。谢谢。你们真是民主政治的最佳推销员。', pinyin: 'Hǎo ba, wǒ huì hǎohǎo kǎolǜ kǎolǜ de. Xièxie. Nǐmen zhēn shì mínzhǔ zhèngzhì de zuìjiā tuīxiāoyuán.', english: 'Oh, all right. I will really think about it. Thanks. You two really are a great salesperson for democracy.', vietnamese: 'Được rồi, mình sẽ suy nghĩ kỹ. Cảm ơn. Các cậu đúng là những người bán hàng xuất sắc nhất cho nền dân chủ.' }
     ]
   ],
-
   shortReading: {
     traditional:
-      '投票只是開始\n\n　　台灣從一九九〇年代開始，人民可以直接選出自己的領導人和民意代表，定期的選舉已經進行了三十幾年。對許多人來說，選舉日是很重要的一天：這一天，每一個滿二十歲的公民，不論身分、收入、教育程度，手上都只有一票，力量是一樣的。\n\n　　開票的時候，一票一票公開唱出來，結果大家都看得到。這種公開和平等，是很多地方的人所羨慕的。\n\n　　不過，近年來也有一些擔心。年輕人的投票率比其他年齡層低。有人認為這是政治冷漠；也有人認為，是年輕人覺得自己的聲音很難被聽見，久了就不想參與。\n\n　　專家提醒，投票只是參與公共事務的第一步。選完以後，持續去了解政策、監督政府、表達意見，才能讓自己的一票真正發揮作用。從長遠的角度來看，民主不是四年一次的活動，而是一種需要每個人一起、一直練習的生活方式。一個社會的進步，往往就是這樣一票一票、一次一次地累積出來的。',
+      '為人民服務的路\n\n李文彥的叔叔原本是一位有名的大學教授，在學術界的地位很高。但是他一直想從政，他認為只有好的政策才能讓人民過得幸福、安定。為了理想，他辭掉工作，出來參選民意代表。因為他頭腦清楚、口才好，又常常上電視節目發表對各種改革議題的看法，所以很受選民歡迎。特別是他在教育改革跟國民年金制度方面的努力，讓他得到選民廣泛的支持，順利連任了四屆。\n\n不過，上一屆，雖然他的支持度一直是候選人中最高的，但最後他卻落選了。他感到非常失望。他原本以為中間選民會把票投給他，沒想到得票率不如預期。太太看他這麼難過，建議他暫時回老家休息一段時間，再想下一步要怎麼做。\n\n回到老家以後，因為以前從政的形象不錯，村子裡大大小小的事情大家都會找他商量，他也盡可能利用自己的人脈跟資源，幫助了不少弱勢的家庭。沒過多久，有一位出版社的老闆想退休，但是孩子不想接這個事業。老闆就找了李文彥的叔叔。考慮以後，叔叔同意把出版社買下來，同時在老家開了一家書店。他到處請認識的人捐二手書、捐錢，甚至請大學生下課以後來義務教小朋友英文。除此之外，他還在書店裡幫小農賣有機農產品，用賺到的錢做英文班的經費。\n\n日子過得雖然忙碌卻很有意義，叔叔也對現在的生活感到很滿意，但隨著新的選舉越來越近，叔叔也開始考慮要不要再次出來參選民意代表。也許回到從前的路，有了權力，他可以服務更多的人。但也許離開那條路，離開城市，他服務大家的理想反而更容易實現。誰知道呢？',
     simplified:
-      '投票只是开始\n\n　　台湾从一九九〇年代开始，人民可以直接选出自己的领导人和民意代表，定期的选举已经进行了三十几年。对许多人来说，选举日是很重要的一天：这一天，每一个满二十岁的公民，不论身分、收入、教育程度，手上都只有一票，力量是一样的。\n\n　　开票的时候，一票一票公开唱出来，结果大家都看得到。这种公开和平等，是很多地方的人所羡慕的。\n\n　　不过，近年来也有一些担心。年轻人的投票率比其他年龄层低。有人认为这是政治冷漠；也有人认为，是年轻人觉得自己的声音很难被听见，久了就不想参与。\n\n　　专家提醒，投票只是参与公共事务的第一步。选完以后，持续去了解政策、监督政府、表达意见，才能让自己的一票真正发挥作用。从长远的角度来看，民主不是四年一次的活动，而是一种需要每个人一起、一直练习的生活方式。一个社会的进步，往往就是这样一票一票、一次一次地累积出来的。',
+      '为人民服务的路\n\n李文彦的叔叔原本是一位有名的大学教授，在学术界的地位很高。但是他一直想从政，他认为只有好的政策才能让人民过得幸福、安定。为了理想，他辞掉工作，出来参选民意代表。因为他头脑清楚、口才好，又常常上电视节目发表对各种改革议题的看法，所以很受选民欢迎。特别是他在教育改革跟国民年金制度方面的努力，让他得到选民广泛的支持，顺利连任了四届。\n\n不过，上一届，虽然他的支持度一直是候选人中最高的，但最后他却落选了。他感到非常失望。他原本以为中间选民会把票投给他，没想到得票率不如预期。太太看他这么难过，建议他暂时回老家休息一段时间，再想下一步要怎么做。\n\n回到老家以后，因为以前从政的形象不错，村子里大大小小的事情大家都会找他商量，他也尽可能利用自己的人脉跟资源，帮助了不少弱势的家庭。没过多久，有一位出版社的老板想退休，但是孩子不想接这个事业。老板就找了李文彦的叔叔。考虑以后，叔叔同意把出版社买下来，同时在老家开了一家书店。他到处请认识的人捐二手书、捐钱，甚至请大学生下课以后来义务教小朋友英文。除此之外，他还在书店里帮小农卖有机农产品，用赚到的钱做英文班的经费。\n\n日子过得虽然忙碌却很有意义，叔叔也对现在的生活感到很满意，但随着新的选举越来越近，叔叔也开始考虑要不要再次出来参选民意代表。也许回到从前的路，有了权力，他可以服务更多的人。但也许离开那条路，离开城市，他服务大家的理想反而更容易实现。谁知道呢？',
     vietnamese:
-      'Bỏ phiếu chỉ là bước khởi đầu\n\nTừ thập niên 1990, người dân Đài Loan có thể trực tiếp bầu ra lãnh đạo và đại biểu dân cử của mình, các cuộc bầu cử định kỳ đã diễn ra hơn ba mươi năm. Đối với nhiều người, ngày bầu cử là một ngày rất quan trọng: ngày này, mỗi công dân đủ hai mươi tuổi, bất kể thân phận, thu nhập, trình độ học vấn, trên tay đều chỉ có một lá phiếu, sức nặng là như nhau.\n\nLúc kiểm phiếu, từng lá phiếu được xướng lên công khai, kết quả ai cũng nhìn thấy. Sự công khai và bình đẳng này là điều người ở nhiều nơi ghen tị.\n\nTuy nhiên, những năm gần đây cũng có một số lo ngại. Tỷ lệ đi bầu của người trẻ thấp hơn các nhóm tuổi khác. Có người cho rằng đó là sự thờ ơ chính trị; cũng có người cho rằng, đó là vì người trẻ thấy tiếng nói của mình khó được lắng nghe, lâu dần thì không muốn tham gia.\n\nChuyên gia nhắc nhở, bỏ phiếu chỉ là bước đầu tiên của việc tham gia vào các vấn đề công. Sau khi bầu xong, tiếp tục tìm hiểu chính sách, giám sát chính phủ, bày tỏ ý kiến, thì lá phiếu của mình mới thật sự phát huy tác dụng. Nhìn từ góc độ lâu dài, dân chủ không phải là một hoạt động bốn năm một lần, mà là một lối sống cần mỗi người cùng nhau, liên tục thực hành. Sự tiến bộ của một xã hội thường chính là được tích lũy như vậy, từng lá phiếu, từng lần một.'
+      'Con đường phục vụ người dân\n\nChú của Lý Văn Ngạn vốn là một giáo sư đại học nổi tiếng, có địa vị rất cao trong giới học thuật. Nhưng ông luôn muốn tham gia hoạt động công quyền. Ông cho rằng chỉ có chính sách tốt mới có thể mang lại hạnh phúc, cuộc sống ổn định cho người dân. Vì lý tưởng, ông từ bỏ công việc, tham gia ứng cử đại diện dân ý. Vì đầu óc minh mẫn, ăn nói giỏi, lại thường lên truyền hình nêu quan điểm về nhiều vấn đề cải cách, nên ông rất được cử tri yêu thích. Đặc biệt là những nỗ lực của ông trong cải cách giáo dục và chế độ hưu trí quốc dân đã giúp ông nhận được sự ủng hộ rộng rãi từ cử tri, thuận lợi tái đắc cử liên tiếp bốn nhiệm kỳ.\n\nTuy nhiên, trong kỳ trước, dù tỷ lệ ủng hộ của ông luôn cao nhất trong số các ứng viên, cuối cùng ông lại không trúng cử. Ông cảm thấy rất thất vọng. Ông vốn nghĩ rằng những cử tri trung dung sẽ dành phiếu cho mình, không ngờ tỷ lệ phiếu bầu không như dự kiến. Vợ ông thấy ông buồn bã như vậy, đề nghị ông tạm thời về quê nghỉ ngơi một thời gian, rồi tính tiếp bước tiếp theo.\n\nSau khi về quê, vì hình ảnh hoạt động công quyền trước đây tốt, mọi việc lớn nhỏ trong làng đều tìm ông để bàn bạc, ông cũng tận dụng hết mức các mối quan hệ và nguồn lực của mình để giúp đỡ không ít gia đình khó khăn. Không lâu sau, có một ông chủ nhà xuất bản muốn nghỉ hưu, nhưng con cái không muốn tiếp quản. Ông chủ đã tìm đến chú của Lý Văn Ngạn. Sau khi cân nhắc, chú đồng ý mua lại nhà xuất bản, đồng thời mở một hiệu sách ở quê. Ông đi khắp nơi mời những người quen biết quyên sách cũ, quyên tiền, thậm chí mời sinh viên đại học sau giờ học đến dạy tiếng Anh miễn phí cho trẻ em. Ngoài ra, ông còn giúp nông dân nhỏ bán nông sản hữu cơ trong hiệu sách, lấy tiền kiếm được làm kinh phí cho lớp tiếng Anh.\n\nNgày tháng tuy trôi qua đầy ý nghĩa, chú cũng rất hài lòng với cuộc sống hiện tại, nhưng khi kỳ bầu cử mới ngày càng đến gần, chú cũng bắt đầu cân nhắc có nên ra ứng cử đại diện dân ý thêm lần nữa hay không. Có lẽ quay lại con đường cũ, có quyền lực, ông sẽ có thể phục vụ nhiều người hơn. Nhưng cũng có lẽ rời xa con đường đó, rời xa thành phố, lý tưởng phục vụ mọi người của ông sẽ dễ thực hiện hơn. Ai mà biết được?'
   },
-
   phrases: [
-    { phraseTraditional: '滿二十歲', phraseSimplified: '满二十岁', pinyin: 'mǎn èrshí suì', meaningVi: 'đủ hai mươi tuổi' },
-    { phraseTraditional: '一票一票唱出來', phraseSimplified: '一票一票唱出来', pinyin: 'yí piào yí piào chàng chūlái', meaningVi: 'xướng lên từng lá phiếu một' },
-    { phraseTraditional: '投不投都一樣', phraseSimplified: '投不投都一样', pinyin: 'tóu bù tóu dōu yíyàng', meaningVi: 'bỏ hay không cũng như nhau' },
-    { phraseTraditional: '你的一票', phraseSimplified: '你的一票', pinyin: 'nǐ de yí piào', meaningVi: 'lá phiếu của bạn' },
-    { phraseTraditional: '為了保險起見', phraseSimplified: '为了保险起见', pinyin: 'wèile bǎoxiǎn qǐjiàn', meaningVi: 'cho chắc ăn, để cho chắc' },
-    { phraseTraditional: '換句話說', phraseSimplified: '换句话说', pinyin: 'huàn jù huà shuō', meaningVi: 'nói cách khác' },
-    { phraseTraditional: '你的聲音', phraseSimplified: '你的声音', pinyin: 'nǐ de shēngyīn', meaningVi: 'tiếng nói (ý kiến) của bạn' }
+    { phraseTraditional: '只不過…而已', phraseSimplified: '只不过…而已', pinyin: 'zhǐ búguò…éryǐ', meaningVi: 'chỉ là… thôi mà' },
+    { phraseTraditional: '對…熱衷', phraseSimplified: '对…热衷', pinyin: 'duì…rèzhōng', meaningVi: 'nhiệt tình/say mê với…' },
+    { phraseTraditional: '表達意見', phraseSimplified: '表达意见', pinyin: 'biǎodá yìjiàn', meaningVi: 'bày tỏ ý kiến' },
+    { phraseTraditional: '按照規定', phraseSimplified: '按照规定', pinyin: 'ànzhào guīdìng', meaningVi: 'theo quy định' },
+    { phraseTraditional: '難道…嗎', phraseSimplified: '难道…吗', pinyin: 'nándào…ma', meaningVi: 'chẳng lẽ… à' },
+    { phraseTraditional: '滿二十歲', phraseSimplified: '满二十岁', pinyin: 'mǎn èrshí suì', meaningVi: 'vừa tròn hai mươi tuổi' },
+    { phraseTraditional: '為人民服務', phraseSimplified: '为人民服务', pinyin: 'wèi rénmín fúwù', meaningVi: 'phục vụ người dân' },
+    { phraseTraditional: '在…方面', phraseSimplified: '在…方面', pinyin: 'zài…fāngmiàn', meaningVi: 'về mặt/phương diện…' },
+    { phraseTraditional: '得票率', phraseSimplified: '得票率', pinyin: 'dépiàolǜ', meaningVi: 'tỷ lệ phiếu bầu' },
+    { phraseTraditional: '暫時回老家', phraseSimplified: '暂时回老家', pinyin: 'zànshí huí lǎojiā', meaningVi: 'tạm thời về quê' }
   ],
-
   vocab: [
-    { id: 'L12-001', lessonId: 'L12', order: 1, group: 'vocab1', traditional: '投票', simplified: '投票', pinyin: 'tóupiào', wordClass: ['V-sep'], meaningVi: 'bỏ phiếu, đầu phiếu', meaningEn: 'to vote, to cast a ballot', tags: ['xa-hoi'], examples: [{ traditional: '星期六就要投票了。', simplified: '星期六就要投票了。', vietnamese: 'Thứ Bảy là bỏ phiếu rồi.' }] },
-    { id: 'L12-002', lessonId: 'L12', order: 2, group: 'vocab1', traditional: '選舉', simplified: '选举', pinyin: 'xuǎnjǔ', wordClass: ['N', 'V'], meaningVi: 'bầu cử; bầu chọn', meaningEn: 'election; to elect', tags: ['xa-hoi'], examples: [{ traditional: '這幾天到處都是選舉的廣播車。', simplified: '这几天到处都是选举的广播车。', vietnamese: 'Mấy ngày nay đâu đâu cũng xe phát thanh bầu cử.' }] },
-    { id: 'L12-003', lessonId: 'L12', order: 3, group: 'vocab1', traditional: '旗子', simplified: '旗子', pinyin: 'qízi', wordClass: ['N'], meaningVi: 'lá cờ', meaningEn: 'flag, banner', examples: [{ traditional: '路上到處都是候選人的旗子。', simplified: '路上到处都是候选人的旗子。', vietnamese: 'Trên đường đâu đâu cũng cờ của các ứng viên.' }] },
-    { id: 'L12-004', lessonId: 'L12', order: 4, group: 'vocab1', traditional: '廣播', simplified: '广播', pinyin: 'guǎngbò', wordClass: ['N', 'V'], meaningVi: 'phát thanh, truyền thanh', meaningEn: 'broadcast; to broadcast', examples: [{ traditional: '廣播車開過來，聲音很大。', simplified: '广播车开过来，声音很大。', vietnamese: 'Xe phát thanh chạy tới, tiếng rất to.' }] },
-    { id: 'L12-005', lessonId: 'L12', order: 5, group: 'vocab1', traditional: '公民', simplified: '公民', pinyin: 'gōngmín', wordClass: ['N'], meaningVi: 'công dân', meaningEn: 'citizen', tags: ['xa-hoi'], examples: [{ traditional: '凡是滿二十歲的公民都可以投票。', simplified: '凡是满二十岁的公民都可以投票。', vietnamese: 'Hễ là công dân đủ hai mươi tuổi đều được bỏ phiếu.' }] },
-    { id: 'L12-006', lessonId: 'L12', order: 6, group: 'vocab1', traditional: '投票權', simplified: '投票权', pinyin: 'tóupiàoquán', wordClass: ['N'], meaningVi: 'quyền bỏ phiếu', meaningEn: 'the right to vote, suffrage', tags: ['xa-hoi'], examples: [{ traditional: '年滿二十歲的人才有投票權。', simplified: '年满二十岁的人才有投票权。', vietnamese: 'Người đủ hai mươi tuổi mới có quyền bỏ phiếu.' }] },
-    { id: 'L12-007', lessonId: 'L12', order: 7, group: 'vocab1', traditional: '公投', simplified: '公投', pinyin: 'gōngtóu', wordClass: ['N'], meaningVi: 'trưng cầu dân ý (bỏ phiếu toàn dân)', meaningEn: 'referendum', tags: ['xa-hoi'], examples: [{ traditional: '這次除了選人，還有幾個公投的題目。', simplified: '这次除了选人，还有几个公投的题目。', vietnamese: 'Lần này ngoài bầu người, còn có vài câu hỏi trưng cầu dân ý.' }] },
-    { id: 'L12-008', lessonId: 'L12', order: 8, group: 'vocab1', traditional: '議題', simplified: '议题', pinyin: 'yìtí', wordClass: ['N'], meaningVi: 'vấn đề, chủ đề (đưa ra thảo luận)', meaningEn: 'issue, topic for discussion', tags: ['xa-hoi'], examples: [{ traditional: '我想先整理幾個我在意的議題。', simplified: '我想先整理几个我在意的议题。', vietnamese: 'Mình muốn sắp xếp trước vài vấn đề mình quan tâm.' }] },
-    { id: 'L12-009', lessonId: 'L12', order: 9, group: 'vocab1', traditional: '開票', simplified: '开票', pinyin: 'kāipiào', wordClass: ['V-sep'], meaningVi: 'kiểm phiếu', meaningEn: 'to count the votes', tags: ['xa-hoi'], examples: [{ traditional: '開票的過程是公開的。', simplified: '开票的过程是公开的。', vietnamese: 'Quá trình kiểm phiếu là công khai.' }] },
-    { id: 'L12-010', lessonId: 'L12', order: 10, group: 'vocab1', traditional: '唱票', simplified: '唱票', pinyin: 'chàngpiào', wordClass: ['V-sep'], meaningVi: 'xướng phiếu (đọc to từng phiếu khi kiểm)', meaningEn: 'to read out ballots aloud during counting', tags: ['xa-hoi'], examples: [{ traditional: '開票的時候，一票一票唱出來。', simplified: '开票的时候，一票一票唱出来。', vietnamese: 'Lúc kiểm phiếu, từng lá phiếu được xướng lên.' }] },
-    { id: 'L12-011', lessonId: 'L12', order: 11, group: 'vocab1', traditional: '政見', simplified: '政见', pinyin: 'zhèngjiàn', wordClass: ['N'], meaningVi: 'chính kiến, cương lĩnh tranh cử', meaningEn: 'political platform, campaign position', tags: ['xa-hoi'], examples: [{ traditional: '我有點看不懂那些政見。', simplified: '我有点看不懂那些政见。', vietnamese: 'Mình hơi khó hiểu mấy cương lĩnh tranh cử đó.' }] },
-    { id: 'L12-012', lessonId: 'L12', order: 12, group: 'vocab1', traditional: '候選人', simplified: '候选人', pinyin: 'hòuxuǎnrén', wordClass: ['N'], meaningVi: 'ứng cử viên', meaningEn: 'candidate', tags: ['xa-hoi'], examples: [{ traditional: '每個候選人講的好像都差不多。', simplified: '每个候选人讲的好像都差不多。', vietnamese: 'Ứng viên nào nói cũng na ná nhau.' }] },
-    { id: 'L12-013', lessonId: 'L12', order: 13, group: 'vocab1', traditional: '主張', simplified: '主张', pinyin: 'zhǔzhāng', wordClass: ['N', 'V'], meaningVi: 'chủ trương, quan điểm; chủ trương (làm gì)', meaningEn: 'position, stance; to advocate', examples: [{ traditional: '先想清楚我要什麼，再看誰的主張比較接近。', simplified: '先想清楚我要什么，再看谁的主张比较接近。', vietnamese: 'Nghĩ rõ mình muốn gì trước, rồi xem chủ trương của ai gần với mình hơn.' }] },
-    { id: 'L12-014', lessonId: 'L12', order: 14, group: 'vocab1', traditional: '少數', simplified: '少数', pinyin: 'shǎoshù', wordClass: ['N'], meaningVi: 'thiểu số', meaningEn: 'minority, the few', examples: [{ traditional: '如果大家都不投，結果就會由少數人決定。', simplified: '如果大家都不投，结果就会由少数人决定。', vietnamese: 'Nếu ai cũng không bỏ, kết quả sẽ do thiểu số quyết định.' }] },
-    { id: 'L12-015', lessonId: 'L12', order: 15, group: 'vocab1', traditional: '多數', simplified: '多数', pinyin: 'duōshù', wordClass: ['N'], meaningVi: 'đa số', meaningEn: 'majority, the many', examples: [{ traditional: '在選舉裡，多數人的意見會決定結果。', simplified: '在选举里，多数人的意见会决定结果。', vietnamese: 'Trong bầu cử, ý kiến của đa số sẽ quyết định kết quả.' }] },
-    { id: 'L12-016', lessonId: 'L12', order: 16, group: 'vocab1', traditional: '投票所', simplified: '投票所', pinyin: 'tóupiàosuǒ', wordClass: ['N'], meaningVi: 'điểm bỏ phiếu', meaningEn: 'polling station', tags: ['xa-hoi'], examples: [{ traditional: '我想看看投票所長什麼樣子。', simplified: '我想看看投票所长什么样子。', vietnamese: 'Mình muốn xem điểm bỏ phiếu trông thế nào.' }] },
-    { id: 'L12-017', lessonId: 'L12', order: 17, group: 'vocab1', traditional: '優惠', simplified: '优惠', pinyin: 'yōuhuì', wordClass: ['N', 'Vs'], meaningVi: 'ưu đãi; có ưu đãi', meaningEn: 'discount, special offer', tags: ['mua-sam'], examples: [{ traditional: '投票日很多店都有優惠。', simplified: '投票日很多店都有优惠。', vietnamese: 'Ngày bầu cử nhiều quán đều có ưu đãi.' }] },
-    { id: 'L12-018', lessonId: 'L12', order: 18, group: 'vocab1', traditional: '整理', simplified: '整理', pinyin: 'zhěnglǐ', wordClass: ['V'], meaningVi: 'sắp xếp, chỉnh lý, dọn dẹp', meaningEn: 'to sort out, to organize, to tidy up', examples: [{ traditional: '我打算把我在意的議題整理一下。', simplified: '我打算把我在意的议题整理一下。', vietnamese: 'Mình định sắp xếp lại những vấn đề mình quan tâm.' }] },
-    { id: 'L12-019', lessonId: 'L12', order: 19, group: 'vocab1', traditional: '長遠', simplified: '长远', pinyin: 'chángyuǎn', wordClass: ['Vs'], meaningVi: 'lâu dài, dài hạn', meaningEn: 'long-term, far-reaching', examples: [{ traditional: '從長遠的角度來看，這是一件好事。', simplified: '从长远的角度来看，这是一件好事。', vietnamese: 'Nhìn từ góc độ lâu dài, đây là một điều tốt.' }] },
-    { id: 'L12-020', lessonId: 'L12', order: 20, group: 'vocab1', traditional: '理解', simplified: '理解', pinyin: 'lǐjiě', wordClass: ['V'], meaningVi: 'thấu hiểu, lý giải', meaningEn: 'to understand, to comprehend', examples: [{ traditional: '這種想法我能理解，可是我不同意。', simplified: '这种想法我能理解，可是我不同意。', vietnamese: 'Suy nghĩ này mình hiểu được, nhưng mình không đồng ý.' }] },
-    { id: 'L12-021', lessonId: 'L12', order: 21, group: 'vocab1', traditional: '權利', simplified: '权利', pinyin: 'quánlì', wordClass: ['N'], meaningVi: 'quyền lợi, quyền', meaningEn: 'right (entitlement)', tags: ['xa-hoi'], examples: [{ traditional: '投票是每個公民的權利。', simplified: '投票是每个公民的权利。', vietnamese: 'Bỏ phiếu là quyền của mỗi công dân.' }] },
-    { id: 'L12-022', lessonId: 'L12', order: 22, group: 'vocab1', traditional: '義務', simplified: '义务', pinyin: 'yìwù', wordClass: ['N'], meaningVi: 'nghĩa vụ', meaningEn: 'obligation, duty', tags: ['xa-hoi'], examples: [{ traditional: '有人認為投票不只是權利，也是一種義務。', simplified: '有人认为投票不只是权利，也是一种义务。', vietnamese: 'Có người cho rằng bỏ phiếu không chỉ là quyền lợi, mà còn là một nghĩa vụ.' }] },
-    { id: 'L12-023', lessonId: 'L12', order: 23, group: 'vocab1', traditional: '參與', simplified: '参与', pinyin: 'cānyù', wordClass: ['V'], meaningVi: 'tham gia, tham dự', meaningEn: 'to participate, to take part in', tags: ['xa-hoi'], examples: [{ traditional: '年輕人願意參與公共事務是好事。', simplified: '年轻人愿意参与公共事务是好事。', vietnamese: 'Người trẻ chịu tham gia vào các vấn đề công là điều tốt.' }] },
-    { id: 'L12-024', lessonId: 'L12', order: 24, group: 'vocab1', traditional: '民主', simplified: '民主', pinyin: 'mínzhǔ', wordClass: ['N', 'Vs'], meaningVi: 'dân chủ', meaningEn: 'democracy; democratic', tags: ['xa-hoi'], examples: [{ traditional: '民主是一種需要一直練習的生活方式。', simplified: '民主是一种需要一直练习的生活方式。', vietnamese: 'Dân chủ là một lối sống cần liên tục thực hành.' }] },
-    { id: 'L12-025', lessonId: 'L12', order: 25, group: 'vocab1', traditional: '早餐', simplified: '早餐', pinyin: 'zǎocān', wordClass: ['N'], meaningVi: 'bữa sáng', meaningEn: 'breakfast', tags: ['am-thuc'], examples: [{ traditional: '投完票，順便去吃個早餐。', simplified: '投完票，顺便去吃个早餐。', vietnamese: 'Bỏ phiếu xong, tiện đi ăn sáng.' }] },
-    { id: 'L12-026', lessonId: 'L12', order: 26, group: 'vocab1', traditional: '聲音', simplified: '声音', pinyin: 'shēngyīn', wordClass: ['N'], meaningVi: 'tiếng, âm thanh; (ẩn dụ) tiếng nói, ý kiến', meaningEn: 'sound, voice; (figuratively) opinion', examples: [{ traditional: '就算沒選上，你的聲音還是被算進去了。', simplified: '就算没选上，你的声音还是被算进去了。', vietnamese: 'Dù không trúng, tiếng nói của bạn vẫn được tính vào.' }] },
-
-    { id: 'L12-027', lessonId: 'L12', order: 1, group: 'vocab2', traditional: '政治', simplified: '政治', pinyin: 'zhèngzhì', wordClass: ['N'], meaningVi: 'chính trị', meaningEn: 'politics', tags: ['xa-hoi'], examples: [{ traditional: '有人說年輕人對政治不感興趣。', simplified: '有人说年轻人对政治不感兴趣。', vietnamese: 'Có người nói người trẻ không quan tâm đến chính trị.' }] },
-    { id: 'L12-028', lessonId: 'L12', order: 2, group: 'vocab2', traditional: '政黨', simplified: '政党', pinyin: 'zhèngdǎng', wordClass: ['N'], meaningVi: 'đảng phái, chính đảng', meaningEn: 'political party', tags: ['xa-hoi'], examples: [{ traditional: '不同的政黨對這個議題有不同的主張。', simplified: '不同的政党对这个议题有不同的主张。', vietnamese: 'Các đảng phái khác nhau có chủ trương khác nhau về vấn đề này.' }] },
-    { id: 'L12-029', lessonId: 'L12', order: 3, group: 'vocab2', traditional: '選民', simplified: '选民', pinyin: 'xuǎnmín', wordClass: ['N'], meaningVi: 'cử tri', meaningEn: 'voter, the electorate', tags: ['xa-hoi'], examples: [{ traditional: '候選人希望得到更多選民的支持。', simplified: '候选人希望得到更多选民的支持。', vietnamese: 'Ứng viên mong nhận được sự ủng hộ của nhiều cử tri hơn.' }] },
-    { id: 'L12-030', lessonId: 'L12', order: 4, group: 'vocab2', traditional: '投票率', simplified: '投票率', pinyin: 'tóupiàolǜ', wordClass: ['N'], meaningVi: 'tỷ lệ đi bầu', meaningEn: 'voter turnout', tags: ['xa-hoi'], examples: [{ traditional: '年輕人的投票率比其他年齡層低。', simplified: '年轻人的投票率比其他年龄层低。', vietnamese: 'Tỷ lệ đi bầu của người trẻ thấp hơn các nhóm tuổi khác.' }] },
-    { id: 'L12-031', lessonId: 'L12', order: 5, group: 'vocab2', traditional: '政策', simplified: '政策', pinyin: 'zhèngcè', wordClass: ['N'], meaningVi: 'chính sách', meaningEn: 'policy', tags: ['xa-hoi'], examples: [{ traditional: '選完以後也要繼續去了解政策。', simplified: '选完以后也要继续去了解政策。', vietnamese: 'Bầu xong cũng phải tiếp tục tìm hiểu chính sách.' }] },
-    { id: 'L12-032', lessonId: 'L12', order: 6, group: 'vocab2', traditional: '監督', simplified: '监督', pinyin: 'jiāndū', wordClass: ['V'], meaningVi: 'giám sát', meaningEn: 'to supervise, to oversee', tags: ['xa-hoi'], examples: [{ traditional: '人民有權利監督政府。', simplified: '人民有权利监督政府。', vietnamese: 'Người dân có quyền giám sát chính phủ.' }] },
-    { id: 'L12-033', lessonId: 'L12', order: 7, group: 'vocab2', traditional: '政府', simplified: '政府', pinyin: 'zhèngfǔ', wordClass: ['N'], meaningVi: 'chính phủ', meaningEn: 'government', tags: ['xa-hoi'], examples: [{ traditional: '選民希望政府能解決這些問題。', simplified: '选民希望政府能解决这些问题。', vietnamese: 'Cử tri mong chính phủ có thể giải quyết những vấn đề này.' }] },
-    { id: 'L12-034', lessonId: 'L12', order: 8, group: 'vocab2', traditional: '執政', simplified: '执政', pinyin: 'zhízhèng', wordClass: ['Vi'], meaningVi: 'cầm quyền, chấp chính', meaningEn: 'to be in power, to govern', tags: ['xa-hoi'], examples: [{ traditional: '選舉決定接下來四年由誰執政。', simplified: '选举决定接下来四年由谁执政。', vietnamese: 'Bầu cử quyết định bốn năm tới ai cầm quyền.' }] },
-    { id: 'L12-035', lessonId: 'L12', order: 9, group: 'vocab2', traditional: '任期', simplified: '任期', pinyin: 'rènqī', wordClass: ['N'], meaningVi: 'nhiệm kỳ', meaningEn: 'term of office', tags: ['xa-hoi'], examples: [{ traditional: '一個任期通常是四年。', simplified: '一个任期通常是四年。', vietnamese: 'Một nhiệm kỳ thường là bốn năm.' }] },
-    { id: 'L12-036', lessonId: 'L12', order: 10, group: 'vocab2', traditional: '表達', simplified: '表达', pinyin: 'biǎodá', wordClass: ['V'], meaningVi: 'biểu đạt, bày tỏ', meaningEn: 'to express', examples: [{ traditional: '投票是表達自己意見最直接的方式。', simplified: '投票是表达自己意见最直接的方式。', vietnamese: 'Bỏ phiếu là cách trực tiếp nhất để bày tỏ ý kiến của mình.' }] },
-    { id: 'L12-037', lessonId: 'L12', order: 11, group: 'vocab2', traditional: '意見', simplified: '意见', pinyin: 'yìjiàn', wordClass: ['N'], meaningVi: 'ý kiến', meaningEn: 'opinion, view', examples: [{ traditional: '沒去投票，等於沒有表達意見。', simplified: '没去投票，等于没有表达意见。', vietnamese: 'Không đi bỏ phiếu, coi như không bày tỏ ý kiến.' }] },
-    { id: 'L12-038', lessonId: 'L12', order: 12, group: 'vocab2', traditional: '冷漠', simplified: '冷漠', pinyin: 'lěngmò', wordClass: ['Vs'], meaningVi: 'thờ ơ, lãnh đạm', meaningEn: 'indifferent, apathetic', examples: [{ traditional: '有人認為低投票率是一種政治冷漠。', simplified: '有人认为低投票率是一种政治冷漠。', vietnamese: 'Có người cho rằng tỷ lệ đi bầu thấp là một kiểu thờ ơ chính trị.' }] },
-    { id: 'L12-039', lessonId: 'L12', order: 13, group: 'vocab2', traditional: '議員', simplified: '议员', pinyin: 'yìyuán', wordClass: ['N'], meaningVi: 'nghị viên, đại biểu (hội đồng)', meaningEn: 'councilor, member of a legislature', tags: ['xa-hoi'], examples: [{ traditional: '這次也要選出地方議員。', simplified: '这次也要选出地方议员。', vietnamese: 'Lần này cũng bầu ra đại biểu hội đồng địa phương.' }] },
-    { id: 'L12-040', lessonId: 'L12', order: 14, group: 'vocab2', traditional: '累積', simplified: '累积', pinyin: 'lěijī', wordClass: ['V'], meaningVi: 'tích lũy, dồn góp', meaningEn: 'to accumulate, to build up', examples: [{ traditional: '社會的進步是一次一次累積出來的。', simplified: '社会的进步是一次一次累积出来的。', vietnamese: 'Sự tiến bộ của xã hội được tích lũy qua từng lần.' }] },
-    { id: 'L12-041', lessonId: 'L12', order: 15, group: 'vocab2', traditional: '民意', simplified: '民意', pinyin: 'mínyì', wordClass: ['N'], meaningVi: 'dân ý, ý dân', meaningEn: 'public opinion, the will of the people', tags: ['xa-hoi'], examples: [{ traditional: '選舉的結果反映了民意。', simplified: '选举的结果反映了民意。', vietnamese: 'Kết quả bầu cử phản ánh ý dân.' }] },
-    { id: 'L12-042', lessonId: 'L12', order: 16, group: 'vocab2', traditional: '進步', simplified: '进步', pinyin: 'jìnbù', wordClass: ['N', 'Vi'], meaningVi: 'tiến bộ; tiến bộ (lên)', meaningEn: 'progress; to progress', examples: [{ traditional: '一個社會的進步需要很多人一起努力。', simplified: '一个社会的进步需要很多人一起努力。', vietnamese: 'Sự tiến bộ của một xã hội cần nhiều người cùng cố gắng.' }] },
-    { id: 'L12-043', lessonId: 'L12', order: 17, group: 'vocab2', traditional: '教育', simplified: '教育', pinyin: 'jiàoyù', wordClass: ['N'], meaningVi: 'giáo dục', meaningEn: 'education', tags: ['giao-duc'], examples: [{ traditional: '學校的公民教育會教學生怎麼看政見。', simplified: '学校的公民教育会教学生怎么看政见。', vietnamese: 'Giáo dục công dân ở trường dạy học sinh cách đọc cương lĩnh tranh cử.' }] },
-    { id: 'L12-044', lessonId: 'L12', order: 18, group: 'vocab2', traditional: '過程', simplified: '过程', pinyin: 'guòchéng', wordClass: ['N'], meaningVi: 'quá trình', meaningEn: 'process, course', examples: [{ traditional: '選完以後怎麼監督政府，是一個更長的過程。', simplified: '选完以后怎么监督政府，是一个更长的过程。', vietnamese: 'Bầu xong rồi giám sát chính phủ thế nào là một quá trình dài hơn.' }] },
-    { id: 'L12-045', lessonId: 'L12', order: 19, group: 'vocab2', traditional: '共識', simplified: '共识', pinyin: 'gòngshì', wordClass: ['N'], meaningVi: 'sự đồng thuận, nhận thức chung', meaningEn: 'consensus', examples: [{ traditional: '很多議題需要慢慢討論才能有共識。', simplified: '很多议题需要慢慢讨论才能有共识。', vietnamese: 'Nhiều vấn đề cần thảo luận từ từ mới có được sự đồng thuận.' }] }
+    { id: 'L12-001', lessonId: 'L12', order: 1, group: 'vocab1', traditional: '投票', simplified: '投票', pinyin: 'tóupiào', wordClass: ['Vi'], meaningVi: 'bỏ phiếu', meaningEn: 'to vote', examples: [{ traditional: '我今年滿二十歲，可以去投票了。', simplified: '我今年满二十岁，可以去投票了。', vietnamese: 'Năm nay mình đủ hai mươi tuổi, có thể đi bỏ phiếu rồi.' }] },
+    { id: 'L12-002', lessonId: 'L12', order: 2, group: 'vocab1', traditional: '抱歉', simplified: '抱歉', pinyin: 'bàoqiàn', wordClass: ['Vs'], meaningVi: 'xin lỗi, lấy làm tiếc', meaningEn: 'to be sorry', examples: [{ traditional: '真抱歉，今天晚上我不能跟你們去聽演唱會了。', simplified: '真抱歉，今天晚上我不能跟你们去听演唱会了。', vietnamese: 'Thật xin lỗi, tối nay mình không thể đi nghe hòa nhạc với các cậu được nữa rồi.' }] },
+    { id: 'L12-003', lessonId: 'L12', order: 3, group: 'vocab1', traditional: '表妹', simplified: '表妹', pinyin: 'biǎomèi', wordClass: ['N'], meaningVi: 'em họ gái (bên ngoại)', meaningEn: 'cousin (younger, female)', examples: [{ traditional: '我表妹從香港回來了。', simplified: '我表妹从香港回来了。', vietnamese: 'Em họ mình từ Hồng Kông về rồi.' }] },
+    { id: 'L12-004', lessonId: 'L12', order: 4, group: 'vocab1', traditional: '反核', simplified: '反核', pinyin: 'fǎnhé', wordClass: ['Vst'], meaningVi: 'phản đối hạt nhân', meaningEn: 'to be against nuclear power', examples: [{ traditional: '她要參加這個週末的反核遊行。', simplified: '她要参加这个周末的反核游行。', vietnamese: 'Cô ấy định tham gia cuộc biểu tình phản hạt nhân cuối tuần này.' }] },
+    { id: 'L12-005', lessonId: 'L12', order: 5, group: 'vocab1', traditional: '遊行', simplified: '游行', pinyin: 'yóuxíng', wordClass: ['Vi', 'N'], meaningVi: 'biểu tình, diễu hành', meaningEn: 'to parade; demonstration', examples: [{ traditional: '只不過參加遊行而已，妳阿姨想太多了吧。', simplified: '只不过参加游行而已，你阿姨想太多了吧。', vietnamese: 'Chỉ là tham gia biểu tình thôi mà, dì cậu nghĩ nhiều quá rồi.' }] },
+    { id: 'L12-006', lessonId: 'L12', order: 6, group: 'vocab1', traditional: '政治', simplified: '政治', pinyin: 'zhèngzhì', wordClass: ['N'], meaningVi: 'chính trị', meaningEn: 'politics', examples: [{ traditional: '政治是很複雜的。', simplified: '政治是很复杂的。', vietnamese: 'Chính trị rất phức tạp.' }] },
+    { id: 'L12-007', lessonId: 'L12', order: 7, group: 'vocab1', traditional: '熱衷', simplified: '热衷', pinyin: 'rèzhōng', wordClass: ['Vst'], meaningVi: 'say mê, nhiệt tình với', meaningEn: 'to be enthusiastic about', examples: [{ traditional: '我阿姨擔心她對政治太熱衷。', simplified: '我阿姨担心她对政治太热衷。', vietnamese: 'Dì mình lo cô ấy quá nhiệt tình với chính trị.' }] },
+    { id: 'L12-008', lessonId: 'L12', order: 8, group: 'vocab1', traditional: '前途', simplified: '前途', pinyin: 'qiántú', wordClass: ['N'], meaningVi: 'tương lai, tiền đồ', meaningEn: 'future prospects', examples: [{ traditional: '會影響她的前途。', simplified: '会影响她的前途。', vietnamese: 'Sẽ ảnh hưởng đến tương lai của cô ấy.' }] },
+    { id: 'L12-009', lessonId: 'L12', order: 9, group: 'vocab1', traditional: '勸', simplified: '劝', pinyin: 'quàn', wordClass: ['V'], meaningVi: 'khuyên', meaningEn: 'to advise, persuade', examples: [{ traditional: '讓我過去勸勸她。', simplified: '让我过去劝劝她。', vietnamese: 'Bảo mình qua khuyên cô ấy.' }] },
+    { id: 'L12-010', lessonId: 'L12', order: 10, group: 'vocab1', traditional: '而已', simplified: '而已', pinyin: 'éryǐ', wordClass: ['Ptc'], meaningVi: 'chỉ... thôi, mà thôi', meaningEn: 'that is all, only', examples: [{ traditional: '只不過參加遊行而已。', simplified: '只不过参加游行而已。', vietnamese: 'Chỉ là tham gia biểu tình thôi mà.' }] },
+    { id: 'L12-011', lessonId: 'L12', order: 11, group: 'vocab1', traditional: '民主', simplified: '民主', pinyin: 'mínzhǔ', wordClass: ['N', 'Vs-attr'], meaningVi: 'dân chủ', meaningEn: 'democracy; democratic', examples: [{ traditional: '在民主社會，人民參加遊行，直接表達意見是很普遍的。', simplified: '在民主社会，人民参加游行，直接表达意见是很普遍的。', vietnamese: 'Trong xã hội dân chủ, người dân tham gia biểu tình, trực tiếp bày tỏ ý kiến là chuyện rất phổ biến.' }] },
+    { id: 'L12-012', lessonId: 'L12', order: 12, group: 'vocab1', traditional: '表達', simplified: '表达', pinyin: 'biǎodá', wordClass: ['V'], meaningVi: 'bày tỏ, biểu đạt', meaningEn: 'to express', examples: [{ traditional: '不去投票也是表達意見的一種方式。', simplified: '不去投票也是表达意见的一种方式。', vietnamese: 'Không đi bỏ phiếu cũng là một cách bày tỏ ý kiến.' }] },
+    { id: 'L12-013', lessonId: 'L12', order: 13, group: 'vocab1', traditional: '公共', simplified: '公共', pinyin: 'gōnggòng', wordClass: ['Vs-attr'], meaningVi: 'công cộng', meaningEn: 'public', examples: [{ traditional: '妳表妹關心公共議題是件很好的事啊。', simplified: '你表妹关心公共议题是件很好的事啊。', vietnamese: 'Em họ cậu quan tâm đến các vấn đề công cộng là việc rất tốt đấy.' }] },
+    { id: 'L12-014', lessonId: 'L12', order: 14, group: 'vocab1', traditional: '議題', simplified: '议题', pinyin: 'yìtí', wordClass: ['N'], meaningVi: 'vấn đề, nghị đề', meaningEn: 'topic, issue', examples: [{ traditional: '妳表妹關心公共議題是件很好的事啊。', simplified: '你表妹关心公共议题是件很好的事啊。', vietnamese: 'Em họ cậu quan tâm đến các vấn đề công cộng là việc rất tốt đấy.' }] },
+    { id: 'L12-015', lessonId: 'L12', order: 15, group: 'vocab1', traditional: '核能', simplified: '核能', pinyin: 'hénéng', wordClass: ['N'], meaningVi: 'năng lượng hạt nhân', meaningEn: 'nuclear energy', examples: [{ traditional: '要不要核能電廠是一個專業的問題。', simplified: '要不要核能电厂是一个专业的问题。', vietnamese: 'Việc có nên xây nhà máy điện hạt nhân hay không là một vấn đề chuyên môn.' }] },
+    { id: 'L12-016', lessonId: 'L12', order: 16, group: 'vocab1', traditional: '電廠', simplified: '电厂', pinyin: 'diànchǎng', wordClass: ['N'], meaningVi: 'nhà máy điện', meaningEn: 'power plant', examples: [{ traditional: '要不要核能電廠是一個專業的問題。', simplified: '要不要核能电厂是一个专业的问题。', vietnamese: 'Việc có nên xây nhà máy điện hạt nhân hay không là một vấn đề chuyên môn.' }] },
+    { id: 'L12-017', lessonId: 'L12', order: 17, group: 'vocab1', traditional: '由', simplified: '由', pinyin: 'yóu', wordClass: ['Prep'], meaningVi: 'do, bởi (người thực hiện)', meaningEn: 'by (indicating agent)', examples: [{ traditional: '應該由專家來討論、決定。', simplified: '应该由专家来讨论、决定。', vietnamese: 'Nên để chuyên gia thảo luận, quyết định.' }] },
+    { id: 'L12-018', lessonId: 'L12', order: 18, group: 'vocab1', traditional: '專家', simplified: '专家', pinyin: 'zhuānjiā', wordClass: ['N'], meaningVi: 'chuyên gia', meaningEn: 'expert', examples: [{ traditional: '應該由專家來討論、決定。', simplified: '应该由专家来讨论、决定。', vietnamese: 'Nên để chuyên gia thảo luận, quyết định.' }] },
+    { id: 'L12-019', lessonId: 'L12', order: 19, group: 'vocab1', traditional: '全面', simplified: '全面', pinyin: 'quánmiàn', wordClass: ['Adv', 'Vs-attr'], meaningVi: 'toàn diện', meaningEn: 'comprehensively, in all respects', examples: [{ traditional: '一般人對這個問題沒有辦法全面了解。', simplified: '一般人对这个问题没有办法全面了解。', vietnamese: 'Người bình thường không có cách nào hiểu toàn diện vấn đề này.' }] },
+    { id: 'L12-020', lessonId: 'L12', order: 20, group: 'vocab1', traditional: '民意', simplified: '民意', pinyin: 'mínyì', wordClass: ['N'], meaningVi: 'ý dân, dân ý', meaningEn: 'public opinion, will of the people', examples: [{ traditional: '既然我們選了民意代表，就應該由他們代表人民處理這些問題。', simplified: '既然我们选了民意代表，就应该由他们代表人民处理这些问题。', vietnamese: 'Đã bầu ra đại diện dân ý rồi, thì nên để họ đại diện người dân xử lý những vấn đề này.' }] },
+    { id: 'L12-021', lessonId: 'L12', order: 21, group: 'vocab1', traditional: '代表', simplified: '代表', pinyin: 'dàibiǎo', wordClass: ['N', 'V'], meaningVi: 'đại diện', meaningEn: 'representative; to represent', examples: [{ traditional: '既然我們選了民意代表，就應該由他們代表人民處理這些問題。', simplified: '既然我们选了民意代表，就应该由他们代表人民处理这些问题。', vietnamese: 'Đã bầu ra đại diện dân ý rồi, thì nên để họ đại diện người dân xử lý những vấn đề này.' }] },
+    { id: 'L12-022', lessonId: 'L12', order: 22, group: 'vocab1', traditional: '處理', simplified: '处理', pinyin: 'chǔlǐ', wordClass: ['V'], meaningVi: 'xử lý', meaningEn: 'to handle, deal with', examples: [{ traditional: '就應該由他們代表人民處理這些問題。', simplified: '就应该由他们代表人民处理这些问题。', vietnamese: 'Thì nên để họ đại diện người dân xử lý những vấn đề này.' }] },
+    { id: 'L12-023', lessonId: 'L12', order: 23, group: 'vocab1', traditional: '政黨', simplified: '政党', pinyin: 'zhèngdǎng', wordClass: ['N'], meaningVi: 'đảng phái', meaningEn: 'political party', examples: [{ traditional: '我覺得民意代表關心的常常不是人民的利益，而是他們自己或是政黨的利益。', simplified: '我觉得民意代表关心的常常不是人民的利益，而是他们自己或是政党的利益。', vietnamese: 'Mình thấy điều mà đại diện dân ý quan tâm thường không phải lợi ích của người dân, mà là lợi ích của bản thân họ hoặc của đảng phái.' }] },
+    { id: 'L12-024', lessonId: 'L12', order: 24, group: 'vocab1', traditional: '難道', simplified: '难道', pinyin: 'nándào', wordClass: ['Adv'], meaningVi: 'chẳng lẽ', meaningEn: "don't tell me that, could it be that", examples: [{ traditional: '難道妳從來不去投票嗎？', simplified: '难道你从来不去投票吗？', vietnamese: 'Chẳng lẽ cậu chưa bao giờ đi bỏ phiếu à?' }] },
+    { id: 'L12-025', lessonId: 'L12', order: 25, group: 'vocab1', traditional: '滿', simplified: '满', pinyin: 'mǎn', wordClass: ['V'], meaningVi: 'đủ, tròn (số lượng/tuổi)', meaningEn: 'to reach (a full amount)', examples: [{ traditional: '我今年滿二十歲。', simplified: '我今年满二十岁。', vietnamese: 'Năm nay mình vừa tròn hai mươi tuổi.' }] },
+    { id: 'L12-026', lessonId: 'L12', order: 26, group: 'vocab1', traditional: '憲法', simplified: '宪法', pinyin: 'xiànfǎ', wordClass: ['N'], meaningVi: 'hiến pháp', meaningEn: 'constitution', examples: [{ traditional: '按照憲法的規定，有投票權了。', simplified: '按照宪法的规定，有投票权了。', vietnamese: 'Theo quy định của hiến pháp, mình đã có quyền bỏ phiếu rồi.' }] },
+    { id: 'L12-027', lessonId: 'L12', order: 27, group: 'vocab1', traditional: '投票權', simplified: '投票权', pinyin: 'tóupiàoquán', wordClass: ['N'], meaningVi: 'quyền bỏ phiếu', meaningEn: 'the right to vote', examples: [{ traditional: '按照憲法的規定，有投票權了。', simplified: '按照宪法的规定，有投票权了。', vietnamese: 'Theo quy định của hiến pháp, mình đã có quyền bỏ phiếu rồi.' }] },
+    { id: 'L12-028', lessonId: 'L12', order: 28, group: 'vocab1', traditional: '選舉', simplified: '选举', pinyin: 'xuǎnjǔ', wordClass: ['N', 'V'], meaningVi: 'bầu cử', meaningEn: 'election; to elect', examples: [{ traditional: '不過年底的選舉我不會去投票的。', simplified: '不过年底的选举我不会去投票的。', vietnamese: 'Nhưng cuộc bầu cử cuối năm mình sẽ không đi bỏ phiếu đâu.' }] },
+    { id: 'L12-029', lessonId: 'L12', order: 29, group: 'vocab1', traditional: '權利', simplified: '权利', pinyin: 'quánlì', wordClass: ['N'], meaningVi: 'quyền lợi', meaningEn: 'right (entitlement)', examples: [{ traditional: '如果妳不去，不就放棄了表達意見的權利嗎？', simplified: '如果你不去，不就放弃了表达意见的权利吗？', vietnamese: 'Nếu cậu không đi, chẳng phải là từ bỏ quyền bày tỏ ý kiến sao?' }] },
+    { id: 'L12-030', lessonId: 'L12', order: 30, group: 'vocab1', traditional: '表示', simplified: '表示', pinyin: 'biǎoshì', wordClass: ['V'], meaningVi: 'biểu thị, nghĩa là', meaningEn: 'to indicate, show', examples: [{ traditional: '這樣做表示我對所有的候選人都不滿意。', simplified: '这样做表示我对所有的候选人都不满意。', vietnamese: 'Làm vậy nghĩa là mình không hài lòng với tất cả các ứng viên.' }] },
+    { id: 'L12-031', lessonId: 'L12', order: 31, group: 'vocab1', traditional: '反映', simplified: '反映', pinyin: 'fǎnyìng', wordClass: ['V'], meaningVi: 'phản ánh', meaningEn: 'to reflect', examples: [{ traditional: '投票的結果就不能反映真正的民意。', simplified: '投票的结果就不能反映真正的民意。', vietnamese: 'Kết quả bỏ phiếu sẽ không phản ánh đúng ý dân thật sự.' }] },
+    { id: 'L12-032', lessonId: 'L12', order: 32, group: 'vocab1', traditional: '為', simplified: '为', pinyin: 'wèi', wordClass: ['Prep'], meaningVi: 'vì, cho (người được hưởng lợi)', meaningEn: 'for (beneficiary marker)', examples: [{ traditional: '還是有一些有理想的候選人，願意出來為人民服務。', simplified: '还是有一些有理想的候选人，愿意出来为人民服务。', vietnamese: 'Vẫn có một số ứng viên có lý tưởng, sẵn lòng đứng ra phục vụ người dân.' }] },
+    { id: 'L12-033', lessonId: 'L12', order: 33, group: 'vocab1', traditional: '服務', simplified: '服务', pinyin: 'fúwù', wordClass: ['V'], meaningVi: 'phục vụ', meaningEn: 'to serve', examples: [{ traditional: '還是有一些有理想的候選人，願意出來為人民服務。', simplified: '还是有一些有理想的候选人，愿意出来为人民服务。', vietnamese: 'Vẫn có một số ứng viên có lý tưởng, sẵn lòng đứng ra phục vụ người dân.' }] },
+    { id: 'L12-034', lessonId: 'L12', order: 34, group: 'vocab1', traditional: '職位', simplified: '职位', pinyin: 'zhíwèi', wordClass: ['N'], meaningVi: 'chức vụ', meaningEn: 'position, post', examples: [{ traditional: '民主政治有一個好處，就是每一個職位都有任期。', simplified: '民主政治有一个好处，就是每一个职位都有任期。', vietnamese: 'Chính trị dân chủ có một điểm tốt, đó là mỗi chức vụ đều có nhiệm kỳ.' }] },
+    { id: 'L12-035', lessonId: 'L12', order: 35, group: 'vocab1', traditional: '任期', simplified: '任期', pinyin: 'rènqí', wordClass: ['N'], meaningVi: 'nhiệm kỳ', meaningEn: 'term of office', examples: [{ traditional: '每一個職位都有任期。', simplified: '每一个职位都有任期。', vietnamese: 'Mỗi chức vụ đều có nhiệm kỳ.' }] },
+    { id: 'L12-036', lessonId: 'L12', order: 36, group: 'vocab1', traditional: '選民', simplified: '选民', pinyin: 'xuǎnmín', wordClass: ['N'], meaningVi: 'cử tri', meaningEn: 'voter, electorate', examples: [{ traditional: '如果選民不滿意當選的人，下次別再選他就好了。', simplified: '如果选民不满意当选的人，下次别再选他就好了。', vietnamese: 'Nếu cử tri không hài lòng với người trúng cử, lần sau đừng bầu người đó nữa là được.' }] },
+    { id: 'L12-037', lessonId: 'L12', order: 37, group: 'vocab1', traditional: '完美', simplified: '完美', pinyin: 'wánměi', wordClass: ['Vs'], meaningVi: 'hoàn hảo', meaningEn: 'perfect', examples: [{ traditional: '雖然民主制度並不完美。', simplified: '虽然民主制度并不完美。', vietnamese: 'Tuy chế độ dân chủ không hoàn hảo.' }] },
+    { id: 'L12-038', lessonId: 'L12', order: 38, group: 'vocab1', traditional: '積極', simplified: '积极', pinyin: 'jījí', wordClass: ['Vs', 'Adv'], meaningVi: 'tích cực', meaningEn: 'active, positive', examples: [{ traditional: '選民還是應該積極地表達自己的意見。', simplified: '选民还是应该积极地表达自己的意见。', vietnamese: 'Cử tri vẫn nên tích cực bày tỏ ý kiến của mình.' }] },
+    { id: 'L12-039', lessonId: 'L12', order: 39, group: 'vocab1', traditional: '最佳', simplified: '最佳', pinyin: 'zuìjiā', wordClass: ['Vs-attr'], meaningVi: 'tốt nhất, xuất sắc nhất', meaningEn: 'the best', examples: [{ traditional: '你們真是民主政治的最佳推銷員。', simplified: '你们真是民主政治的最佳推销员。', vietnamese: 'Các cậu đúng là những người bán hàng xuất sắc nhất cho nền dân chủ.' }] },
+    { id: 'L12-040', lessonId: 'L12', order: 40, group: 'vocab1', traditional: '推銷員', simplified: '推销员', pinyin: 'tuīxiāoyuán', wordClass: ['N'], meaningVi: 'nhân viên bán hàng, người tiếp thị', meaningEn: 'salesperson', examples: [{ traditional: '你們真是民主政治的最佳推銷員。', simplified: '你们真是民主政治的最佳推销员。', vietnamese: 'Các cậu đúng là những người bán hàng xuất sắc nhất cho nền dân chủ.' }] },
+    { id: 'L12-041', lessonId: 'L12', order: 41, group: 'vocab1', traditional: '有道理', simplified: '有道理', pinyin: 'yǒu dàolǐ', wordClass: ['Vs'], meaningVi: 'có lý', meaningEn: 'to make sense', examples: [{ traditional: '妳的話雖然有道理。', simplified: '你的话虽然有道理。', vietnamese: 'Lời cậu nói tuy có lý.' }] },
+    { id: 'L12-042', lessonId: 'L12', order: 42, group: 'vocab1', traditional: '候選人', simplified: '候选人', pinyin: 'hòuxuǎnrén', wordClass: ['N'], meaningVi: 'ứng viên, người ứng cử', meaningEn: 'candidate', examples: [{ traditional: '這樣做表示我對所有的候選人都不滿意。', simplified: '这样做表示我对所有的候选人都不满意。', vietnamese: 'Làm vậy nghĩa là mình không hài lòng với tất cả các ứng viên.' }] },
+    { id: 'L12-043', lessonId: 'L12', order: 1, group: 'vocab2', traditional: '學術界', simplified: '学术界', pinyin: 'xuéshùjiè', wordClass: ['N'], meaningVi: 'giới học thuật', meaningEn: 'academic circles', examples: [{ traditional: '在學術界的地位很高。', simplified: '在学术界的地位很高。', vietnamese: 'Có địa vị rất cao trong giới học thuật.' }] },
+    { id: 'L12-044', lessonId: 'L12', order: 2, group: 'vocab2', traditional: '從政', simplified: '从政', pinyin: 'cóngzhèng', wordClass: ['Vi'], meaningVi: 'làm chính trị, ra làm quan', meaningEn: 'to go into politics', examples: [{ traditional: '他一直想從政。', simplified: '他一直想从政。', vietnamese: 'Ông luôn muốn tham gia hoạt động công quyền.' }] },
+    { id: 'L12-045', lessonId: 'L12', order: 3, group: 'vocab2', traditional: '政策', simplified: '政策', pinyin: 'zhèngcè', wordClass: ['N'], meaningVi: 'chính sách', meaningEn: 'policy', examples: [{ traditional: '只有好的政策才能讓人民過得幸福、安定。', simplified: '只有好的政策才能让人民过得幸福、安定。', vietnamese: 'Chỉ có chính sách tốt mới có thể mang lại hạnh phúc, cuộc sống ổn định cho người dân.' }] },
+    { id: 'L12-046', lessonId: 'L12', order: 4, group: 'vocab2', traditional: '安定', simplified: '安定', pinyin: 'āndìng', wordClass: ['Vs'], meaningVi: 'ổn định', meaningEn: 'stable', examples: [{ traditional: '只有好的政策才能讓人民過得幸福、安定。', simplified: '只有好的政策才能让人民过得幸福、安定。', vietnamese: 'Chỉ có chính sách tốt mới có thể mang lại hạnh phúc, cuộc sống ổn định cho người dân.' }] },
+    { id: 'L12-047', lessonId: 'L12', order: 5, group: 'vocab2', traditional: '辭', simplified: '辞', pinyin: 'cí', wordClass: ['V'], meaningVi: 'từ (chức/việc)', meaningEn: 'to resign from', examples: [{ traditional: '為了理想，他辭掉工作，出來參選民意代表。', simplified: '为了理想，他辞掉工作，出来参选民意代表。', vietnamese: 'Vì lý tưởng, ông từ bỏ công việc, tham gia ứng cử đại diện dân ý.' }] },
+    { id: 'L12-048', lessonId: 'L12', order: 6, group: 'vocab2', traditional: '頭腦', simplified: '头脑', pinyin: 'tóunǎo', wordClass: ['N'], meaningVi: 'đầu óc', meaningEn: 'mind, brain', examples: [{ traditional: '因為他頭腦清楚、口才好。', simplified: '因为他头脑清楚、口才好。', vietnamese: 'Vì đầu óc minh mẫn, ăn nói giỏi.' }] },
+    { id: 'L12-049', lessonId: 'L12', order: 7, group: 'vocab2', traditional: '改革', simplified: '改革', pinyin: 'gǎigé', wordClass: ['N', 'V'], meaningVi: 'cải cách', meaningEn: 'reform', examples: [{ traditional: '常常上電視節目發表對各種改革議題的看法。', simplified: '常常上电视节目发表对各种改革议题的看法。', vietnamese: 'Thường lên truyền hình nêu quan điểm về nhiều vấn đề cải cách.' }] },
+    { id: 'L12-050', lessonId: 'L12', order: 8, group: 'vocab2', traditional: '看法', simplified: '看法', pinyin: 'kànfǎ', wordClass: ['N'], meaningVi: 'quan điểm, cách nhìn', meaningEn: 'viewpoint, opinion', examples: [{ traditional: '常常上電視節目發表對各種改革議題的看法。', simplified: '常常上电视节目发表对各种改革议题的看法。', vietnamese: 'Thường lên truyền hình nêu quan điểm về nhiều vấn đề cải cách.' }] },
+    { id: 'L12-051', lessonId: 'L12', order: 9, group: 'vocab2', traditional: '教育', simplified: '教育', pinyin: 'jiàoyù', wordClass: ['N', 'V'], meaningVi: 'giáo dục', meaningEn: 'education', examples: [{ traditional: '他在教育改革跟國民年金制度方面的努力。', simplified: '他在教育改革跟国民年金制度方面的努力。', vietnamese: 'Những nỗ lực của ông trong cải cách giáo dục và chế độ hưu trí quốc dân.' }] },
+    { id: 'L12-052', lessonId: 'L12', order: 10, group: 'vocab2', traditional: '方面', simplified: '方面', pinyin: 'fāngmiàn', wordClass: ['N'], meaningVi: 'mặt, phương diện', meaningEn: 'aspect, respect', examples: [{ traditional: '他在教育改革跟國民年金制度方面的努力。', simplified: '他在教育改革跟国民年金制度方面的努力。', vietnamese: 'Những nỗ lực của ông trong cải cách giáo dục và chế độ hưu trí quốc dân.' }] },
+    { id: 'L12-053', lessonId: 'L12', order: 11, group: 'vocab2', traditional: '得到', simplified: '得到', pinyin: 'dédào', wordClass: ['V'], meaningVi: 'nhận được, đạt được', meaningEn: 'to obtain, get', examples: [{ traditional: '讓他得到選民廣泛的支持。', simplified: '让他得到选民广泛的支持。', vietnamese: 'Giúp ông nhận được sự ủng hộ rộng rãi từ cử tri.' }] },
+    { id: 'L12-054', lessonId: 'L12', order: 12, group: 'vocab2', traditional: '連任', simplified: '连任', pinyin: 'liánrèn', wordClass: ['Vi'], meaningVi: 'tái đắc cử liên tiếp', meaningEn: 'to serve consecutive terms', examples: [{ traditional: '順利連任了四屆。', simplified: '顺利连任了四届。', vietnamese: 'Thuận lợi tái đắc cử liên tiếp bốn nhiệm kỳ.' }] },
+    { id: 'L12-055', lessonId: 'L12', order: 13, group: 'vocab2', traditional: '屆', simplified: '届', pinyin: 'jiè', wordClass: ['M'], meaningVi: 'nhiệm kỳ, khóa (lượng từ)', meaningEn: 'term, session (measure word)', examples: [{ traditional: '順利連任了四屆。', simplified: '顺利连任了四届。', vietnamese: 'Thuận lợi tái đắc cử liên tiếp bốn nhiệm kỳ.' }] },
+    { id: 'L12-056', lessonId: 'L12', order: 14, group: 'vocab2', traditional: '支持度', simplified: '支持度', pinyin: 'zhīchídù', wordClass: ['N'], meaningVi: 'mức độ ủng hộ', meaningEn: 'level of support', examples: [{ traditional: '雖然他的支持度一直是候選人中最高的。', simplified: '虽然他的支持度一直是候选人中最高的。', vietnamese: 'Tuy tỷ lệ ủng hộ của ông luôn cao nhất trong số các ứng viên.' }] },
+    { id: 'L12-057', lessonId: 'L12', order: 15, group: 'vocab2', traditional: '落選', simplified: '落选', pinyin: 'luòxuǎn', wordClass: ['Vi'], meaningVi: 'rớt cử, thất cử', meaningEn: 'to lose an election', examples: [{ traditional: '但最後他卻落選了。', simplified: '但最后他却落选了。', vietnamese: 'Nhưng cuối cùng ông lại không trúng cử.' }] },
+    { id: 'L12-058', lessonId: 'L12', order: 16, group: 'vocab2', traditional: '得票率', simplified: '得票率', pinyin: 'dépiàolǜ', wordClass: ['N'], meaningVi: 'tỷ lệ phiếu bầu', meaningEn: 'vote share', examples: [{ traditional: '沒想到得票率不如預期。', simplified: '没想到得票率不如预期。', vietnamese: 'Không ngờ tỷ lệ phiếu bầu không như dự kiến.' }] },
+    { id: 'L12-059', lessonId: 'L12', order: 17, group: 'vocab2', traditional: '預期', simplified: '预期', pinyin: 'yùqí', wordClass: ['V', 'N'], meaningVi: 'dự kiến, dự đoán', meaningEn: 'to expect, anticipate', examples: [{ traditional: '沒想到得票率不如預期。', simplified: '没想到得票率不如预期。', vietnamese: 'Không ngờ tỷ lệ phiếu bầu không như dự kiến.' }] },
+    { id: 'L12-060', lessonId: 'L12', order: 18, group: 'vocab2', traditional: '暫時', simplified: '暂时', pinyin: 'zànshí', wordClass: ['Adv'], meaningVi: 'tạm thời', meaningEn: 'temporarily', examples: [{ traditional: '建議他暫時回老家休息一段時間。', simplified: '建议他暂时回老家休息一段时间。', vietnamese: 'Đề nghị ông tạm thời về quê nghỉ ngơi một thời gian.' }] },
+    { id: 'L12-061', lessonId: 'L12', order: 19, group: 'vocab2', traditional: '老家', simplified: '老家', pinyin: 'lǎojiā', wordClass: ['N'], meaningVi: 'quê nhà', meaningEn: 'hometown', examples: [{ traditional: '建議他暫時回老家休息一段時間。', simplified: '建议他暂时回老家休息一段时间。', vietnamese: 'Đề nghị ông tạm thời về quê nghỉ ngơi một thời gian.' }] },
+    { id: 'L12-062', lessonId: 'L12', order: 20, group: 'vocab2', traditional: '形象', simplified: '形象', pinyin: 'xíngxiàng', wordClass: ['N'], meaningVi: 'hình ảnh (uy tín)', meaningEn: 'image, reputation', examples: [{ traditional: '因為以前從政的形象不錯。', simplified: '因为以前从政的形象不错。', vietnamese: 'Vì hình ảnh hoạt động công quyền trước đây tốt.' }] },
+    { id: 'L12-063', lessonId: 'L12', order: 21, group: 'vocab2', traditional: '商量', simplified: '商量', pinyin: 'shāngliáng', wordClass: ['V'], meaningVi: 'bàn bạc, trao đổi', meaningEn: 'to discuss, consult', examples: [{ traditional: '村子裡大大小小的事情大家都會找他商量。', simplified: '村子里大大小小的事情大家都会找他商量。', vietnamese: 'Việc lớn nhỏ trong làng đều tìm ông để bàn bạc.' }] },
+    { id: 'L12-064', lessonId: 'L12', order: 22, group: 'vocab2', traditional: '人脈', simplified: '人脉', pinyin: 'rénmài', wordClass: ['N'], meaningVi: 'mối quan hệ (quan hệ xã hội)', meaningEn: 'connections, network', examples: [{ traditional: '他也盡可能利用自己的人脈跟資源。', simplified: '他也尽可能利用自己的人脉跟资源。', vietnamese: 'Ông cũng tận dụng hết mức các mối quan hệ và nguồn lực của mình.' }] },
+    { id: 'L12-065', lessonId: 'L12', order: 23, group: 'vocab2', traditional: '弱勢', simplified: '弱势', pinyin: 'ruòshì', wordClass: ['Vs-attr', 'N'], meaningVi: 'yếu thế, khó khăn', meaningEn: 'disadvantaged', examples: [{ traditional: '幫助了不少弱勢的家庭。', simplified: '帮助了不少弱势的家庭。', vietnamese: 'Giúp đỡ không ít gia đình khó khăn.' }] },
+    { id: 'L12-066', lessonId: 'L12', order: 24, group: 'vocab2', traditional: '退休', simplified: '退休', pinyin: 'tuìxiū', wordClass: ['Vi'], meaningVi: 'nghỉ hưu', meaningEn: 'to retire', examples: [{ traditional: '有一位出版社的老闆想退休。', simplified: '有一位出版社的老板想退休。', vietnamese: 'Có một ông chủ nhà xuất bản muốn nghỉ hưu.' }] },
+    { id: 'L12-067', lessonId: 'L12', order: 25, group: 'vocab2', traditional: '事業', simplified: '事业', pinyin: 'shìyè', wordClass: ['N'], meaningVi: 'sự nghiệp, cơ nghiệp', meaningEn: 'career, enterprise', examples: [{ traditional: '但是孩子不想接這個事業。', simplified: '但是孩子不想接这个事业。', vietnamese: 'Nhưng con cái không muốn tiếp quản.' }] },
+    { id: 'L12-068', lessonId: 'L12', order: 26, group: 'vocab2', traditional: '捐', simplified: '捐', pinyin: 'juān', wordClass: ['V'], meaningVi: 'quyên góp', meaningEn: 'to donate', examples: [{ traditional: '他到處請認識的人捐二手書、捐錢。', simplified: '他到处请认识的人捐二手书、捐钱。', vietnamese: 'Ông đi khắp nơi mời những người quen biết quyên sách cũ, quyên tiền.' }] },
+    { id: 'L12-069', lessonId: 'L12', order: 27, group: 'vocab2', traditional: '義務', simplified: '义务', pinyin: 'yìwù', wordClass: ['Adv', 'N'], meaningVi: 'tình nguyện (không công), nghĩa vụ', meaningEn: 'voluntary; duty', examples: [{ traditional: '甚至請大學生下課以後來義務教小朋友英文。', simplified: '甚至请大学生下课以后来义务教小朋友英文。', vietnamese: 'Thậm chí mời sinh viên đại học sau giờ học đến dạy tiếng Anh miễn phí cho trẻ em.' }] },
+    { id: 'L12-070', lessonId: 'L12', order: 28, group: 'vocab2', traditional: '經費', simplified: '经费', pinyin: 'jīngfèi', wordClass: ['N'], meaningVi: 'kinh phí', meaningEn: 'funds, expenses', examples: [{ traditional: '用賺到的錢做英文班的經費。', simplified: '用赚到的钱做英文班的经费。', vietnamese: 'Lấy tiền kiếm được làm kinh phí cho lớp tiếng Anh.' }] },
+    { id: 'L12-071', lessonId: 'L12', order: 29, group: 'vocab2', traditional: '競選', simplified: '竞选', pinyin: 'jìngxuǎn', wordClass: ['Vi'], meaningVi: 'ứng cử, tranh cử', meaningEn: 'to run for office', examples: [{ traditional: '也開始考慮要不要再次出來參選民意代表。', simplified: '也开始考虑要不要再次出来参选民意代表。', vietnamese: 'Chú cũng bắt đầu cân nhắc có nên ra ứng cử đại diện dân ý thêm lần nữa hay không.' }] },
+    { id: 'L12-072', lessonId: 'L12', order: 30, group: 'vocab2', traditional: '也許', simplified: '也许', pinyin: 'yěxǔ', wordClass: ['Adv'], meaningVi: 'có lẽ', meaningEn: 'perhaps, maybe', examples: [{ traditional: '也許回到從前的路，有了權力，他可以服務更多的人。', simplified: '也许回到从前的路，有了权力，他可以服务更多的人。', vietnamese: 'Có lẽ quay lại con đường cũ, có quyền lực, ông sẽ có thể phục vụ nhiều người hơn.' }] },
+    { id: 'L12-073', lessonId: 'L12', order: 31, group: 'vocab2', traditional: '政治界', simplified: '政治界', pinyin: 'zhèngzhìjiè', wordClass: ['N'], meaningVi: 'giới chính trị', meaningEn: 'political circles', examples: [{ traditional: '他原本是政治界很受歡迎的人物。', simplified: '他原本是政治界很受欢迎的人物。', vietnamese: 'Ông vốn là người được yêu thích trong giới chính trị.' }] },
+    { id: 'L12-074', lessonId: 'L12', order: 32, group: 'vocab2', traditional: '權力', simplified: '权力', pinyin: 'quánlì', wordClass: ['N'], meaningVi: 'quyền lực', meaningEn: 'power, authority', examples: [{ traditional: '有了權力，他可以服務更多的人。', simplified: '有了权力，他可以服务更多的人。', vietnamese: 'Có quyền lực, ông sẽ có thể phục vụ nhiều người hơn.' }] },
+    { id: 'L12-075', lessonId: 'L12', order: 33, group: 'vocab2', traditional: '辭掉', simplified: '辞掉', pinyin: 'cídiào', wordClass: ['V'], meaningVi: 'từ bỏ (công việc)', meaningEn: 'to quit (a job)', examples: [{ traditional: '他辭掉工作，出來參選民意代表。', simplified: '他辞掉工作，出来参选民意代表。', vietnamese: 'Ông từ bỏ công việc, tham gia ứng cử đại diện dân ý.' }] },
+    { id: 'L12-076', lessonId: 'L12', order: 34, group: 'vocab2', traditional: '提出', simplified: '提出', pinyin: 'tíchū', wordClass: ['V'], meaningVi: 'đưa ra, đề xuất', meaningEn: 'to propose, put forward', examples: [{ traditional: '他常常提出對改革議題的看法。', simplified: '他常常提出对改革议题的看法。', vietnamese: 'Ông thường đưa ra quan điểm về các vấn đề cải cách.' }] },
+    { id: 'L12-077', lessonId: 'L12', order: 35, group: 'vocab2', traditional: '國民年金', simplified: '国民年金', pinyin: 'guómín niánjīn', wordClass: ['N'], meaningVi: 'chế độ hưu trí quốc dân', meaningEn: 'national pension', examples: [{ traditional: '他在教育改革跟國民年金制度方面的努力。', simplified: '他在教育改革跟国民年金制度方面的努力。', vietnamese: 'Những nỗ lực của ông trong cải cách giáo dục và chế độ hưu trí quốc dân.' }] },
+    { id: 'L12-078', lessonId: 'L12', order: 36, group: 'vocab2', traditional: '中間選民', simplified: '中间选民', pinyin: 'zhōngjiān xuǎnmín', wordClass: ['N'], meaningVi: 'cử tri trung dung', meaningEn: 'swing/independent voters', examples: [{ traditional: '他原本以為中間選民會把票投給他。', simplified: '他原本以为中间选民会把票投给他。', vietnamese: 'Ông vốn nghĩ rằng những cử tri trung dung sẽ dành phiếu cho mình.' }] },
+    { id: 'L12-079', lessonId: 'L12', order: 37, group: 'vocab2', traditional: '一陣子', simplified: '一阵子', pinyin: 'yí zhènzi', wordClass: ['N'], meaningVi: 'một thời gian', meaningEn: 'a period of time, a while', examples: [{ traditional: '建議他暫時回老家休息一陣子。', simplified: '建议他暂时回老家休息一阵子。', vietnamese: 'Đề nghị ông tạm thời về quê nghỉ ngơi một thời gian.' }] },
+    { id: 'L12-080', lessonId: 'L12', order: 38, group: 'vocab2', traditional: '下一步', simplified: '下一步', pinyin: 'xià yí bù', wordClass: ['N'], meaningVi: 'bước tiếp theo', meaningEn: 'next step', examples: [{ traditional: '再想下一步要怎麼做。', simplified: '再想下一步要怎么做。', vietnamese: 'Rồi tính tiếp bước tiếp theo.' }] },
+    { id: 'L12-081', lessonId: 'L12', order: 39, group: 'vocab2', traditional: '盡可能', simplified: '尽可能', pinyin: 'jìn kěnéng', wordClass: ['Adv'], meaningVi: 'cố gắng hết sức, tận dụng tối đa', meaningEn: 'as much as possible', examples: [{ traditional: '他也盡可能利用自己的人脈跟資源。', simplified: '他也尽可能利用自己的人脉跟资源。', vietnamese: 'Ông cũng tận dụng hết mức các mối quan hệ và nguồn lực của mình.' }] },
+    { id: 'L12-082', lessonId: 'L12', order: 40, group: 'vocab2', traditional: '出版社', simplified: '出版社', pinyin: 'chūbǎnshè', wordClass: ['N'], meaningVi: 'nhà xuất bản', meaningEn: 'publishing house', examples: [{ traditional: '有一位出版社的老闆想退休。', simplified: '有一位出版社的老板想退休。', vietnamese: 'Có một ông chủ nhà xuất bản muốn nghỉ hưu.' }] },
+    { id: 'L12-083', lessonId: 'L12', order: 41, group: 'vocab2', traditional: '捐出', simplified: '捐出', pinyin: 'juānchū', wordClass: ['V'], meaningVi: 'quyên góp ra', meaningEn: 'to donate (something) out', examples: [{ traditional: '他請認識的人捐出二手書、捐出錢。', simplified: '他请认识的人捐出二手书、捐出钱。', vietnamese: 'Ông mời những người quen biết quyên góp sách cũ, quyên góp tiền.' }] },
+    { id: 'L12-084', lessonId: 'L12', order: 42, group: 'vocab2', traditional: '二手書', simplified: '二手书', pinyin: 'èrshǒu shū', wordClass: ['N'], meaningVi: 'sách cũ', meaningEn: 'secondhand book', examples: [{ traditional: '他到處請認識的人捐二手書。', simplified: '他到处请认识的人捐二手书。', vietnamese: 'Ông đi khắp nơi mời những người quen biết quyên sách cũ.' }] }
   ],
-
   grammar: [
     {
-      id: 'L12-G1', lessonId: 'L12', order: 1, pattern: '凡是…，都…',
-      functionVi: '"凡是 A，都 B" nghĩa là hễ là A (bất kỳ cái hoặc người nào thuộc loại A), thì đều B. Nhấn mạnh tính bao quát không ngoại lệ. A thường là một loại người hoặc vật.',
-      functionEn: '"凡是 A，都 B" means whatever or whoever is A, all B. It stresses that there are no exceptions. A is usually a category of people or things.',
+      id: 'L12-G1',
+      lessonId: 'L12',
+      order: 1,
+      pattern: '只不過…（而已）',
+      functionVi: 'Dùng để nhấn mạnh rằng sự việc chỉ ở một mức độ nhỏ, không nghiêm trọng hay to tát như người khác nghĩ.',
+      functionEn: 'Used to emphasize that something is merely at a small/limited degree, not as serious as others might think.',
       examples: [
-        { traditional: '凡是有身分證、年滿二十歲的人，都有投票權。', simplified: '凡是有身分证、年满二十岁的人，都有投票权。', english: 'Anyone with an ID card who is at least twenty has the right to vote.', vietnamese: 'Hễ là người có chứng minh thư, đủ hai mươi tuổi, đều có quyền bỏ phiếu.' },
-        { traditional: '凡是這家出版社的書，品質都很不錯。', simplified: '凡是这家出版社的书，品质都很不错。', english: 'Every book from this publisher is of good quality.', vietnamese: 'Hễ là sách của nhà xuất bản này, chất lượng đều khá tốt.' },
-        { traditional: '凡是報名的人，都會收到一封確認信。', simplified: '凡是报名的人，都会收到一封确认信。', english: 'Everyone who registers will receive a confirmation email.', vietnamese: 'Hễ là người đăng ký, đều nhận được một email xác nhận.' },
-        { traditional: '凡是他答應過的事，一定會做到。', simplified: '凡是他答应过的事，一定会做到。', english: "Whatever he's promised, he always follows through.", vietnamese: 'Hễ là việc anh ấy đã hứa, nhất định sẽ làm.' },
-        { traditional: '凡是跟健康有關的問題，都應該先問醫生。', simplified: '凡是跟健康有关的问题，都应该先问医生。', english: 'Any question about health should first be asked of a doctor.', vietnamese: 'Hễ là vấn đề liên quan đến sức khỏe, đều nên hỏi bác sĩ trước.' }
+        { traditional: '只不過參加遊行而已，妳阿姨想太多了吧。', simplified: '只不过参加游行而已，你阿姨想太多了吧。', english: "She's just taking part in a demonstration. Your aunt is over-analyzing the situation.", vietnamese: 'Chỉ là tham gia biểu tình thôi mà, dì cậu nghĩ nhiều quá rồi.' },
+        { traditional: '我只不過遲到五分鐘而已，老師就生氣了。', simplified: '我只不过迟到五分钟而已，老师就生气了。', english: 'I was only five minutes late, and the teacher got angry.', vietnamese: 'Mình chỉ đi trễ năm phút thôi mà, thầy đã nổi giận rồi.' },
+        { traditional: '他只不過開個玩笑而已，妳別那麼生氣。', simplified: '他只不过开个玩笑而已，你别那么生气。', english: "He's only joking around; don't be so angry.", vietnamese: 'Anh ấy chỉ đùa một chút thôi mà, cậu đừng giận như vậy.' },
+        { traditional: '這只不過是個小感冒而已，不用去醫院。', simplified: '这只不过是个小感冒而已，不用去医院。', english: "It's only a minor cold, no need to go to the hospital.", vietnamese: 'Đây chỉ là cảm nhẹ thôi mà, không cần phải đi bệnh viện.' },
+        { traditional: '我只不過說了實話而已，為什麼大家都不高興？', simplified: '我只不过说了实话而已，为什么大家都不高兴？', english: "I only told the truth, why is everyone unhappy?", vietnamese: 'Mình chỉ nói thật thôi mà, sao mọi người đều không vui?' }
       ],
-      usageNotesVi: '"凡是" trang trọng hơn "只要是". Vế sau bắt buộc có "都 / 一律 / 一定". A là điều kiện bao gồm mọi trường hợp cùng loại; câu mang tính quy tắc, khái quát.',
+      usageNotesVi: '"只不過…（而已）" thường đi kèm nhau để giảm nhẹ mức độ nghiêm trọng của sự việc, ngụ ý người nói cho rằng việc đó không đáng để người khác phản ứng quá mức. "而已" có thể bỏ, chỉ dùng "只不過" cũng được, nhưng có "而已" thì sắc thái giảm nhẹ rõ hơn.',
       exercises: [
-        { id: 'L12-G1-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：什麼人可以參加這個活動？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['凡是對這個題目有興趣的人，都可以參加。'] }], targetPattern: 'L12-G1' },
-        { id: 'L12-G1-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這張卡在哪些店可以用？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['凡是門口有這個標誌的店，都可以用。'] }], targetPattern: 'L12-G1' },
-        { id: 'L12-G1-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：新來的同事需要做這個訓練嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['要，凡是新進人員，都要先上兩天的課。'] }], targetPattern: 'L12-G1' },
-        { id: 'L12-G1-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個優惠有限制嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['凡是當天投過票的人，出示證明都可以打折。'] }], targetPattern: 'L12-G1' },
-        { id: 'L12-G1-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他對朋友怎麼樣？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['凡是朋友開口的忙，他都盡量幫。'] }], targetPattern: 'L12-G1' }
+        { id: 'L12-G1-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '他___是去買個東西___，怎麼去了那麼久？', blanks: [{ index: 0, acceptedAnswers: ['只不過'] }, { index: 1, acceptedAnswers: ['而已'] }], targetPattern: 'L12-G1' },
+        { id: 'L12-G1-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這件事___是個誤會___，不是故意的。', blanks: [{ index: 0, acceptedAnswers: ['只不過'] }, { index: 1, acceptedAnswers: ['而已'] }], targetPattern: 'L12-G1' },
+        { id: 'L12-G1-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '我___是提出一點意見___，不是要批評你。', blanks: [{ index: 0, acceptedAnswers: ['只不過'] }, { index: 1, acceptedAnswers: ['而已'] }], targetPattern: 'L12-G1' },
+        { id: 'L12-G1-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '他___是沒去投票___，妳不要說他不關心政治。', blanks: [{ index: 0, acceptedAnswers: ['只不過'] }, { index: 1, acceptedAnswers: ['而已'] }], targetPattern: 'L12-G1' },
+        { id: 'L12-G1-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這次的得票率___是比上次低了一點___，不算落選的主要原因。', blanks: [{ index: 0, acceptedAnswers: ['只不過'] }, { index: 1, acceptedAnswers: ['而已'] }], targetPattern: 'L12-G1' }
       ]
     },
     {
-      id: 'L12-G2', lessonId: 'L12', order: 2, pattern: '就…而言 / 就…來說',
-      functionVi: '"就 A 而言，B" nghĩa là xét về mặt A (một phương diện cụ thể), thì B. Dùng để giới hạn phạm vi đánh giá. "而言" trang trọng, "來說" khẩu ngữ hơn.',
-      functionEn: '"就 A 而言，B" means as far as A is concerned / in terms of A, B. It limits the scope of an assessment. "而言" is formal; "來說" is more colloquial.',
+      id: 'L12-G2',
+      lessonId: 'L12',
+      order: 2,
+      pattern: '由',
+      functionVi: 'Giới từ đánh dấu người/đối tượng chịu trách nhiệm thực hiện hành động, thường dùng khi quyết định việc do ai đảm nhiệm.',
+      functionEn: 'Preposition marking the agent responsible for carrying out an action.',
       examples: [
-        { traditional: '就制度而言，台灣的選舉算是相當公開的。', simplified: '就制度而言，台湾的选举算是相当公开的。', english: "In terms of the system, Taiwan's elections are quite transparent.", vietnamese: 'Xét về mặt chế độ, bầu cử Đài Loan tương đối công khai.' },
-        { traditional: '就價錢而言，這家民宿算是便宜的。', simplified: '就价钱而言，这家民宿算是便宜的。', english: 'In terms of price, this homestay is on the cheap side.', vietnamese: 'Xét về giá cả, homestay này tính là rẻ.' },
-        { traditional: '就我個人而言，我比較支持第二個方案。', simplified: '就我个人而言，我比较支持第二个方案。', english: 'Personally speaking, I prefer the second option.', vietnamese: 'Về phần cá nhân tôi, tôi ủng hộ phương án thứ hai hơn.' },
-        { traditional: '就經驗而言，他是我們裡面最適合的人選。', simplified: '就经验而言，他是我们里面最适合的人选。', english: "In terms of experience, he's the most suitable candidate among us.", vietnamese: 'Xét về kinh nghiệm, anh ấy là ứng viên phù hợp nhất trong chúng ta.' },
-        { traditional: '就這件事而言，我覺得雙方都有責任。', simplified: '就这件事而言，我觉得双方都有责任。', english: 'As far as this matter goes, I think both sides bear responsibility.', vietnamese: 'Xét riêng chuyện này, tôi thấy cả hai bên đều có trách nhiệm.' }
+        { traditional: '要不要核能電廠是一個專業的問題，應該由專家來討論、決定。', simplified: '要不要核能电厂是一个专业的问题，应该由专家来讨论、决定。', english: 'Whether or not we have nuclear power plants is a specialized problem and should be discussed and decided by experts.', vietnamese: 'Việc có nên xây nhà máy điện hạt nhân hay không là một vấn đề chuyên môn, nên để chuyên gia thảo luận, quyết định.' },
+        { traditional: '既然我們選了民意代表，就應該由他們代表人民處理這些問題。', simplified: '既然我们选了民意代表，就应该由他们代表人民处理这些问题。', english: 'Since we elected public representatives, they should represent the people and deal with these problems.', vietnamese: 'Đã bầu ra đại diện dân ý rồi, thì nên để họ đại diện người dân xử lý những vấn đề này.' },
+        { traditional: '這次的活動由學生會負責安排。', simplified: '这次的活动由学生会负责安排。', english: 'This event will be arranged by the student council.', vietnamese: 'Hoạt động lần này do hội học sinh phụ trách sắp xếp.' },
+        { traditional: '晚餐由我來準備，你們不用擔心。', simplified: '晚餐由我来准备，你们不用担心。', english: "I'll take care of dinner; you don't need to worry.", vietnamese: 'Bữa tối do mình chuẩn bị, các cậu không cần lo.' },
+        { traditional: '公司的未來發展方向，由董事會決定。', simplified: '公司的未来发展方向，由董事会决定。', english: "The company's future direction will be decided by the board of directors.", vietnamese: 'Hướng phát triển tương lai của công ty do hội đồng quản trị quyết định.' }
       ],
-      usageNotesVi: '"就…而言" đứng đầu câu hoặc đầu mệnh đề, khoanh vùng góc nhìn. Gần với "從…來看" nhưng "就…而言" thiên về "nếu chỉ xét mặt này". "就我而言" = "về phần tôi".',
+      usageNotesVi: '"由" đứng trước danh từ chỉ người/tổ chức chịu trách nhiệm, sau đó là động từ chỉ hành động họ thực hiện (由 + người + V). Khác với "被" (bị động, chịu tác động), "由" nhấn mạnh người được giao trách nhiệm thực hiện việc gì.',
       exercises: [
-        { id: 'L12-G2-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這兩份工作你會選哪個？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['就薪水而言，第一份比較好，可是第二份學得到的東西多。'] }], targetPattern: 'L12-G2' },
-        { id: 'L12-G2-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你覺得這次活動辦得成功嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['就參加的人數而言，算是很成功。'] }], targetPattern: 'L12-G2' },
-        { id: 'L12-G2-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這台舊車還能開嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['就安全而言，我覺得該換了。'] }], targetPattern: 'L12-G2' },
-        { id: 'L12-G2-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你贊成這個政策嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['就長遠而言，我覺得方向是對的。'] }], targetPattern: 'L12-G2' },
-        { id: 'L12-G2-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他適合當班代表嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['就個性而言，他很願意為大家服務，滿適合的。'] }], targetPattern: 'L12-G2' }
+        { id: 'L12-G2-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這個案子___張經理負責處理。', blanks: [{ index: 0, acceptedAnswers: ['由'] }], targetPattern: 'L12-G2' },
+        { id: 'L12-G2-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '選舉的結果應該___選民自己決定。', blanks: [{ index: 0, acceptedAnswers: ['由'] }], targetPattern: 'L12-G2' },
+        { id: 'L12-G2-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這次的政策___政府跟專家一起討論出來的。', blanks: [{ index: 0, acceptedAnswers: ['由'] }], targetPattern: 'L12-G2' },
+        { id: 'L12-G2-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這本書的出版___那家出版社負責。', blanks: [{ index: 0, acceptedAnswers: ['由'] }], targetPattern: 'L12-G2' },
+        { id: 'L12-G2-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '誰當選，___選民投票決定，不是___政黨決定。', blanks: [{ index: 0, acceptedAnswers: ['由'] }, { index: 1, acceptedAnswers: ['由'] }], targetPattern: 'L12-G2' }
       ]
     },
     {
-      id: 'L12-G3', lessonId: 'L12', order: 3, pattern: '以…的身分',
-      functionVi: '"以 A 的身分 + V" nghĩa là với tư cách hoặc thân phận là A mà làm việc gì. Nhấn mạnh vai trò hoặc danh nghĩa của người thực hiện hành động.',
-      functionEn: '"以 A 的身分 + V" means to do something in the capacity or role of A. It stresses the doer\'s role or standing.',
+      id: 'L12-G3',
+      lessonId: 'L12',
+      order: 3,
+      pattern: '難道',
+      functionVi: 'Dùng trong câu hỏi tu từ để nhấn mạnh, biểu thị sự nghi vấn hoặc ngạc nhiên pha chút trách móc, thường đi với "嗎" ở cuối câu.',
+      functionEn: 'Used in rhetorical questions to express surprise, doubt or mild reproach.',
       examples: [
-        { traditional: '這是我第一次以公民的身分去投票。', simplified: '这是我第一次以公民的身分去投票。', english: 'This is my first time voting as a citizen.', vietnamese: 'Đây là lần đầu tiên tôi đi bỏ phiếu với tư cách công dân.' },
-        { traditional: '他以志工的身分參加了這次的服務。', simplified: '他以志工的身分参加了这次的服务。', english: 'He took part in the service as a volunteer.', vietnamese: 'Anh ấy tham gia đợt phục vụ này với tư cách tình nguyện viên.' },
-        { traditional: '我今天不是以老師的身分，而是以朋友的身分跟你說這些話。', simplified: '我今天不是以老师的身分，而是以朋友的身分跟你说这些话。', english: "I'm saying this to you today not as a teacher but as a friend.", vietnamese: 'Hôm nay tôi nói những lời này với cậu không phải với tư cách giáo viên, mà với tư cách bạn bè.' },
-        { traditional: '她以家屬的身分留在醫院陪病人。', simplified: '她以家属的身分留在医院陪病人。', english: 'She stayed at the hospital with the patient as a family member.', vietnamese: 'Cô ấy ở lại bệnh viện chăm bệnh nhân với tư cách người nhà.' },
-        { traditional: '他以代表的身分上台說了幾句話。', simplified: '他以代表的身分上台说了几句话。', english: 'He went on stage and spoke a few words as a representative.', vietnamese: 'Anh ấy lên sân khấu nói vài câu với tư cách đại diện.' }
+        { traditional: '難道妳從來不去投票嗎？', simplified: '难道你从来不去投票吗？', english: "Don't you ever vote?", vietnamese: 'Chẳng lẽ cậu chưa bao giờ đi bỏ phiếu à?' },
+        { traditional: '難道你不知道這件事有多嚴重嗎？', simplified: '难道你不知道这件事有多严重吗？', english: "Don't you know how serious this matter is?", vietnamese: 'Chẳng lẽ cậu không biết việc này nghiêm trọng đến mức nào sao?' },
+        { traditional: '難道為了賺錢，什麼事都可以做嗎？', simplified: '难道为了赚钱，什么事都可以做吗？', english: 'Could it be that anything is permissible just to make money?', vietnamese: 'Chẳng lẽ vì kiếm tiền mà việc gì cũng có thể làm sao?' },
+        { traditional: '難道你還不相信我說的話嗎？', simplified: '难道你还不相信我说的话吗？', english: "Don't you still believe what I said?", vietnamese: 'Chẳng lẽ cậu vẫn không tin lời mình nói sao?' },
+        { traditional: '難道只有投票才能表達意見嗎？', simplified: '难道只有投票才能表达意见吗？', english: 'Is voting really the only way to express an opinion?', vietnamese: 'Chẳng lẽ chỉ có bỏ phiếu mới có thể bày tỏ ý kiến sao?' }
       ],
-      usageNotesVi: '"以…的身分" thường đứng trước động từ chính. Gần với "作為 A" nhưng "以…的身分" nhấn vào việc "nhân danh hoặc dựa trên vai trò đó" mà hành động. "身分" cũng viết "身份".',
+      usageNotesVi: '"難道" đặt ở đầu câu (hoặc sau chủ ngữ), câu thường kết thúc bằng "嗎". Người nói dùng câu hỏi để khẳng định điều ngược lại với nội dung câu hỏi, mang sắc thái nhấn mạnh, đôi khi có ý trách.',
       exercises: [
-        { id: 'L12-G3-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼會去參加那個會議？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我是以學生代表的身分去的。'] }], targetPattern: 'L12-G3' },
-        { id: 'L12-G3-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這次比賽你也下場了？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['沒有，我這次是以裁判的身分參加。'] }], targetPattern: 'L12-G3' },
-        { id: 'L12-G3-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他為什麼可以進去後台？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['他以工作人員的身分進去的，有掛證。'] }], targetPattern: 'L12-G3' },
-        { id: 'L12-G3-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你要跟他說這件事嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['要，不過我會以同事的身分好好跟他談，不會太嚴肅。'] }], targetPattern: 'L12-G3' },
-        { id: 'L12-G3-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：那位老先生上台領獎，是得獎人嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['不是，他是以家屬的身分代替過世的作家上台的。'] }], targetPattern: 'L12-G3' }
+        { id: 'L12-G3-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '___你不覺得這個政策有問題嗎？', blanks: [{ index: 0, acceptedAnswers: ['難道'] }], targetPattern: 'L12-G3' },
+        { id: 'L12-G3-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '___他說的話，你都要相信嗎？', blanks: [{ index: 0, acceptedAnswers: ['難道'] }], targetPattern: 'L12-G3' },
+        { id: 'L12-G3-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '___妳不想知道選舉的結果嗎？', blanks: [{ index: 0, acceptedAnswers: ['難道'] }], targetPattern: 'L12-G3' },
+        { id: 'L12-G3-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '___我們沒有權利表達自己的意見嗎？', blanks: [{ index: 0, acceptedAnswers: ['難道'] }], targetPattern: 'L12-G3' },
+        { id: 'L12-G3-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '___你忘了上次選舉的教訓了嗎？', blanks: [{ index: 0, acceptedAnswers: ['難道'] }], targetPattern: 'L12-G3' }
       ]
     },
     {
-      id: 'L12-G4', lessonId: 'L12', order: 4, pattern: '為（了）…起見',
-      functionVi: '"為（了）A 起見，B" nghĩa là vì mục đích A (thường là để bảo đảm điều gì tốt hoặc an toàn), nên làm B. "起見" luôn đứng cuối cụm mục đích.',
-      functionEn: '"為（了）A 起見，B" means for the sake of A (usually to ensure something good or safe), do B. "起見" always comes at the end of the purpose phrase.',
+      id: 'L12-G4',
+      lessonId: 'L12',
+      order: 4,
+      pattern: '滿',
+      functionVi: 'Dùng trước số lượng/tuổi để diễn đạt "đạt đủ, đạt tròn" mức đó.',
+      functionEn: 'Used before a quantity/age to indicate reaching that full amount.',
       examples: [
-        { traditional: '為了保險起見，我打算一早就去投票。', simplified: '为了保险起见，我打算一早就去投票。', english: 'Just to be safe, I plan to go vote first thing in the morning.', vietnamese: 'Cho chắc ăn, tôi định sáng sớm đã đi bỏ phiếu.' },
-        { traditional: '為了公平起見，我們用抽籤決定順序。', simplified: '为了公平起见，我们用抽签决定顺序。', english: "For fairness, we'll decide the order by drawing lots.", vietnamese: 'Cho công bằng, chúng ta rút thăm quyết định thứ tự.' },
-        { traditional: '為了安全起見，這條步道晚上不開放。', simplified: '为了安全起见，这条步道晚上不开放。', english: 'For safety reasons, this trail is closed at night.', vietnamese: 'Vì lý do an toàn, con đường mòn này không mở ban đêm.' },
-        { traditional: '為了方便大家討論起見，我先把資料印出來。', simplified: '为了方便大家讨论起见，我先把资料印出来。', english: 'To make discussion easier for everyone, I printed out the materials first.', vietnamese: 'Để tiện cho mọi người thảo luận, tôi in tài liệu ra trước.' },
-        { traditional: '為了慎重起見，這個決定我們想再多聽幾個人的意見。', simplified: '为了慎重起见，这个决定我们想再多听几个人的意见。', english: 'To be prudent, we want to hear a few more opinions on this decision.', vietnamese: 'Cho thận trọng, quyết định này chúng tôi muốn nghe thêm ý kiến vài người nữa.' }
+        { traditional: '我今年滿二十歲。按照憲法的規定，有投票權了。', simplified: '我今年满二十岁。按照宪法的规定，有投票权了。', english: 'I turned 20 this year. According to provisions in the constitution, I have the right to vote.', vietnamese: 'Năm nay mình vừa tròn hai mươi tuổi. Theo quy định của hiến pháp, mình đã có quyền bỏ phiếu rồi.' },
+        { traditional: '這孩子還沒滿一歲，就會叫爸爸媽媽了。', simplified: '这孩子还没满一岁，就会叫爸爸妈妈了。', english: "This child hasn't even turned one yet, and already calls out mom and dad.", vietnamese: 'Đứa bé này còn chưa đủ một tuổi đã biết gọi bố mẹ rồi.' },
+        { traditional: '工作滿三年才能申請這個職位。', simplified: '工作满三年才能申请这个职位。', english: 'You must have worked for a full three years before you can apply for this position.', vietnamese: 'Làm việc đủ ba năm mới có thể ứng tuyển vị trí này.' },
+        { traditional: '這張票滿一百元才能使用。', simplified: '这张票满一百元才能使用。', english: 'This coupon can only be used once you spend a full 100 dollars.', vietnamese: 'Phiếu này phải mua đủ một trăm đồng mới được dùng.' },
+        { traditional: '他們結婚還沒滿一年就離婚了。', simplified: '他们结婚还没满一年就离婚了。', english: "They got divorced before they'd even been married a full year.", vietnamese: 'Họ kết hôn chưa đầy một năm đã ly hôn rồi.' }
       ],
-      usageNotesVi: '"為…起見" hơi trang trọng, hay dùng trong thông báo, văn viết. A thường là danh từ trừu tượng hai âm tiết (公平、安全、保險、慎重、方便). Không nói "為了…的緣故起見".',
+      usageNotesVi: '"滿" + số lượng/thời gian/tuổi, nghĩa là đạt đúng hoặc đủ mức đó, thường dùng với "才" ở mệnh đề sau để nhấn mạnh điều kiện phải đạt đủ mức mới được làm gì.',
       exercises: [
-        { id: 'L12-G4-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：報名為什麼要附身分證影本？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['為了確認身分起見，主辦單位要求大家附上。'] }], targetPattern: 'L12-G4' },
-        { id: 'L12-G4-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這麼近的路，還要戴安全帽嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['要，為了安全起見，再近都要戴。'] }], targetPattern: 'L12-G4' },
-        { id: 'L12-G4-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：東西不是已經檢查過了嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['檢查過了，可是為了保險起見，出門前我再看一次。'] }], targetPattern: 'L12-G4' },
-        { id: 'L12-G4-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：會議記錄一定要兩個人簽名嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['對，為了公正起見，記錄要有兩個人一起確認。'] }], targetPattern: 'L12-G4' },
-        { id: 'L12-G4-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼提早一個小時到機場？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['為了不趕時間起見，我習慣早一點到。'] }], targetPattern: 'L12-G4' }
+        { id: 'L12-G4-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '他今年___十八歲，可以自己簽名了。', blanks: [{ index: 0, acceptedAnswers: ['滿'] }], targetPattern: 'L12-G4' },
+        { id: 'L12-G4-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '工作___半年以後才有年假。', blanks: [{ index: 0, acceptedAnswers: ['滿'] }], targetPattern: 'L12-G4' },
+        { id: 'L12-G4-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這個優惠活動消費___五百元才能參加。', blanks: [{ index: 0, acceptedAnswers: ['滿'] }], targetPattern: 'L12-G4' },
+        { id: 'L12-G4-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '他們交往還沒___三個月就分開了。', blanks: [{ index: 0, acceptedAnswers: ['滿'] }], targetPattern: 'L12-G4' },
+        { id: 'L12-G4-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '住院___一個星期以後才能出院。', blanks: [{ index: 0, acceptedAnswers: ['滿'] }], targetPattern: 'L12-G4' }
       ]
     },
     {
-      id: 'L12-G5', lessonId: 'L12', order: 5, pattern: '儘管…，（還是 / 卻）…',
-      functionVi: '"儘管 A，B" nghĩa là mặc dù A (một sự thật), B vẫn xảy ra (trái với dự đoán). Gần "雖然…可是…" nhưng "儘管" nhấn mạnh sự thật A hơn. Vế sau hay có "還是 / 仍然 / 卻".',
-      functionEn: '"儘管 A，B" means although A (a fact), B still happens (contrary to expectation). Close to "雖然…可是…" but "儘管" emphasizes fact A more. The second clause often has "還是 / 仍然 / 卻".',
+      id: 'L12-G5',
+      lessonId: 'L12',
+      order: 5,
+      pattern: '為',
+      functionVi: 'Giới từ đánh dấu đối tượng được hưởng lợi từ hành động, nghĩa là "vì, cho, thay cho".',
+      functionEn: 'Preposition marking the beneficiary of an action; "for, on behalf of".',
       examples: [
-        { traditional: '儘管一票很小，如果大家都覺得沒用，結果就會由少數人決定。', simplified: '尽管一票很小，如果大家都觉得没用，结果就会由少数人决定。', english: "Although one vote is small, if everyone thinks it's useless, the outcome ends up decided by a few.", vietnamese: 'Mặc dù một lá phiếu rất nhỏ, nếu ai cũng nghĩ vô ích, kết quả sẽ do thiểu số quyết định.' },
-        { traditional: '儘管下著大雨，還是有很多人出來投票。', simplified: '尽管下着大雨，还是有很多人出来投票。', english: 'Despite the heavy rain, many people still came out to vote.', vietnamese: 'Mặc dù mưa to, vẫn có nhiều người ra bỏ phiếu.' },
-        { traditional: '儘管他反對，最後大家還是照原計畫做了。', simplified: '尽管他反对，最后大家还是照原计划做了。', english: 'Although he objected, in the end everyone went ahead with the original plan.', vietnamese: 'Mặc dù anh ấy phản đối, cuối cùng mọi người vẫn làm theo kế hoạch ban đầu.' },
-        { traditional: '儘管準備了很久，上台的時候他還是很緊張。', simplified: '尽管准备了很久，上台的时候他还是很紧张。', english: 'Although he\'d prepared for a long time, he was still nervous on stage.', vietnamese: 'Mặc dù đã chuẩn bị rất lâu, khi lên sân khấu anh ấy vẫn rất căng thẳng.' },
-        { traditional: '儘管費用不低，這個健康檢查還是很值得做。', simplified: '尽管费用不低，这个健康检查还是很值得做。', english: "Although it's not cheap, this health check is still well worth doing.", vietnamese: 'Mặc dù chi phí không thấp, đợt kiểm tra sức khỏe này vẫn rất đáng làm.' }
+        { traditional: '還是有一些有理想的候選人，願意出來為人民服務。', simplified: '还是有一些有理想的候选人，愿意出来为人民服务。', english: 'There are still some candidates with ideals who are willing to come forward and serve the people.', vietnamese: 'Vẫn có một số ứng viên có lý tưởng, sẵn lòng đứng ra phục vụ người dân.' },
+        { traditional: '讓他們有機會為大家做事。', simplified: '让他们有机会为大家做事。', english: 'Giving them the chance to do things for everybody.', vietnamese: 'Để họ có cơ hội làm việc cho mọi người.' },
+        { traditional: '媽媽每天都為我們準備早餐。', simplified: '妈妈每天都为我们准备早餐。', english: 'Mom prepares breakfast for us every day.', vietnamese: 'Mẹ mỗi ngày đều chuẩn bị bữa sáng cho chúng tôi.' },
+        { traditional: '老師特別為同學們安排了一場演講。', simplified: '老师特别为同学们安排了一场演讲。', english: 'The teacher specially arranged a lecture for the students.', vietnamese: 'Thầy giáo đặc biệt sắp xếp một buổi diễn thuyết cho các bạn học sinh.' },
+        { traditional: '他決定為這個理想奉獻一生。', simplified: '他决定为这个理想奉献一生。', english: 'He decided to devote his life to this ideal.', vietnamese: 'Anh ấy quyết định dành cả đời cho lý tưởng này.' }
       ],
-      usageNotesVi: '"儘管" (chữ 儘) đứng đầu mệnh đề nhượng bộ. Khác nghĩa "儘管 + V" (= cứ việc V, thoải mái V): 有問題儘管問. Phân biệt qua kết cấu: đứng trước mệnh đề = "mặc dù"; đứng trước động từ đơn = "cứ việc".',
+      usageNotesVi: '"為" + đối tượng + động từ, đối tượng sau "為" là người được hưởng lợi từ hành động. Khác với "為了" (vì mục đích gì), "為" ở đây nhấn mạnh đối tượng thụ hưởng cụ thể.',
       exercises: [
-        { id: 'L12-G5-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他都不理你，你還要幫他？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['儘管他態度不好，我還是覺得該幫的時候要幫。'] }], targetPattern: 'L12-G5' },
-        { id: 'L12-G5-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：那家店這麼貴，怎麼還這麼多人？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['儘管貴，東西真的好，大家還是願意排隊。'] }], targetPattern: 'L12-G5' },
-        { id: 'L12-G5-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你不是很累嗎？怎麼還去？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['儘管很累，答應人家的事還是要做到。'] }], targetPattern: 'L12-G5' },
-        { id: 'L12-G5-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個題目很難，大家都做不出來吧？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['儘管很難，還是有兩三個同學想出了辦法。'] }], targetPattern: 'L12-G5' },
-        { id: 'L12-G5-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：颱風天航班應該都取消了。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['儘管風雨很大，這班飛機還是照常起飛了。'] }], targetPattern: 'L12-G5' }
+        { id: 'L12-G5-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這位候選人一直___社會上的弱勢家庭努力。', blanks: [{ index: 0, acceptedAnswers: ['為'] }], targetPattern: 'L12-G5' },
+        { id: 'L12-G5-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '他___小農們爭取更合理的收入。', blanks: [{ index: 0, acceptedAnswers: ['為'] }], targetPattern: 'L12-G5' },
+        { id: 'L12-G5-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '政府應該___人民解決生活上的問題。', blanks: [{ index: 0, acceptedAnswers: ['為'] }], targetPattern: 'L12-G5' },
+        { id: 'L12-G5-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '叔叔___村子裡的孩子開了一個免費英文班。', blanks: [{ index: 0, acceptedAnswers: ['為'] }], targetPattern: 'L12-G5' },
+        { id: 'L12-G5-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這些義工___弱勢家庭募集了不少經費。', blanks: [{ index: 0, acceptedAnswers: ['為'] }], targetPattern: 'L12-G5' }
       ]
     },
     {
-      id: 'L12-G6', lessonId: 'L12', order: 6, pattern: '換句話說…',
-      functionVi: '"換句話說" (= nói cách khác) dùng để diễn đạt lại ý vừa nói bằng cách khác, thường để làm rõ hoặc rút ra kết luận. Đứng đầu câu.',
-      functionEn: '"換句話說" (in other words) restates what was just said in another way, usually to clarify or draw a conclusion. It opens the sentence.',
+      id: 'L12-G6',
+      lessonId: 'L12',
+      order: 6,
+      pattern: '（在）…方面',
+      functionVi: 'Dùng để chỉ ra phạm vi, khía cạnh cụ thể mà nội dung được nói tới thuộc về.',
+      functionEn: 'Used to indicate a specific aspect or respect of something.',
       examples: [
-        { traditional: '先想清楚我要什麼，換句話說，先確定我在意的議題，再去看誰的主張比較接近。', simplified: '先想清楚我要什么，换句话说，先确定我在意的议题，再去看谁的主张比较接近。', english: "Figure out what I want first—in other words, settle on the issues I care about, then see whose positions are closest.", vietnamese: 'Nghĩ rõ mình muốn gì trước, nói cách khác, xác định vấn đề mình quan tâm, rồi xem chủ trương của ai gần với mình hơn.' },
-        { traditional: '這個位子交通不方便，換句話說，開店以後客人不會太多。', simplified: '这个位子交通不方便，换句话说，开店以后客人不会太多。', english: "This spot has poor transport access—in other words, there won't be many customers after opening.", vietnamese: 'Chỗ này giao thông bất tiện, nói cách khác, mở tiệm rồi khách sẽ không đông.' },
-        { traditional: '他一句話都沒說就走了，換句話說，他其實不同意。', simplified: '他一句话都没说就走了，换句话说，他其实不同意。', english: 'He left without a word—in other words, he actually disagrees.', vietnamese: 'Anh ấy chẳng nói lời nào đã bỏ đi, nói cách khác, thật ra anh ấy không đồng ý.' },
-        { traditional: '報名的人只有十個，換句話說，這門課這學期開不成。', simplified: '报名的人只有十个，换句话说，这门课这学期开不成。', english: "Only ten people signed up—in other words, this class won't run this semester.", vietnamese: 'Chỉ có mười người đăng ký, nói cách khác, môn này học kỳ này không mở được.' },
-        { traditional: '每個人都不想負責，換句話說，這件事最後沒有人做。', simplified: '每个人都不想负责，换句话说，这件事最后没有人做。', english: 'Nobody wants to take responsibility—in other words, in the end no one does it.', vietnamese: 'Ai cũng không muốn chịu trách nhiệm, nói cách khác, cuối cùng chẳng ai làm.' }
+        { traditional: '特別是他在教育改革跟國民年金制度方面的努力，讓他得到選民廣泛的支持。', simplified: '特别是他在教育改革跟国民年金制度方面的努力，让他得到选民广泛的支持。', english: 'In particular, his efforts in educational reform and the national pension system earned him broad support from voters.', vietnamese: 'Đặc biệt là những nỗ lực của ông trong cải cách giáo dục và chế độ hưu trí quốc dân đã giúp ông nhận được sự ủng hộ rộng rãi từ cử tri.' },
+        { traditional: '在環保方面，政府還可以做得更多。', simplified: '在环保方面，政府还可以做得更多。', english: 'In terms of environmental protection, the government could do even more.', vietnamese: 'Về mặt bảo vệ môi trường, chính phủ còn có thể làm được nhiều hơn.' },
+        { traditional: '他在語言方面很有天分，學什麼語言都很快。', simplified: '他在语言方面很有天分，学什么语言都很快。', english: 'He has a talent for languages; he learns any language quickly.', vietnamese: 'Anh ấy rất có tài về mặt ngôn ngữ, học ngôn ngữ nào cũng nhanh.' },
+        { traditional: '這家公司在服務方面做得很好，客人都很滿意。', simplified: '这家公司在服务方面做得很好，客人都很满意。', english: 'This company does very well in terms of service, and customers are all satisfied.', vietnamese: 'Công ty này làm rất tốt về mặt dịch vụ, khách hàng đều rất hài lòng.' },
+        { traditional: '在健康方面，他這幾年特別注意飲食。', simplified: '在健康方面，他这几年特别注意饮食。', english: 'In terms of health, he has paid special attention to his diet in recent years.', vietnamese: 'Về mặt sức khỏe, mấy năm nay anh ấy đặc biệt chú ý đến ăn uống.' }
       ],
-      usageNotesVi: '"換句話說" luôn đứng đầu câu hoặc mệnh đề, theo sau là cách diễn đạt tương đương hoặc hệ quả logic của câu trước. Gần với "也就是說". Không dùng giữa câu như một liên từ nối.',
+      usageNotesVi: '"在…方面" đặt trước hoặc sau chủ ngữ để giới hạn phạm vi được đề cập; "在" có thể bỏ, chỉ giữ "…方面" ở cuối cụm danh từ cũng được. Thường dùng để liệt kê hoặc so sánh các khía cạnh khác nhau của một vấn đề.',
       exercises: [
-        { id: 'L12-G6-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個計畫需要三個月。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['換句話說，暑假結束以前是做不完的。'] }], targetPattern: 'L12-G6' },
-        { id: 'L12-G6-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他每天都最早到、最晚走。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['換句話說，他把大部分的時間都給了工作。'] }], targetPattern: 'L12-G6' },
-        { id: 'L12-G6-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這裡冬天平均只有十度。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['換句話說，你冬天來的話一定要帶厚外套。'] }], targetPattern: 'L12-G6' },
-        { id: 'L12-G6-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：投票率只有五成。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['換句話說，有一半的人沒有表達意見。'] }], targetPattern: 'L12-G6' },
-        { id: 'L12-G6-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：房租加水電要佔他收入的一半。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['換句話說，他每個月能存的錢其實很少。'] }], targetPattern: 'L12-G6' }
-      ]
-    },
-    {
-      id: 'L12-G7', lessonId: 'L12', order: 7, pattern: '從…的角度來看',
-      functionVi: '"從 A 的角度來看，B" nghĩa là nhìn từ góc độ hoặc lập trường A, thì B. Dùng để giới thiệu một cách nhìn nhận vấn đề. Gần "就…而言" nhưng "從…角度" nhấn vào "đứng ở vị trí nào để nhìn".',
-      functionEn: '"從 A 的角度來看，B" means looking from the angle or standpoint of A, B. It introduces a perspective on an issue. Close to "就…而言" but "從…角度" stresses the vantage point.',
-      examples: [
-        { traditional: '從長遠的角度來看，年輕人願意去投票是好事。', simplified: '从长远的角度来看，年轻人愿意去投票是好事。', english: "From a long-term perspective, young people's willingness to vote is a good thing.", vietnamese: 'Nhìn từ góc độ lâu dài, việc người trẻ chịu đi bỏ phiếu là điều tốt.' },
-        { traditional: '從店家的角度來看，網購搶走了不少客人。', simplified: '从店家的角度来看，网购抢走了不少客人。', english: "From the shops' point of view, online shopping has taken away many customers.", vietnamese: 'Nhìn từ góc độ của các cửa hàng, mua sắm online đã cướp đi không ít khách.' },
-        { traditional: '從學生的角度來看，這樣的作業量太多了。', simplified: '从学生的角度来看，这样的作业量太多了。', english: "From the students' perspective, this workload is too much.", vietnamese: 'Nhìn từ góc độ của học sinh, khối lượng bài tập như vậy là quá nhiều.' },
-        { traditional: '從環境的角度來看，過多的包裝是個大問題。', simplified: '从环境的角度来看，过多的包装是个大问题。', english: 'From an environmental standpoint, excessive packaging is a big problem.', vietnamese: 'Nhìn từ góc độ môi trường, bao bì quá nhiều là một vấn đề lớn.' },
-        { traditional: '換個角度來看，這次失敗其實讓他學到很多。', simplified: '换个角度来看，这次失败其实让他学到很多。', english: 'Looking at it another way, this failure actually taught him a lot.', vietnamese: 'Nhìn từ góc độ khác, lần thất bại này thật ra dạy anh ấy nhiều điều.' }
-      ],
-      usageNotesVi: '"從…的角度來看" đứng đầu câu. Có thể rút gọn "從 N 來看" hoặc nói "換個角度（來）看". A thường là người hoặc nhóm người, hoặc một phương diện (長遠、環境、經濟).',
-      exercises: [
-        { id: 'L12-G7-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個決定對公司好嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['從省錢的角度來看是好的，可是從員工的角度來看不太公平。'] }], targetPattern: 'L12-G7' },
-        { id: 'L12-G7-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：搬到郊區是不是比較不方便？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['從交通的角度來看的確不方便，可是從生活品質來看好很多。'] }], targetPattern: 'L12-G7' },
-        { id: 'L12-G7-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你為什麼支持這個公投題目？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['從下一代的角度來看，現在做這個改變是值得的。'] }], targetPattern: 'L12-G7' },
-        { id: 'L12-G7-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這次比賽輸了，是不是很糟？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['換個角度來看，我們發現了很多可以改進的地方。'] }], targetPattern: 'L12-G7' },
-        { id: 'L12-G7-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：老闆為什麼不同意我們的提議？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['從成本的角度來看，我們的方案短期內花的錢太多了。'] }], targetPattern: 'L12-G7' }
+        { id: 'L12-G6-EX1', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這位候選人___經濟政策___的看法很受選民認同。', blanks: [{ index: 0, acceptedAnswers: ['在'] }, { index: 1, acceptedAnswers: ['方面'] }], targetPattern: 'L12-G6' },
+        { id: 'L12-G6-EX2', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '他___教育改革___投入了很多心力。', blanks: [{ index: 0, acceptedAnswers: ['在'] }, { index: 1, acceptedAnswers: ['方面'] }], targetPattern: 'L12-G6' },
+        { id: 'L12-G6-EX3', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '___弱勢家庭的照顧___，政府還需要加強。', blanks: [{ index: 0, acceptedAnswers: ['在'] }, { index: 1, acceptedAnswers: ['方面'] }], targetPattern: 'L12-G6' },
+        { id: 'L12-G6-EX4', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '她___表達意見___一直很積極。', blanks: [{ index: 0, acceptedAnswers: ['在'] }, { index: 1, acceptedAnswers: ['方面'] }], targetPattern: 'L12-G6' },
+        { id: 'L12-G6-EX5', lessonId: 'L12', section: 'textbook-practice', type: 'fill-blank', textWithBlanks: '這個政黨___公共議題___的立場跟我們不太一樣。', blanks: [{ index: 0, acceptedAnswers: ['在'] }, { index: 1, acceptedAnswers: ['方面'] }], targetPattern: 'L12-G6' }
       ]
     }
   ],
-
   workbookExercises: [
     {
-      id: 'L12-WB-match-collocation', lessonId: 'L12', section: 'pairs', type: 'matching',
-      prompt: 'Ghép danh từ với vị ngữ thường đi cùng (collocation).',
+      id: 'L12-WB-pairs-1',
+      lessonId: 'L12',
+      section: 'pairs',
+      type: 'matching',
       pairs: [
-        { left: '票', right: '投 (bỏ)' },
-        { left: '票（結果）', right: '開 (kiểm)' },
-        { left: '意見', right: '表達 (bày tỏ)' },
-        { left: '政府', right: '監督 (giám sát)' },
-        { left: '義務', right: '盡 (làm tròn)' },
-        { left: '共識', right: '達成 (đạt được)' }
+        { left: '投票', right: '選舉' },
+        { left: '核能', right: '電廠' },
+        { left: '民意', right: '代表' },
+        { left: '憲法', right: '規定' },
+        { left: '候選人', right: '競選' }
       ]
     },
+    { id: 'L12-WB-fw-1', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '他今年滿二十歲了，終於有了___（tóupiàoquán）。', blanks: [{ index: 0, acceptedAnswers: ['投票權'] }] },
+    { id: 'L12-WB-fw-2', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '這個議題應該由___（zhuānjiā）來討論比較合適。', blanks: [{ index: 0, acceptedAnswers: ['專家'] }] },
+    { id: 'L12-WB-fw-3', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '很多人覺得___（zhèngdǎng）之間的競爭太激烈了。', blanks: [{ index: 0, acceptedAnswers: ['政黨'] }] },
+    { id: 'L12-WB-fw-4', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '他上次___（luòxuǎn）以後，就回老家休息了。', blanks: [{ index: 0, acceptedAnswers: ['落選'] }] },
+    { id: 'L12-WB-fw-5', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '他決定把出版社賺到的錢當作英文班的___（jīngfèi）。', blanks: [{ index: 0, acceptedAnswers: ['經費'] }] },
     {
-      id: 'L12-WB-match-response', lessonId: 'L12', section: 'pairs', type: 'matching',
-      prompt: 'Nối mỗi tình huống (cột trái) với cách phản ứng phù hợp (cột phải).',
-      pairs: [
-        { left: '第一次要去投票', right: '先整理自己在意的議題再看政見' },
-        { left: '看不懂候選人的政見', right: '找比較中立的整理來看' },
-        { left: '覺得「一票沒用」', right: '想想如果大家都這樣想會怎樣' },
-        { left: '選舉日不想排太久的隊', right: '為了保險起見，一早就去' },
-        { left: '想關心公共事務又沒時間', right: '至少投票日去投一票' },
-        { left: '選完想繼續參與', right: '平常也去了解、監督政策' }
-      ]
-    },
-
-    { id: 'L12-WB-fw-1', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '星期六就要___(tóupiào)了，這次的___(xuǎnjǔ)除了選人，還有幾個___(gōngtóu)的題目。', blanks: [{ index: 0, acceptedAnswers: ['投票'] }, { index: 1, acceptedAnswers: ['選舉'] }, { index: 2, acceptedAnswers: ['公投'] }] },
-    { id: 'L12-WB-fw-2', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '凡是有身分證、年滿二十歲的___(gōngmín)，都有___(tóupiàoquán)。', blanks: [{ index: 0, acceptedAnswers: ['公民'] }, { index: 1, acceptedAnswers: ['投票權'] }] },
-    { id: 'L12-WB-fw-3', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '___(kāipiào)的時候，一票一票___(chàngpiào)出來，大家都看得到。', blanks: [{ index: 0, acceptedAnswers: ['開票'] }, { index: 1, acceptedAnswers: ['唱票'] }] },
-    { id: 'L12-WB-fw-4', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '我看不太懂那些___(zhèngjiàn)，打算先___(zhěnglǐ)自己在意的___(yìtí)，再看誰的___(zhǔzhāng)比較接近。', blanks: [{ index: 0, acceptedAnswers: ['政見'] }, { index: 1, acceptedAnswers: ['整理'] }, { index: 2, acceptedAnswers: ['議題'] }, { index: 3, acceptedAnswers: ['主張'] }] },
-    { id: 'L12-WB-fw-5', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '儘管一票很小，如果大家都不去，結果就會由___(shǎoshù)人決定。投票是我的___(quánlì)，也是一種___(yìwù)。', blanks: [{ index: 0, acceptedAnswers: ['少數'] }, { index: 1, acceptedAnswers: ['權利'] }, { index: 2, acceptedAnswers: ['義務'] }] },
-    { id: 'L12-WB-fw-6', lessonId: 'L12', section: 'fill-write', type: 'fill-blank', textWithBlanks: '從___(chángyuǎn)的角度來看，年輕人願意___(cānyù)、去了解，對___(mínzhǔ)是好事。', blanks: [{ index: 0, acceptedAnswers: ['長遠'] }, { index: 1, acceptedAnswers: ['參與'] }, { index: 2, acceptedAnswers: ['民主'] }] },
-
-    {
-      id: 'L12-WB-fb-1', lessonId: 'L12', section: 'fill-bank', type: 'fill-blank',
-      prompt: 'Điền từ thích hợp vào đoạn văn (mỗi từ chỉ dùng 1 lần).',
-      wordBank: ['政治', '投票率', '表達', '冷漠', '民意', '過程'],
-      textWithBlanks: '台灣的定期選舉已經進行了三十幾年。對很多人來說，投票是1.___自己意見最直接的方式。可是近年來，年輕人的2.___比其他年齡層低。有人說這是因為年輕人對3.___不感興趣；也有人說，是因為他們覺得自己的聲音不會被聽見，久了就變得4.___。其實，選舉只是一個開始。選完以後，怎麼監督政府、怎麼讓5.___持續被聽到，是一個更長的6.___。民主不只是四年投一次票，而是一種需要一直練習的生活方式。',
+      id: 'L12-WB-fb-1',
+      lessonId: 'L12',
+      section: 'fill-bank',
+      type: 'fill-blank',
+      textWithBlanks: '小張的叔叔___是一所大學的教授，但是他一直希望能從政，為人民服務。他認為好的政策才能讓社會更___。後來他___辭掉教職，出來競選民意代表，也___得到了不少選民的___。可惜上一屆他卻___了，只好暫時回老家休息。',
       blanks: [
-        { index: 1, acceptedAnswers: ['表達'] },
-        { index: 2, acceptedAnswers: ['投票率'] },
-        { index: 3, acceptedAnswers: ['政治'] },
-        { index: 4, acceptedAnswers: ['冷漠'] },
-        { index: 5, acceptedAnswers: ['民意'] },
-        { index: 6, acceptedAnswers: ['過程'] }
-      ]
-    },
-
-    {
-      id: 'L12-WB-read-a1', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '玉真：你決定要投給誰了嗎？\n安同：還沒。我打算把三個我最在意的議題列出來，看哪個候選人的主張最接近。',
-      question: '安同打算怎麼決定投票對象？',
-      options: [{ id: 'a', text: '聽爸媽的意見。' }, { id: 'b', text: '根據自己在意的議題來比較候選人的主張。' }, { id: 'c', text: '看哪個候選人比較有名。' }],
-      correctOptionId: 'b',
-      explanationVi: '"把三個我最在意的議題列出來，看哪個候選人的主張最接近".'
+        { index: 0, acceptedAnswers: ['原本'] },
+        { index: 1, acceptedAnswers: ['安定'] },
+        { index: 2, acceptedAnswers: ['於是'] },
+        { index: 3, acceptedAnswers: ['順利'] },
+        { index: 4, acceptedAnswers: ['支持'] },
+        { index: 5, acceptedAnswers: ['落選'] }
+      ],
+      wordBank: ['原本', '安定', '順利', '支持', '落選', '於是']
     },
     {
-      id: 'L12-WB-read-a2', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '高橋：我朋友說「反正一票也改變不了什麼」，就不去投了。\n陳敏萱：我懂他的想法。可是如果大家都這樣想，最後就會由少數願意去的人決定。',
-      question: '陳敏萱的意思是：',
-      options: [{ id: 'a', text: '她也覺得一票沒有用。' }, { id: 'b', text: '每個人放棄投票，反而讓少數人決定結果。' }, { id: 'c', text: '大家都應該投給同一個人。' }],
-      correctOptionId: 'b',
-      explanationVi: '"如果大家都這樣想，最後就會由少數願意去的人決定".'
+      id: 'L12-WB-read-a1',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: 'A：你覺得我們應不應該參加這次的反核遊行？\nB：只不過參加遊行而已，有什麼關係呢？在民主社會，這是很普遍的。\n請問B的意思是什麼？',
+      options: [
+        { id: 'a', text: '參加遊行是小事，不用想太多' },
+        { id: 'b', text: '參加遊行是違法的事' },
+        { id: 'c', text: '參加遊行會影響前途' }
+      ],
+      correctOptionId: 'a'
     },
     {
-      id: 'L12-WB-read-a3', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '羅珊蒂：投票所裡面可以拍照嗎？\n陳敏萱：不行喔，圈選的地方不能拍，這是為了保護每個人投票的祕密。',
-      question: '為什麼投票的地方不能拍照？',
-      options: [{ id: 'a', text: '因為裡面光線不好。' }, { id: 'b', text: '為了保護每個人投票的祕密。' }, { id: 'c', text: '因為工作人員很忙。' }],
-      correctOptionId: 'b',
-      explanationVi: '"這是為了保護每個人投票的祕密".'
-    },
-
-    {
-      id: 'L12-WB-read-b1', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '台灣從一九九〇年代開始，人民可以直接選出自己的領導人和民意代表，定期的選舉已經進行了三十幾年。對許多人來說，選舉日是很重要的一天：這一天，每個滿二十歲的公民，不論身分、收入、教育程度，手上都只有一票，力量是一樣的。開票的時候，一票一票公開唱出來，結果大家都看得到。不過，近年來也有一些擔心。年輕人的投票率比其他年齡層低，有人認為這是政治冷漠，也有人認為是年輕人覺得自己的聲音很難被聽見。專家提醒，投票只是參與公共事務的第一步。選完以後，持續去了解政策、監督政府，才能讓自己的一票真正發揮作用。',
-      question: '台灣人民從一九九〇年代開始可以直接選出自己的領導人。',
-      options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'true',
-      explanationVi: '"台灣從一九九〇年代開始，人民可以直接選出自己的領導人和民意代表".'
+      id: 'L12-WB-read-a2',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: 'A：核能電廠的問題應該由誰決定？\nB：應該由專家討論決定，一般人沒辦法全面了解。\n請問B認為這個問題該怎麼處理？',
+      options: [
+        { id: 'a', text: '由所有的人民直接投票決定' },
+        { id: 'b', text: '由專業的人來討論、決定' },
+        { id: 'c', text: '由政黨自己決定就好' }
+      ],
+      correctOptionId: 'b'
     },
     {
-      id: 'L12-WB-read-b2', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '台灣從一九九〇年代開始，人民可以直接選出自己的領導人和民意代表，定期的選舉已經進行了三十幾年。對許多人來說，選舉日是很重要的一天：這一天，每個滿二十歲的公民，不論身分、收入、教育程度，手上都只有一票，力量是一樣的。開票的時候，一票一票公開唱出來，結果大家都看得到。不過，近年來也有一些擔心。年輕人的投票率比其他年齡層低，有人認為這是政治冷漠，也有人認為是年輕人覺得自己的聲音很難被聽見。專家提醒，投票只是參與公共事務的第一步。選完以後，持續去了解政策、監督政府，才能讓自己的一票真正發揮作用。',
-      question: '在選舉日，收入高的人手上的票比較多。',
-      options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'false',
-      explanationVi: '"不論身分、收入、教育程度，手上都只有一票，力量是一樣的".'
+      id: 'L12-WB-read-a3',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: 'A：你今年滿二十歲了，年底的選舉會去投票嗎？\nB：不會，不去投票也是表達意見的一種方式，表示我對候選人都不滿意。\n請問B為什麼不去投票？',
+      options: [
+        { id: 'a', text: '因為她忘了選舉的時間' },
+        { id: 'b', text: '因為她對所有候選人都不滿意' },
+        { id: 'c', text: '因為她沒有投票權' }
+      ],
+      correctOptionId: 'b'
     },
     {
-      id: 'L12-WB-read-b3', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '台灣從一九九〇年代開始，人民可以直接選出自己的領導人和民意代表，定期的選舉已經進行了三十幾年。對許多人來說，選舉日是很重要的一天：這一天，每個滿二十歲的公民，不論身分、收入、教育程度，手上都只有一票，力量是一樣的。開票的時候，一票一票公開唱出來，結果大家都看得到。不過，近年來也有一些擔心。年輕人的投票率比其他年齡層低，有人認為這是政治冷漠，也有人認為是年輕人覺得自己的聲音很難被聽見。專家提醒，投票只是參與公共事務的第一步。選完以後，持續去了解政策、監督政府，才能讓自己的一票真正發揮作用。',
-      question: '開票的過程是不公開的，一般人看不到。',
-      options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'false',
-      explanationVi: '"一票一票公開唱出來，結果大家都看得到".'
+      id: 'L12-WB-read-a4',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: 'A：民主制度並不完美，選不出好的代表怎麼辦？\nB：沒關係，每個職位都有任期，如果選民不滿意，下次別再選他就好了。\n請問B提到民主制度的什麼優點？',
+      options: [
+        { id: 'a', text: '代表的任期是終身的' },
+        { id: 'b', text: '每個職位都有任期，選民可以換人' },
+        { id: 'c', text: '代表一旦當選就不會再犯錯' }
+      ],
+      correctOptionId: 'b'
     },
     {
-      id: 'L12-WB-read-b4', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '台灣從一九九〇年代開始，人民可以直接選出自己的領導人和民意代表，定期的選舉已經進行了三十幾年。對許多人來說，選舉日是很重要的一天：這一天，每個滿二十歲的公民，不論身分、收入、教育程度，手上都只有一票，力量是一樣的。開票的時候，一票一票公開唱出來，結果大家都看得到。不過，近年來也有一些擔心。年輕人的投票率比其他年齡層低，有人認為這是政治冷漠，也有人認為是年輕人覺得自己的聲音很難被聽見。專家提醒，投票只是參與公共事務的第一步。選完以後，持續去了解政策、監督政府，才能讓自己的一票真正發揮作用。',
-      question: '近年來年輕人的投票率比其他年齡層低。',
-      options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'true',
-      explanationVi: '"年輕人的投票率比其他年齡層低".'
+      id: 'L12-WB-read-b1',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: '小李今年剛滿二十歲，是第一次有投票權的選民。他一直很熱衷參與各種社會議題的討論，常常在網路上表達自己對政策的看法。這次選舉，他花了很多時間研究候選人的政見，最後選出了自己認為最合適的人。\n判斷：小李是因為沒有時間才沒有去研究候選人的政見。',
+      options: [
+        { id: 'true', text: '對' },
+        { id: 'false', text: '錯' }
+      ],
+      correctOptionId: 'false'
     },
     {
-      id: 'L12-WB-read-b5', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '台灣從一九九〇年代開始，人民可以直接選出自己的領導人和民意代表，定期的選舉已經進行了三十幾年。對許多人來說，選舉日是很重要的一天：這一天，每個滿二十歲的公民，不論身分、收入、教育程度，手上都只有一票，力量是一樣的。開票的時候，一票一票公開唱出來，結果大家都看得到。不過，近年來也有一些擔心。年輕人的投票率比其他年齡層低，有人認為這是政治冷漠，也有人認為是年輕人覺得自己的聲音很難被聽見。專家提醒，投票只是參與公共事務的第一步。選完以後，持續去了解政策、監督政府，才能讓自己的一票真正發揮作用。',
-      question: '專家認為投票就是參與公共事務的全部。',
-      options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'false',
-      explanationVi: '"投票只是參與公共事務的第一步".'
-    },
-
-    {
-      id: 'L12-WB-read-c1', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '【選舉日 溫馨提醒】投票時間為上午八點到下午四點。請攜帶身分證、印章和投票通知單。投票所內請保持安靜，圈選處禁止拍照及使用手機。另外，本區多家早餐店、咖啡廳於當日推出「憑投票紀念章享九折」的活動，歡迎大家投完票順便吃頓早餐，把民主變成一件輕鬆的事。',
-      question: '去投票要帶哪些東西？',
-      options: [{ id: 'a', text: '只要帶身分證就好。' }, { id: 'b', text: '身分證、印章和投票通知單。' }, { id: 'c', text: '帶投票通知單和一支手機就好。' }],
-      correctOptionId: 'b',
-      explanationVi: '"請攜帶身分證、印章和投票通知單".'
+      id: 'L12-WB-read-b2',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: '（承上文）\n判斷：小李對社會議題很關心，常常在網路上發表意見。',
+      options: [
+        { id: 'true', text: '對' },
+        { id: 'false', text: '錯' }
+      ],
+      correctOptionId: 'true'
     },
     {
-      id: 'L12-WB-read-c2', lessonId: 'L12', section: 'reading', type: 'multiple-choice',
-      prompt: '【選舉日 溫馨提醒】投票時間為上午八點到下午四點。請攜帶身分證、印章和投票通知單。投票所內請保持安靜，圈選處禁止拍照及使用手機。另外，本區多家早餐店、咖啡廳於當日推出「憑投票紀念章享九折」的活動，歡迎大家投完票順便吃頓早餐，把民主變成一件輕鬆的事。',
-      question: '當天早餐店的優惠是給誰的？',
-      options: [{ id: 'a', text: '所有客人。' }, { id: 'b', text: '憑投票紀念章的人。' }, { id: 'c', text: '只有第一次投票的人。' }],
-      correctOptionId: 'b',
-      explanationVi: '"憑投票紀念章享九折".'
-    },
-
-    { id: 'L12-WB-dc-1', lessonId: 'L12', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L12-G1', turns: [{ speaker: 'A', text: '什麼人可以投票？', isBlank: false }, { speaker: 'B', text: '（凡是…都…）', isBlank: true }], sampleAnswer: '凡是有身分證、年滿二十歲的人，都可以去投票。' },
-    { id: 'L12-WB-dc-2', lessonId: 'L12', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L12-G2', turns: [{ speaker: 'A', text: '你覺得這次的選舉辦得怎麼樣？', isBlank: false }, { speaker: 'B', text: '（就…而言）', isBlank: true }], sampleAnswer: '就開票的公開程度而言，我覺得辦得很好。' },
-    { id: 'L12-WB-dc-3', lessonId: 'L12', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L12-G4', turns: [{ speaker: 'A', text: '你怎麼一早就要去投票？', isBlank: false }, { speaker: 'B', text: '（為…起見）', isBlank: true }], sampleAnswer: '為了保險起見，我想早點去，免得下午排太久。' },
-    { id: 'L12-WB-dc-4', lessonId: 'L12', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L12-G5', turns: [{ speaker: 'A', text: '反正一票也不會改變結果吧？', isBlank: false }, { speaker: 'B', text: '（儘管…還是…）', isBlank: true }], sampleAnswer: '儘管一票很小，我還是想把自己的意見表達出來。' },
-    { id: 'L12-WB-dc-5', lessonId: 'L12', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L12-G7', turns: [{ speaker: 'A', text: '年輕人不投票，有這麼嚴重嗎？', isBlank: false }, { speaker: 'B', text: '（從…的角度來看）', isBlank: true }], sampleAnswer: '從長遠的角度來看，如果一整代人都不參與，政策就很難照顧到他們。' },
-
-    {
-      id: 'L12-WB-comp-1', lessonId: 'L12', section: 'composition', type: 'composition',
-      topicVi: 'Ở nước bạn, người dân tham gia vào các vấn đề công cộng (bầu cử, ý kiến chính sách...) như thế nào? Bạn từng tham gia chưa, hoặc bạn nghĩ vì sao việc đó quan trọng hay không?',
-      requiredWords: ['L12-001', 'L12-002', 'L12-005', 'L12-008', 'L12-021', 'L12-022', 'L12-023', 'L12-024'],
-      requiredPatterns: ['L12-G1', 'L12-G3', 'L12-G4'],
-      minLength: 200, maxLength: 250
+      id: 'L12-WB-read-b3',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: '（承上文）\n判斷：這是小李第一次擁有投票權。',
+      options: [
+        { id: 'true', text: '對' },
+        { id: 'false', text: '錯' }
+      ],
+      correctOptionId: 'true'
     },
     {
-      id: 'L12-WB-comp-2', lessonId: 'L12', section: 'composition', type: 'composition',
-      topicVi: 'Có ý kiến cho rằng "một lá phiếu chẳng thay đổi được gì" nên nhiều người trẻ không đi bầu. Bạn đồng ý hay phản đối? Vì sao?',
-      requiredWords: ['L12-014', 'L12-015', 'L12-029', 'L12-030', 'L12-036', 'L12-038', 'L12-041', 'L12-044'],
-      requiredPatterns: ['L12-G2', 'L12-G5', 'L12-G7'],
-      minLength: 200, maxLength: 250
+      id: 'L12-WB-read-b4',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: '（承上文）\n判斷：小李投票前有仔細研究候選人的政見。',
+      options: [
+        { id: 'true', text: '對' },
+        { id: 'false', text: '錯' }
+      ],
+      correctOptionId: 'true'
+    },
+    {
+      id: 'L12-WB-read-b5',
+      lessonId: 'L12',
+      section: 'reading',
+      type: 'multiple-choice',
+      question: '（承上文）\n判斷：小李認為投票是沒有意義的事，所以隨便選一個候選人。',
+      options: [
+        { id: 'true', text: '對' },
+        { id: 'false', text: '錯' }
+      ],
+      correctOptionId: 'false'
+    },
+    {
+      id: 'L12-WB-dc-1',
+      lessonId: 'L12',
+      section: 'dialogue',
+      type: 'dialogue-completion',
+      turns: [
+        { speaker: 'A', text: '你怎麼跟他吵架了？是不是他又遲到了？', isBlank: false },
+        { speaker: 'B', text: '', isBlank: true }
+      ],
+      requiredPattern: 'L12-G1',
+      sampleAnswer: '只不過遲到十分鐘而已，我不是因為這個跟他吵架的。'
+    },
+    {
+      id: 'L12-WB-dc-2',
+      lessonId: 'L12',
+      section: 'dialogue',
+      type: 'dialogue-completion',
+      turns: [
+        { speaker: 'A', text: '這次的活動要怎麼安排？', isBlank: false },
+        { speaker: 'B', text: '', isBlank: true }
+      ],
+      requiredPattern: 'L12-G2',
+      sampleAnswer: '這次的活動由學生會負責安排。'
+    },
+    {
+      id: 'L12-WB-dc-3',
+      lessonId: 'L12',
+      section: 'dialogue',
+      type: 'dialogue-completion',
+      turns: [
+        { speaker: 'A', text: '我覺得這件事跟我沒關係，不想管。', isBlank: false },
+        { speaker: 'B', text: '', isBlank: true }
+      ],
+      requiredPattern: 'L12-G3',
+      sampleAnswer: '難道你不覺得這是大家的責任嗎？'
+    },
+    {
+      id: 'L12-WB-dc-4',
+      lessonId: 'L12',
+      section: 'dialogue',
+      type: 'dialogue-completion',
+      turns: [
+        { speaker: 'A', text: '他這麼年輕，已經可以投票了嗎？', isBlank: false },
+        { speaker: 'B', text: '', isBlank: true }
+      ],
+      requiredPattern: 'L12-G4',
+      sampleAnswer: '對啊，他今年滿二十歲，已經有投票權了。'
+    },
+    {
+      id: 'L12-WB-dc-5',
+      lessonId: 'L12',
+      section: 'dialogue',
+      type: 'dialogue-completion',
+      turns: [
+        { speaker: 'A', text: '聽說他退休以後開了一家書店？', isBlank: false },
+        { speaker: 'B', text: '', isBlank: true }
+      ],
+      requiredPattern: 'L12-G5',
+      sampleAnswer: '對，他開書店是為了幫助弱勢家庭跟小農賣有機農產品。'
+    },
+    {
+      id: 'L12-WB-comp-1',
+      lessonId: 'L12',
+      section: 'composition',
+      type: 'composition',
+      topicVi: 'Bạn nghĩ đi bỏ phiếu có quan trọng không? Vì sao có người chọn không đi bỏ phiếu? Hãy viết một đoạn văn trình bày quan điểm của bạn.',
+      requiredWords: ['L12-001', 'L12-011', 'L12-021', 'L12-029', 'L12-031', 'L12-042'],
+      requiredPatterns: ['L12-G1', 'L12-G3'],
+      minLength: 200,
+      maxLength: 250
+    },
+    {
+      id: 'L12-WB-comp-2',
+      lessonId: 'L12',
+      section: 'composition',
+      type: 'composition',
+      topicVi: 'Nếu bạn là một đại diện dân ý (民意代表), bạn muốn đưa ra chính sách gì để phục vụ người dân? Hãy viết một đoạn văn giới thiệu chính sách đó.',
+      requiredWords: ['L12-023', 'L12-032', 'L12-033', 'L12-045', 'L12-052', 'L12-058'],
+      requiredPatterns: ['L12-G5', 'L12-G6'],
+      minLength: 200,
+      maxLength: 250
     }
   ]
 }
