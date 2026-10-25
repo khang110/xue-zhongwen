@@ -11,7 +11,7 @@ export const lesson07: Lesson = {
 
   dialogues: [
     [
-      { speaker: '羅珊蒂', traditional: '何雅婷，昨天我們去打籃球，妳怎麼沒去？', simplified: '罗珊蒂：何雅婷，昨天我们去打篮球，妳怎么没去？', pinyin: 'Hé Yǎtíng, zuótiān wǒmen qù dǎ lánqiú, nǐ zěnme méi qù?', english: "He Yating, yesterday we went to play basketball. Why didn't you go?", vietnamese: 'Hà Nhã Đình, hôm qua bọn mình đi chơi bóng rổ, sao cậu không đi vậy?' },
+      { speaker: '羅珊蒂', traditional: '何雅婷，昨天我們去打籃球，妳怎麼沒去？', simplified: '何雅婷，昨天我们去打篮球，妳怎么没去？', pinyin: 'Hé Yǎtíng, zuótiān wǒmen qù dǎ lánqiú, nǐ zěnme méi qù?', english: "He Yating, yesterday we went to play basketball. Why didn't you go?", vietnamese: 'Hà Nhã Đình, hôm qua bọn mình đi chơi bóng rổ, sao cậu không đi vậy?' },
       { speaker: '何雅婷', traditional: '我媽說我爺爺跌倒，叫我去看他。', simplified: '我妈说我爷爷跌倒，叫我去看他。', pinyin: 'Wǒ mā shuō wǒ yéye diédǎo, jiào wǒ qù kàn tā.', english: 'My mom said my grandpa had a fall and told me to go see him.', vietnamese: 'Mẹ mình nói ông nội mình bị ngã, bảo mình đến thăm ông.' },
       { speaker: '羅珊蒂', traditional: '妳爺爺還好吧？', simplified: '妳爷爷还好吧？', pinyin: 'Nǐ yéye hái hǎo ba?', english: 'Is your grandpa OK?', vietnamese: 'Ông cậu ổn chứ?' },
       { speaker: '何雅婷', traditional: '還好。幸虧鄰居聽見狗一直叫，很快地過來幫忙，所以沒什麼關係。', simplified: '还好。幸亏邻居听见狗一直叫，很快地过来帮忙，所以没什么关系。', pinyin: 'Hái hǎo. Xìngkuī línjū tīngjiàn gǒu yìzhí jiào, hěn kuài de guòlái bāngmáng, suǒyǐ méi shénme guānxi.', english: "He's all right. Luckily, the neighbors heard his dog's non-stop barking and quickly went over to help, so it wasn't a big deal.", vietnamese: 'Ổn rồi. May mà hàng xóm nghe thấy chó sủa mãi, chạy qua giúp ngay, nên không sao cả.' },
@@ -309,7 +309,7 @@ export const lesson07: Lesson = {
 
     {
       id: 'L7-WB-fb-1', lessonId: 'L7', section: 'fill-bank', type: 'fill-blank',
-      prompt: 'Điền từ thích hợp vào đoạn văn (có từ thừa: 道德、孤單).',
+      prompt: 'Điền từ thích hợp vào đoạn văn (có từ thừa: 道德、孤單、接受).',
       wordBank: ['道德', '接受', '領養', '當成', '真正', '孤單', '親', '教養'],
       textWithBlanks: '阿智是個快樂的孩子。有一天阿智發現自己是李家1.___的孩子。他很難過——生他的父母為什麼不要他？後來他想爸媽對他真好，不但讓他念私立小學，而且只要他有興趣的事，都送他去學，也常帶他拜訪親戚、參觀博物館，把他2.___成一個大家都喜歡的孩子。爸媽把他3.___自己生的孩子，而且關係也比一般父子、母子還4.___。爸媽才是5.___愛他的人。想清楚以後，就不再難過了。',
       blanks: [

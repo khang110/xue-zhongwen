@@ -26,7 +26,7 @@ export const lesson06: Lesson = {
       { speaker: '安德思', traditional: '這些番茄真漂亮！', simplified: '这些番茄真漂亮！', pinyin: 'Zhèxiē fānqié zhēn piàoliang!', english: 'These tomatoes are really pretty!', vietnamese: 'Mấy quả cà chua này đẹp thật!' },
       { speaker: '表哥', traditional: '這不是基因改造的，是新品種。今年氣候特別好，再加上沒有颱風，所以青菜水果都長得很好。', simplified: '这不是基因改造的，是新品种。今年气候特别好，再加上没有台风，所以青菜水果都长得很好。', pinyin: 'Zhè bú shì jīyīn gǎizào de, shì xīn pǐnzhǒng. Jīnnián qìhòu tèbié hǎo, zài jiāshàng méiyǒu táifēng, suǒyǐ qīngcài shuǐguǒ dōu zhǎng de hěn hǎo.', english: "These aren't genetically modified. It's a new variety. The climate has been especially good this year, plus there haven't been any typhoons, so the vegetables and fruit have grown really well.", vietnamese: 'Đây không phải loại biến đổi gen, mà là giống mới. Năm nay khí hậu đặc biệt tốt, lại thêm không có bão, nên rau củ quả đều lớn rất tốt.' },
       { speaker: '安德思', traditional: '這些番茄熟了嗎？', simplified: '这些番茄熟了吗？', pinyin: 'Zhèxiē fānqié shóu le ma?', english: 'Are these tomatoes ripe?', vietnamese: 'Mấy quả cà chua này chín chưa?' },
-      { speaker: '表哥', traditional: '熟了，熟了，摘下來就可以吃。這些番茄都是有機的，不必洗。', simplified: '熟了，熟了，摘下来就可以吃。这些番茄都是有机的，不必洗。', pinyin: 'Shóu le, shóu le, zhāi xiàlái jiù kěyǐ chī. Zhèxiē fānqié dōu shì yǒujī de, búbì xǐ.', english: "Yes, they're ripe. You can eat them right off the plant. These tomatoes are organic, no need to wash them.", vietnamese: 'Chín rồi, chín rồi, hái xuống là ăn được luôn. Mấy quả cà chua này đều hữu cơ, không cần rửa.' },
+      { speaker: '表哥', traditional: '熟了，熟了，摘下來就可以吃了。這些番茄都是有機的，不必洗。', simplified: '熟了，熟了，摘下来就可以吃了。这些番茄都是有机的，不必洗。', pinyin: 'Shóu le, shóu le, zhāi xiàlái jiù kěyǐ chī le. Zhèxiē fānqié dōu shì yǒujī de, búbì xǐ.', english: "Yes, they're ripe. You can eat them right off the plant. These tomatoes are organic, no need to wash them.", vietnamese: 'Chín rồi, chín rồi, hái xuống là ăn được luôn. Mấy quả cà chua này đều hữu cơ, không cần rửa.' },
       { speaker: '安德思', traditional: '這麼大的一片田，你一個人照顧，忙得過來嗎？', simplified: '这么大的一片田，你一个人照顾，忙得过来吗？', pinyin: 'Zhème dà de yí piàn tián, nǐ yí ge rén zhàogù, máng de guòlái ma?', english: "Such a large plot of land. Can you manage it all alone?", vietnamese: 'Thửa ruộng rộng thế này, một mình anh chăm sóc, xoay xở nổi không?' },
       { speaker: '表哥', traditional: '平常還好，可是收成的時候，很難找到人幫忙。', simplified: '平常还好，可是收成的时候，很难找到人帮忙。', pinyin: 'Píngcháng hái hǎo, kěshì shōuchéng de shíhòu, hěn nán zhǎodào rén bāngmáng.', english: "Generally, it's not a problem, but during harvest time, it's hard to find people to help.", vietnamese: 'Bình thường thì ổn, nhưng đến mùa thu hoạch thì rất khó tìm người giúp.' },
       { speaker: '李文彥', traditional: '這幾年，回鄉下種田的年輕人不是很多嗎？', simplified: '这几年，回乡下种田的年轻人不是很多吗？', pinyin: 'Zhè jǐ nián, huí xiāngxià zhòngtián de niánqīngrén bú shì hěn duō ma?', english: "Over the past few years, haven't a lot of young people been returning to the countryside to till the land?", vietnamese: 'Mấy năm nay, chẳng phải có nhiều người trẻ về quê làm ruộng hay sao?' },
@@ -67,7 +67,7 @@ export const lesson06: Lesson = {
   ],
 
   vocab: [
-    { id: 'L6-001', lessonId: 'L6', order: 1, group: 'vocab1', traditional: '表哥', simplified: '表哥', pinyin: 'biǎogē', wordClass: ['N'], meaningVi: 'anh họ (con trai của cô, dì, chú hoặc bác bên ngoại, lớn tuổi hơn)', meaningEn: 'cousin (older male cousin, from a female lineage)', examples: [{ traditional: '我表哥除了芒果以外，還種了很多有機蔬菜。', simplified: '我表哥除了芒果以外，还种了很多有机蔬菜。', vietnamese: 'Anh họ mình ngoài xoài ra còn trồng rất nhiều rau hữu cơ.' }] },
+    { id: 'L6-001', lessonId: 'L6', order: 1, group: 'vocab1', traditional: '表哥', simplified: '表哥', pinyin: 'biǎogē', wordClass: ['N'], meaningVi: 'anh họ (con trai của cô, cậu, dì, lớn tuổi hơn)', meaningEn: 'cousin (older male cousin, from a female lineage)', examples: [{ traditional: '我表哥除了芒果以外，還種了很多有機蔬菜。', simplified: '我表哥除了芒果以外，还种了很多有机蔬菜。', vietnamese: 'Anh họ mình ngoài xoài ra còn trồng rất nhiều rau hữu cơ.' }] },
     { id: 'L6-002', lessonId: 'L6', order: 2, group: 'vocab1', traditional: '隨便', simplified: '随便', pinyin: 'suíbiàn', wordClass: ['Adv'], meaningVi: 'tùy ý, tự nhiên, thoải mái', meaningEn: 'as one pleases, freely', examples: [{ traditional: '歡迎、歡迎。大家隨便坐。', simplified: '欢迎、欢迎。大家随便坐。', vietnamese: 'Hoan nghênh, hoan nghênh. Mọi người cứ ngồi thoải mái.' }] },
     { id: 'L6-003', lessonId: 'L6', order: 3, group: 'vocab1', traditional: '種', simplified: '种', pinyin: 'zhòng', wordClass: ['V'], meaningVi: 'trồng', meaningEn: 'to plant, to grow', examples: [{ traditional: '我表哥除了芒果以外，還種了很多有機蔬菜。', simplified: '我表哥除了芒果以外，还种了很多有机蔬菜。', vietnamese: 'Anh họ mình ngoài xoài ra còn trồng rất nhiều rau hữu cơ.' }] },
     { id: 'L6-004', lessonId: 'L6', order: 4, group: 'vocab1', traditional: '蔬菜', simplified: '蔬菜', pinyin: 'shūcài', wordClass: ['N'], meaningVi: 'rau củ', meaningEn: 'vegetable', tags: ['am-thuc'], examples: [{ traditional: '我表哥還種了很多有機蔬菜。', simplified: '我表哥还种了很多有机蔬菜。', vietnamese: 'Anh họ mình còn trồng rất nhiều rau hữu cơ.' }] },
@@ -366,7 +366,7 @@ export const lesson06: Lesson = {
       id: 'L6-WB-fb-7', lessonId: 'L6', section: 'fill-bank', type: 'fill-blank',
       prompt: 'Điền từ thích hợp vào đoạn văn (mỗi từ chỉ dùng 1 lần).',
       wordBank: ['由於', '辛苦', '信任', '推銷', '消費', '減少'],
-      textWithBlanks: '最近因為經濟不好，大家都不太願意多花錢來買有機食品，我們的顧客1.___了，所以我們店長居然想了一個奇怪的辦法：他打算帶所有的店員到農村去種田。2.___我們都是在城市長大的，都沒種過田，所以一開始都很反對這個活動，但是店長一定要我們參加。沒想到透過這個活動，我們一方面了解到農夫的3.___，一方面也讓我們好好地想土地和人的關係。我們也發現到，像這樣的實際經驗，讓我們更知道怎麼4.___有機食品。因為能跟顧客說明清楚這些食品是怎麼來的，顧客才會5.___我們；另外，也讓顧客了解有機食品對我們的身體健康、環境都比較好，這樣才能吸引更多的人來我們店裡6.___。',
+      textWithBlanks: '最近因為經濟不好，大家都不太願意多花錢來買有機食品，我們的顧客1.___了，所以我們店長居然想了一個奇怪的辦法：他打算帶所有的店員到農村去種田。2.___我們都是在城市長大的，都沒種過田，所以一開始都很反對這個活動，但是店長一定要我們參加。沒想到透過這個活動，我們一方面了解到農夫的3.___，一方面也讓我們好好地想想土地和人的關係。我們也發現到，像這樣的實際經驗，讓我們更知道怎麼4.___有機食品。因為能跟顧客說明清楚這些食品是怎麼來的，顧客才會5.___我們；另外，也讓顧客了解有機食品對我們的身體健康、環境都比較好，這樣才能吸引更多的人來我們店裡6.___。',
       blanks: [
         { index: 1, acceptedAnswers: ['減少'] },
         { index: 2, acceptedAnswers: ['由於'] },
@@ -387,7 +387,7 @@ export const lesson06: Lesson = {
     },
     {
       id: 'L6-WB-read-a2', lessonId: 'L6', section: 'reading', type: 'multiple-choice',
-      prompt: '小珊：修理機車的師傅薪水很高吧？怎麼你們機車店好像一直找不到人來做。\n阿明：修理機車的師傅很辛苦，再加上社會地位不高，雖然收入不錯，但是很多年輕人寧可穿得漂漂亮亮地去當店員，也不願意來做這個工作。',
+      prompt: '小珊：修理機車的師傅薪水很高吧？怎麼你們機車店好像一直找不到人來做。\n阿明：修理機車的師傅很辛苦，總是會把手弄得黑黑的，再加上社會地位不高，雖然收入不錯，但是很多年輕人寧可穿得漂漂亮亮地去當店員，也不願意來做這個工作。',
       question: '根據這個對話，下面哪一個是對的？',
       options: [{ id: 'a', text: '只是因為社會地位低，所以沒有人想當修理機車的師傅。' }, { id: 'b', text: '年輕人比較喜歡在乾淨舒服的地方工作，薪水差也沒關係。' }, { id: 'c', text: '修理機車的師傅薪水不如店員的高。' }],
       correctOptionId: 'b',
@@ -412,7 +412,7 @@ export const lesson06: Lesson = {
     },
     {
       id: 'L6-WB-read-b2', lessonId: 'L6', section: 'reading', type: 'multiple-choice',
-      prompt: '【農夫市集　2017年春季】每週六、日14:30-20:30。驚喜活動：三月每週六、日在館內餐飲消費300元，即可拿農夫市集攤「當地出產」新鮮蔬果一份。',
+      prompt: '【農夫市集　2017年春季】每週六、日14:30-20:30。驚喜活動：三月每週六、日在館內餐廳消費300塊，即可到農夫市集換「當地出產的新鮮蔬果」一份。',
       question: '如果我在四月的一個星期天下午去，市集會怎麼樣？',
       options: [{ id: 'a', text: '市集照常營業，但不一定能拿到驚喜禮物（因為驚喜活動只到三月）。' }, { id: 'b', text: '市集只在三月開放，四月不開放。' }, { id: 'c', text: '市集照常營業，而且四月也能拿到驚喜禮物。' }],
       correctOptionId: 'a',
@@ -420,19 +420,17 @@ export const lesson06: Lesson = {
     },
     {
       id: 'L6-WB-read-b3', lessonId: 'L6', section: 'reading', type: 'multiple-choice',
-      prompt: '【農夫市集　2017年春季】驚喜活動：三月每週六、日在館內餐飲消費300元，即可拿農夫市集攤「當地出產」新鮮蔬果一份。',
+      prompt: '【農夫市集　2017年春季】驚喜活動：三月每週六、日在館內餐廳消費300塊，即可到農夫市集換「當地出產的新鮮蔬果」一份。',
       question: '三月如果在館內用餐，要花多少錢才能拿到禮物？',
       options: [{ id: 'a', text: '消費滿300元。' }, { id: 'b', text: '消費滿500元。' }, { id: 'c', text: '不需要消費，只要去就有。' }],
       correctOptionId: 'a',
-      explanationVi: '"消費300元，即可拿…新鮮蔬果一份"，所以要花滿300元才能拿到禮物。'
+      explanationVi: '"消費300塊，即可到農夫市集換…新鮮蔬果一份"，所以要花滿300元才能拿到禮物。'
     },
 
-    { id: 'L6-WB-dc-1', lessonId: 'L6', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L6-G1', turns: [{ speaker: 'A', text: '你怎麼突然決定要回鄉下種田？', isBlank: false }, { speaker: 'B', text: '（因為…才…）', isBlank: true }], sampleAnswer: '因為看到父母年紀大了、做不動了，我才決定回鄉下種田的。' },
     { id: 'L6-WB-dc-2', lessonId: 'L6', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L6-G2', turns: [{ speaker: 'A', text: '你為什麼那麼討厭他？', isBlank: false }, { speaker: 'B', text: '（…不說，…還…）', isBlank: true }], sampleAnswer: '他說話不客氣不說，還常常說別人的壞話，我當然討厭他。' },
     { id: 'L6-WB-dc-3', lessonId: 'L6', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L6-G3', turns: [{ speaker: 'A', text: '為什麼你說他是你的知音呢？', isBlank: false }, { speaker: 'B', text: '（再加上）', isBlank: true }], sampleAnswer: '因為他懂我說的每一句話，再加上我們的興趣也差不多，所以我說他是我的知音。' },
     { id: 'L6-WB-dc-4', lessonId: 'L6', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L6-G4', turns: [{ speaker: 'A', text: '你有沒有淺藍色的衣服？可以借我嗎？', isBlank: false }, { speaker: 'B', text: '沒有。（什麼都…就是…）', isBlank: true }], sampleAnswer: '我的衣服什麼顏色都有，就是沒有淺藍色的。' },
     { id: 'L6-WB-dc-5', lessonId: 'L6', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L6-G5', turns: [{ speaker: 'A', text: '他真的對穿很講究。', isBlank: false }, { speaker: 'B', text: '（寧可…也…）', isBlank: true }], sampleAnswer: '是啊，他寧可餐餐吃麵包，也要買一件好看的外套。' },
-    { id: 'L6-WB-dc-6', lessonId: 'L6', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L6-G6', turns: [{ speaker: 'A', text: '你喜歡什麼樣的旅行方式？', isBlank: false }, { speaker: 'B', text: '（像…這樣…）', isBlank: true }], sampleAnswer: '像到鄉下住一晚、親手下田這樣的旅行，我都很喜歡。' },
     { id: 'L6-WB-dc-7', lessonId: 'L6', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L6-G7', turns: [{ speaker: 'A', text: '為什麼充實自己的專業能力那麼重要？', isBlank: false }, { speaker: 'B', text: '（一方面…，一方面（也）…）', isBlank: true }], sampleAnswer: '一方面可以讓工作更順利，一方面也能讓自己更有自信。' },
     { id: 'L6-WB-dc-8', lessonId: 'L6', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L6-G8', turns: [{ speaker: 'A', text: '最近來這裡欣賞櫻花的人多了起來。', isBlank: false }, { speaker: 'B', text: '（隨著）', isBlank: true }], sampleAnswer: '是啊，隨著社群媒體上分享照片的人越來越多，來拍照的遊客也跟著變多了。' },
 
