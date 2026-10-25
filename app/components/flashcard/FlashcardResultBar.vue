@@ -17,12 +17,12 @@ const buttons: { grade: SrsGrade; label: string; hint: string; classes: string }
       v-for="btn in buttons"
       :key="btn.grade"
       type="button"
-      class="flex flex-col items-center rounded-lg py-2.5 text-sm font-medium text-white transition"
+      class="flex flex-col items-center rounded-full py-3 text-[15px] font-bold text-white transition"
       :class="btn.classes"
       @click="$emit('grade', btn.grade)"
     >
       {{ btn.label }}
-      <span class="mt-0.5 text-[10px] font-mono-pinyin opacity-70">{{ btn.hint }}</span>
+      <span class="mt-0.5 text-[11px] font-semibold opacity-80">{{ btn.hint }}</span>
     </button>
   </div>
 </template>

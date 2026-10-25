@@ -9,6 +9,7 @@ const props = defineProps<{
 const { current, total, remaining, isDone, loading, error, start, grade } = useDailyReview()
 const flipped = ref(false)
 const grading = ref(false)
+const progressPct = computed(() => (total.value ? ((total.value - remaining.value) / total.value) * 100 : 0))
 
 onMounted(() => start(props.tag))
 
@@ -44,37 +45,51 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
   <div>
     <div v-if="loading" class="py-16 text-center text-ink-400">Đang tải thẻ ôn tập...</div>
 
-    <div v-else-if="error && !current" class="rounded-lg border border-seal-200 bg-seal-50 p-6 text-center text-seal-700">
+    <div v-else-if="error && !current" class="rounded-[32px] border border-seal-200 bg-seal-50 p-6 text-center text-seal-700">
       {{ error }}
     </div>
 
-    <div v-else-if="total === 0" class="rounded-lg border border-dashed border-ink-200 p-10 text-center">
-      <p class="font-hanzi text-2xl text-ink-800">太好了！</p>
+    <div v-else-if="total === 0" class="max-w-[560px] rounded-[32px] border border-paper-line bg-white p-10">
+      <p class="font-hanzi text-[40px] font-bold text-ink-800">太好了！</p>
       <p class="mt-1 text-ink-500">Hiện không có thẻ nào đến hạn ôn tập.</p>
     </div>
 
-    <div v-else-if="isDone" class="rounded-lg border border-dashed border-jade-300 bg-jade-50 p-10 text-center">
-      <p class="font-hanzi text-2xl text-jade-800">做完了！</p>
-      <p class="mt-1 text-jade-700">Bạn đã ôn xong {{ total }} thẻ hôm nay.</p>
-      <NuxtLink to="/" class="mt-4 inline-block text-sm text-seal-600 hover:underline">← Quay lại trang chủ</NuxtLink>
+    <div v-else-if="isDone" class="flex max-w-[560px] flex-col items-start gap-3 rounded-[32px] border border-paper-line bg-jade-100 p-10">
+      <p class="font-hanzi text-[56px] font-bold text-jade-900">做完了！</p>
+      <p class="text-[17px] text-jade-900">Bạn đã ôn xong {{ total }} thẻ hôm nay.</p>
+      <NuxtLink to="/" class="rounded-full bg-seal-600 px-5 py-2.5 font-semibold text-paper transition hover:bg-seal-700">Về trang chủ</NuxtLink>
     </div>
 
-    <div v-else-if="current">
-      <p class="mb-4 text-center text-sm text-ink-400">Còn {{ remaining }} / {{ total }} thẻ</p>
+    <div v-else-if="current" class="grid items-start gap-10 md:grid-cols-[minmax(0,380px)_minmax(0,560px)]">
+      <div class="flex flex-col gap-4">
+        <span class="kicker">{{ tag ? 'Ôn theo chủ đề' : 'Ôn tập hôm nay' }}</span>
+        <h1 class="font-heading text-5xl font-bold leading-[1.05] text-ink-800">Còn {{ remaining }} thẻ</h1>
+        <div class="h-3 overflow-hidden rounded-full bg-paper-line">
+          <div class="h-full rounded-full bg-seal-600 transition-all duration-300" :style="{ width: `${progressPct}%` }" />
+        </div>
+        <p class="text-ink-500">
+          <template v-if="tag">Chủ đề <TagBadge :tag="tag" />.</template>
+          <template v-else>Từ tất cả bài đã học · thẻ đến hạn trước, sau đó tối đa 10 thẻ mới.</template>
+        </p>
+        <div class="flex flex-wrap gap-2 text-[13px] text-ink-500">
+          <span class="rounded-full bg-ink-100 px-2.5 py-1"><strong>Space</strong> lật thẻ</span>
+          <span class="rounded-full bg-ink-100 px-2.5 py-1"><strong>1–4</strong> chấm điểm</span>
+        </div>
+      </div>
 
-      <Flashcard :item="current" :flipped="flipped" @flip="handleFlip" />
+      <div class="flex flex-col gap-5">
+        <Flashcard :item="current" :flipped="flipped" @flip="handleFlip" />
 
-      <p v-if="error" class="mt-3 text-center text-sm text-seal-600">{{ error }}</p>
+        <p v-if="error" class="text-center text-sm text-seal-600">{{ error }}</p>
 
-      <div class="mx-auto mt-6 max-w-sm">
         <FlashcardResultBar v-if="flipped" @grade="handleGrade" />
         <button
           v-else
           type="button"
-          class="w-full rounded-lg bg-ink-800 py-2.5 text-sm font-medium text-white transition hover:bg-ink-900"
+          class="rounded-full bg-seal-600 py-3.5 text-base font-semibold text-paper transition hover:bg-seal-700"
           @click="handleFlip"
         >
-          Lật thẻ (Space)
+          Lật thẻ
         </button>
       </div>
     </div>

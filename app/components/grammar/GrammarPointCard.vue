@@ -7,13 +7,13 @@ defineProps<{
 </script>
 
 <template>
-  <article :id="`grammar-${point.id}`" class="scroll-mt-20 rounded-xl border border-ink-100 bg-white p-5 shadow-sm">
-    <header class="flex items-baseline gap-2">
-      <span class="seal-mark shrink-0 px-1.5 py-0.5 text-[11px] text-seal-600">{{ point.order }}</span>
-      <h3 class="font-hanzi text-xl font-semibold text-ink-900">{{ point.pattern }}</h3>
+  <article :id="`grammar-${point.id}`" class="scroll-mt-20 rounded-[32px] border border-paper-line bg-white p-7">
+    <header class="flex items-center gap-3.5">
+      <span class="grid h-[38px] w-[38px] shrink-0 place-items-center rounded-full bg-seal-100 font-heading text-seal-800">{{ point.order }}</span>
+      <h3 class="font-hanzi text-[28px] font-bold text-ink-800">{{ point.pattern }}</h3>
     </header>
 
-    <p class="mt-2 text-sm leading-relaxed text-ink-700">{{ point.functionVi }}</p>
+    <p class="mt-3 text-base leading-relaxed text-ink-800">{{ point.functionVi }}</p>
 
     <div class="mt-3">
       <GrammarExampleList :examples="point.examples" />

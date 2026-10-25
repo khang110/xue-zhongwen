@@ -14,7 +14,7 @@ defineEmits<{ save: [] }>()
     <button
       type="button"
       :disabled="saving"
-      class="rounded-md border border-jade-300 px-3 py-1.5 text-sm text-jade-700 transition hover:bg-jade-50 disabled:cursor-not-allowed disabled:opacity-40"
+      class="rounded-full border border-jade-300 px-4 py-2 text-sm font-semibold text-jade-700 transition hover:bg-jade-50 disabled:cursor-not-allowed disabled:opacity-40"
       @click="$emit('save')"
     >
       {{ saving ? 'Đang lưu…' : 'Lưu lại' }}

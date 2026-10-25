@@ -39,18 +39,18 @@ function isBlankCorrect(i: number): boolean {
 </script>
 
 <template>
-  <div class="rounded-lg border border-ink-100 bg-white p-4">
+  <div class="rounded-[28px] border border-paper-line bg-white p-5">
     <p v-if="exercise.prompt" class="whitespace-pre-line font-hanzi text-sm leading-relaxed text-ink-600">{{ exercise.prompt }}</p>
-    <p v-if="exercise.prompt && showPinyin" class="mb-2 whitespace-pre-line font-mono-pinyin text-xs text-ink-400">{{ promptPinyin }}</p>
+    <p v-if="exercise.prompt && showPinyin" class="mb-2 whitespace-pre-line font-pinyin text-xs text-seal-700">{{ promptPinyin }}</p>
 
-    <div v-if="exercise.wordBank?.length" class="mb-3 flex flex-wrap gap-1.5 rounded-md bg-paper px-3 py-2">
+    <div v-if="exercise.wordBank?.length" class="mb-3 flex flex-wrap gap-1.5 rounded-[20px] bg-paper px-4 py-2.5">
       <span
         v-for="(w, i) in exercise.wordBank"
         :key="w"
         class="rounded border border-ink-200 bg-white px-2 py-0.5 text-sm text-ink-700"
       >
         <span class="font-hanzi">{{ w }}</span>
-        <span v-if="showPinyin" class="ml-1 font-mono-pinyin text-xs text-ink-400">{{ wordBankPinyin[i] }}</span>
+        <span v-if="showPinyin" class="ml-1 font-pinyin text-xs text-seal-700">{{ wordBankPinyin[i] }}</span>
       </span>
     </div>
 
@@ -67,7 +67,7 @@ function isBlankCorrect(i: number): boolean {
         </template>
       </template>
     </p>
-    <p v-if="showPinyin" class="mt-1 whitespace-pre-line font-mono-pinyin text-xs text-ink-400">{{ fullTextPinyin }}</p>
+    <p v-if="showPinyin" class="mt-1 whitespace-pre-line font-pinyin text-xs text-seal-700">{{ fullTextPinyin }}</p>
 
     <div v-if="checked" class="mt-2 space-y-1 text-sm text-ink-600">
       <p v-for="(b, i) in blanks" :key="i">
@@ -80,7 +80,7 @@ function isBlankCorrect(i: number): boolean {
       <button
         v-if="!checked"
         type="button"
-        class="rounded-md bg-seal-600 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-seal-700"
+        class="rounded-full bg-seal-600 px-5 py-2 text-sm font-semibold text-paper transition hover:bg-seal-700"
         @click="handleCheck"
       >
         Kiểm tra
@@ -88,7 +88,7 @@ function isBlankCorrect(i: number): boolean {
       <button
         v-else
         type="button"
-        class="rounded-md border border-ink-200 px-3 py-1.5 text-sm text-ink-600 transition hover:border-seal-300"
+        class="rounded-full border border-paper-line px-4 py-2 text-sm font-semibold text-ink-800 transition hover:bg-black/5"
         @click="handleReset"
       >
         Làm lại

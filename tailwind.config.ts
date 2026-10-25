@@ -61,9 +61,11 @@ export default <Partial<Config>>{
         // Chữ Hán nổi bật - font Song/Ming cổ điển, khác biệt với Noto Sans mặc định
         hanzi: ['"Noto Serif TC"', '"Noto Sans TC"', 'serif'],
         // Chữ Việt / giao diện
-        sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
-        // Pinyin, nhãn phụ, dữ liệu
-        mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace']
+        sans: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif'],
+        // Tiêu đề, số lớn
+        heading: ['"Noto Serif"', 'serif'],
+        // Pinyin (đủ dấu thanh)
+        pinyin: ['"Noto Sans"', 'system-ui', 'sans-serif']
       }
     }
   }

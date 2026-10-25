@@ -13,34 +13,27 @@ const useSimplifiedChars = useSimplified()
 
 <template>
   <div
-    class="mx-auto max-w-sm cursor-pointer select-none"
+    class="flex min-h-[420px] w-full cursor-pointer select-none flex-col items-center justify-center gap-3.5 rounded-[32px] border border-paper-line bg-white p-8 text-center shadow-md"
     role="button"
     tabindex="0"
     @click="$emit('flip')"
     @keydown.enter="$emit('flip')"
   >
-    <div v-if="!flipped" class="tianzige mx-auto w-48 shadow-sm sm:w-56">
-      <span class="font-hanzi text-7xl text-ink-900">{{ useSimplifiedChars ? item.simplified : item.traditional }}</span>
+    <div class="tianzige w-[200px] !rounded-2xl">
+      <span class="font-hanzi text-[88px] leading-none text-ink-800">{{ useSimplifiedChars ? item.simplified : item.traditional }}</span>
     </div>
 
-    <div v-else class="rounded-2xl border border-ink-100 bg-white p-6 text-center shadow-sm">
-      <p class="font-hanzi text-3xl text-ink-900">{{ useSimplifiedChars ? item.simplified : item.traditional }}</p>
-      <p class="mt-1 font-mono-pinyin text-base text-ink-500">{{ item.pinyin }}</p>
-      <WordClassBadge :word-class="item.wordClass" class="mt-2" />
-      <p class="mt-3 text-lg font-medium text-ink-900">{{ item.meaningVi }}</p>
-      <p class="text-xs text-ink-400">{{ item.meaningEn }}</p>
-
-      <div v-if="item.examples.length" class="mt-3 border-t border-ink-100 pt-3 text-left">
-        <p v-for="(ex, i) in item.examples.slice(0, 1)" :key="i" class="text-sm">
-          <span class="font-hanzi text-ink-800">{{ useSimplifiedChars ? ex.simplified : ex.traditional }}</span>
-          <br>
-          <span class="text-ink-500">{{ ex.vietnamese }}</span>
-        </p>
+    <div v-if="flipped" class="flex flex-col items-center gap-1.5">
+      <span class="font-pinyin text-xl font-bold text-seal-700">{{ item.pinyin }}</span>
+      <span class="font-heading text-[28px] font-bold text-ink-800">{{ item.meaningVi }}</span>
+      <span class="text-[13px] text-ink-500">
+        <WordClassBadge :word-class="item.wordClass" class="mr-1" />{{ item.meaningEn }}
+      </span>
+      <div v-if="item.examples.length" class="mt-2 flex flex-col gap-0.5 rounded-[20px] bg-paper px-4 py-2.5">
+        <span class="font-hanzi">{{ useSimplifiedChars ? item.examples[0]!.simplified : item.examples[0]!.traditional }}</span>
+        <span class="text-[13px] text-ink-500">{{ item.examples[0]!.vietnamese }}</span>
       </div>
     </div>
-
-    <p class="mt-3 text-center text-xs text-ink-400">
-      {{ flipped ? 'Bấm để lật lại' : 'Bấm hoặc nhấn Space để xem nghĩa' }}
-    </p>
+    <span v-else class="text-sm text-ink-500">Nhớ nghĩa chưa? Bấm để lật thẻ.</span>
   </div>
 </template>

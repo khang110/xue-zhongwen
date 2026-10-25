@@ -36,15 +36,17 @@ if (!selected.value && allChars.value.length) {
 </script>
 
 <template>
-  <div>
-    <h1 class="font-hanzi text-2xl font-semibold text-ink-900">Luyện viết chữ Hán</h1>
-    <p class="mt-1 text-ink-500">Chọn 1 chữ để xem hoạt hình thứ tự nét hoặc luyện viết theo.</p>
+  <div class="flex flex-col gap-6 pt-6">
+    <div class="max-w-[640px]">
+      <h1 class="font-heading text-[44px] font-bold text-ink-800">Luyện viết</h1>
+      <p class="mt-2 text-ink-500">Xem hoạt hình thứ tự nét, rồi tự viết theo ngay trong ô.</p>
+    </div>
 
-    <div class="mt-4 flex flex-wrap gap-1.5">
+    <div class="flex flex-wrap gap-1.5">
       <button
         type="button"
-        class="rounded-full border px-3 py-1 text-sm transition"
-        :class="lessonFilter === 'all' ? 'border-seal-500 bg-seal-50 text-seal-700' : 'border-ink-200 text-ink-600 hover:border-seal-300'"
+        class="rounded-full border-[1.5px] px-3.5 py-1 text-[13px] font-semibold transition"
+        :class="lessonFilter === 'all' ? 'border-seal-600 bg-seal-600 text-paper' : 'border-paper-line text-ink-600 hover:border-seal-300'"
         @click="lessonFilter = 'all'"
       >
         Tất cả
@@ -53,8 +55,8 @@ if (!selected.value && allChars.value.length) {
         v-for="lesson in availableLessons"
         :key="lesson.id"
         type="button"
-        class="rounded-full border px-3 py-1 text-sm transition"
-        :class="lessonFilter === lesson.id ? 'border-seal-500 bg-seal-50 text-seal-700' : 'border-ink-200 text-ink-600 hover:border-seal-300'"
+        class="rounded-full border-[1.5px] px-3.5 py-1 text-[13px] font-semibold transition"
+        :class="lessonFilter === lesson.id ? 'border-seal-600 bg-seal-600 text-paper' : 'border-paper-line text-ink-600 hover:border-seal-300'"
         @click="lessonFilter = lesson.id"
       >
         Bài {{ lesson.number }}
@@ -63,19 +65,19 @@ if (!selected.value && allChars.value.length) {
 
     <div class="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
       <div>
-        <div class="mb-4 flex justify-center gap-2">
+        <div class="pill-tabs mx-auto mb-4 flex w-fit">
           <button
             type="button"
-            class="rounded-md px-3 py-1.5 text-sm font-medium transition"
-            :class="mode === 'view' ? 'bg-ink-800 text-white' : 'border border-ink-200 text-ink-600'"
+            class="pill-tab"
+            :class="{ 'pill-tab--active': mode === 'view' }"
             @click="mode = 'view'"
           >
             Xem thứ tự nét
           </button>
           <button
             type="button"
-            class="rounded-md px-3 py-1.5 text-sm font-medium transition"
-            :class="mode === 'quiz' ? 'bg-ink-800 text-white' : 'border border-ink-200 text-ink-600'"
+            class="pill-tab"
+            :class="{ 'pill-tab--active': mode === 'quiz' }"
             @click="mode = 'quiz'"
           >
             Luyện viết
@@ -95,7 +97,7 @@ if (!selected.value && allChars.value.length) {
               v-for="w in relatedWords"
               :key="w.id"
               :to="`/lessons/${w.lessonId}#vocab-${w.id}`"
-              class="font-hanzi rounded border border-ink-200 bg-white px-2 py-1 text-sm text-ink-700 transition hover:border-seal-300 hover:text-seal-600"
+              class="font-hanzi rounded-full bg-seal-50 px-3 py-1 text-sm text-seal-800 transition hover:bg-seal-100"
             >
               {{ w.traditional }} <span class="text-ink-400">- {{ w.meaningVi }}</span>
             </NuxtLink>

@@ -70,7 +70,7 @@ function optionState(itemId: string, itemAnswer: string, optionId: string) {
 </script>
 
 <template>
-  <div class="rounded-lg border border-ink-100 bg-white p-4">
+  <div class="rounded-[28px] border border-paper-line bg-white p-5">
     <p v-if="exercise.prompt" class="mb-3 text-sm leading-relaxed text-ink-600">{{ exercise.prompt }}</p>
 
     <div class="flex flex-wrap items-center gap-3">
@@ -80,7 +80,7 @@ function optionState(itemId: string, itemAnswer: string, optionId: string) {
           v-for="r in RATES"
           :key="r"
           type="button"
-          class="rounded-md border px-2 py-1 text-xs transition"
+          class="rounded-full border px-3 py-1 text-xs transition"
           :class="rate === r
             ? 'border-seal-400 bg-seal-50 text-seal-700'
             : 'border-ink-200 text-ink-500 hover:border-seal-300'"
@@ -99,7 +99,7 @@ function optionState(itemId: string, itemAnswer: string, optionId: string) {
         <p v-else class="text-sm text-ink-400">
           <span class="mr-1">{{ idx + 1 }}.</span>Chọn câu trả lời phù hợp
         </p>
-        <p v-if="item.question && showPinyin" class="mb-1 whitespace-pre-line font-mono-pinyin text-xs text-ink-400">
+        <p v-if="item.question && showPinyin" class="mb-1 whitespace-pre-line font-pinyin text-xs text-seal-700">
           {{ questionPinyin.get(item.id) }}
         </p>
 
@@ -107,7 +107,7 @@ function optionState(itemId: string, itemAnswer: string, optionId: string) {
           <label
             v-for="option in optionsFor(item)"
             :key="option.id"
-            class="flex cursor-pointer items-center gap-2 rounded-md border px-3 py-2 text-sm transition"
+            class="flex cursor-pointer items-center gap-2 rounded-full border-[1.5px] px-4 py-2.5 text-sm transition"
             :class="{
               'border-ink-200 hover:border-seal-300': optionState(item.id, item.answer, option.id) === 'idle',
               'border-jade-400 bg-jade-50 text-jade-800': optionState(item.id, item.answer, option.id) === 'correct',
@@ -125,7 +125,7 @@ function optionState(itemId: string, itemAnswer: string, optionId: string) {
               <span class="font-hanzi">{{ option.text }}</span>
               <span
                 v-if="showPinyin && exercise.format !== 'true-false'"
-                class="block font-mono-pinyin text-xs text-ink-400"
+                class="block font-pinyin text-xs text-seal-700"
               >{{ optionPinyin.get(option.text) }}</span>
             </span>
           </label>
@@ -138,7 +138,7 @@ function optionState(itemId: string, itemAnswer: string, optionId: string) {
         v-if="!checked"
         type="button"
         :disabled="!allAnswered"
-        class="rounded-md bg-seal-600 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-seal-700 disabled:cursor-not-allowed disabled:opacity-40"
+        class="rounded-full bg-seal-600 px-5 py-2 text-sm font-semibold text-paper transition hover:bg-seal-700 disabled:cursor-not-allowed disabled:opacity-40"
         @click="handleCheck"
       >
         Kiểm tra
@@ -146,7 +146,7 @@ function optionState(itemId: string, itemAnswer: string, optionId: string) {
       <button
         v-else
         type="button"
-        class="rounded-md border border-ink-200 px-3 py-1.5 text-sm text-ink-600 transition hover:border-seal-300"
+        class="rounded-full border border-paper-line px-4 py-2 text-sm font-semibold text-ink-800 transition hover:bg-black/5"
         @click="handleReset"
       >
         Làm lại
@@ -165,7 +165,7 @@ function optionState(itemId: string, itemAnswer: string, optionId: string) {
 
     <details
       v-if="checked"
-      class="mt-3 rounded-md bg-paper px-3 py-2 text-sm text-ink-600"
+      class="mt-3 rounded-[20px] bg-paper px-4 py-2.5 text-sm text-ink-600"
       @toggle="transcriptOpen = ($event.target as HTMLDetailsElement).open"
     >
       <summary class="cursor-pointer select-none font-medium text-ink-500">Lời thoại</summary>

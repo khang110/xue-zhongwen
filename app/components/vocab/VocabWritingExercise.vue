@@ -96,11 +96,11 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
 
 <template>
   <div>
-    <div v-if="props.vocab.length === 0" class="rounded-lg border border-dashed border-ink-200 p-8 text-center text-ink-400">
+    <div v-if="props.vocab.length === 0" class="rounded-[32px] border border-dashed border-ink-200 p-8 text-center text-ink-400">
       Chưa có từ vựng để luyện viết.
     </div>
 
-    <div v-else-if="isDone" class="rounded-lg border border-dashed border-jade-300 bg-jade-50 p-10 text-center">
+    <div v-else-if="isDone" class="rounded-[32px] border border-jade-200 bg-jade-100 p-10 text-center">
       <p class="font-hanzi text-2xl text-jade-800">做完了！</p>
       <p class="mt-1 text-jade-700">Đúng {{ correctCount }} / {{ total }} câu.</p>
 
@@ -112,7 +112,7 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
           <li
             v-for="(w, i) in wrongAnswers"
             :key="i"
-            class="rounded-lg border border-seal-100 bg-white px-3 py-2 text-left text-sm"
+            class="rounded-[22px] border border-seal-100 bg-white px-4 py-2.5 text-left text-sm"
           >
             <p class="text-ink-500">{{ w.item.meaningVi }}</p>
             <p class="mt-0.5 text-ink-600">
@@ -120,7 +120,7 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
             </p>
             <p class="mt-0.5 text-ink-600">
               Đáp án: <span class="font-hanzi text-base text-ink-900">{{ w.item.traditional }} / {{ w.item.simplified }}</span>
-              <span class="ml-1 font-mono-pinyin text-xs text-ink-400">{{ w.item.pinyin }}</span>
+              <span class="ml-1 font-pinyin text-xs text-seal-700">{{ w.item.pinyin }}</span>
             </p>
           </li>
         </ul>
@@ -130,14 +130,14 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
         <button
           v-if="wrongAnswers.length"
           type="button"
-          class="rounded-md bg-seal-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-seal-700"
+          class="rounded-full bg-seal-600 px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-seal-700"
           @click="retryWrongOnly"
         >
           Làm lại câu sai
         </button>
         <button
           type="button"
-          class="rounded-md bg-ink-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-ink-900"
+          class="rounded-full bg-seal-600 px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-seal-700"
           @click="startSession"
         >
           Bắt đầu bài kiểm tra mới
@@ -151,14 +151,14 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
         <button
           type="button"
           :title="autoSpeak ? 'Đang tự động đọc đáp án - bấm để tắt' : 'Đang tắt tự động đọc - bấm để bật'"
-          class="rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"
+          class="rounded-full border border-paper-line px-3 py-1 text-xs font-semibold text-ink-600 transition hover:bg-black/5 hover:text-seal-600"
           @click="autoSpeak = !autoSpeak"
         >
           {{ autoSpeak ? 'Tự đọc đáp án: Bật' : 'Tự đọc đáp án: Tắt' }}
         </button>
       </div>
 
-      <div class="rounded-xl border border-ink-100 bg-white p-6 text-center shadow-sm">
+      <div class="rounded-[32px] border border-paper-line bg-white p-7 text-center">
         <p class="text-xs uppercase tracking-wide text-ink-400">Nghĩa tiếng Việt</p>
         <p class="mt-1 text-xl font-medium text-ink-900">{{ current.meaningVi }}</p>
         <p v-if="current.meaningEn" class="mt-1 text-xs text-ink-400">{{ current.meaningEn }}</p>
@@ -170,7 +170,7 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
         type="text"
         :disabled="checked"
         placeholder="Gõ chữ Hán..."
-        class="mt-4 w-full rounded-lg border px-4 py-3 text-center font-hanzi text-2xl text-ink-900 outline-none transition disabled:cursor-not-allowed"
+        class="mt-4 w-full rounded-2xl border-[1.5px] px-4 py-3 text-center font-hanzi text-2xl text-ink-900 outline-none transition disabled:cursor-not-allowed"
         :class="!checked
           ? 'border-ink-200 focus:border-seal-400'
           : isCorrect ? 'border-jade-400 bg-jade-50' : 'border-seal-400 bg-seal-50'"
@@ -178,13 +178,13 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
 
       <p class="mt-1.5 text-center text-xs text-ink-400">Enter: kiểm tra · Ctrl+Enter: câu tiếp theo</p>
 
-      <div v-if="checked" class="mt-3 rounded-lg bg-paper px-4 py-3 text-center">
+      <div v-if="checked" class="mt-3 rounded-2xl bg-paper px-4 py-3 text-center">
         <span :class="isCorrect ? 'text-jade-700' : 'text-seal-600'" class="text-sm font-medium">
           {{ isCorrect ? 'Chính xác!' : 'Chưa đúng.' }}
         </span>
         <p class="mt-1 flex items-center justify-center gap-1.5 text-sm text-ink-600">
           Đáp án: <span class="font-hanzi text-base text-ink-900">{{ current.traditional }} / {{ current.simplified }}</span>
-          <span class="font-mono-pinyin text-xs text-ink-400">{{ current.pinyin }}</span>
+          <span class="font-pinyin text-xs text-seal-700">{{ current.pinyin }}</span>
           <SpeakerButton size="sm" :text="current.traditional" :simplified-text="current.simplified" />
         </p>
       </div>
@@ -194,7 +194,7 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
           v-if="!checked"
           type="button"
           :disabled="!inputValue.trim()"
-          class="rounded-md bg-seal-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-seal-700 disabled:cursor-not-allowed disabled:opacity-40"
+          class="rounded-full bg-seal-600 px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-seal-700 disabled:cursor-not-allowed disabled:opacity-40"
           @click="handleCheck"
         >
           Kiểm tra
@@ -202,7 +202,7 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
         <button
           v-else
           type="button"
-          class="rounded-md border border-ink-200 px-4 py-2 text-sm text-ink-600 transition hover:border-seal-300"
+          class="rounded-full border border-paper-line px-5 py-2.5 text-sm font-semibold text-ink-800 transition hover:bg-black/5"
           @click="goNext"
         >
           Câu tiếp theo →

@@ -28,31 +28,33 @@ const filtered = computed(() => {
 </script>
 
 <template>
-  <div>
-    <h1 class="font-hanzi text-2xl font-semibold text-ink-900">Chữ Hán đã học</h1>
-    <p class="mt-1 text-ink-500">
-      {{ entries.length }} chữ duy nhất, tách từ {{ totalVocabCount }} từ vựng đã nhập ở 3 bài đầu.
-    </p>
+  <div class="flex flex-col gap-6 pt-6">
+    <div class="max-w-[640px]">
+      <h1 class="font-heading text-[44px] font-bold text-ink-800">Chữ Hán đã học</h1>
+      <p class="mt-2 text-ink-500">
+        {{ entries.length }} chữ duy nhất, tách từ {{ totalVocabCount }} từ vựng. Mỗi chữ gom mọi từ chứa nó, bất kể thuộc bài nào — bấm một chữ để luyện viết.
+      </p>
+    </div>
 
     <input
       v-model="search"
       type="text"
       placeholder="Tìm theo chữ Hán, pinyin, hoặc nghĩa tiếng Việt..."
-      class="mt-4 w-full max-w-md rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-seal-500"
+      class="min-h-12 w-full max-w-[480px] rounded-full border border-paper-line bg-white px-5 text-[15px] outline-none focus:border-seal-600"
     >
 
-    <div class="mt-6 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+    <div class="grid grid-cols-[repeat(auto-fill,minmax(112px,1fr))] gap-3">
       <NuxtLink
         v-for="entry in filtered"
         :key="entry.char"
         :to="`/writing?char=${entry.char}`"
-        class="group rounded-lg border border-ink-100 bg-white p-2 text-center transition hover:border-seal-300 hover:shadow-md"
+        class="group flex flex-col items-center gap-1.5 rounded-[22px] border border-paper-line bg-white px-2.5 pb-3 pt-2.5 text-center transition hover:-translate-y-0.5 hover:border-seal-300"
       >
-        <div class="tianzige mx-auto w-full">
-          <span class="font-hanzi text-3xl text-ink-900 group-hover:text-seal-600">{{ entry.char }}</span>
+        <div class="tianzige w-full">
+          <span class="font-hanzi text-[42px] text-ink-800 group-hover:text-seal-600">{{ entry.char }}</span>
         </div>
-        <p v-if="entry.pinyin" class="mt-1 truncate font-mono-pinyin text-xs text-ink-400">{{ entry.pinyin }}</p>
-        <p class="text-xs text-ink-400">{{ entry.words.length }} từ</p>
+        <p v-if="entry.pinyin" class="truncate font-pinyin text-xs text-seal-700">{{ entry.pinyin }}</p>
+        <p class="text-xs font-semibold text-ink-500">{{ entry.words.length }} từ</p>
       </NuxtLink>
     </div>
 

@@ -23,8 +23,9 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Noto Serif TC': [400, 500, 600, 700],
-      'IBM Plex Sans': [400, 500, 600, 700],
-      'IBM Plex Mono': [400, 500]
+      'Noto Serif': [400, 600, 700],
+      'Noto Sans': [400, 500, 600],
+      'Be Vietnam Pro': [400, 600, 700, 800]
     },
     display: 'swap'
   },

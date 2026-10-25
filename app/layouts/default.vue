@@ -1,70 +1,68 @@
 <script setup lang="ts">
-import { lessons } from '../data/lessons'
-
-const { user, clear } = useUserSession()
+const { user } = useUserSession()
 const useSimplifiedChars = useSimplified()
 const route = useRoute()
 
-const currentLessonId = computed(() => (typeof route.params.id === 'string' ? route.params.id : ''))
+const navItems = [
+  { to: '/', label: 'Trang chủ' },
+  { to: '/review', label: 'Ôn tập' },
+  { to: '/characters', label: 'Chữ Hán' },
+  { to: '/writing', label: 'Luyện viết' }
+]
 
-function handleLessonChange(e: Event) {
-  const id = (e.target as HTMLSelectElement).value
-  if (id) navigateTo(`/lessons/${id}`)
+function isActive(to: string): boolean {
+  if (to === '/') return route.path === '/' || route.path.startsWith('/lessons')
+  return route.path.startsWith(to)
 }
 
-async function handleLogout() {
-  await $fetch('/api/auth/logout', { method: 'POST' })
-  await clear()
-  await navigateTo('/login')
-}
+const initial = computed(() => (user.value?.name ?? user.value?.email ?? '?').trim().charAt(0).toUpperCase())
 </script>
 
 <template>
   <div class="min-h-screen bg-paper">
-    <header class="border-b border-paper-line bg-paper/90 backdrop-blur">
-      <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-y-2 px-4 py-3">
-        <NuxtLink to="/" class="flex items-center gap-2">
-          <span class="seal-mark h-7 w-7 shrink-0 text-seal-600 font-hanzi text-sm">學</span>
-          <span class="font-hanzi text-lg font-semibold text-ink-900">當代中文</span>
-          <span class="hidden text-sm text-ink-400 sm:inline">Book 3</span>
+    <header class="sticky top-0 z-10 bg-paper/90 backdrop-blur">
+      <div class="mx-auto flex max-w-[1160px] flex-wrap items-center gap-x-5 gap-y-3 px-4 py-4 sm:px-6">
+        <NuxtLink to="/" class="mr-auto flex items-center gap-2.5">
+          <span class="seal-mark h-9 w-9 shrink-0 border-2 border-seal-600 font-hanzi text-xl font-semibold text-seal-600">學</span>
+          <span class="flex flex-col leading-[1.1]">
+            <span class="font-heading text-[19px] font-bold text-ink-800">Xué</span>
+            <span class="font-hanzi text-xs text-ink-500">當代中文課程 3</span>
+          </span>
         </NuxtLink>
-        <nav class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-ink-600 sm:gap-x-5">
-          <StreakBadge variant="compact" />
-          <select
-            :value="currentLessonId"
-            class="rounded-md border border-ink-200 bg-white px-2 py-1 text-sm text-ink-600 transition hover:border-seal-300 focus:outline-none"
-            @change="handleLessonChange"
+
+        <nav class="pill-tabs">
+          <NuxtLink
+            v-for="item in navItems"
+            :key="item.to"
+            :to="item.to"
+            class="pill-tab"
+            :class="{ 'pill-tab--active': isActive(item.to) }"
           >
-            <option value="" disabled>Bài học</option>
-            <option
-              v-for="lesson in lessons"
-              :key="lesson.id"
-              :value="lesson.id"
-              :disabled="lesson.status === 'coming-soon'"
-            >
-              Bài {{ lesson.number }}: {{ lesson.titleVi }}{{ lesson.status === 'coming-soon' ? ' (sắp có)' : '' }}
-            </option>
-          </select>
-          <NuxtLink to="/review" class="transition hover:text-seal-600">Ôn tập</NuxtLink>
-          <NuxtLink to="/characters" class="transition hover:text-seal-600">Chữ Hán</NuxtLink>
-          <NuxtLink to="/writing" class="transition hover:text-seal-600">Luyện viết</NuxtLink>
-          <NuxtLink to="/profile" class="transition hover:text-seal-600">Cá nhân</NuxtLink>
+            {{ item.label }}
+          </NuxtLink>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <StreakBadge />
           <button
             type="button"
             :title="useSimplifiedChars ? 'Đang hiện giản thể - bấm để chuyển sang phồn thể' : 'Đang hiện phồn thể - bấm để chuyển sang giản thể'"
-            class="font-hanzi rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"
+            class="grid h-9 w-9 place-items-center rounded-full border border-paper-line font-hanzi text-[15px] text-ink-700 transition hover:bg-black/5"
             @click="useSimplifiedChars = !useSimplifiedChars"
           >
             {{ useSimplifiedChars ? '简' : '繁' }}
           </button>
-          <span class="hidden text-xs text-ink-400 sm:inline">{{ user?.name ?? user?.email }}</span>
-          <button type="button" class="text-ink-400 transition hover:text-seal-600" @click="handleLogout">
-            Đăng xuất
-          </button>
-        </nav>
+          <NuxtLink
+            to="/profile"
+            title="Trang cá nhân"
+            class="grid h-9 w-9 place-items-center rounded-full bg-jade-500 font-bold text-paper"
+          >
+            {{ initial }}
+          </NuxtLink>
+        </div>
       </div>
     </header>
-    <main class="mx-auto max-w-5xl px-4 py-8">
+    <main class="mx-auto max-w-[1160px] px-4 pb-20 pt-2 sm:px-6">
       <slot />
     </main>
   </div>

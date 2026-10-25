@@ -46,7 +46,7 @@ watch(() => props.character, mountWriter)
   <div class="text-center">
     <div
       ref="container"
-      class="mx-auto rounded-xl border border-ink-100 bg-white"
+      class="mx-auto rounded-2xl border border-ink-200 bg-[#faf9f5]"
       :style="{ width: `${size}px`, height: `${size}px` }"
     />
 
@@ -57,7 +57,7 @@ watch(() => props.character, mountWriter)
 
     <button
       type="button"
-      class="mt-3 rounded-md border border-ink-200 px-3 py-1.5 text-sm text-ink-600 transition hover:border-seal-300"
+      class="mt-3 rounded-full border border-paper-line px-4 py-2 text-sm font-semibold text-ink-800 transition hover:bg-black/5"
       @click="startQuiz"
     >
       Viết lại từ đầu

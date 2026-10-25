@@ -12,15 +12,15 @@ const displayChar = computed(() => (useSimplifiedChars.value ? props.item.simpli
 </script>
 
 <template>
-  <article :id="`vocab-${item.id}`" class="scroll-mt-20 rounded-xl border border-ink-100 bg-white p-4 shadow-sm">
-    <div class="flex gap-4">
-      <div class="tianzige w-16 shrink-0 self-start sm:w-20">
+  <article :id="`vocab-${item.id}`" class="scroll-mt-20 rounded-[32px] border border-paper-line bg-white p-[22px]">
+    <div class="flex gap-5">
+      <div class="tianzige w-20 shrink-0 self-start sm:w-[104px]">
         <span class="font-hanzi text-3xl text-ink-900 sm:text-4xl">{{ displayChar }}</span>
       </div>
 
       <div class="min-w-0 flex-1">
         <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <span v-if="showPinyin" class="font-mono-pinyin text-sm text-ink-500">{{ item.pinyin }}</span>
+          <span v-if="showPinyin" class="font-pinyin text-base font-semibold text-seal-700">{{ item.pinyin }}</span>
           <WordClassBadge :word-class="item.wordClass" />
           <SpeakerButton
             size="sm"
@@ -29,10 +29,10 @@ const displayChar = computed(() => (useSimplifiedChars.value ? props.item.simpli
           />
         </div>
 
-        <p class="mt-1.5 font-medium text-ink-900">{{ item.meaningVi }}</p>
-        <p class="text-xs text-ink-400">{{ item.meaningEn }}</p>
+        <p class="mt-2 text-[17px] font-bold text-ink-800">{{ item.meaningVi }}</p>
+        <p class="text-[13px] text-ink-500">{{ item.meaningEn }}</p>
 
-        <p v-if="item.notes" class="mt-2 rounded-md bg-paper px-2.5 py-1.5 text-xs leading-relaxed text-ink-600">
+        <p v-if="item.notes" class="mt-2 rounded-2xl bg-paper px-3.5 py-2.5 text-xs leading-relaxed text-ink-600">
           {{ item.notes }}
         </p>
 

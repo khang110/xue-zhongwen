@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
   background-color: #f3f1ea;
   color: #26211c;
 }
@@ -17,8 +17,71 @@ body {
 }
 
 .font-mono-pinyin {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-feature-settings: 'ss01';
+  font-family: 'Noto Sans', system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Noto Serif', serif;
+}
+
+/* Tab / nút dạng viên thuốc */
+.pill-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: #fff;
+}
+.pill-tab {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #463f36;
+  transition: color 0.15s;
+}
+.pill-tab:hover { color: #7a2620; }
+.pill-tab--active,
+.pill-tab--active:hover { background: #962c22; color: #f3f1ea; }
+
+.toggle-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4375rem 0.875rem 0.4375rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid #dcd5c2;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.toggle-pill__track {
+  position: relative;
+  width: 28px;
+  height: 16px;
+  border-radius: 999px;
+  background: #a89f8b;
+}
+.toggle-pill__track::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f3f1ea;
+  transition: left 0.15s;
+}
+.toggle-pill--on .toggle-pill__track { background: #3f6355; }
+.toggle-pill--on .toggle-pill__track::after { left: 14px; }
+
+.kicker {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a2620;
 }
 
 /* 田字格 - ô vuông chia 4 phần bằng nét mực mảnh, khung để đặt 1 chữ Hán nổi bật.

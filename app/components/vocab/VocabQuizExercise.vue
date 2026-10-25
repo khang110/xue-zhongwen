@@ -129,11 +129,11 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
 
 <template>
   <div>
-    <div v-if="props.vocab.length < 2" class="rounded-lg border border-dashed border-ink-200 p-8 text-center text-ink-400">
+    <div v-if="props.vocab.length < 2" class="rounded-[32px] border border-dashed border-ink-200 p-8 text-center text-ink-400">
       Cần ít nhất 2 từ vựng để tạo câu hỏi kiểm tra.
     </div>
 
-    <div v-else-if="isDone" class="rounded-lg border border-dashed border-jade-300 bg-jade-50 p-10 text-center">
+    <div v-else-if="isDone" class="rounded-[32px] border border-jade-200 bg-jade-100 p-10 text-center">
       <p class="font-hanzi text-2xl text-jade-800">做完了！</p>
       <p class="mt-1 text-jade-700">Đúng {{ correctCount }} / {{ total }} câu.</p>
 
@@ -145,12 +145,12 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
           <li
             v-for="(w, i) in wrongAnswers"
             :key="i"
-            class="rounded-lg border border-seal-100 bg-white px-3 py-2 text-left text-sm"
+            class="rounded-[22px] border border-seal-100 bg-white px-4 py-2.5 text-left text-sm"
           >
             <p class="text-ink-500">{{ w.meaningVi }}</p>
             <p class="mt-0.5 text-ink-600">
               Đáp án: <span class="font-hanzi text-base text-ink-900">{{ w.traditional }} / {{ w.simplified }}</span>
-              <span class="ml-1 font-mono-pinyin text-xs text-ink-400">{{ w.pinyin }}</span>
+              <span class="ml-1 font-pinyin text-xs text-seal-700">{{ w.pinyin }}</span>
             </p>
           </li>
         </ul>
@@ -160,14 +160,14 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
         <button
           v-if="wrongAnswers.length"
           type="button"
-          class="rounded-md bg-seal-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-seal-700"
+          class="rounded-full bg-seal-600 px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-seal-700"
           @click="retryWrongOnly"
         >
           Làm lại câu sai
         </button>
         <button
           type="button"
-          class="rounded-md bg-ink-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-ink-900"
+          class="rounded-full bg-seal-600 px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-seal-700"
           @click="startSession"
         >
           Bắt đầu bài kiểm tra mới
@@ -177,12 +177,12 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
 
     <div v-else-if="current" class="mx-auto max-w-lg">
       <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <p class="text-sm text-ink-400">Câu {{ currentIndex + 1 }} / {{ total }}</p>
+        <p class="kicker">Câu {{ currentIndex + 1 }} / {{ total }}</p>
         <div class="flex gap-2">
           <button
             type="button"
             :title="autoNextOnCorrect ? 'Đang tự động chuyển câu khi đúng - bấm để tắt' : 'Đang tắt tự động chuyển câu - bấm để bật'"
-            class="rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"
+            class="rounded-full border border-paper-line px-3 py-1 text-xs font-semibold text-ink-600 transition hover:bg-black/5 hover:text-seal-600"
             @click="autoNextOnCorrect = !autoNextOnCorrect"
           >
             {{ autoNextOnCorrect ? 'Tự động next: Bật' : 'Tự động next: Tắt' }}
@@ -190,7 +190,7 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
           <button
             type="button"
             :title="autoSpeak ? 'Đang tự động đọc đáp án đúng - bấm để tắt' : 'Đang tắt tự động đọc - bấm để bật'"
-            class="rounded-md border border-ink-200 px-2 py-1 text-xs text-ink-500 transition hover:border-seal-300 hover:text-seal-600"
+            class="rounded-full border border-paper-line px-3 py-1 text-xs font-semibold text-ink-600 transition hover:bg-black/5 hover:text-seal-600"
             @click="autoSpeak = !autoSpeak"
           >
             {{ autoSpeak ? 'Tự đọc đáp án: Bật' : 'Tự đọc đáp án: Tắt' }}
@@ -198,9 +198,9 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
         </div>
       </div>
 
-      <div class="rounded-xl border border-ink-100 bg-white p-6 text-center shadow-sm">
-        <p class="text-xs uppercase tracking-wide text-ink-400">Nghĩa tiếng Việt</p>
-        <p class="mt-1 text-xl font-medium text-ink-900">{{ current.meaningVi }}</p>
+      <div class="rounded-[32px] border border-paper-line bg-white p-7 text-center">
+        <p class="text-xs font-bold uppercase tracking-[0.08em] text-ink-400">Nghĩa tiếng Việt</p>
+        <p class="mt-1 font-heading text-[26px] font-bold leading-tight text-ink-800">{{ current.meaningVi }}</p>
         <p v-if="current.meaningEn" class="mt-1 text-xs text-ink-400">{{ current.meaningEn }}</p>
       </div>
 
@@ -210,7 +210,7 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
           :key="option.id"
           type="button"
           :disabled="checked"
-          class="flex items-center justify-center gap-2 rounded-lg border px-4 py-3 text-center font-hanzi text-2xl transition disabled:cursor-not-allowed"
+          class="flex items-center justify-center gap-2 rounded-2xl border-[1.5px] px-4 py-3 text-center font-hanzi text-2xl transition disabled:cursor-not-allowed"
           :class="{
             'border-ink-200 hover:border-seal-300': optionState(option.id) === 'idle',
             'border-jade-400 bg-jade-50 text-jade-800': optionState(option.id) === 'correct',
@@ -219,7 +219,7 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
           @click="selectOption(option.id)"
         >
           <span
-            class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded border border-ink-200 font-mono-pinyin text-xs text-ink-400"
+            class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded border border-ink-200 font-pinyin text-xs text-seal-700"
           >{{ i + 1 }}</span>
           <span>{{ option.text }}</span>
         </button>
@@ -233,14 +233,14 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
         </p>
         <p class="mt-1 flex items-center justify-center gap-1.5 text-sm text-ink-600">
           Đáp án: <span class="font-hanzi text-base text-ink-900">{{ displayText(current) }}</span>
-          <span class="font-mono-pinyin text-xs text-ink-400">{{ current.pinyin }}</span>
+          <span class="font-pinyin text-xs text-seal-700">{{ current.pinyin }}</span>
           <SpeakerButton size="sm" :text="current.traditional" :simplified-text="current.simplified" />
         </p>
         <div class="mt-2 flex items-center justify-center gap-3">
           <button
             v-if="!isCorrect || !autoNextOnCorrect"
             type="button"
-            class="rounded-md border border-ink-200 px-3 py-1.5 text-sm text-ink-600 transition hover:border-seal-300"
+            class="rounded-full border border-paper-line px-4 py-2 text-sm font-semibold text-ink-800 transition hover:bg-black/5"
             @click="goNext"
           >
             Câu tiếp theo →

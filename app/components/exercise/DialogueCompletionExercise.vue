@@ -26,7 +26,7 @@ const sampleAnswerPinyin = computed(() => toPinyinText(props.exercise.sampleAnsw
 </script>
 
 <template>
-  <div class="rounded-lg border border-ink-100 bg-white p-4">
+  <div class="rounded-[28px] border border-paper-line bg-white p-5">
     <p v-if="pattern" class="mb-2 text-xs text-ink-400">
       Dùng mẫu câu: <span class="font-hanzi text-seal-600">{{ pattern.pattern }}</span>
     </p>
@@ -36,16 +36,16 @@ const sampleAnswerPinyin = computed(() => toPinyinText(props.exercise.sampleAnsw
         <span class="w-5 shrink-0 font-medium text-ink-500">{{ turn.speaker }}:</span>
         <div v-if="!turn.isBlank" class="min-w-0">
           <span class="font-hanzi text-ink-800">{{ turn.text }}</span>
-          <p v-if="showPinyin" class="font-mono-pinyin text-xs text-ink-400">{{ turnPinyin[i] }}</p>
+          <p v-if="showPinyin" class="font-pinyin text-xs text-seal-700">{{ turnPinyin[i] }}</p>
         </div>
         <div v-else class="flex-1">
           <p v-if="turn.text" class="font-hanzi text-xs text-ink-400">{{ turn.text }}</p>
-          <p v-if="turn.text && showPinyin" class="mb-1 font-mono-pinyin text-xs text-ink-400">{{ turnPinyin[i] }}</p>
+          <p v-if="turn.text && showPinyin" class="mb-1 font-pinyin text-xs text-seal-700">{{ turnPinyin[i] }}</p>
           <textarea
             v-model="userAnswer"
             rows="2"
             placeholder="Nhập câu trả lời của bạn..."
-            class="w-full rounded-md border border-ink-200 bg-paper px-2 py-1.5 font-hanzi text-sm outline-none focus:border-seal-500"
+            class="w-full rounded-full border border-paper-line bg-paper px-3 py-1.5 font-hanzi text-sm outline-none focus:border-seal-500"
           />
         </div>
       </div>
@@ -54,7 +54,7 @@ const sampleAnswerPinyin = computed(() => toPinyinText(props.exercise.sampleAnsw
     <div class="mt-3 flex flex-wrap items-center gap-3">
       <button
         type="button"
-        class="rounded-md border border-ink-200 px-3 py-1.5 text-sm text-ink-600 transition hover:border-seal-300"
+        class="rounded-full border border-paper-line px-4 py-2 text-sm font-semibold text-ink-800 transition hover:bg-black/5"
         @click="revealed = !revealed"
       >
         {{ revealed ? 'Ẩn đáp án tham khảo' : 'Xem đáp án tham khảo' }}
@@ -68,9 +68,9 @@ const sampleAnswerPinyin = computed(() => toPinyinText(props.exercise.sampleAnsw
       />
     </div>
 
-    <div v-if="revealed" class="mt-2 rounded-md bg-paper px-3 py-2">
+    <div v-if="revealed" class="mt-2 rounded-[20px] bg-paper px-4 py-2.5">
       <p class="font-hanzi text-sm text-ink-800">{{ exercise.sampleAnswer }}</p>
-      <p v-if="showPinyin" class="mt-0.5 font-mono-pinyin text-xs text-ink-400">{{ sampleAnswerPinyin }}</p>
+      <p v-if="showPinyin" class="mt-0.5 font-pinyin text-xs text-seal-700">{{ sampleAnswerPinyin }}</p>
     </div>
   </div>
 </template>

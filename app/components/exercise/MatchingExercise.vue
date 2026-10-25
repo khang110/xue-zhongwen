@@ -70,13 +70,13 @@ function handleReset() {
 </script>
 
 <template>
-  <div class="rounded-lg border border-ink-100 bg-white p-4">
+  <div class="rounded-[28px] border border-paper-line bg-white p-5">
     <p v-if="exercise.prompt" class="mb-3 text-sm leading-relaxed text-ink-600">{{ exercise.prompt }}</p>
 
     <div class="space-y-3">
       <div v-for="left in leftItems" :key="left">
         <p class="font-hanzi text-sm font-medium text-ink-800">{{ left }}</p>
-        <p v-if="showPinyin" class="mb-1 font-mono-pinyin text-xs text-ink-400">{{ pinyinFor.get(left) }}</p>
+        <p v-if="showPinyin" class="mb-1 font-pinyin text-xs text-seal-700">{{ pinyinFor.get(left) }}</p>
         <div class="flex flex-wrap gap-1.5">
           <button
             v-for="right in rightItems"
@@ -103,7 +103,7 @@ function handleReset() {
       <button
         v-if="!checked"
         type="button"
-        class="rounded-md bg-seal-600 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-seal-700"
+        class="rounded-full bg-seal-600 px-5 py-2 text-sm font-semibold text-paper transition hover:bg-seal-700"
         @click="handleCheck"
       >
         Kiểm tra
@@ -111,7 +111,7 @@ function handleReset() {
       <button
         v-else
         type="button"
-        class="rounded-md border border-ink-200 px-3 py-1.5 text-sm text-ink-600 transition hover:border-seal-300"
+        class="rounded-full border border-paper-line px-4 py-2 text-sm font-semibold text-ink-800 transition hover:bg-black/5"
         @click="handleReset"
       >
         Làm lại
