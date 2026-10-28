@@ -59,9 +59,12 @@ const readingParagraphs = computed(() => {
   if (!reading) return []
   const displayText = useSimplifiedChars.value ? reading.simplified : reading.traditional
   const displayParas = displayText.split('\n\n')
+  const traditionalParas = reading.traditional.split('\n\n')
   const pinyinParas = reading.simplified.split('\n\n')
   return displayParas.map((text, i) => ({
     text,
+    traditional: traditionalParas[i] ?? text,
+    simplified: pinyinParas[i] ?? text,
     pinyin: toPinyinText(pinyinParas[i]?.trim() ?? '')
   }))
 })
@@ -214,7 +217,10 @@ const readingParagraphs = computed(() => {
       <div v-if="lesson.shortReading" class="rounded-[32px] border border-paper-line bg-white p-7">
         <div class="space-y-3">
           <div v-for="(para, i) in readingParagraphs" :key="i">
-            <p class="whitespace-pre-line font-hanzi text-base leading-loose text-ink-900">{{ para.text }}</p>
+            <div class="flex items-start gap-2">
+              <p class="whitespace-pre-line font-hanzi text-base leading-loose text-ink-900">{{ para.text }}</p>
+              <SpeakerButton size="sm" pausable :text="para.traditional" :simplified-text="para.simplified" class="mt-2 shrink-0" />
+            </div>
             <p v-if="showPinyin" class="mt-1 whitespace-pre-line font-mono-pinyin text-xs leading-relaxed text-ink-400">{{ para.pinyin }}</p>
           </div>
         </div>

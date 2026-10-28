@@ -51,9 +51,18 @@ export function useSpeech() {
     utterance.lang = zhVoice.value.lang
     utterance.rate = opts?.rate ?? 0.85
     window.speechSynthesis.speak(utterance)
+    return utterance
+  }
+
+  function pause() {
+    if (typeof window !== 'undefined') window.speechSynthesis?.pause()
+  }
+
+  function resume() {
+    if (typeof window !== 'undefined') window.speechSynthesis?.resume()
   }
 
   init()
 
-  return { isSupported, zhVoice, speak }
+  return { isSupported, zhVoice, speak, pause, resume }
 }

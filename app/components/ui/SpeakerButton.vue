@@ -5,14 +5,32 @@ const props = withDefaults(
     simplifiedText?: string
     rate?: number
     size?: 'sm' | 'md'
+    pausable?: boolean
   }>(),
-  { size: 'md', rate: 0.85, simplifiedText: undefined }
+  { size: 'md', rate: 0.85, simplifiedText: undefined, pausable: false }
 )
 
-const { isSupported, speak } = useSpeech()
+const { isSupported, speak, pause, resume } = useSpeech()
+
+const state = ref<'idle' | 'playing' | 'paused'>('idle')
 
 function handleClick() {
-  speak(props.text, { rate: props.rate, simplifiedText: props.simplifiedText })
+  if (props.pausable && state.value === 'playing') {
+    pause()
+    state.value = 'paused'
+    return
+  }
+  if (props.pausable && state.value === 'paused') {
+    resume()
+    state.value = 'playing'
+    return
+  }
+  const utterance = speak(props.text, { rate: props.rate, simplifiedText: props.simplifiedText })
+  if (!utterance || !props.pausable) return
+  state.value = 'playing'
+  const reset = () => { state.value = 'idle' }
+  utterance.onend = reset
+  utterance.onerror = reset
 }
 </script>
 
@@ -20,12 +38,19 @@ function handleClick() {
   <button
     v-if="isSupported"
     type="button"
-    :title="`Nghe phát âm: ${text}`"
+    :title="state === 'playing' ? 'Tạm dừng' : state === 'paused' ? 'Tiếp tục' : `Nghe phát âm: ${text}`"
     class="inline-flex items-center justify-center rounded-full text-ink-400 transition hover:bg-seal-50 hover:text-seal-600"
-    :class="size === 'sm' ? 'h-6 w-6' : 'h-8 w-8'"
+    :class="[size === 'sm' ? 'h-6 w-6' : 'h-8 w-8', state !== 'idle' ? 'text-seal-600' : '']"
     @click="handleClick"
   >
-    <svg viewBox="0 0 24 24" fill="none" class="h-[60%] w-[60%]">
+    <svg v-if="state === 'playing'" viewBox="0 0 24 24" fill="currentColor" class="h-[60%] w-[60%]">
+      <rect x="6" y="5" width="4" height="14" rx="1" />
+      <rect x="14" y="5" width="4" height="14" rx="1" />
+    </svg>
+    <svg v-else-if="state === 'paused'" viewBox="0 0 24 24" fill="currentColor" class="h-[60%] w-[60%]">
+      <path d="M7 4v16l13-8z" />
+    </svg>
+    <svg v-else viewBox="0 0 24 24" fill="none" class="h-[60%] w-[60%]">
       <path
         d="M4 9v6h4l5 5V4L8 9H4z"
         fill="currentColor"
