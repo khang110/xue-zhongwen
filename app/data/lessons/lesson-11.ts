@@ -126,122 +126,123 @@ export const lesson11: Lesson = {
   grammar: [
     {
       id: 'L11-G1', lessonId: 'L11', order: 1, pattern: '到底',
-      functionVi: '"到底" dùng trong câu hỏi để nhấn mạnh người nói muốn biết rõ sự thật, thể hiện sự sốt ruột, nghi hoặc hoặc tò mò. Đặt sau chủ ngữ (hoặc đầu câu), trước phần còn lại của câu hỏi.',
-      functionEn: '"到底" is used in questions to emphasize that the speaker really wants to get to the bottom of something, expressing impatience, doubt, or curiosity. It is placed after the subject (or at the start of the question).',
+      functionVi: '"到底" là phó từ, dùng khi người nói đang băn khoăn về một điều gì đó và rất muốn biết sự thật. Câu mang sắc thái tò mò, sốt ruột mạnh. Dịch: "rốt cuộc", "thật ra".',
+      functionEn: 'The adverb 到底 is used when the speaker is perplexed about something and is eager to find out about the truth. The sentence carries a strong tone of inquisitiveness and impatience.',
       examples: [
-        { traditional: '網路上說紅毛城先是西班牙人建的，後來荷蘭人又重建。到底是怎麼回事？', simplified: '网路上说红毛城先是西班牙人建的，后来荷兰人又重建。到底是怎么回事？', english: 'Online it says Fort Santo Domingo was first built by the Spanish, then rebuilt by the Dutch. What exactly happened?', vietnamese: 'Trên mạng nói Hồng Mao Thành ban đầu do Tây Ban Nha xây, sau Hà Lan lại xây lại. Rốt cuộc là chuyện gì vậy?' },
-        { traditional: '你到底要不要跟我們去？快點決定。', simplified: '你到底要不要跟我们去？快点决定。', english: "Are you coming with us or not? Decide quickly.", vietnamese: 'Rốt cuộc cậu có đi với chúng mình không? Quyết định nhanh đi.' },
-        { traditional: '這件事到底是誰做的，到現在還沒有人知道。', simplified: '这件事到底是谁做的，到现在还没有人知道。', english: 'Who exactly did this—no one knows even now.', vietnamese: 'Việc này rốt cuộc là ai làm, đến giờ vẫn chưa ai biết.' },
-        { traditional: '你到底想說什麼？別拐彎抹角了。', simplified: '你到底想说什么？别拐弯抹角了。', english: "What exactly are you trying to say? Stop beating around the bush.", vietnamese: 'Rốt cuộc cậu muốn nói gì? Đừng vòng vo nữa.' },
-        { traditional: '這兩個國家到底為什麼打仗，歷史書上的說法不太一樣。', simplified: '这两个国家到底为什么打仗，历史书上的说法不太一样。', english: "Why exactly did these two countries go to war—history books don't quite agree.", vietnamese: 'Rốt cuộc hai nước này vì sao đánh nhau, các sách lịch sử nói không hẳn giống nhau.' }
+        { traditional: '小陳幾天以前說想去麵包店當學徒，今天說想去鄉下種水果，他到底想做什麼？', simplified: '小陈几天以前说想去面包店当学徒，今天说想去乡下种水果，他到底想做什么？', english: 'The other day, Xiao Chen said he wanted to apprentice at a bakery. Today, he said he wants to go to the countryside and grow fruit. What does he really want to do?', vietnamese: 'Mấy hôm trước Tiểu Trần nói muốn đi học việc ở tiệm bánh mì, hôm nay lại nói muốn về quê trồng trái cây, rốt cuộc anh ấy muốn làm gì?' },
+        { traditional: '你不要看到新型的電子產品就買，「貨比三家不吃虧」這句話的意思，你到底懂不懂？', simplified: '你不要看到新型的电子产品就买，「货比三家不吃亏」这句话的意思，你到底懂不懂？', english: 'Stop buying the latest electronic product whenever you see one. You understand the saying "shop around and you won\'t get ripped off", don\'t you?', vietnamese: 'Đừng thấy sản phẩm điện tử mẫu mới là mua. Ý nghĩa câu "so sánh ba nhà thì không bị thiệt", rốt cuộc cậu có hiểu không?' },
+        { traditional: '那家商店賣的鳳梨酥特別受歡迎，他們到底用的是什麼行銷方式？', simplified: '那家商店卖的凤梨酥特别受欢迎，他们到底用的是什么行销方式？', english: 'The pineapple cakes sold at that store are especially popular. What is their marketing scheme?', vietnamese: 'Bánh dứa của tiệm đó bán đặc biệt được ưa chuộng, rốt cuộc họ dùng cách tiếp thị gì vậy?' },
+        { traditional: '我昨天介紹給你的那位先生，到底你對他的印象怎麼樣？', simplified: '我昨天介绍给你的那位先生，到底你对他的印象怎么样？', english: 'What is your impression of the gentleman I introduced to you yesterday?', vietnamese: 'Vị tiên sinh hôm qua mình giới thiệu cho cậu, rốt cuộc ấn tượng của cậu về anh ấy thế nào?' },
+        { traditional: '真羨慕你有這麼多好朋友。你到底是怎麼跟別人建立關係的？', simplified: '真羡慕你有这么多好朋友。你到底是怎么跟别人建立关系的？', english: 'You have so many friends. I really envy you. How in the world do you make friends like that?', vietnamese: 'Thật ngưỡng mộ cậu có nhiều bạn tốt như vậy. Rốt cuộc cậu làm thế nào để xây dựng quan hệ với người khác vậy?' }
       ],
-      usageNotesVi: '"到底" chỉ dùng trong câu hỏi (có nghi vấn từ như 是誰/為什麼/怎麼/要不要…) hoặc câu gián tiếp mang tính nghi vấn. Không dùng trong câu khẳng định đơn thuần.',
+      usageNotesVi: '1) "到底" chỉ dùng trong câu hỏi KHÔNG có 嗎 (câu hỏi có từ để hỏi, hoặc dạng chính phản V不V). 2) Có thể đứng trước hoặc sau chủ ngữ: 你到底去不去？/ 到底你去不去？; 他到底哪裡不舒服？/ 到底他哪裡不舒服？; 你到底買菜了沒有？/ 到底你買菜了沒有？. 3) Nếu chủ ngữ chính là từ để hỏi thì "到底" chỉ được đứng đầu câu; KHÔNG nói: *誰到底要去？ *哪裡到底好玩？ *什麼人到底才能參加？ 4) Điều kiện dùng: trước khi hỏi kiểu "臭豆腐到底臭不臭？", phải có một trong hai tình huống: (a) có người nói là có, người khác nói là không; (b) có người cứ nói đi nói lại là có/không. Nếu không ai đang nói về món đó, hoặc chỉ nói đúng một lần thì không dùng "到底".',
       exercises: [
-        { id: 'L11-G1-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：聽說這家店要收了，又聽說還會繼續開。', textWithBlanks: 'B：___？', blanks: [{ index: 0, acceptedAnswers: ['到底是要收還是不收啊'] }], targetPattern: 'L11-G1' },
-        { id: 'L11-G1-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這兩份資料寫的年代不一樣。', textWithBlanks: 'B：___？', blanks: [{ index: 0, acceptedAnswers: ['到底哪一個是對的'] }], targetPattern: 'L11-G1' },
-        { id: 'L11-G1-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他說他很忙，又說他很閒。', textWithBlanks: 'B：___？', blanks: [{ index: 0, acceptedAnswers: ['他到底在忙什麼'] }], targetPattern: 'L11-G1' },
-        { id: 'L11-G1-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個字有兩種唸法。', textWithBlanks: 'B：___？', blanks: [{ index: 0, acceptedAnswers: ['到底要唸哪一個才對'] }], targetPattern: 'L11-G1' },
-        { id: 'L11-G1-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你剛剛說同意，現在又說不同意。', textWithBlanks: 'B：___？', blanks: [{ index: 0, acceptedAnswers: ['你到底同不同意'] }], targetPattern: 'L11-G1' }
+        { id: 'L11-G1-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「到底」完成句子。', textWithBlanks: '好久沒有小王的消息了，他在美國到底___？', blanks: [{ index: 0, acceptedAnswers: ['過得怎麼樣', '過得好不好', '在做什麼'] }], targetPattern: 'L11-G1' },
+        { id: 'L11-G1-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「到底」完成句子。', textWithBlanks: '你說上網訂購月餅，很快就能收到。到底___？', blanks: [{ index: 0, acceptedAnswers: ['要等幾天才能收到', '多快能收到', '多久能收到'] }], targetPattern: 'L11-G1' },
+        { id: 'L11-G1-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「到底」完成句子。', textWithBlanks: '我從來沒在網路上買過東西。你可不可以告訴我在網路上買東西，到底___？', blanks: [{ index: 0, acceptedAnswers: ['要怎麼買', '怎麼付錢', '要怎麼做'] }], targetPattern: 'L11-G1' },
+        { id: 'L11-G1-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「到底」完成句子。', textWithBlanks: '這棟建築外表看起來很舊，到底___？', blanks: [{ index: 0, acceptedAnswers: ['是什麼時候蓋的', '有多少年的歷史', '是誰蓋的'] }], targetPattern: 'L11-G1' },
+        { id: 'L11-G1-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「到底」完成句子。', textWithBlanks: '我做的事情，他總是不滿意。我到底___？', blanks: [{ index: 0, acceptedAnswers: ['哪裡做得不好', '哪裡做錯了', '要怎麼做他才滿意'] }], targetPattern: 'L11-G1' }
       ]
     },
     {
       id: 'L11-G2', lessonId: 'L11', order: 2, pattern: '甚至',
-      functionVi: '"甚至" dùng để đưa ra một ví dụ cực đoan hơn, nhấn mạnh mức độ vượt quá dự tính, tương đương "thậm chí". Thường đặt trước động từ/cụm động từ muốn nhấn mạnh.',
-      functionEn: '"甚至" introduces a more extreme example to emphasize that something goes beyond what might be expected, equivalent to "even." It is placed before the verb/verb phrase being emphasized.',
+      functionVi: '"甚至" là phó từ, đánh dấu một điều trong câu là đặc biệt, vượt ngoài thường lệ. Dịch: "thậm chí".',
+      functionEn: "甚至 'even' is an adverb which marks something in the sentence as extraordinary.",
       examples: [
-        { traditional: '那時候歐洲人可以自由地來來去去，甚至在台灣打仗。', simplified: '那时候欧洲人可以自由地来来去去，甚至在台湾打仗。', english: 'Back then Europeans could freely come and go, even fighting wars in Taiwan.', vietnamese: 'Thời đó người châu Âu có thể tự do đến đi, thậm chí còn đánh nhau ở Đài Loan.' },
-        { traditional: '他每天都練習寫毛筆字，甚至連過年都沒休息。', simplified: '他每天都练习写毛笔字，甚至连过年都没休息。', english: 'He practices calligraphy every day, even not resting during the Lunar New Year.', vietnamese: 'Anh ấy ngày nào cũng luyện viết chữ, thậm chí Tết cũng không nghỉ.' },
-        { traditional: '這家店的客人很多，甚至外國觀光客也常常來。', simplified: '这家店的客人很多，甚至外国观光客也常常来。', english: 'This shop has a lot of customers, even foreign tourists often come.', vietnamese: 'Tiệm này đông khách lắm, thậm chí khách du lịch nước ngoài cũng thường đến.' },
-        { traditional: '這個問題很難，甚至老師都要想一下才能回答。', simplified: '这个问题很难，甚至老师都要想一下才能回答。', english: "This question is so hard that even the teacher needs to think before answering.", vietnamese: 'Câu hỏi này khó đến mức thậm chí thầy giáo cũng phải nghĩ một lúc mới trả lời được.' },
-        { traditional: '她對台灣歷史很有興趣，甚至自己去圖書館借書研究。', simplified: '她对台湾历史很有兴趣，甚至自己去图书馆借书研究。', english: "She's very interested in Taiwanese history, even going to the library on her own to borrow books and do research.", vietnamese: 'Cô ấy rất thích lịch sử Đài Loan, thậm chí tự đi thư viện mượn sách nghiên cứu.' }
+        { traditional: '這種款式的包包非常受歡迎，甚至連續劇的女主角都拿過。我非買不可。', simplified: '这种款式的包包非常受欢迎，甚至连续剧的女主角都拿过。我非买不可。', english: 'This style of bag is quite popular. Even the leading lady in a TV series had one. I have to buy one.', vietnamese: 'Kiểu túi này rất được ưa chuộng, thậm chí nữ chính phim truyền hình cũng từng cầm. Mình nhất định phải mua.' },
+        { traditional: '很多小農為了友善對待土地，最近甚至連農藥都不用了。', simplified: '很多小农为了友善对待土地，最近甚至连农药都不用了。', english: 'For the sake of a healthy soil, recently, many small farmers are even going so far as to not use pesticides.', vietnamese: 'Nhiều nông hộ nhỏ vì muốn đối xử thân thiện với đất đai, gần đây thậm chí không dùng cả thuốc trừ sâu nữa.' },
+        { traditional: '鳳梨對臺灣經濟發展一直有很大的幫助，臺灣出口的鳳梨甚至曾經占世界第二位。', simplified: '凤梨对台湾经济发展一直有很大的帮助，台湾出口的凤梨甚至曾经占世界第二位。', english: "Pineapples have always been a big help to Taiwan's economic development. Taiwan's pineapple exports were even once number two in the world.", vietnamese: 'Dứa luôn giúp ích rất lớn cho phát triển kinh tế Đài Loan, dứa xuất khẩu của Đài Loan thậm chí từng chiếm vị trí thứ hai thế giới.' },
+        { traditional: '十六世紀時，歐洲人不但到中南美洲做生意，甚至到東方來從事貿易活動。', simplified: '十六世纪时，欧洲人不但到中南美洲做生意，甚至到东方来从事贸易活动。', english: 'During the 16th century, Europeans not only went to Central and South America to do business, they even came to the East to engage in trade activities.', vietnamese: 'Vào thế kỷ 16, người châu Âu không chỉ đến Trung Nam Mỹ làm ăn, thậm chí còn đến phương Đông làm thương mại.' },
+        { traditional: '臺灣的微整型做得非常好，價錢又合理，甚至連外國人都利用假期來臺灣做微整型。', simplified: '台湾的微整型做得非常好，价钱又合理，甚至连外国人都利用假期来台湾做微整型。', english: "Taiwan's micro-cosmetic surgery is very advanced and the prices are reasonable. Foreigners even use their holidays to come to Taiwan and undergo micro-cosmetic surgery.", vietnamese: 'Phẫu thuật thẩm mỹ nhỏ của Đài Loan làm rất tốt, giá cả lại hợp lý, thậm chí người nước ngoài cũng tranh thủ kỳ nghỉ đến Đài Loan làm.' }
       ],
-      usageNotesVi: '"甚至" thường đi cùng "連…都/也" để nhấn mạnh thêm mức độ cực đoan (連…都/也 甚至…). Khác với "而且" (chỉ nối thêm thông tin bình thường), "甚至" nhấn mạnh ví dụ vượt mức.',
+      usageNotesVi: '1) "甚至" thường đi kèm với "連" (甚至連…都/也…) để đánh dấu tình huống đặc biệt (xem thêm Tập 2, Bài 14). 2) "甚至" KHÔNG liên quan đến "至於" (Bài 10).',
+      relatedPatterns: ['L10-G1'],
       exercises: [
-        { id: 'L11-G2-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他中文學得怎麼樣？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['學得很好，甚至能看中文小說了'] }], targetPattern: 'L11-G2' },
-        { id: 'L11-G2-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這裡的冬天很冷嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['很冷，甚至還會下雪'] }], targetPattern: 'L11-G2' },
-        { id: 'L11-G2-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個傳統現在還有人在做嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['有，甚至年輕人也開始學了'] }], targetPattern: 'L11-G2' },
-        { id: 'L11-G2-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：那場比賽很激烈嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['很激烈，甚至打到最後一分鐘才分出勝負'] }], targetPattern: 'L11-G2' },
-        { id: 'L11-G2-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：大家都知道這件事嗎？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['都知道，甚至連小孩子都聽過'] }], targetPattern: 'L11-G2' }
+        { id: 'L11-G2-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「甚至」表示特別的情況，完成句子。', textWithBlanks: '小王是一個很節省的人，___都不開冷氣。', blanks: [{ index: 0, acceptedAnswers: ['夏天甚至連最熱的時候', '甚至連夏天', '甚至連最熱的夏天'] }], targetPattern: 'L11-G2' },
+        { id: 'L11-G2-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「甚至」表示特別的情況，完成句子。', textWithBlanks: '他現在住的地方，不但手機收不到訊號，___。', blanks: [{ index: 0, acceptedAnswers: ['甚至連電視也看不了', '甚至連網路都不能用', '甚至連電都沒有'] }], targetPattern: 'L11-G2' },
+        { id: 'L11-G2-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「甚至」表示特別的情況，完成句子。', textWithBlanks: '他對吃真講究，___跑一趟臺南。', blanks: [{ index: 0, acceptedAnswers: ['為了吃一碗好吃的牛肉湯，甚至會專程', '甚至會特地'] }], targetPattern: 'L11-G2' },
+        { id: 'L11-G2-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「甚至」表示特別的情況，完成句子。', textWithBlanks: '他小時候家裡很窮，不但買不起新衣服，___。', blanks: [{ index: 0, acceptedAnswers: ['甚至連三餐都吃不飽', '甚至連飯都吃不飽'] }], targetPattern: 'L11-G2' },
+        { id: 'L11-G2-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「甚至」表示特別的情況，完成句子。', textWithBlanks: '百貨公司週年慶的時候，大部分的商品都會有不錯的折扣，有的東西___。', blanks: [{ index: 0, acceptedAnswers: ['甚至打到三折', '甚至打到五折以下', '甚至連一半的價錢都不到'] }], targetPattern: 'L11-G2' }
       ]
     },
     {
       id: 'L11-G3', lessonId: 'L11', order: 3, pattern: '這麼說',
-      functionVi: '"這麼說" dùng để đưa ra một kết luận/suy đoán dựa trên điều người khác vừa nói, tương đương "vậy thì, nói như vậy thì". Thường đứng đầu câu, sau đó là kết luận hoặc câu hỏi xác nhận.',
-      functionEn: '"這麼說" is used to draw a conclusion or inference based on what the other person just said, equivalent to "in that case" / "so you\'re saying." It usually comes at the start of a sentence, followed by the conclusion or a confirming question.',
+      functionVi: '"這麼說" đưa ra một nhận định như là hệ quả tự nhiên của câu nói trước. Dịch: "nói vậy thì", "vậy thì".',
+      functionEn: 'The pattern 這麼說 presents a statement as a natural consequence of the previous statement.',
       examples: [
-        { traditional: '這麼說，台灣應該有很多原住民才對。可是為什麼我的朋友當中一個原住民都沒有？', simplified: '这么说，台湾应该有很多原住民才对。可是为什么我的朋友当中一个原住民都没有？', english: "In that case, Taiwan should have a lot of Aborigines. But why don't I have a single Aboriginal friend?", vietnamese: 'Vậy thì Đài Loan phải có nhiều thổ dân mới đúng. Nhưng sao trong số bạn bè mình không có ai là thổ dân cả?' },
-        { traditional: '這麼說，你明天不能來上課了？', simplified: '这么说，你明天不能来上课了？', english: "So you're saying you can't come to class tomorrow?", vietnamese: 'Vậy thì mai cậu không đến lớp được đúng không?' },
-        { traditional: '這麼說，這件事跟他沒有關係。', simplified: '这么说，这件事跟他没有关系。', english: "In that case, this has nothing to do with him.", vietnamese: 'Vậy thì việc này không liên quan đến anh ấy.' },
-        { traditional: '這麼說，當初建這座城是為了貿易，不是為了打仗。', simplified: '这么说，当初建这座城是为了贸易，不是为了打仗。', english: "In that case, this fort was originally built for trade, not for war.", vietnamese: 'Vậy thì ban đầu xây thành này là vì thương mại, không phải để đánh trận.' },
-        { traditional: '這麼說，你已經決定要搬到鄉下去了。', simplified: '这么说，你已经决定要搬到乡下去了。', english: "So you've already decided to move to the countryside.", vietnamese: 'Vậy thì cậu đã quyết định dọn về nông thôn rồi.' }
+        { traditional: 'A：現在上網購物越來越普遍，這幾年大家的購物習慣真的改變了很多。\nB：這麼說，將來我就不能開服裝店了，是不是？', simplified: 'A：现在上网购物越来越普遍，这几年大家的购物习惯真的改变了很多。\nB：这么说，将来我就不能开服装店了，是不是？', english: 'A: It is becoming increasingly common to shop online. In recent years, everyone\'s shopping habits have really changed a lot.\nB: That being the case, I won\'t be able to open a clothing store in the future, right?', vietnamese: 'A: Giờ mua sắm trên mạng ngày càng phổ biến, mấy năm nay thói quen mua sắm của mọi người thay đổi rất nhiều.\nB: Nói vậy thì sau này mình không mở tiệm quần áo được nữa, đúng không?' },
+        { traditional: 'A：醫生看了片子，說小王是骨折。\nB：這麼說，他得住院開刀嘍。', simplified: 'A：医生看了片子，说小王是骨折。\nB：这么说，他得住院开刀喽。', english: 'A: After looking at the X-ray, the doctor told Xiao Wang that he had a broken bone.\nB: In that case, he\'ll have to be hospitalized and undergo surgery.', vietnamese: 'A: Bác sĩ xem phim chụp, nói Tiểu Vương bị gãy xương.\nB: Vậy thì anh ấy phải nhập viện mổ rồi.' },
+        { traditional: 'A：我叔叔打算用穩定的價格跟當地小農購買芒果，做成芒果蛋糕來賣。\nB：這麼說，那些小農就不需要擔心芒果賣不出去了。', simplified: 'A：我叔叔打算用稳定的价格跟当地小农购买芒果，做成芒果蛋糕来卖。\nB：这么说，那些小农就不需要担心芒果卖不出去了。', english: 'A: My uncle plans to buy mangoes at stable prices from small farmers in the area, and use them to make mango cakes which he will then sell.\nB: That being the case, those small farmers won\'t have to worry that they can\'t sell their mangoes.', vietnamese: 'A: Chú mình định mua xoài của nông dân nhỏ địa phương với giá ổn định để làm bánh xoài bán.\nB: Vậy thì những nông dân đó không cần lo xoài bán không được nữa.' },
+        { traditional: 'A：小陳從九月起，要到美國念EMBA研究所。\nB：這麼說，他將來想成為企業家嘍。', simplified: 'A：小陈从九月起，要到美国念EMBA研究所。\nB：这么说，他将来想成为企业家喽。', english: 'A: Xiao Chen is going to the US where he\'ll study in an EMBA graduate school program starting in September.\nB: That being the case, I assume he wants to become an entrepreneur.', vietnamese: 'A: Từ tháng 9, Tiểu Trần sẽ sang Mỹ học thạc sĩ EMBA.\nB: Vậy thì sau này anh ấy muốn trở thành doanh nhân rồi.' },
+        { traditional: 'A：我父母說大學念什麼系不重要，最重要的是要有興趣。\nB：這麼說，你念服裝設計系，你父母應該不會反對。', simplified: 'A：我父母说大学念什么系不重要，最重要的是要有兴趣。\nB：这么说，你念服装设计系，你父母应该不会反对。', english: 'A: My parents say that it doesn\'t matter what major you study in. What matters most is that you find it interesting.\nB: In that case, your parents shouldn\'t oppose you studying fashion design.', vietnamese: 'A: Bố mẹ mình nói học khoa nào ở đại học không quan trọng, quan trọng nhất là phải có hứng thú.\nB: Vậy thì cậu học khoa thiết kế thời trang, bố mẹ cậu chắc sẽ không phản đối.' }
       ],
-      usageNotesVi: '"這麼說" dùng để diễn giải lại/suy luận từ lời người khác, không phải để mở đầu một chủ đề mới. Có thể theo sau bằng câu khẳng định hoặc câu hỏi xác nhận (…對不對？/…是不是？).',
+      usageNotesVi: '"這麼說" dùng trong hội thoại: người B dựa vào lời của người A để suy ra một kết luận (thường kết thúc bằng 嘍 / 是不是 / 對不對). Kết luận phải là hệ quả tự nhiên của câu trước.',
       exercises: [
-        { id: 'L11-G3-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我昨天熬夜把報告寫完了。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['這麼說，你現在應該很累吧'] }], targetPattern: 'L11-G3' },
-        { id: 'L11-G3-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這家店的老闆換人了。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['這麼說，味道可能也會不一樣了'] }], targetPattern: 'L11-G3' },
-        { id: 'L11-G3-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：他已經把房子賣了。', textWithBlanks: 'B：___？', blanks: [{ index: 0, acceptedAnswers: ['這麼說，他真的要搬去國外了'] }], targetPattern: 'L11-G3' },
-        { id: 'L11-G3-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這座城最早是為了保護港口才建的。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['這麼說，它跟貿易也有關係'] }], targetPattern: 'L11-G3' },
-        { id: 'L11-G3-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這次考試比上次簡單一點。', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['這麼說，我應該有機會考好一點'] }], targetPattern: 'L11-G3' }
+        { id: 'L11-G3-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：小張的姐姐上個月去法國學烹飪了。', textWithBlanks: 'B：這麼說，___。', blanks: [{ index: 0, acceptedAnswers: ['她將來想當廚師嘍', '她以後想開餐廳嘍', '她將來可能想當廚師'] }], targetPattern: 'L11-G3' },
+        { id: 'L11-G3-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：我覺得他說話很誇張。他說的話，都要打個折扣。', textWithBlanks: 'B：這麼說，___。', blanks: [{ index: 0, acceptedAnswers: ['他說的話不能全信', '他說的話不太可靠', '我們不能全相信他說的話'] }], targetPattern: 'L11-G3' },
+        { id: 'L11-G3-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：大明說小王不但愛抱怨，還喜歡亂罵人。', textWithBlanks: 'B：這麼說，___，對不對？', blanks: [{ index: 0, acceptedAnswers: ['小王的人緣一定不好', '小王應該沒什麼朋友', '小王不太受歡迎'] }], targetPattern: 'L11-G3' },
+        { id: 'L11-G3-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：小美說一個人生活很自由，想做什麼就做什麼。', textWithBlanks: 'B：這麼說，___。', blanks: [{ index: 0, acceptedAnswers: ['她應該不想結婚', '她不太想結婚嘍', '她大概不想跟別人住在一起'] }], targetPattern: 'L11-G3' },
+        { id: 'L11-G3-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '先生：下個月起，我的薪水會增加5,000塊。', textWithBlanks: '太太：這麼說，___。', blanks: [{ index: 0, acceptedAnswers: ['我們可以存更多錢了', '我們可以搬到大一點的房子了', '我們可以多存一點錢了'] }], targetPattern: 'L11-G3' }
       ]
     },
     {
       id: 'L11-G4', lessonId: 'L11', order: 4, pattern: '跟B有關的A',
-      functionVi: '"跟 B 有關的 A" nghĩa là "A có liên quan đến B", dùng B làm mệnh đề/danh từ bổ nghĩa để giới hạn phạm vi của A (danh từ chính). Tương đương cấu trúc định ngữ "liên quan đến B" đứng trước danh từ A.',
-      functionEn: '"跟 B 有關的 A" means "A that is related to B," using B as a modifying clause/noun to narrow the scope of A (the head noun). It corresponds to a relative clause "related to B" placed before noun A.',
+      functionVi: 'Trong mẫu này, giới từ "跟" đưa vào một mục B có liên quan đến A. A là chủ đề chính của cụm. Dịch: "A có liên quan đến B".',
+      functionEn: 'In this pattern, the preposition 跟 introduces an item (B) that is related to A. A in this pattern is the main topic.',
       examples: [
-        { traditional: '謝謝妳告訴我這麼多跟台灣有關的故事。', simplified: '谢谢你告诉我这么多跟台湾有关的故事。', english: 'Thanks for telling me so many stories related to Taiwan.', vietnamese: 'Cảm ơn cậu đã kể cho mình nghe nhiều câu chuyện liên quan đến Đài Loan như vậy.' },
-        { traditional: '圖書館裡有不少跟台灣歷史有關的書。', simplified: '图书馆里有不少跟台湾历史有关的书。', english: 'There are quite a few books related to Taiwanese history in the library.', vietnamese: 'Trong thư viện có khá nhiều sách liên quan đến lịch sử Đài Loan.' },
-        { traditional: '這次展覽展出了很多跟原住民文化有關的東西。', simplified: '这次展览展出了很多跟原住民文化有关的东西。', english: "This exhibition shows a lot of things related to Aboriginal culture.", vietnamese: 'Triển lãm lần này trưng bày nhiều thứ liên quan đến văn hóa thổ dân.' },
-        { traditional: '他寫了一篇跟客家飲食有關的文章。', simplified: '他写了一篇跟客家饮食有关的文章。', english: 'He wrote an article related to Hakka cuisine.', vietnamese: 'Anh ấy viết một bài liên quan đến ẩm thực Khách Gia.' },
-        { traditional: '這門課討論的都是跟殖民歷史有關的問題。', simplified: '这门课讨论的都是跟殖民历史有关的问题。', english: "This course discusses issues related to colonial history.", vietnamese: 'Môn học này thảo luận toàn những vấn đề liên quan đến lịch sử thuộc địa.' }
+        { traditional: '上網買東西雖然方便，但是最近電視上有不少跟網購糾紛有關的新聞。你還是小心一點。', simplified: '上网买东西虽然方便，但是最近电视上有不少跟网购纠纷有关的新闻。你还是小心一点。', english: 'Going online to buy things is convenient, but there have been a lot of TV news about disputes related to online shopping lately. You still need to be careful.', vietnamese: 'Mua đồ trên mạng tuy tiện, nhưng gần đây trên TV có khá nhiều tin tức liên quan đến tranh chấp mua sắm online. Cậu vẫn nên cẩn thận.' },
+        { traditional: '我剛剛放在你桌上的是跟演講比賽有關的資料，請你收好。', simplified: '我刚刚放在你桌上的是跟演讲比赛有关的资料，请你收好。', english: 'What I just put on your desk is some information about the speech contest. Please put it somewhere where you won\'t lose it.', vietnamese: 'Thứ mình vừa để trên bàn cậu là tài liệu liên quan đến cuộc thi hùng biện, cậu cất cho cẩn thận nhé.' },
+        { traditional: '他大學念的是歷史，而且輔系是經濟，所以跟臺灣經濟發展有關的歷史，你應該去請教他。', simplified: '他大学念的是历史，而且辅系是经济，所以跟台湾经济发展有关的历史，你应该去请教他。', english: 'He studied history in university and minored in economics, so any history questions related to Taiwan\'s economic development, you should direct to him.', vietnamese: 'Anh ấy học ngành lịch sử ở đại học, lại học phụ ngành kinh tế, nên những vấn đề lịch sử liên quan đến phát triển kinh tế Đài Loan, cậu nên hỏi anh ấy.' },
+        { traditional: '想要了解跟原住民有關的風俗文化，你最好去一趟花蓮。', simplified: '想要了解跟原住民有关的风俗文化，你最好去一趟花莲。', english: 'If you want to better understand the customs and culture of aborigines, your best bet is to take a trip to Hualian.', vietnamese: 'Muốn tìm hiểu phong tục văn hóa liên quan đến thổ dân, tốt nhất cậu nên đi Hoa Liên một chuyến.' },
+        { traditional: '我建議跟這一次校外教學有關的活動，都讓小王一個人安排。', simplified: '我建议跟这一次校外教学有关的活动，都让小王一个人安排。', english: 'I suggest that we let Xiao Wang make all arrangements for activities related to the class excursion by himself.', vietnamese: 'Mình đề nghị các hoạt động liên quan đến chuyến học ngoại khóa lần này đều để Tiểu Vương một mình sắp xếp.' }
       ],
-      usageNotesVi: '"跟 B 有關的 A" = "A liên quan đến B" nhưng A đứng sau cùng (là trọng tâm câu). Có thể thay "跟" bằng "和/與" trong văn viết trang trọng hơn.',
+      usageNotesVi: 'Cấu trúc: 跟 + B + 有關的 + A. B là điều có liên quan, A là danh từ chính (chủ đề chính) được bổ nghĩa. Ví dụ: 跟原住民有關的風俗文化.',
       exercises: [
-        { id: 'L11-G4-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你最近在看什麼書？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['我在看一本跟台灣歷史有關的書'] }], targetPattern: 'L11-G4' },
-        { id: 'L11-G4-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個網站是做什麼的？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['是放跟美食有關的文章的網站'] }], targetPattern: 'L11-G4' },
-        { id: 'L11-G4-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這個課程主要教什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['主要教跟中文語法有關的知識'] }], targetPattern: 'L11-G4' },
-        { id: 'L11-G4-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你報告的題目是什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['是一個跟紅毛城有關的題目'] }], targetPattern: 'L11-G4' },
-        { id: 'L11-G4-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這部紀錄片在講什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['在講跟原住民文化有關的故事'] }], targetPattern: 'L11-G4' }
+        { id: 'L11-G4-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「跟B有關的A」完成句子。B：環境汙染', textWithBlanks: '他昨天跟我談了很多___，真是可怕。', blanks: [{ index: 0, acceptedAnswers: ['跟環境汙染有關的事情', '跟環境汙染有關的問題', '跟環境汙染有關的新聞'] }], targetPattern: 'L11-G4' },
+        { id: 'L11-G4-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「跟B有關的A」完成句子。B：中秋節', textWithBlanks: '___很多，也很有趣，你想不想聽？', blanks: [{ index: 0, acceptedAnswers: ['跟中秋節有關的故事', '跟中秋節有關的傳說', '跟中秋節有關的習俗'] }], targetPattern: 'L11-G4' },
+        { id: 'L11-G4-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「跟B有關的A」完成句子。B：做麵包、蛋糕', textWithBlanks: '小王的夢想是當一位烘焙師傅，所以決定到日本學習___。', blanks: [{ index: 0, acceptedAnswers: ['跟做麵包、蛋糕有關的技術', '跟做麵包、蛋糕有關的知識', '跟做麵包、蛋糕有關的東西'] }], targetPattern: 'L11-G4' },
+        { id: 'L11-G4-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「跟B有關的A」完成句子。B：醫美', textWithBlanks: '整型可以增加自信，還可以改善人際關係，因此醫美成為很大的商機，越來越多人從事___。', blanks: [{ index: 0, acceptedAnswers: ['跟醫美有關的工作', '跟醫美有關的行業', '跟醫美有關的生意'] }], targetPattern: 'L11-G4' },
+        { id: 'L11-G4-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「跟B有關的A」完成句子。B：國共內戰', textWithBlanks: '他拍的這部(M, for movies)___，許多人看了都很感動。', blanks: [{ index: 0, acceptedAnswers: ['跟國共內戰有關的電影', '跟國共內戰有關的片子'] }], targetPattern: 'L11-G4' }
       ]
     },
     {
       id: 'L11-G5', lessonId: 'L11', order: 5, pattern: '不得不',
-      functionVi: '"不得不" nghĩa là "không thể không, buộc phải, bất đắc dĩ phải" — diễn tả việc làm gì đó dù không muốn nhưng vì hoàn cảnh bắt buộc. Đứng trước động từ.',
-      functionEn: '"不得不" means "cannot help but, has no choice but to" — expressing that someone does something against their wishes because circumstances force them to. It is placed before the verb.',
+      functionVi: '"不得不" dùng khi ai đó miễn cưỡng làm một việc gì đó như là biện pháp cuối cùng, không còn lựa chọn nào khác. Dịch: "buộc phải", "đành phải", "bất đắc dĩ phải".',
+      functionEn: 'The pattern 不得不 is used when one is engaged in doing something reluctantly, as a last resort. There are no other options.',
       examples: [
-        { traditional: '那時候有人為了生活，不得不擺攤子賣家鄉的美味。', simplified: '那时候有人为了生活，不得不摆摊子卖家乡的美味。', english: 'At that time some people, in order to survive, had no choice but to set up stalls selling food from their hometowns.', vietnamese: 'Lúc đó có người vì mưu sinh, bất đắc dĩ phải dựng sạp bán món ngon quê nhà.' },
-        { traditional: '因為下大雨，我們不得不改在室內舉行活動。', simplified: '因为下大雨，我们不得不改在室内举行活动。', english: 'Because it was raining heavily, we had no choice but to move the event indoors.', vietnamese: 'Vì mưa to, chúng tôi buộc phải chuyển hoạt động vào trong nhà.' },
-        { traditional: '公司業績不好，他不得不把店收起來。', simplified: '公司业绩不好，他不得不把店收起来。', english: "The business wasn't doing well, so he had no choice but to close the shop.", vietnamese: 'Việc kinh doanh không tốt, anh ấy buộc phải đóng tiệm.' },
-        { traditional: '清朝政府禁止漢人帶家人來，他們不得不娶原住民。', simplified: '清朝政府禁止汉人带家人来，他们不得不娶原住民。', english: "The Qing government forbade Han people from bringing their families, so they had no choice but to marry Aborigines.", vietnamese: 'Chính quyền nhà Thanh cấm người Hán mang gia quyến theo, họ buộc phải cưới thổ dân.' },
-        { traditional: '敵人太強，軍隊不得不撤退。', simplified: '敌人太强，军队不得不撤退。', english: 'The enemy was too strong, so the troops had no choice but to retreat.', vietnamese: 'Kẻ địch quá mạnh, quân đội buộc phải rút lui.' }
+        { traditional: '我不喜歡吃魚，但是為了讓傷口恢復得比較快，不得不喝點魚湯。', simplified: '我不喜欢吃鱼，但是为了让伤口恢复得比较快，不得不喝点鱼汤。', english: "I don't like fish, but if I want to heal my wound quicker I have no choice but to drink some fish soup.", vietnamese: 'Mình không thích ăn cá, nhưng để vết thương mau lành hơn, đành phải uống chút canh cá.' },
+        { traditional: '因為小明去參加畢業旅行，媽媽不得不幫他照顧寵物。', simplified: '因为小明去参加毕业旅行，妈妈不得不帮他照顾宠物。', english: 'Because Xiaoming went on a graduation trip, his mom has no choice but to take care of his pet for him.', vietnamese: 'Vì Tiểu Minh đi du lịch tốt nghiệp, mẹ cậu ấy đành phải chăm thú cưng giúp.' },
+        { traditional: '現代人的飲食習慣改變了，很多傳統小吃店不得不改賣年輕人喜歡的食物。', simplified: '现代人的饮食习惯改变了，很多传统小吃店不得不改卖年轻人喜欢的食物。', english: 'The dietary habits of people today have changed. Many traditional eateries have had to change and sell foods that young people like.', vietnamese: 'Thói quen ăn uống của người hiện đại đã thay đổi, nhiều quán ăn vặt truyền thống buộc phải chuyển sang bán món giới trẻ thích.' },
+        { traditional: '他的腿受傷了，不得不放棄這場(M, for games)比賽。', simplified: '他的腿受伤了，不得不放弃这场(M, for games)比赛。', english: 'He has an injured leg, so he has no choice but to sit out this match.', vietnamese: 'Chân anh ấy bị thương, buộc phải bỏ cuộc thi đấu này.' },
+        { traditional: '陳如美的父親生病住院，所以她不得不休學去工作，改善家裡的生活。', simplified: '陈如美的父亲生病住院，所以她不得不休学去工作，改善家里的生活。', english: "Chen Rumei's father is sick and staying in the hospital, so she had no choice but to take a break from school and go to work to help improve her family's life.", vietnamese: 'Cha của Trần Như Mỹ bệnh phải nhập viện, nên cô buộc phải nghỉ học đi làm để cải thiện cuộc sống gia đình.' }
       ],
-      usageNotesVi: '"不得不" nhấn mạnh tính bị bắt buộc/không có lựa chọn khác, hàm ý tiêu cực hoặc bất đắc dĩ, khác với "必須" (chỉ nói nghĩa vụ trung lập) hay "應該" (nên làm).',
+      usageNotesVi: '"不得不" đặt trước động từ, diễn tả việc làm trái ý muốn vì hoàn cảnh bắt buộc, không còn lựa chọn khác.',
       exercises: [
-        { id: 'L11-G5-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你為什麼突然換工作？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['公司關了，我不得不換工作'] }], targetPattern: 'L11-G5' },
-        { id: 'L11-G5-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你為什麼提早離開會議？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['孩子生病了，我不得不先走'] }], targetPattern: 'L11-G5' },
-        { id: 'L11-G5-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：為什麼那麼多人離開家鄉？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['因為戰爭不斷，他們不得不離開家鄉'] }], targetPattern: 'L11-G5' },
-        { id: 'L11-G5-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：你怎麼會學會修理東西？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['沒有人可以幫忙，我不得不自己學'] }], targetPattern: 'L11-G5' },
-        { id: 'L11-G5-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這座城最後為什麼燒了？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['西班牙人打輸了，不得不把城燒了才離開'] }], targetPattern: 'L11-G5' }
+        { id: 'L11-G5-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「不得不」表示不得已的情況，完成句子。', textWithBlanks: '台灣因為平原小，人口多，因此___。', blanks: [{ index: 0, acceptedAnswers: ['不得不把房子蓋得很高', '不得不蓋很多高樓', '不得不住在很小的房子裡'] }], targetPattern: 'L11-G5' },
+        { id: 'L11-G5-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「不得不」表示不得已的情況，完成句子。', textWithBlanks: '雖然我不太敢吃辣的，但是這碗酸辣湯是老師做的，我___。', blanks: [{ index: 0, acceptedAnswers: ['不得不把它喝完', '不得不喝一點', '不得不吃一點'] }], targetPattern: 'L11-G5' },
+        { id: 'L11-G5-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「不得不」表示不得已的情況，完成句子。', textWithBlanks: '小王的國家內戰不斷，所以他___。', blanks: [{ index: 0, acceptedAnswers: ['不得不離開家鄉', '不得不離開自己的國家', '不得不搬到國外'] }], targetPattern: 'L11-G5' },
+        { id: 'L11-G5-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「不得不」表示不得已的情況，完成句子。', textWithBlanks: '為了提高職場上的競爭力，他___，充實自己。', blanks: [{ index: 0, acceptedAnswers: ['不得不利用下班時間學習', '不得不晚上去上課', '不得不下班後去進修'] }], targetPattern: 'L11-G5' },
+        { id: 'L11-G5-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「不得不」表示不得已的情況，完成句子。', textWithBlanks: '她的錢包掉了，又沒帶車票，___。', blanks: [{ index: 0, acceptedAnswers: ['不得不走路回家', '不得不走回家', '不得不向朋友借錢'] }], targetPattern: 'L11-G5' }
       ]
     },
     {
       id: 'L11-G6', lessonId: 'L11', order: 6, pattern: '以及',
-      functionVi: '"以及" nghĩa là "và, cùng với", dùng để nối thêm một thành phần (thường là thành phần cuối, có thể ít quan trọng hơn hoặc bổ sung) vào danh sách danh từ/cụm từ đã có. Dùng trong văn viết trang trọng hơn "和/跟".',
-      functionEn: '"以及" means "as well as, and," used to add one more item (usually the last, sometimes a supplementary one) to an existing list of nouns/phrases. It is more formal than "和/跟" and typically used in writing.',
+      functionVi: '"以及" là liên từ mang tính văn viết, dùng để nối danh từ hoặc câu. Dịch: "cùng với", "và".',
+      functionEn: '以及 is a literary conjunction, which connects nouns or sentences.',
       examples: [
-        { traditional: '節儉的客家主婦做出各種各樣的菜，以及好吃的點心。', simplified: '节俭的客家主妇做出各种各样的菜，以及好吃的点心。', english: 'The thrifty Hakka housewives made all kinds of dishes, as well as delicious snacks.', vietnamese: 'Các bà nội trợ Khách Gia tiết kiệm làm ra đủ loại món ăn, cùng với các món điểm tâm ngon miệng.' },
-        { traditional: '這次報告會介紹紅毛城的歷史、建築特色，以及它現在的用途。', simplified: '这次报告会介绍红毛城的历史、建筑特色，以及它现在的用途。', english: "This presentation will introduce the history and architectural features of Fort Santo Domingo, as well as its current uses.", vietnamese: 'Bài thuyết trình lần này sẽ giới thiệu lịch sử, đặc điểm kiến trúc của Hồng Mao Thành, cùng với công năng hiện nay của nó.' },
-        { traditional: '參加這個活動需要帶身分證、相機，以及足夠的水。', simplified: '参加这个活动需要带身份证、相机，以及足够的水。', english: 'To join this activity you need to bring an ID card, a camera, as well as enough water.', vietnamese: 'Tham gia hoạt động này cần mang theo chứng minh thư, máy ảnh, cùng với nước uống đủ dùng.' },
-        { traditional: '這本書討論了荷蘭、西班牙，以及明朝在台灣的歷史。', simplified: '这本书讨论了荷兰、西班牙，以及明朝在台湾的历史。', english: 'This book discusses the history of the Dutch, the Spanish, as well as the Ming dynasty in Taiwan.', vietnamese: 'Cuốn sách này thảo luận lịch sử của Hà Lan, Tây Ban Nha, cùng với nhà Minh ở Đài Loan.' },
-        { traditional: '老師講了語法規則、例句，以及常見的錯誤。', simplified: '老师讲了语法规则、例句，以及常见的错误。', english: 'The teacher explained the grammar rules, example sentences, as well as common mistakes.', vietnamese: 'Thầy giáo giảng quy tắc ngữ pháp, câu ví dụ, cùng với những lỗi thường gặp.' }
+        { traditional: '我表哥念高中的時候，最喜歡的課有英文、歷史以及藝術。', simplified: '我表哥念高中的时候，最喜欢的课有英文、历史以及艺术。', english: "My cousin's favorite courses in high school were English, history, and art.", vietnamese: 'Hồi anh họ mình học cấp ba, những môn anh thích nhất có tiếng Anh, lịch sử và nghệ thuật.' },
+        { traditional: '台北、台中以及高雄都是人口兩百萬以上的大城市。', simplified: '台北、台中以及高雄都是人口两百万以上的大城市。', english: 'Taipei, Taichung and Kaohsiung are all cities with a population of more than 2 million people.', vietnamese: 'Đài Bắc, Đài Trung và Cao Hùng đều là những thành phố lớn có dân số trên hai triệu người.' },
+        { traditional: '這個城市的交通很亂，怎麼改善交通問題以及減少車禍的發生，是這個城市的人民最關心的事情。', simplified: '这个城市的交通很乱，怎么改善交通问题以及减少车祸的发生，是这个城市的人民最关心的事情。', english: 'The traffic in this city is chaotic. The people of this city are most concerned with how to improve the traffic situation and reduce the number of accidents.', vietnamese: 'Giao thông thành phố này rất lộn xộn, làm thế nào để cải thiện vấn đề giao thông và giảm tai nạn xe là điều người dân thành phố quan tâm nhất.' },
+        { traditional: '這次颱風，台灣東部以及南部都會受到影響。', simplified: '这次台风，台湾东部以及南部都会受到影响。', english: 'The eastern and southern parts of Taiwan will both be affected by this typhoon.', vietnamese: 'Cơn bão lần này, miền đông và miền nam Đài Loan đều sẽ bị ảnh hưởng.' },
+        { traditional: '明天要去旅行，請你把外套、鞋子以及日用品放在背包裡。', simplified: '明天要去旅行，请你把外套、鞋子以及日用品放在背包里。', english: "We're going on a trip tomorrow. Please put your coat, shoes, and daily necessities in your backpack.", vietnamese: 'Ngày mai đi du lịch, cậu hãy để áo khoác, giày và đồ dùng hằng ngày vào ba lô nhé.' }
       ],
-      usageNotesVi: '"以及" thường dùng để nối danh từ/cụm danh từ trong liệt kê có 3 phần tử trở lên, phần tử cuối trước "以及" không cần đảo vị trí. Không dùng để nối 2 mệnh đề độc lập (khác "而且").',
+      usageNotesVi: 'Liên từ trong tiếng Trung có 3 loại: nối danh từ, nối câu, và nối được cả hai. "以及" thuộc loại thứ ba. Loại 1 (chỉ nối danh từ): 和、跟 — 那家商店賣青菜、水果和一些日用品。/ 他剛去超市買了牛肉、魚跟麵包。 Loại 2 (nối câu): 不過、但是 — 這裡白天的溫度很高，不過剛剛下過雨，我覺得涼快多了。/ 她想去國外旅行，但是想到一個人旅行有點麻煩，就下不了決心。 Loại 3 (nối danh từ và câu): 以及 — 去國外念書，當地的生活費以及學費，是學生最關心的事。/ 你要不要跟王先生見面，以及見面以後，要談什麼，你最好想清楚。',
       exercises: [
-        { id: 'L11-G6-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：報告裡要寫哪些東西？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['要寫歷史背景、重要人物，以及現在的影響'] }], targetPattern: 'L11-G6' },
-        { id: 'L11-G6-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這家店賣些什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['賣燒餅油條、豆漿，以及各種小吃'] }], targetPattern: 'L11-G6' },
-        { id: 'L11-G6-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這門課的考試範圍是什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['課本前六課的語法、生詞，以及課文'] }], targetPattern: 'L11-G6' },
-        { id: 'L11-G6-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這次旅行要準備什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['護照、機票，以及足夠的現金'] }], targetPattern: 'L11-G6' },
-        { id: 'L11-G6-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: 'A：這篇文章主要談了什麼？', textWithBlanks: 'B：___。', blanks: [{ index: 0, acceptedAnswers: ['談了殖民歷史、原住民的處境，以及文化融合的過程'] }], targetPattern: 'L11-G6' }
+        { id: 'L11-G6-EX1', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「以及」連接名詞或句子，完成句子。', textWithBlanks: '房租貴不貴，離捷運站近不近，___，都是我租房子的時候必須考慮的。', blanks: [{ index: 0, acceptedAnswers: ['以及附近生活方便不方便', '以及周圍環境好不好', '以及房東好不好相處'] }], targetPattern: 'L11-G6' },
+        { id: 'L11-G6-EX2', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「以及」連接名詞或句子，完成句子。', textWithBlanks: '羅珊蒂說她回國以後，一定忘不了臺灣的美食___。', blanks: [{ index: 0, acceptedAnswers: ['以及夜市熱鬧的氣氛', '以及台灣人的熱情', '以及台灣人友善的態度'] }], targetPattern: 'L11-G6' },
+        { id: 'L11-G6-EX3', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「以及」連接名詞或句子，完成句子。', textWithBlanks: '吳寶春是怎麼努力學習，怎麼努力工作，___，大家是清楚的。', blanks: [{ index: 0, acceptedAnswers: ['以及怎麼得到世界冠軍的', '以及他是怎麼成功的', '以及怎麼成為麵包師傅的'] }], targetPattern: 'L11-G6' },
+        { id: 'L11-G6-EX4', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「以及」連接名詞或句子，完成句子。', textWithBlanks: '小王把這件事情的經過情形，___，都清清楚楚地跟老闆報告了。', blanks: [{ index: 0, acceptedAnswers: ['以及造成的損失', '以及造成的影響', '以及解決的辦法'] }], targetPattern: 'L11-G6' },
+        { id: 'L11-G6-EX5', lessonId: 'L11', section: 'textbook-practice', type: 'fill-blank', prompt: '請用「以及」連接名詞或句子，完成句子。', textWithBlanks: '新郎、新娘敬酒的時候，包括「百年好合」、「新婚快樂」，___，都是客人常用來祝福新人的話。', blanks: [{ index: 0, acceptedAnswers: ['以及「早生貴子」', '以及「永浴愛河」'] }], targetPattern: 'L11-G6' }
       ]
     }
   ],
@@ -260,121 +261,121 @@ export const lesson11: Lesson = {
       ]
     },
 
-    { id: 'L11-WB-fw-1', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '這家店老闆為人很( jiéjiǎn )，從來不浪費食材。', textWithBlanks: '這家店老闆為人很___，從來不浪費食材。', blanks: [{ index: 0, acceptedAnswers: ['節儉'] }] },
-    { id: 'L11-WB-fw-2', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '這場晚會的表演真( jīngcǎi )，大家都看得非常開心。', textWithBlanks: '這場晚會的表演真___，大家都看得非常開心。', blanks: [{ index: 0, acceptedAnswers: ['精彩'] }] },
-    { id: 'L11-WB-fw-3', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '這個星期終於( lúndào )我負責打掃教室了。', textWithBlanks: '這個星期終於___我負責打掃教室了。', blanks: [{ index: 0, acceptedAnswers: ['輪到'] }] },
-    { id: 'L11-WB-fw-4', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '市場裡賣著( gèzhǒnggèyàng )的新鮮蔬果。', textWithBlanks: '市場裡賣著___的新鮮蔬果。', blanks: [{ index: 0, acceptedAnswers: ['各種各樣'] }] },
-    { id: 'L11-WB-fw-5', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '這個小鎮最早是靠( shāngyè )活動發展起來的。', textWithBlanks: '這個小鎮最早是靠___活動發展起來的。', blanks: [{ index: 0, acceptedAnswers: ['商業'] }] },
-    { id: 'L11-WB-fw-6', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '天氣不好的時候，很多攤販沒辦法( bǎi tānzi )做生意。', textWithBlanks: '天氣不好的時候，很多攤販沒辦法___做生意。', blanks: [{ index: 0, acceptedAnswers: ['擺攤子'] }] },
-    { id: 'L11-WB-fw-7', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '這件事我不太清楚，不過我( xiāngxìn )他說的是真的。', textWithBlanks: '這件事我不太清楚，不過我___他說的是真的。', blanks: [{ index: 0, acceptedAnswers: ['相信'] }] },
-    { id: 'L11-WB-fw-8', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '這些蘿蔔要先( shàigān )才能保存比較久。', textWithBlanks: '這些蘿蔔要先___才能保存比較久。', blanks: [{ index: 0, acceptedAnswers: ['曬乾'] }] },
-    { id: 'L11-WB-fw-9', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '她每天都花很多時間照顧自己的( tóufǎ )。', textWithBlanks: '她每天都花很多時間照顧自己的___。', blanks: [{ index: 0, acceptedAnswers: ['頭髮'] }] },
-    { id: 'L11-WB-fw-10', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '這個問題( bùduàn )出現，大家都覺得很困擾。', textWithBlanks: '這個問題___出現，大家都覺得很困擾。', blanks: [{ index: 0, acceptedAnswers: ['不斷'] }] },
+    { id: 'L11-WB-fw-1', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '他非常( jiéjiǎn )，連衣服破了，都還繼續穿。', textWithBlanks: '他非常___，連衣服破了，都還繼續穿。', blanks: [{ index: 0, acceptedAnswers: ['節儉'] }] },
+    { id: 'L11-WB-fw-2', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '星期天我去聽了一個演講。那位教授講得非常( jīngcǎi )，大家聽得都不想回家了。', textWithBlanks: '星期天我去聽了一個演講。那位教授講得非常___，大家聽得都不想回家了。', blanks: [{ index: 0, acceptedAnswers: ['精彩'] }] },
+    { id: 'L11-WB-fw-3', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '我今天恐怕不能跟你去玩。今天( lúndào )我打掃，如果我不回家打掃，我的室友一定會生氣。', textWithBlanks: '我今天恐怕不能跟你去玩。今天___我打掃，如果我不回家打掃，我的室友一定會生氣。', blanks: [{ index: 0, acceptedAnswers: ['輪到'] }] },
+    { id: 'L11-WB-fw-4', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '我最喜歡去夜市吃小吃，( gèzhǒng gèyàng )的小吃，那裡都有。', textWithBlanks: '我最喜歡去夜市吃小吃，___的小吃，那裡都有。', blanks: [{ index: 0, acceptedAnswers: ['各種各樣'] }] },
+    { id: 'L11-WB-fw-5', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '他父母希望他念跟( shāngyè )有關的科系，可是他一點興趣都沒有。', textWithBlanks: '他父母希望他念跟___有關的科系，可是他一點興趣都沒有。', blanks: [{ index: 0, acceptedAnswers: ['商業'] }] },
+    { id: 'L11-WB-fw-6', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '大學的時候，他跟朋友一起去夜市( bǎi tānzi )賣東西。雖然很辛苦，但是也是一個特別的經驗。', textWithBlanks: '大學的時候，他跟朋友一起去夜市___賣東西。雖然很辛苦，但是也是一個特別的經驗。', blanks: [{ index: 0, acceptedAnswers: ['擺攤子'] }] },
+    { id: 'L11-WB-fw-7', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '很多人不( xiāngxìn )網路上的賣家，怕會被騙。', textWithBlanks: '很多人不___網路上的賣家，怕會被騙。', blanks: [{ index: 0, acceptedAnswers: ['相信'] }] },
+    { id: 'L11-WB-fw-8', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '今天太陽很大，一個早上衣服就能( shàigān )。', textWithBlanks: '今天太陽很大，一個早上衣服就能___。', blanks: [{ index: 0, acceptedAnswers: ['曬乾'] }] },
+    { id: 'L11-WB-fw-9', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '不知道是怎麼回事？最近一直掉( tóufǎ )。', textWithBlanks: '不知道是怎麼回事？最近一直掉___。', blanks: [{ index: 0, acceptedAnswers: ['頭髮'] }] },
+    { id: 'L11-WB-fw-10', lessonId: 'L11', section: 'fill-write', type: 'fill-blank', prompt: '今年因為颱風( bùduàn )，整個夏天蔬菜、水果的價格都很高。', textWithBlanks: '今年因為颱風___，整個夏天蔬菜、水果的價格都很高。', blanks: [{ index: 0, acceptedAnswers: ['不斷'] }] },
 
     {
       id: 'L11-WB-fb-1', lessonId: 'L11', section: 'fill-bank', type: 'fill-blank',
       prompt: '請從詞庫中選出合適的詞填入短文。（利益、燒、禁止、貿易、軍隊、打敗、世紀、重建、建、統治）',
       wordBank: ['利益', '燒', '禁止', '貿易', '軍隊', '打敗', '世紀', '重建', '建', '統治'],
-      textWithBlanks: '十六1.___，歐洲許多國家開始到亞洲進行2.___活動。十七世紀初，西班牙人在台灣北部3.___了一座城堡。後來荷蘭人為了商業4.___，派5.___打敗了西班牙人。西班牙人離開以前，把城堡6.___了，所以現在看到的城堡其實是荷蘭人7.___的。荷蘭人曾經8.___台灣幾十年，直到鄭成功帶兵9.___他們，才結束了荷蘭人在台灣的統治。清朝政府後來也10.___漢人帶家人一起來台灣開墾。',
+      textWithBlanks: '十七1.___，西班牙人為了從事2.___到東方來。他們在台灣北部3.___了「聖多明哥城」，就是今天的紅毛城。西班牙人到台灣來，只是為了商業4.___，並不是真的想5.___台灣。他們希望能從台灣到日本做生意，可是當時的日本政府6.___中國跟荷蘭以外的國家到日本做生意，所以台灣對西班牙來說越來越不重要。荷蘭看到這個情形，就派7.___到台灣北部，8.___了西班牙。西班牙人離開台灣以前，把「聖多明哥城」9.___了。現在的紅毛城是荷蘭人10.___的。',
       blanks: [
         { index: 1, acceptedAnswers: ['世紀'] },
         { index: 2, acceptedAnswers: ['貿易'] },
         { index: 3, acceptedAnswers: ['建'] },
         { index: 4, acceptedAnswers: ['利益'] },
-        { index: 5, acceptedAnswers: ['軍隊'] },
-        { index: 6, acceptedAnswers: ['燒'] },
-        { index: 7, acceptedAnswers: ['重建'] },
-        { index: 8, acceptedAnswers: ['統治'] },
-        { index: 9, acceptedAnswers: ['打敗'] },
-        { index: 10, acceptedAnswers: ['禁止'] }
+        { index: 5, acceptedAnswers: ['統治'] },
+        { index: 6, acceptedAnswers: ['禁止'] },
+        { index: 7, acceptedAnswers: ['軍隊'] },
+        { index: 8, acceptedAnswers: ['打敗'] },
+        { index: 9, acceptedAnswers: ['燒'] },
+        { index: 10, acceptedAnswers: ['重建'] }
       ]
     },
 
     {
       id: 'L11-WB-read-a1', lessonId: 'L11', section: 'reading', type: 'multiple-choice',
-      prompt: 'A：你知道紅毛城到底是誰建的嗎？網路上的說法好像不太一樣。\nB：我查過資料，其實兩種說法都對，只是建的時間不一樣，一個是西班牙人先建的，一個是荷蘭人後來重建的。',
-      question: '請問對話中「到底」表達了說話者什麼樣的語氣？',
-      options: [{ id: 'a', text: '表示說話者想弄清楚真正的事實' }, { id: 'b', text: '表示說話者已經確定答案' }, { id: 'c', text: '表示說話者想要結束話題' }],
+      prompt: '小美：明天是你報告還是我報告？\n阿德：我也不記得到底輪到誰了。\n小美：不管輪到誰，我們都準備好，明天就一定沒問題了！',
+      question: '根據這個對話，哪一個對？',
+      options: [{ id: 'a', text: '小美跟阿德都不記得明天輪到誰報告了。' }, { id: 'b', text: '小美叫阿德明天讓她先報告。' }, { id: 'c', text: '他們今天不準備，明天看情形再說。' }],
       correctOptionId: 'a',
-      explanationVi: '"到底是誰建的" 表示說話者對事實感到疑惑，想弄清楚真相。'
+      explanationVi: '阿德說 "我也不記得到底輪到誰了", nghĩa là cả hai đều không nhớ ngày mai đến lượt ai thuyết trình.'
     },
     {
       id: 'L11-WB-read-a2', lessonId: 'L11', section: 'reading', type: 'multiple-choice',
-      prompt: 'A：以前很多漢人移民到台灣來開墾。\nB：那原住民呢？\nA：原住民本來住在平原，後來有些搬到山上去了，更多人跟漢人結婚了，現在原住民只占台灣人口的百分之二。',
-      question: '請問根據對話，現在台灣原住民人口大約占多少比例？',
-      options: [{ id: 'a', text: '百分之二' }, { id: 'b', text: '百分之二十' }, { id: 'c', text: '一半' }],
-      correctOptionId: 'a',
-      explanationVi: '"現在原住民只占台灣人口的百分之二".'
+      prompt: '小美：為什麼很多漢人要移民到台灣來？\n阿德：因為那時候他們在當地的生活很困難，就算到台灣來很危險，為了生活他們也不得不來。',
+      question: '根據這個對話，哪一個對？',
+      options: [{ id: 'a', text: '那時候漢人到台灣來很容易。' }, { id: 'b', text: '很多漢人因為在當地沒辦法生活而移民到台灣來。' }, { id: 'c', text: '這些漢人不知道到台灣來很危險，都高高興興地到台灣來。' }],
+      correctOptionId: 'b',
+      explanationVi: 'Người Hán sống ở quê khó khăn, dù sang Đài Loan nguy hiểm vẫn "不得不來" (buộc phải đến) để mưu sinh.'
     },
     {
       id: 'L11-WB-read-a3', lessonId: 'L11', section: 'reading', type: 'multiple-choice',
-      prompt: 'A：你知道為什麼現在網購這麼方便嗎？\nB：因為物流和網路系統越來越發達啊。',
-      question: '這段對話的主題跟本課「紅毛城的故事」最大的不同是什麼？',
-      options: [{ id: 'a', text: '一個談現代科技發展，一個談歷史故事' }, { id: 'b', text: '兩個都在談歷史' }, { id: 'c', text: '兩個都在談網路購物' }],
+      prompt: '小美：這兩年大家的購物習慣改變了很多，上網購物越來越普遍了。\n阿德：是啊，聽說網路上什麼都有，甚至新鮮的蔬菜水果都有。',
+      question: '根據這個對話，哪一個對？',
+      options: [{ id: 'a', text: '就算你要買新鮮的蔬菜水果，網路上也有。' }, { id: 'b', text: '阿德在網路上不是買蔬菜，就是買水果。' }, { id: 'c', text: '網路上什麼都有，就是沒有蔬菜水果。' }],
       correctOptionId: 'a',
-      explanationVi: '網購對話談的是現代科技發展，紅毛城的故事談的是台灣殖民歷史，兩者主題不同。'
+      explanationVi: '"甚至新鮮的蔬菜水果都有" nghĩa là ngay cả rau củ trái cây tươi trên mạng cũng có.'
     },
 
     {
       id: 'L11-WB-read-b1', lessonId: 'L11', section: 'reading', type: 'multiple-choice',
-      prompt: '新加坡自古以來就是一個多元移民社會。十九世紀，英國在新加坡建立殖民地，吸引了華人、馬來人、印度人等不同族群前來工作、定居。二十世紀中，新加坡脫離英國統治，先加入馬來西亞聯邦，後來才獨立建國。現在新加坡的官方語言有英語、華語、馬來語和淡米爾語四種，不同族群長期生活在一起，飲食、節日、信仰都互相影響，形成了獨特的多元文化。',
-      question: '新加坡自古以來只有華人居住，沒有別的族群。',
+      prompt: '新加坡是東南亞的一個島國，除了本島以外，還包括附近的一些小島。它的發展要從1819年英國的萊佛士爵士（Sir Stamford Raffles）為了貿易利益來到這裡，建立殖民政府說起。經過萊佛士多年的努力，新加坡成為亞洲非常重要的貿易中心。第二次世界大戰結束以後，它曾經跟馬來西亞組成一個國家。但是不久以後，因為種種原因，在1965年的時候，決定離開馬來西亞獨立。\n\n新加坡是多民族組成的國家。在它的人口當中，華人占第一位，另外還有馬來人、印度人以及其他民族。因此，新加坡的文化相當多元。拿飲食來說，肉骨茶和海南雞飯就是華人接受當地的飲食習慣而發展出來的特色美食。在印度餐廳很受歡迎的咖哩魚頭，聽說是新加坡的印度人因為看到華人愛吃魚頭而想出來的一道菜。多元的文化讓新加坡人餐桌上的菜色跟街道上的風景一樣熱鬧、精彩。',
+      question: '新加坡在十八世紀曾經受到英國的殖民統治。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
       correctOptionId: 'false',
-      explanationVi: '"吸引了華人、馬來人、印度人等不同族群前來工作、定居".'
+      explanationVi: 'Bài viết nói năm 1819 (thế kỷ 19) Raffles lập chính quyền thuộc địa, không phải thế kỷ 18.'
     },
     {
       id: 'L11-WB-read-b2', lessonId: 'L11', section: 'reading', type: 'multiple-choice',
-      prompt: '新加坡自古以來就是一個多元移民社會。十九世紀，英國在新加坡建立殖民地，吸引了華人、馬來人、印度人等不同族群前來工作、定居。二十世紀中，新加坡脫離英國統治，先加入馬來西亞聯邦，後來才獨立建國。現在新加坡的官方語言有英語、華語、馬來語和淡米爾語四種，不同族群長期生活在一起，飲食、節日、信仰都互相影響，形成了獨特的多元文化。',
-      question: '新加坡曾經是英國的殖民地，後來才獨立建國。',
+      prompt: '新加坡是東南亞的一個島國，除了本島以外，還包括附近的一些小島。它的發展要從1819年英國的萊佛士爵士（Sir Stamford Raffles）為了貿易利益來到這裡，建立殖民政府說起。經過萊佛士多年的努力，新加坡成為亞洲非常重要的貿易中心。第二次世界大戰結束以後，它曾經跟馬來西亞組成一個國家。但是不久以後，因為種種原因，在1965年的時候，決定離開馬來西亞獨立。\n\n新加坡是多民族組成的國家。在它的人口當中，華人占第一位，另外還有馬來人、印度人以及其他民族。因此，新加坡的文化相當多元。拿飲食來說，肉骨茶和海南雞飯就是華人接受當地的飲食習慣而發展出來的特色美食。在印度餐廳很受歡迎的咖哩魚頭，聽說是新加坡的印度人因為看到華人愛吃魚頭而想出來的一道菜。多元的文化讓新加坡人餐桌上的菜色跟街道上的風景一樣熱鬧、精彩。',
+      question: '1965年，新加坡終於獨立，不再受英國統治了。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'true',
-      explanationVi: '"英國在新加坡建立殖民地…後來才獨立建國".'
+      correctOptionId: 'false',
+      explanationVi: 'Bài viết nói năm 1965 Singapore "離開馬來西亞獨立" (tách khỏi Malaysia để độc lập), không nói là thoát khỏi sự cai trị của Anh vào năm đó.'
     },
     {
       id: 'L11-WB-read-b3', lessonId: 'L11', section: 'reading', type: 'multiple-choice',
-      prompt: '新加坡自古以來就是一個多元移民社會。十九世紀，英國在新加坡建立殖民地，吸引了華人、馬來人、印度人等不同族群前來工作、定居。二十世紀中，新加坡脫離英國統治，先加入馬來西亞聯邦，後來才獨立建國。現在新加坡的官方語言有英語、華語、馬來語和淡米爾語四種，不同族群長期生活在一起，飲食、節日、信仰都互相影響，形成了獨特的多元文化。',
-      question: '新加坡的官方語言只有英語一種，其他語言都不是官方語言。',
+      prompt: '新加坡是東南亞的一個島國，除了本島以外，還包括附近的一些小島。它的發展要從1819年英國的萊佛士爵士（Sir Stamford Raffles）為了貿易利益來到這裡，建立殖民政府說起。經過萊佛士多年的努力，新加坡成為亞洲非常重要的貿易中心。第二次世界大戰結束以後，它曾經跟馬來西亞組成一個國家。但是不久以後，因為種種原因，在1965年的時候，決定離開馬來西亞獨立。\n\n新加坡是多民族組成的國家。在它的人口當中，華人占第一位，另外還有馬來人、印度人以及其他民族。因此，新加坡的文化相當多元。拿飲食來說，肉骨茶和海南雞飯就是華人接受當地的飲食習慣而發展出來的特色美食。在印度餐廳很受歡迎的咖哩魚頭，聽說是新加坡的印度人因為看到華人愛吃魚頭而想出來的一道菜。多元的文化讓新加坡人餐桌上的菜色跟街道上的風景一樣熱鬧、精彩。',
+      question: '新加坡的人口當中，華人最多。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
-      correctOptionId: 'false',
-      explanationVi: '"官方語言有英語、華語、馬來語和淡米爾語四種".'
+      correctOptionId: 'true',
+      explanationVi: '"華人占第一位" — người Hoa chiếm vị trí thứ nhất trong dân số.'
     },
     {
       id: 'L11-WB-read-b4', lessonId: 'L11', section: 'reading', type: 'multiple-choice',
-      prompt: '新加坡自古以來就是一個多元移民社會。十九世紀，英國在新加坡建立殖民地，吸引了華人、馬來人、印度人等不同族群前來工作、定居。二十世紀中，新加坡脫離英國統治，先加入馬來西亞聯邦，後來才獨立建國。現在新加坡的官方語言有英語、華語、馬來語和淡米爾語四種，不同族群長期生活在一起，飲食、節日、信仰都互相影響，形成了獨特的多元文化。',
-      question: '新加坡社會中，不同族群的人長期生活在一起，文化上互相影響。',
+      prompt: '新加坡是東南亞的一個島國，除了本島以外，還包括附近的一些小島。它的發展要從1819年英國的萊佛士爵士（Sir Stamford Raffles）為了貿易利益來到這裡，建立殖民政府說起。經過萊佛士多年的努力，新加坡成為亞洲非常重要的貿易中心。第二次世界大戰結束以後，它曾經跟馬來西亞組成一個國家。但是不久以後，因為種種原因，在1965年的時候，決定離開馬來西亞獨立。\n\n新加坡是多民族組成的國家。在它的人口當中，華人占第一位，另外還有馬來人、印度人以及其他民族。因此，新加坡的文化相當多元。拿飲食來說，肉骨茶和海南雞飯就是華人接受當地的飲食習慣而發展出來的特色美食。在印度餐廳很受歡迎的咖哩魚頭，聽說是新加坡的印度人因為看到華人愛吃魚頭而想出來的一道菜。多元的文化讓新加坡人餐桌上的菜色跟街道上的風景一樣熱鬧、精彩。',
+      question: '在新加坡，我們吃得到馬來、印度和中、西各式的美食。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
       correctOptionId: 'true',
-      explanationVi: '"不同族群長期生活在一起，飲食、節日、信仰都互相影響".'
+      explanationVi: 'Dân số gồm người Hoa, người Mã Lai, người Ấn nên ẩm thực đa dạng ("文化相當多元"). Lưu ý: bài viết chỉ nêu cụ thể món Hoa và Ấn; đáp án này là suy luận từ ý "đa văn hóa".'
     },
     {
       id: 'L11-WB-read-b5', lessonId: 'L11', section: 'reading', type: 'multiple-choice',
-      prompt: '新加坡自古以來就是一個多元移民社會。十九世紀，英國在新加坡建立殖民地，吸引了華人、馬來人、印度人等不同族群前來工作、定居。二十世紀中，新加坡脫離英國統治，先加入馬來西亞聯邦，後來才獨立建國。現在新加坡的官方語言有英語、華語、馬來語和淡米爾語四種，不同族群長期生活在一起，飲食、節日、信仰都互相影響，形成了獨特的多元文化。',
-      question: '新加坡的多元文化現象跟台灣完全沒有相似之處。',
+      prompt: '新加坡是東南亞的一個島國，除了本島以外，還包括附近的一些小島。它的發展要從1819年英國的萊佛士爵士（Sir Stamford Raffles）為了貿易利益來到這裡，建立殖民政府說起。經過萊佛士多年的努力，新加坡成為亞洲非常重要的貿易中心。第二次世界大戰結束以後，它曾經跟馬來西亞組成一個國家。但是不久以後，因為種種原因，在1965年的時候，決定離開馬來西亞獨立。\n\n新加坡是多民族組成的國家。在它的人口當中，華人占第一位，另外還有馬來人、印度人以及其他民族。因此，新加坡的文化相當多元。拿飲食來說，肉骨茶和海南雞飯就是華人接受當地的飲食習慣而發展出來的特色美食。在印度餐廳很受歡迎的咖哩魚頭，聽說是新加坡的印度人因為看到華人愛吃魚頭而想出來的一道菜。多元的文化讓新加坡人餐桌上的菜色跟街道上的風景一樣熱鬧、精彩。',
+      question: '咖哩魚頭是一道道地的印度美食，印度人都非常喜歡。',
       options: [{ id: 'true', text: 'Đúng (○)' }, { id: 'false', text: 'Sai (✕)' }],
       correctOptionId: 'false',
-      explanationVi: '新加坡因殖民歷史和移民形成多元文化，跟台灣由荷蘭、西班牙、漢人、原住民共同形成的多元歷史有相似之處。'
+      explanationVi: 'Cà ri đầu cá là món do người Ấn ở Singapore nghĩ ra sau khi thấy người Hoa thích ăn đầu cá, không phải món Ấn chính gốc.'
     },
 
-    { id: 'L11-WB-dc-1', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G1', turns: [{ speaker: 'A', text: '這兩本書寫的建城時間不一樣，一本說是1628年，一本說是1642年。', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '到底是哪一年建的，我們應該查更多資料才能確定。' },
-    { id: 'L11-WB-dc-2', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G2', turns: [{ speaker: 'A', text: '這座城堡的歷史真複雜，換過好幾個統治者。', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '對啊，甚至連名字也跟著改了好幾次。' },
-    { id: 'L11-WB-dc-3', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G3', turns: [{ speaker: 'A', text: '我爸爸的祖先是清朝的時候從福建移民過來的。', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '這麼說，你應該也算是閩南人囉？' },
-    { id: 'L11-WB-dc-4', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G4', turns: [{ speaker: 'A', text: '圖書館裡有沒有介紹本地歷史的書？', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '有，二樓有一整個書架都是跟本地歷史有關的書。' },
-    { id: 'L11-WB-dc-5', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G5', turns: [{ speaker: 'A', text: '你後來怎麼決定要搬家的？', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '房租漲太多了，我不得不搬去比較便宜的地方。' },
+    { id: 'L11-WB-dc-1', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G3', turns: [{ speaker: 'A', text: '你知道老闆決定派誰去越南管理分公司了嗎？', isBlank: false }, { speaker: 'B', text: '嗯，美美告訴我她已經幫小張訂好去越南的機票了。', isBlank: false }, { speaker: 'A', text: '', isBlank: true }], sampleAnswer: '這麼說，老闆決定派小張去越南管理分公司嘍。' },
+    { id: 'L11-WB-dc-2', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G2', turns: [{ speaker: 'A', text: '這家不是上海餐廳嗎？為什麼也賣蘿蔔煎蛋？', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '因為老闆是客家人，他的店裡有各種菜色，甚至連客家人過年吃的蘿蔔糕都有。' },
+    { id: 'L11-WB-dc-3', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G1', turns: [{ speaker: 'A', text: '飯糰也好吃，蛋餅也好吃，真的很難決定。', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '你到底要吃飯糰還是蛋餅？' },
+    { id: 'L11-WB-dc-4', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G5', turns: [{ speaker: 'A', text: '你的室友都去看電影了，你怎麼不一起去？', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '我明天要交報告，今天不得不留在家裡寫。' },
+    { id: 'L11-WB-dc-5', lessonId: 'L11', section: 'dialogue', type: 'dialogue-completion', requiredPattern: 'L11-G4', turns: [{ speaker: 'A', text: '我的電腦怎麼忽然不動了？你可以幫我看看哪裡出問題了嗎？', isBlank: false }, { speaker: 'B', text: '', isBlank: true }], sampleAnswer: '我只懂跟上網有關的問題，電腦壞了的話，你最好去問專業的人。' },
 
     {
       id: 'L11-WB-comp-1', lessonId: 'L11', section: 'composition', type: 'composition',
-      topicVi: '如果你可以回到過去，變成台灣歷史上的一個人物（例如鄭成功、荷蘭商人、清朝移民），你想選誰？請寫一篇短文，說明你選擇的原因，以及你想經歷的事情。',
+      topicVi: '如果你可以變成一個歷史人物，你想變成誰？如果你變成他，你就可以做什麼事？為什麼你想變成他？介紹一下他的故事。',
       requiredWords: ['L11-004', 'L11-028', 'L11-030', 'L11-016'],
       requiredPatterns: ['L11-G1', 'L11-G6'],
-      minLength: 200, maxLength: 300
+      minLength: 200, maxLength: 250
     },
     {
       id: 'L11-WB-comp-2', lessonId: 'L11', section: 'composition', type: 'composition',
-      topicVi: '你的家鄉有沒有一個你很佩服的歷史人物？請寫一篇短文，介紹這個人物的故事，以及他對你的家鄉有什麼貢獻或影響。',
+      topicVi: '你最欣賞哪一個歷史人物？他做了什麼事？為什麼你欣賞他？介紹一下他的故事。',
       requiredWords: ['L11-022', 'L11-054', 'L11-063'],
       requiredPatterns: ['L11-G3', 'L11-G4'],
-      minLength: 200, maxLength: 300
+      minLength: 200, maxLength: 250
     }
   ]
 }
